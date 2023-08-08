@@ -10,7 +10,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-* {
+html {
   scroll-behavior: smooth;
 }
 
@@ -31,4 +31,69 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+.mess {
+  background-image: url("/img/mensaje.svg");
+}
+
+@keyframes slideAndFade {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-7pc);
+    opacity: 0;
+  }
+}
+
+.fading-of-elements-right {
+  animation: slideAndFade 0.5s ease-in-out forwards; /* Ajusta la duración según tus preferencias */
+}
+@keyframes slideAndFade2 {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-7pc);
+    opacity: 0;
+  }
+}
+
+.fading-of-elements-top {
+  animation: slideAndFade2 0.5s ease-in-out forwards; /* Ajusta la duración según tus preferencias */
+}
+
+/* Estilos normales para el SVG */
+.svg-container {
+  width: 24px;
+  height: 24px;
+  /* Otros estilos que desees aplicar */
+  border: 1px solid red;
+  fill: green !important;
+}
+
+/* Estilos de hover para el SVG */
+.svg-container:hover {
+  fill: blue !important; /* Cambia el color de relleno en hover */
+  transform: scale(1.2); /* Cambia el tamaño en hover */
+  /* Otros estilos de hover que desees aplicar */
+}
+
+@keyframes aumentarYDesvanecer {
+  0% {
+    width: 41pc;
+  }
+  100% {
+    width: 78pc;
+  }
+}
+
+.mi-animacion {
+  animation: aumentarYDesvanecer 1s ease-in-out forwards; /* 5s es la duración de la animación */
+}
+
+.mp {
+  transition: all 0.5s ease-in-out forwards;
 }

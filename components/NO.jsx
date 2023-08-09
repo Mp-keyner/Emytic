@@ -19,21 +19,8 @@ const NO = () => {
   };
 
   const AddAnimation = () => {
-    const row = document.getElementById("row");
-    const Secon = document.getElementById("Secon");
-    const mensaje = document.getElementById("mensaje");
-    const Arbol = document.getElementById("Arbol");
-    const titulo = document.getElementById("titulo");
-    const loro = document.getElementById("loro");
-
-    // mensaje.classList.add("fading-of-elements-top");
-    // loro.classList.add("fading-of-elements-right");
-    // Arbol.classList.add("fading-of-elements-right");
-    // titulo.classList.add("fading-of-elements-right");
-
-    // Escuchar el evento 'animationend' en el elemento mensaje
-    // mensaje.addEventListener("animationend", () => {
-    //   // Realizar el desplazamiento al siguiente elemento
+    console.log(window.screen.width, "width");
+    console.log(window.screen.height, "height");
     Secon.scrollIntoView({
       behavior: "smooth",
       block: "start",
@@ -42,8 +29,19 @@ const NO = () => {
     // });
     row.style.backgroundColor = "blue";
     row.style.transition = "all 1s";
-    row.style.top = "61pc";
-    row.style.left = "1pc";
+    switch (window.screen.height) {
+      case 720:
+        row.style.top = "61pc";
+        row.style.left = "1pc";
+        break;
+      case 1024:
+        row.style.top = "81pc";
+        row.style.left = "1pc";
+        break;
+
+      default:
+        break;
+    }
     row.style.width = "13pc";
     console.log("objectsdftgyhuji");
   };
@@ -69,7 +67,7 @@ const NO = () => {
           width={400}
           height={600}
           onClick={CALme}
-          className="w-[100%] position: absolute top-[-40.6pc] right-[7pc]"
+          className="w-[100%] position: absolute bottom-[0] right-[7pc]"
           data-aos="fade-right"
           data-aos-out="fade-left"
           id="Arbol"
@@ -87,7 +85,7 @@ const NO = () => {
           src="/img/6.svg"
           width={300}
           height={500}
-          className="absolute top-[21pc] left-[-1pc]"
+          className="absolute top-[35%] left-[-1pc]"
           data-aos="fade-right"
           id="loro"
           data-aos-out="fade-left"

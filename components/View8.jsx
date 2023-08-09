@@ -5,27 +5,24 @@ import React from "react";
 const View1 = () => {
   const AddAnimation = () => {
     const row = document.getElementById("row");
-    const nine = document.getElementById("nine");
+    const ten = document.getElementById("ten");
 
-    nine.scrollIntoView({
+    ten.scrollIntoView({
       behavior: "smooth",
       block: "start",
       inline: "nearest",
     });
 
-    row.style.backgroundColor = "red";
-    row.style.transition = "all 1s";
-    row.style.top = "327pc";
-    row.style.left = "1pc";
-    row.style.width = "13pc";
+    row.style.backgroundColor = "blue";
+    // row.style.transition = "all 1s";
+    // row.style.top = "169pc";
+    // row.style.left = "66pc";
+    // row.style.width = "13pc";
     console.log("objectsdftgyhuji");
   };
   return (
     <>
-      <div
-        id="secon"
-        className="relative border-1 border-solid border-red-500 bg-[#222] h-screen"
-      >
+      <div className="relative border-1 border-solid border-red-500 bg-[#d89f22] h-screen">
         <div className="absolute top-[3pc] left-[0pc] w-[10pc] flex flex-col items-center bg-green-400">
           <h2>Presiona para empezar</h2>
           <Image
@@ -36,7 +33,7 @@ const View1 = () => {
           />
         </div>
         <div
-          className="w-[52pc] h-[15pc] border-2 border-red-500  text-lg px-4 py-1 z-40 absolute bg-white text-black mess left-[13pc] top-[3pc]"
+          className="w-[52pc] h-[15pc] border-2 border-red-500  text-lg px-4 py-1 z-40 absolute bg-white text-black mess left-[12pc] top-[2pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -77,28 +74,38 @@ const View1 = () => {
           </table>
         </div>
         <div
-          className="w-[23pc] border-2 border-red-500  text-lg px-4 py-1 z-40 absolute bg-white text-black mess left-[13pc] top-[25pc]"
+          className="w-[52pc] h-[12pc] border-2 border-red-500  text-lg px-4 py-1 z-40 absolute bg-white text-black mess left-[21pc] top-[20pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
         >
-          <p>Escribe el numero de cada carita con la situación que la generó</p>
+          <table class="styled-table-tow">
+            <tbody>
+              <tr>
+                <td>
+                  <p>Ganar un examen con excelente nota</p>
+                </td>
+                <td>
+                  <p>Quedarme solo en la oscuridad</p>
+                </td>
+                <td>
+                  <p>Recibir una fiesta sorpresa</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>No conseguir mi juguete favorito</p>
+                </td>
+                <td>
+                  <p>Probar un alimento que no me gusta</p>
+                </td>
+                <td>
+                  <p>Perder a un ser querido</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <Image
-          src="/img/5.1.svg"
-          priority={true} // {false} | {true}
-          width={400}
-          height={600}
-          className="w-[36pc] z-10 position: absolute top-[0pc] right-[0pc]"
-          data-aos="fade-right"
-        />
-        <Image
-          src="/img/6.1.svg"
-          data-aos="fade-right"
-          width={100}
-          height={100}
-          className="w-[18pc] z-30 position: absolute top-[10pc] right-[0pc]"
-        />
       </div>
     </>
   );

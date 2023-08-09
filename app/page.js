@@ -9,6 +9,10 @@ import View4 from "@/components/View4";
 import View5 from "@/components/View5";
 import View6 from "@/components/View6";
 import View7 from "@/components/View7";
+import View8 from "@/components/View8";
+import View9 from "@/components/View9";
+import View10 from "@/components/View10";
+import View11 from "@/components/View11";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -40,6 +44,18 @@ export default function Home() {
       </div>
       <div id="eight">
         <View7 />
+      </div>
+      <div id="nine">
+        <View8 />
+      </div>
+      <div id="ten">
+        <View9 />
+      </div>
+      <div id="eleven">
+        <View10 />
+      </div>
+      <div id="twelve">
+        <View11 />
       </div>
     </>
   );

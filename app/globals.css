@@ -93,7 +93,44 @@ body {
 .mi-animacion {
   animation: aumentarYDesvanecer 1s ease-in-out forwards; /* 5s es la duración de la animación */
 }
+.mi-animacion-2 {
+  animation: aumentarYDesvanecer 1s ease-in-out forwards; /* 5s es la duración de la animación */
+}
 
 .mp {
   transition: all 0.5s ease-in-out forwards;
+}
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.styled-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+.styled-table-tow {
+  width: 50pc;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+.styled-table-tow th,
+.styled-table-tow td {
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.styled-table-tow th {
+  background-color: #f2f2f2;
+  font-weight: bold;
 }

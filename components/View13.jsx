@@ -4,10 +4,10 @@ import React from "react";
 const View11 = () => {
   const AddAnimation = () => {
     const row = document.getElementById("row");
-    const thirteen = document.getElementById("thirteen");
+    const fiveteen = document.getElementById("fiveteen");
 
     // Realizar el desplazamiento al siguiente elemento
-    thirteen.scrollIntoView({
+    fiveteen.scrollIntoView({
       behavior: "smooth",
       block: "start",
       inline: "nearest",

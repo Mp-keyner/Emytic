@@ -6,13 +6,13 @@ import SvgComponent from "./SvgComponent";
 const View1 = () => {
   const AddAnimation = () => {
     const row = document.getElementById("row");
-    const twelve = document.getElementById("Three");
-    const mapa = document.getElementById("mapa");
+    const twelve = document.getElementById("twelve");
+    const mapados = document.getElementById("mapados");
 
-    mapa.src = "/img/map/1.2.svg";
-    mapa.classList.add("mi-animacion-2");
+    mapados.src = "/img/map/1.2.svg";
+    mapados.classList.add("miAnimacion2");
 
-    mapa.addEventListener("animationend", () => {
+    mapados.addEventListener("animationend", () => {
       // Realizar el desplazamiento al siguiente elemento
       twelve.scrollIntoView({
         behavior: "smooth",
@@ -22,9 +22,8 @@ const View1 = () => {
 
       row.style.backgroundColor = "blue";
       row.style.transition = "all 1s";
-      row.style.top = "91pc";
-      row.style.left = "49pc";
-      row.style.width = "300px";
+      row.style.top = "440pc";
+      row.style.left = "1pc";
       console.log("objectsdftgyhuji");
     });
   };
@@ -62,7 +61,7 @@ const View1 = () => {
           src={"/img/map/1.svg"}
           width={300}
           height={300}
-          id="mapa"
+          id="mapados"
           className="w-[41pc] border-1px border-red-500 absolute top-0 right-[7pc] mp"
         />
       </div>

@@ -89,12 +89,20 @@ body {
     width: 78pc;
   }
 }
+@keyframes mapaDos {
+  0% {
+    width: 41pc;
+  }
+  100% {
+    width: 78pc;
+  }
+}
 
 .mi-animacion {
   animation: aumentarYDesvanecer 1s ease-in-out forwards; /* 5s es la duración de la animación */
 }
-.mi-animacion-2 {
-  animation: aumentarYDesvanecer 1s ease-in-out forwards; /* 5s es la duración de la animación */
+.miAnimacion2 {
+  animation: mapaDos 1s ease-in-out forwards; /* 5s es la duración de la animación */
 }
 
 .mp {

@@ -13,6 +13,9 @@ import View8 from "@/components/View8";
 import View9 from "@/components/View9";
 import View10 from "@/components/View10";
 import View11 from "@/components/View11";
+import View12 from "@/components/View12";
+import View13 from "@/components/View13";
+import View14 from "@/components/View14";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -56,6 +59,15 @@ export default function Home() {
       </div>
       <div id="twelve">
         <View11 />
+      </div>
+      <div id="thirteen">
+        <View12 />
+      </div>
+      <div id="fourteen">
+        <View13 />
+      </div>
+      <div id="fiveteen">
+        <View14 />
       </div>
     </>
   );

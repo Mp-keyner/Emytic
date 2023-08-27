@@ -10,16 +10,17 @@ const Fscreen = ({ key }) => {
       document.documentElement.requestFullscreen();
     }
   };
+
   return (
     <div className="bg-customColor h-screen text-white flex justify-center flex-col p-[1pc]">
-      <h1 className="text-center text-[2pc]">Antes de empezar</h1>
-      <p>Activa el modo de pantalla, competa para potenciar la experiencia </p>
+      <h1 className="text-center text-[2pc] z-40">Antes de empezar</h1>
+      <p className="z-40">
+        Activa el modo de pantalla, competa para potenciar la experiencia{" "}
+      </p>
       <br />
       <button
-        className="border border-solid border-white w-[7pc] h-[3pc] rounded-lg"
-        onClick={() => {
-          requestFullScreen();
-        }}
+        className="border border-solid border-white w-[7pc] h-[3pc] rounded-lg z-40"
+        onClick={requestFullScreen}
       >
         Comenzar
       </button>

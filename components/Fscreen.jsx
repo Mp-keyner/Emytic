@@ -1,13 +1,14 @@
 import React from "react";
 import Image from "next/image";
 
-const Fscreen = ({ key }) => {
+const Fscreen = ({ setShowFunction }) => {
   const requestFullScreen = () => {
     console.log("dia dia ");
     // Verificar si el navegador admite el modo de pantalla completa
     if (document.documentElement.requestFullscreen) {
       // Solicitar entrar en modo de pantalla completa en respuesta a un clic
       document.documentElement.requestFullscreen();
+      setShowFunction();
     }
   };
 

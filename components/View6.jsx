@@ -36,7 +36,7 @@ const View1 = () => {
           />
         </div>
         <div
-          className="w-[23pc] border-2 border-red-500  text-lg px-4 py-1 z-40 absolute bg-white text-black mess left-[27pc] top-[9pc]"
+          className="w-[23pc] border-2 border-red-500  text-lg px-4 py-1 z-40 absolute bg-white text-black mess left-[0pc] sm:left-[27pc] top-[9pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -49,7 +49,7 @@ const View1 = () => {
           </p>
         </div>
         <div
-          className="w-[23pc] border-2 border-red-500  text-lg px-4 py-1 z-40 absolute bg-white text-black mess left-[13pc] top-[25pc]"
+          className="w-[23pc] border-2 border-red-500  text-lg px-4 py-1 z-40 absolute bg-white text-black mess sm:left-[13pc] left-[0pc] top-[25pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

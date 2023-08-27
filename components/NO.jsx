@@ -16,10 +16,14 @@ const NO = () => {
     console.log(window.screen.height, "height");
     const Secon = document.getElementById("secon");
 
-    row.style.backgroundColor = "blue";
     row.style.transition = "all 1s";
-    row.style.top = "80%";
-    row.style.left = "10%";
+    if (screen.width > 400) {
+      row.style.top = "80%";
+      row.style.left = "10%";
+    } else if (screen.width < 400) {
+      row.style.top = "86%";
+      row.style.left = "26%";
+    }
     row.style.width = "13pc";
     console.log("objectsdftgyhuji");
 
@@ -57,7 +61,7 @@ const NO = () => {
           priority={true} // {false} | {true}
           width={400}
           height={600}
-          className="w-[100%] position: absolute bottom-[0] right-[7pc]"
+          className="w-[100%] position: absolute bottom-[0vh] right-[7pc]"
           data-aos="fade-right"
           data-aos-out="fade-left"
           id="Arbol"
@@ -67,7 +71,7 @@ const NO = () => {
           src="/img/1.svg"
           width={300}
           height={500}
-          className="fixed sm:top-[60%] top-[46%] sm:left-[43%] left-[23%] transform z-40 w-[10pc]"
+          className="fixed sm:top-[60%] top-[57%] sm:left-[43%] left-[23%] transform z-40 w-[10pc]"
           style={{ transform: "translate(-50%, -50%)" }}
           id="row"
           data-aos="fade-down"

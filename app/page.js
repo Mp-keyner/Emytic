@@ -19,34 +19,42 @@ import View15 from "@/components/View15";
 import View16 from "@/components/View16";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Fscreen from "@/components/Fscreen";
 
 export default function Home() {
+  const [Show, setShow] = useState(true);
   useEffect(() => {
     AOS.init();
   }, []);
 
   return (
     <>
-      <NO />
-      <div id="Secon">
-        <View1 />
-      </div>
-      <div id="Three">
-        <View2 />
-      </div>
-      <div id="Fourth">
-        <View3 />
-      </div>
-      <div id="Five">
-        <View4 />
-      </div>
-      <div id="Six">
-        <View5 />
-      </div>
-      <div id="Seven">
-        <View6 />
-      </div>
+      {Show ? (
+        <Fscreen key={setShow} />
+      ) : (
+        <>
+          <NO />
+          <div id="Secon">
+            <View1 />
+          </div>
+          <div id="Three">
+            <View2 />
+          </div>
+          <div id="Fourth">
+            <View3 />
+          </div>
+          <div id="Five">
+            <View4 />
+          </div>
+          <div id="Six">
+            <View5 />
+          </div>
+          <div id="Seven">
+            <View6 />
+          </div>
+        </>
+      )}
     </>
   );
 }

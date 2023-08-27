@@ -33,13 +33,7 @@ const NO = () => {
       inline: "nearest",
     });
   };
-  const requestFullScreen = () => {
-    // Verificar si el navegador admite el modo de pantalla completa
-    if (document.documentElement.requestFullscreen) {
-      // Solicitar entrar en modo de pantalla completa en respuesta a un clic
-      document.documentElement.requestFullscreen();
-    }
-  };
+
   return (
     <>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -65,7 +59,6 @@ const NO = () => {
           data-aos="fade-right"
           data-aos-out="fade-left"
           id="Arbol"
-          onClick={requestFullScreen}
         />
         <Image
           src="/img/1.svg"

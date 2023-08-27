@@ -1,6 +1,5 @@
 "use client";
 
-import View from "../components/View";
 import NO from "../components/NO";
 import View1 from "@/components/View1";
 import View2 from "@/components/View2";
@@ -16,6 +15,8 @@ import View11 from "@/components/View11";
 import View12 from "@/components/View12";
 import View13 from "@/components/View13";
 import View14 from "@/components/View14";
+import View15 from "@/components/View15";
+import View16 from "@/components/View16";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -68,6 +69,12 @@ export default function Home() {
       </div>
       <div id="fiveteen">
         <View14 />
+      </div>
+      <div id="sixteen">
+        <View15 />
+      </div>
+      <div id="eighteen">
+        <View16 />
       </div>
     </>
   );

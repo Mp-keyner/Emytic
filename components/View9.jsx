@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const View1 = () => {
+const View9 = () => {
   const AddAnimation = () => {
     const row = document.getElementById("row");
     const eleven = document.getElementById("eleven");
@@ -15,8 +15,9 @@ const View1 = () => {
 
     row.style.backgroundColor = "red";
     row.style.transition = "all 1s";
-    row.style.top = "402pc";
-    row.style.left = "1pc";
+    row.style.top = "82%";
+    row.style.left = "11%";
+    row.style.opacity = 1;
     row.style.width = "13pc";
     console.log("objectsdftgyhuji");
   };
@@ -87,4 +88,4 @@ const View1 = () => {
   );
 };
 
-export default View1;
+export default View9;

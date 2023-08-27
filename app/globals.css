@@ -13,6 +13,9 @@
 html {
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -97,12 +100,23 @@ body {
     width: 78pc;
   }
 }
+@keyframes mapaTres {
+  0% {
+    width: 41pc;
+  }
+  100% {
+    width: 78pc;
+  }
+}
 
 .mi-animacion {
   animation: aumentarYDesvanecer 1s ease-in-out forwards; /* 5s es la duración de la animación */
 }
 .miAnimacion2 {
   animation: mapaDos 1s ease-in-out forwards; /* 5s es la duración de la animación */
+}
+.miAnimacion3 {
+  animation: mapaTres 1s ease-in-out forwards; /* 5s es la duración de la animación */
 }
 
 .mp {
@@ -141,4 +155,17 @@ body {
 .styled-table-tow th {
   background-color: #f2f2f2;
   font-weight: bold;
+}
+
+.tat img {
+  width: 3pc;
+}
+
+.tat {
+  display: flex;
+  align-items: center;
+}
+.contaAni {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
 }

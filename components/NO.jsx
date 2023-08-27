@@ -11,39 +11,23 @@ const NO = () => {
     AOS.init();
     window.scrollTo(0, 0);
   }, []);
-  const CALme = () => {
-    console.log("object");
-  };
-  const CALme1 = () => {
-    console.log("objectsdftgyhuji");
-  };
-
   const AddAnimation = () => {
     console.log(window.screen.width, "width");
     console.log(window.screen.height, "height");
+    const Secon = document.getElementById("secon");
+
+    row.style.backgroundColor = "blue";
+    row.style.transition = "all 1s";
+    row.style.top = "80%";
+    row.style.left = "10%";
+    row.style.width = "13pc";
+    console.log("objectsdftgyhuji");
+
     Secon.scrollIntoView({
       behavior: "smooth",
       block: "start",
       inline: "nearest",
     });
-    // });
-    row.style.backgroundColor = "blue";
-    row.style.transition = "all 1s";
-    switch (window.screen.height) {
-      case 720:
-        row.style.top = "61pc";
-        row.style.left = "1pc";
-        break;
-      case 1024:
-        row.style.top = "81pc";
-        row.style.left = "1pc";
-        break;
-
-      default:
-        break;
-    }
-    row.style.width = "13pc";
-    console.log("objectsdftgyhuji");
   };
   return (
     <>
@@ -55,7 +39,7 @@ const NO = () => {
       />
       <div className="border-1 border-solid border-red-500 bg-customColor h-screen text-white">
         <h1
-          className="text-[8pc] font-bold z-40 absolute left-[1pc]"
+          className="text-[4pc] sm:text-[8pc] font-bold z-40 absolute left-[1pc]"
           data-aos="fade-up"
           id="titulo"
         >
@@ -66,7 +50,6 @@ const NO = () => {
           priority={true} // {false} | {true}
           width={400}
           height={600}
-          onClick={CALme}
           className="w-[100%] position: absolute bottom-[0] right-[7pc]"
           data-aos="fade-right"
           data-aos-out="fade-left"
@@ -76,8 +59,8 @@ const NO = () => {
           src="/img/1.svg"
           width={300}
           height={500}
-          className="absolute top-[12pc] left-[34%] z-40"
-          style={{ backgroundColor: "red" }}
+          className="fixed sm:top-[60%] top-[18%] sm:left-[43%] left-[7%] transform z-40 w-[10pc]"
+          style={{ backgroundColor: "red", transform: "translate(-50%, -50%)" }}
           id="row"
           data-aos="fade-down"
         />
@@ -85,7 +68,7 @@ const NO = () => {
           src="/img/6.svg"
           width={300}
           height={500}
-          className="absolute top-[35%] left-[-1pc]"
+          className="absolute top-[74%] sm:top-[35%] left-[-1pc]"
           data-aos="fade-right"
           id="loro"
           data-aos-out="fade-left"
@@ -93,7 +76,7 @@ const NO = () => {
         <div
           data-aos="fade-left"
           data-aos-out="fade-left"
-          className="absolute bottom-[13pc] right-[0pc] w-[10pc] flex flex-col items-center bg-red-500"
+          className="absolute sm:bottom-[13pc] bottom-[7pc] right-[0pc] w-[10pc] flex flex-col items-center bg-red-500"
         >
           <h2>Presiona para empezar</h2>
           <Image
@@ -104,7 +87,7 @@ const NO = () => {
           />
         </div>
         <div
-          className="border-2 border-red-500 w-1/3 text-lg px-4 py-1 z-40 absolute bg-white text-black mess right-[9pc] top-[3pc]"
+          className="border-2 border-red-500 sm:w-1/3 w-[20pc] text-lg px-4 py-1 z-40 absolute bg-white text-black mess sm:right-[14%] sm:top-[27%] right-[2%] top-[14%]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

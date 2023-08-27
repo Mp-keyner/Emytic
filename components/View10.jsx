@@ -22,8 +22,8 @@ const View1 = () => {
 
       row.style.backgroundColor = "blue";
       row.style.transition = "all 1s";
-      row.style.top = "440pc";
-      row.style.left = "1pc";
+      row.style.top = "78%";
+      row.style.left = "11%";
       console.log("objectsdftgyhuji");
     });
   };

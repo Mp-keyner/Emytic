@@ -4,10 +4,10 @@ import React from "react";
 const View11 = () => {
   const AddAnimation = () => {
     const row = document.getElementById("row");
-    const thirteen = document.getElementById("thirteen");
+    const sixteen = document.getElementById("sixteen");
 
     // Realizar el desplazamiento al siguiente elemento
-    thirteen.scrollIntoView({
+    sixteen.scrollIntoView({
       behavior: "smooth",
       block: "start",
       inline: "nearest",
@@ -15,9 +15,7 @@ const View11 = () => {
 
     row.style.backgroundColor = "blue";
     row.style.transition = "all 1s";
-    row.style.top = "456pc";
-    row.style.left = "69pc";
-    row.style.width = "8pc";
+    row.style.opacity = 0;
     console.log("objectsdftgyhuji");
   };
   return (
@@ -74,9 +72,6 @@ const View11 = () => {
           data-aos-out="fade-left"
           id="mensaje"
         >
-          <p>
-            <b>Aprende</b>
-          </p>
           <p>
             Lo importante es ser capaz de afrontar retos y situaciones, sin
             dejar que afecte nuestras emociones

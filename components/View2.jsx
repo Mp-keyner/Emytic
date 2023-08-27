@@ -15,8 +15,8 @@ const View1 = () => {
 
     row.style.backgroundColor = "blue";
     row.style.transition = "all 1s";
-    row.style.top = "136pc";
-    row.style.left = "3pc";
+    row.style.top = "72%";
+    row.style.left = "12%";
     row.style.width = "13pc";
     console.log("objectsdftgyhuji");
   };

@@ -18,6 +18,7 @@ const View1 = () => {
     // row.style.top = "169pc";
     // row.style.left = "66pc";
     // row.style.width = "13pc";
+    row.style.opacity = 0;
     console.log("objectsdftgyhuji");
   };
   return (

@@ -4,14 +4,14 @@ import React from "react";
 const View11 = () => {
   const AddAnimation = () => {
     const row = document.getElementById("row");
-    const fourteen = document.getElementById("fourteen");
+    const Fourteen = document.getElementById("Fourteen");
     const mapa = document.getElementById("mapa");
 
     mapa.src = "/img/map/1.2.svg";
     mapa.classList.add("mi-animacion-2");
 
     // Realizar el desplazamiento al siguiente elemento
-    fourteen.scrollIntoView({
+    Fourteen.scrollIntoView({
       behavior: "smooth",
       block: "start",
       inline: "nearest",

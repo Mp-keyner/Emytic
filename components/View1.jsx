@@ -34,7 +34,7 @@ const View1 = () => {
         id="secon"
         className="relative border-1 border-solid border-red-500 bg-red-400 h-screen"
       >
-        <div className="absolute sm:bottom-[13pc] bottom-[0] right-[0pc] w-[10pc] flex flex-col items-center text-center">
+        <div className="absolute sm:bottom-[13pc] z-50 bottom-[0] right-[0pc] w-[10pc] flex flex-col items-center text-center">
           <h2>Presiona para empezar</h2>
           <Image
             onClick={AddAnimation}
@@ -61,7 +61,7 @@ const View1 = () => {
           width={300}
           height={300}
           id="mapa"
-          className="w-[41pc] border-1px border-red-500 absolute top-0 right-[0] mp"
+          className="w-[41pc] border-1px border-red-500 absolute top-0 right-[0] sm:right-[6%] mp"
         />
       </div>
     </>

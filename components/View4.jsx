@@ -23,7 +23,7 @@ const View4 = () => {
   return (
     <>
       <div className="relative border-1 border-solid border-red-500 bg-blue-400 h-screen">
-        <div className="absolute bottom-[25pc] right-[0pc] w-[10pc] flex flex-col items-center bg-green-900">
+        <div className="absolute bottom-[25pc] right-[0pc] w-[10pc] flex flex-col items-center text-center bg-green-900">
           <h2>Presiona para continuar</h2>
 
           <Image

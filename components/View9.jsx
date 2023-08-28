@@ -5,9 +5,9 @@ import React from "react";
 const View9 = () => {
   const AddAnimation = () => {
     const row = document.getElementById("row");
-    const eleven = document.getElementById("eleven");
+    const Eleven = document.getElementById("Eleven");
 
-    eleven.scrollIntoView({
+    Eleven.scrollIntoView({
       behavior: "smooth",
       block: "start",
       inline: "nearest",
@@ -24,7 +24,7 @@ const View9 = () => {
   return (
     <>
       <div className="relative border-1 border-solid border-red-500 bg-[#0098ff] h-screen">
-        <div className="absolute top-[3pc] left-[0pc] w-[10pc] flex flex-col items-center bg-red-400">
+        <div className="absolute top-[3pc] left-[0pc] text-center w-[10pc] flex flex-col items-center bg-red-400">
           <h2>Presiona para empezar</h2>
           <Image
             onClick={AddAnimation}

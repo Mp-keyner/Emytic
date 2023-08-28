@@ -64,7 +64,7 @@ const NO = () => {
           src="/img/1.svg"
           width={300}
           height={500}
-          className="fixed sm:top-[60%] top-[57%] sm:left-[43%] left-[23%] transform z-40 w-[10pc]"
+          className="fixed sm:top-[60%] top-[57%] sm:left-[43%] left-[23%] transform z-40 w-[10pc] sm:w-[16pc]"
           style={{ transform: "translate(-50%, -50%)" }}
           id="row"
           data-aos="fade-down"
@@ -73,7 +73,7 @@ const NO = () => {
           src="/img/6.svg"
           width={300}
           height={500}
-          className="absolute top-[74%] sm:top-[35%] left-[-1pc] w-[12pc]"
+          className="absolute top-[74%] sm:top-[35%] left-[-1pc] w-[12pc] sm:w-[19pc]"
           data-aos="fade-right"
           id="loro"
           data-aos-out="fade-left"
@@ -81,7 +81,7 @@ const NO = () => {
         <div
           data-aos="fade-left"
           data-aos-out="fade-left"
-          className="absolute sm:bottom-[13pc] bottom-[7pc] right-[0pc] w-[10pc] flex flex-col items-center text-center"
+          className="absolute sm:bottom-[13pc] bottom-[7pc] z-[1pc] right-[0pc] w-[10pc] flex flex-col items-center text-center"
         >
           <h2>Presiona para empezar</h2>
           <Image

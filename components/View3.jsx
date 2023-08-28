@@ -26,7 +26,7 @@ const View1 = () => {
         id="secon"
         className="relative border-1 border-solid border-red-500 bg-purple-400 h-screen"
       >
-        <div className="absolute top-[3pc] left-[0pc] w-[10pc] flex flex-col items-center bg-yellow-900">
+        <div className="absolute top-[3pc] left-[0pc] w-[10pc] flex flex-col items-center text-center bg-yellow-900">
           <h2>Presiona para empezar</h2>
           <Image
             onClick={AddAnimation}

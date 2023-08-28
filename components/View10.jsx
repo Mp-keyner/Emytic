@@ -33,7 +33,7 @@ const View1 = () => {
         id="secon"
         className="relative border-1 border-solid border-red-500 bg-red-400 h-screen"
       >
-        <div className="absolute bottom-[13pc] right-[0pc] w-[10pc] flex flex-col items-center bg-blue-500">
+        <div className="absolute bottom-[13pc] text-center right-[0pc] w-[10pc] flex flex-col items-center bg-blue-500">
           <h2>Presiona para empezar</h2>
           <Image
             onClick={AddAnimation}
@@ -62,7 +62,7 @@ const View1 = () => {
           width={300}
           height={300}
           id="mapados"
-          className="w-[41pc] border-1px border-red-500 absolute top-0 right-[7pc] mp"
+          className="w-[41pc] border-1px border-red-500 absolute top-0 right-[] sm:right-[6%] mp"
         />
       </div>
     </>

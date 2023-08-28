@@ -53,6 +53,36 @@ export default function Home() {
           <div id="Seven">
             <View6 />
           </div>
+          <div id="Eight">
+            <View7 />
+          </div>
+          <div id="Nine">
+            <View8 />
+          </div>
+          <div id="ten">
+            <View9 />
+          </div>
+          <div id="Eleven">
+            <View10 />
+          </div>
+          <div id="Twelve">
+            <View11 />
+          </div>
+          <div id="Thirteen">
+            <View12 />
+          </div>
+          <div id="Fourteen">
+            <View13 />
+          </div>
+          <div id="Fifteen">
+            <View14 />
+          </div>
+          <div id="Sixteen">
+            <View15 />
+          </div>
+          <div id="Seventeen">
+            <View16 />
+          </div>
         </>
       )}
     </>

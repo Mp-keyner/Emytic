@@ -24,7 +24,7 @@ const View1 = () => {
   return (
     <>
       <div className="relative border-1 border-solid border-red-500 bg-[#d89f22] h-screen">
-        <div className="absolute top-[3pc] left-[0pc] w-[10pc] flex flex-col items-center bg-green-400">
+        <div className="absolute top-[3pc] left-[0pc] w-[10pc] text-center flex flex-col items-center bg-green-400">
           <h2>Presiona para empezar</h2>
           <Image
             onClick={AddAnimation}

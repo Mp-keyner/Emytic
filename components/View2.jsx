@@ -23,7 +23,7 @@ const View1 = () => {
   return (
     <>
       <div className="relative border-1 border-solid border-red-500 bg-blue-400 h-screen">
-        <div className="absolute bottom-[13pc] right-[0pc] w-[10pc] flex flex-col items-center bg-green-900">
+        <div className="absolute bottom-[13pc] right-[0pc] w-[10pc] flex flex-col items-center text-center bg-green-900">
           <h2>Presiona para empezar</h2>
 
           <Image
@@ -34,7 +34,7 @@ const View1 = () => {
           />
         </div>
         <div
-          className="w-[12pc] border-2 border-red-500 w-1/3 text-lg px-4 py-1 z-40 absolute bg-white text-black mess right-[29pc] top-[15pc]"
+          className="w-[12pc] border-2 border-red-500 text-lg px-4 py-1 z-40 absolute bg-white text-black mess right-[29pc] top-[15pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

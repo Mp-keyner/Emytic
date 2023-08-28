@@ -5,9 +5,9 @@ import React from "react";
 const View1 = () => {
   const AddAnimation = () => {
     const row = document.getElementById("row");
-    const eighteen = document.getElementById("eighteen");
+    const Seventeen = document.getElementById("Seventeen");
 
-    eighteen.scrollIntoView({
+    Seventeen.scrollIntoView({
       behavior: "smooth",
       block: "start",
       inline: "nearest",

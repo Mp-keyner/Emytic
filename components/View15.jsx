@@ -23,7 +23,7 @@ const View1 = () => {
   return (
     <>
       <div className="relative border-1 border-solid border-red-500 bg-[#d89f22] h-screen p-[1pc]">
-        <h1>Descubre el mensaje oculto</h1>
+        <h1 className="text-[2pc] font-semibold">Descubre el mensaje oculto</h1>
         <br />
         <div className="absolute top-[3pc] right-[0pc] w-[10pc] flex flex-col items-center bg-green-400 z-[1]">
           <h2>Presiona para empezar</h2>

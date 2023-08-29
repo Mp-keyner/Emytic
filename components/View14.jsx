@@ -34,7 +34,7 @@ const View11 = () => {
           />
         </div>
         <Image
-          className="w-[13pc] border-2 border-red-500 absolute right-[1pc] top-[0pc]"
+          className="w-[13pc] border-2 border-red-500 absolute right-[7pc] top-[15pc]"
           data-aos="fade-left" // Definición única de data-aos
           data-aos-out="fade-left"
           src="/img/tortuga.svg"

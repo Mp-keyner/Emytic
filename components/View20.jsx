@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
+ 
 const View11 = () => {
   const AddAnimation = () => {
     const row = document.getElementById("row");

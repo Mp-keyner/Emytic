@@ -5,7 +5,7 @@ import View1 from "@/components/View1";
 import View2 from "@/components/View2";
 import View3 from "@/components/View3";
 import View4 from "@/components/View4";
-import View5 from "@/components/View5";
+import View5 from "@/components/View5"; 
 import View6 from "@/components/View6";
 import View7 from "@/components/View7";
 import View8 from "@/components/View8";

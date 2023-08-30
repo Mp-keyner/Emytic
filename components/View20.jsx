@@ -4,24 +4,25 @@ import React from "react";
 const View11 = () => {
   const AddAnimation = () => {
     const row = document.getElementById("row");
-    const Fourteen = document.getElementById("Fourteen");
+    const TwentyTwo = document.getElementById("TwentyTwo");
     const mapa = document.getElementById("mapa");
 
     mapa.src = "/img/map/1.2.svg";
     mapa.classList.add("mi-animacion-2");
 
     // Realizar el desplazamiento al siguiente elemento
-    Fourteen.scrollIntoView({
+    TwentyTwo.scrollIntoView({
       behavior: "smooth",
       block: "start",
       inline: "nearest",
     });
 
-    row.style.backgroundColor = "blue";
+    row.style.backgroundColor = "red";
     row.style.transition = "all 1s";
-    row.style.top = "43%";
-    row.style.left = "11%";
+    row.style.top = "60%";
+    row.style.left = "7%";
     row.style.width = "200px";
+    row.style.transform = "translate(0)";
     console.log("objectsdftgyhuji");
   };
   return (
@@ -38,10 +39,11 @@ const View11 = () => {
         </div>
 
         <div
-          className="border-2 border-red-500 w-[34pc] text-lg px-4 py-1 z-40 absolute bg-white text-black mess right-[11pc] top-[5%]"
+          className="border-2 border-red-500 w-[34pc] text-lg px-4 py-1 z-40 absolute bg-white text-black mess left-[50%] top-[50%]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
+          style={{ transform: "translate(-50%, -50%)" }}
         >
           <p>
             Pregunta Si un compañero tropieza el cuaderno de tu amigo y se cae
@@ -50,8 +52,9 @@ const View11 = () => {
             situaciones has contagiado a tus amiguitos de felicidad
           </p>
         </div>
+
         <div
-          className="border-2 border-red-500 w-[20pc] text-lg px-4 py-1 z-40 absolute bg-white text-black mess left-[2%] bottom-[34%]"
+          className="border-2 border-red-500 w-[20pc] text-lg px-4 py-1 z-40 absolute bg-white text-black mess right-[18%] top-[9%]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

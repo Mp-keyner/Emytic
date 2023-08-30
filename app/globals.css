@@ -108,6 +108,22 @@ body {
     width: 78pc;
   }
 }
+@keyframes mapaCuatro {
+  0% {
+    width: 41pc;
+  }
+  100% {
+    width: 78pc;
+  }
+}
+@keyframes mapaFive {
+  0% {
+    width: 41pc;
+  }
+  100% {
+    width: 78pc;
+  }
+}
 
 .mi-animacion {
   animation: aumentarYDesvanecer 1s ease-in-out forwards; /* 5s es la duración de la animación */
@@ -117,6 +133,12 @@ body {
 }
 .miAnimacion3 {
   animation: mapaTres 1s ease-in-out forwards; /* 5s es la duración de la animación */
+}
+.miAnimacion4 {
+  animation: mapaCuatro 1s ease-in-out forwards; /* 5s es la duración de la animación */
+}
+.miAnimacion5 {
+  animation: mapaFive 1s ease-in-out forwards; /* 5s es la duración de la animación */
 }
 
 .mp {

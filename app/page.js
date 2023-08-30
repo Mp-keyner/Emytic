@@ -21,6 +21,19 @@ import View17 from "@/components/View17";
 import View18 from "@/components/View18";
 import View19 from "@/components/View19";
 import View20 from "@/components/View20";
+import View21 from "@/components/View21";
+import View22 from "@/components/View22";
+import View23 from "@/components/View23";
+import View24 from "@/components/View24";
+import View25 from "@/components/View25";
+import View26 from "@/components/View26";
+import View27 from "@/components/View27";
+import View28 from "@/components/View28";
+import View29 from "@/components/View29";
+import View30 from "@/components/View30";
+import View31 from "@/components/View31";
+import View32 from "@/components/View32";
+import View33 from "@/components/View33";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
@@ -98,6 +111,45 @@ export default function Home() {
           </div>
           <div id="TwentyOne">
             <View20 />
+          </div>
+          <div id="TwentyTwo">
+            <View21 />
+          </div>
+          <div id="TwentyThree">
+            <View22 />
+          </div>
+          <div id="TwentyFour">
+            <View23 />
+          </div>
+          <div id="TwentyFive">
+            <View24 />
+          </div>
+          <div id="TwentySix">
+            <View25 />
+          </div>
+          <div id="TwentySeven">
+            <View26 />
+          </div>
+          <div id="TwentyEight">
+            <View27 />
+          </div>
+          <div id="TwentyNine">
+            <View28 />
+          </div>
+          <div id="Thirty">
+            <View29 />
+          </div>
+          <div id="ThirtyOne">
+            <View30 />
+          </div>
+          <div id="ThirtyTow">
+            <View31 />
+          </div>
+          <div id="ThirtyThree">
+            <View32 />
+          </div>
+          <div id="ThirtyFourt">
+            <View33 />
           </div>
         </>
       )}

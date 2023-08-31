@@ -13,7 +13,6 @@ const View1 = () => {
       inline: "nearest",
     });
 
-    row.style.backgroundColor = "red";
     row.style.transition = "all 1s";
     row.style.top = "67%";
     row.style.left = "92%";
@@ -24,9 +23,9 @@ const View1 = () => {
     <>
       <div
         id="secon"
-        className="relative border-1 border-solid border-red-500 bg-purple-400 h-screen"
+        className="relative border-1 border-solid bg-blue-600 h-screen"
       >
-        <div className="absolute top-[3pc] left-[0pc] w-[10pc] flex flex-col items-center text-center bg-yellow-900">
+        <div className="absolute bottom-[2pc] z-50 right-[0pc] w-[10pc] flex flex-col items-center text-center">
           <h2>Presiona para empezar</h2>
           <Image
             onClick={AddAnimation}
@@ -36,7 +35,7 @@ const View1 = () => {
           />
         </div>
         <div
-          className="w-[5pc] border-2 border-red-500  text-lg px-4 py-1 z-40 absolute bg-white text-black mess left-[15pc] top-[23pc]"
+          className="w-[5pc] border-2  text-lg px-4 py-1 z-40 absolute  left-[15pc] top-[23pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -59,7 +58,7 @@ const View1 = () => {
           className="w-[18pc] z-30 position: absolute top-[10pc] right-[0pc]"
         />
         <div
-          className="border-2 border-red-500 w-1/2 text-lg px-4 py-1 z-40 absolute bg-white text-black mess right-[15pc] top-[3pc]"
+          className="border-2  w-1/2 text-lg px-4 py-1 z-40 absolute    right-[15pc] top-[3pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

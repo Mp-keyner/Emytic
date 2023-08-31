@@ -102,7 +102,7 @@ const View1 = () => {
 
         <div className="flex gap-[2pc] absolute bottom-[6pc] justify-center w-[97%]">
           <div className="flex gap-[0.6pc] border border-1 border-solid border-black">
-            <input type="text" className="bg-red-400 w-[2pc] " />
+            <input type="text" value='M' className="bg-red-400 w-[2pc] " />
             <input type="text" className="bg-red-400 w-[2pc]" />
             <input type="text" className="bg-red-400 w-[2pc]" />
             <input type="text" className="bg-red-400 w-[2pc]" />
@@ -117,7 +117,7 @@ const View1 = () => {
           <div className="flex gap-[0.6pc] border border-1 border-solid border-black">
             <input type="text" className="bg-red-400 w-[2pc]" />
             <input type="text" className="bg-red-400 w-[2pc]" />
-            <input type="text" className="bg-red-400 w-[2pc]" />
+            <input type="text" value='O' className="bg-red-400 w-[2pc]" />
             <input type="text" className="bg-red-400 w-[2pc]" />
             <input type="text" className="bg-red-400 w-[2pc]" />
             <input type="text" className="bg-red-400 w-[2pc]" />
@@ -138,6 +138,7 @@ const View1 = () => {
         </div>
         <div className="flex gap-[2pc] bottom-[3pc] absolute justify-center w-[97%]">
           <div className="flex gap-[0.6pc] border border-1 border-solid border-black">
+            <input type="text" className="bg-red-400 w-[2pc]" />
             <input type="text" className="bg-red-400 w-[2pc]" />
             <input type="text" className="bg-red-400 w-[2pc]" />
             <input type="text" className="bg-red-400 w-[2pc]" />

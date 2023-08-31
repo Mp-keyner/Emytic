@@ -13,7 +13,6 @@ const View1 = () => {
       inline: "nearest",
     });
 
-    row.style.backgroundColor = "blue";
     // row.style.transition = "all 1s";
     // row.style.top = "169pc";
     // row.style.left = "66pc";
@@ -23,8 +22,8 @@ const View1 = () => {
   };
   return (
     <>
-      <div className="relative border-1 border-solid border-red-500 bg-[#d89f22] h-screen">
-        <div className="absolute top-[3pc] left-[0pc] w-[10pc] text-center flex flex-col items-center bg-green-400">
+      <div className="relative border-1 border-solid  bg-blue-600 h-screen">
+        <div className="absolute top-[3pc] left-[0pc] w-[10pc] text-center flex flex-col items-center ">
           <h2>Presiona para empezar</h2>
           <Image
             onClick={AddAnimation}
@@ -34,7 +33,7 @@ const View1 = () => {
           />
         </div>
         <div
-          className="w-[52pc] h-[15pc] border-2 border-red-500  text-lg px-4 py-1 z-40 absolute bg-white text-black mess left-[12pc] top-[2pc]"
+          className="w-[52pc] h-[15pc] border-2   text-lg px-4 py-1 z-40 absolute  text-black  left-[12pc] top-[2pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -75,7 +74,7 @@ const View1 = () => {
           </table>
         </div>
         <div
-          className="w-[52pc] h-[12pc] border-2 border-red-500  text-lg px-4 py-1 z-40 absolute bg-white text-black mess left-[21pc] top-[20pc]"
+          className="w-[52pc] h-[12pc] border-none text-lg px-4 py-1 z-40 absolute  text-black  left-[21pc] top-[20pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

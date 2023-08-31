@@ -17,7 +17,7 @@ const Fscreen = ({ setShowFunction }) => {
       <br />
       <div className="z-40 sm:w-[30pc] w-[20pc] sm:border p-[1pc]">
         <h1 className="text-center text-[2pc] ">Antes de empezar</h1>
-        <p className="z-40">
+        <p className="z-40 text-[1.4pc]">
           Activa el modo de pantalla, competa para potenciar la experiencia{" "}
         </p>
         <br />
@@ -40,7 +40,7 @@ const Fscreen = ({ setShowFunction }) => {
         priority={true} // {false} | {true}
         width={400}
         height={600}
-        className="w-[100%] position: absolute bottom-[0vh] right-[7pc] sm:right-[-6pc]"
+        className="w-[100%] position: absolute bottom-[0vh] right-[7pc] sm:right-[-6pc] xl:right-[0]"
         data-aos="fade-right"
         data-aos-out="fade-left"
         id="Arbol"

@@ -13,7 +13,6 @@ const View4 = () => {
       inline: "nearest",
     });
 
-    row.style.backgroundColor = "blue";
     row.style.transition = "all 1s";
     row.style.top = "62%";
     row.style.left = "12%";
@@ -22,8 +21,8 @@ const View4 = () => {
   };
   return (
     <>
-      <div className="relative border-1 border-solid border-red-500 bg-blue-400 h-screen">
-        <div className="absolute bottom-[25pc] right-[0pc] w-[10pc] flex flex-col items-center text-center bg-green-900">
+      <div className="relative border-1 border-solid bg-blue-600 h-screen">
+        <div className="absolute bottom-[25pc] right-[0pc] w-[10pc] flex flex-col items-center text-center ">
           <h2>Presiona para continuar</h2>
 
           <Image
@@ -34,7 +33,7 @@ const View4 = () => {
           />
         </div>
         <div
-          className=" border-2 border-red-500 w-1/3 text-lg px-4 py-1 z-40 absolute bg-white text-black mess right-[12pc] top-[16pc]"
+          className=" border-2  w-1/3 text-lg px-4 py-1 z-40 absolute   right-[12pc] top-[16pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -47,7 +46,7 @@ const View4 = () => {
           </p>
         </div>
         <div
-          className=" border-2 border-red-500 w-1/3 text-lg px-4 py-1 z-40 absolute bg-white text-black mess right-[39pc] top-[8pc]"
+          className=" border-2  w-1/3 text-lg px-4 py-1 z-40 absolute   right-[39pc] top-[8pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

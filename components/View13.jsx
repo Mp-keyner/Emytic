@@ -24,9 +24,9 @@ const View11 = () => {
     <>
       <div
         id="twelve"
-        className="relative border-1 border-solid border-red-500 bg-green-400 h-screen"
+        className="relative border-1 border-solid bg-customColor h-screen"
       >
-        <div className="absolute bottom-[4pc] right-[0pc] w-[10pc] flex flex-col items-center bg-blue-500">
+        <div className="absolute bottom-[4pc] right-[0pc] w-[10pc] flex flex-col items-center">
           <h2>Presiona para </h2>
           <Image
             onClick={AddAnimation}
@@ -36,7 +36,7 @@ const View11 = () => {
           />
         </div>
         <Image
-          className="w-[13pc] border-2 border-red-500 absolute right-[1pc] top-[0pc]"
+          className="w-[13pc]  absolute right-[1pc] top-[0pc]"
           data-aos="fade-left" // Definición única de data-aos
           data-aos-out="fade-left"
           src="/img/tortuga.svg"
@@ -44,7 +44,7 @@ const View11 = () => {
           height={500}
         />
         <div
-          className="border-2 border-red-500 w-1/3 text-lg px-4 py-1 z-40 absolute bg-white text-black mess right-[11pc] top-[6pc]"
+          className="border-2  w-1/3 text-lg px-4 py-1 z-40 absolute  right-[11pc] top-[6pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -56,7 +56,7 @@ const View11 = () => {
           </p>
         </div>
         <div
-          className="border-2 border-red-500 w-1/3 text-lg px-4 py-1 z-40 absolute bg-white text-black mess right-[39pc] top-[2pc]"
+          className="border-2  w-1/3 text-lg px-4 py-1 z-40 absolute  right-[39pc] top-[2pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -70,7 +70,7 @@ const View11 = () => {
           </p>
         </div>
         <div
-          className="border-2 border-red-500 w-1/3 text-lg px-4 py-1 z-40 absolute bg-white text-black mess right-[27pc] top-[20pc]"
+          className="border-2  w-1/3 text-lg px-4 py-1 z-40 absolute  right-[27pc] top-[20pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

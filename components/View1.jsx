@@ -15,12 +15,11 @@ const View1 = () => {
     mapa.addEventListener("animationend", () => {
       // Realizar el desplazamiento al siguiente elemento
       Three.scrollIntoView({
-        behavior: "smooth",
+        behavior: "smooth", 
         block: "start",
         inline: "nearest",
       });
 
-      row.style.backgroundColor = "blue";
       row.style.transition = "all 1s";
       row.style.top = "60%";
       row.style.left = "74%";
@@ -32,7 +31,7 @@ const View1 = () => {
     <>
       <div
         id="secon"
-        className="relative border-1 border-solid border-red-500 bg-red-400 h-screen"
+        className="relative border-1 border-soli  bg-customColor h-screen"
       >
         <div className="absolute sm:bottom-[13pc] z-50 bottom-[0] right-[0pc] w-[10pc] flex flex-col items-center text-center">
           <h2>Presiona para empezar</h2>
@@ -44,7 +43,7 @@ const View1 = () => {
           />
         </div>
         <div
-          className="border-2 border-red-500 sm:w-1/3 w-[15pc] text-lg px-4 py-1 z-40 absolute bg-white text-black mess sm:right-[50%] right-[5%] top-[21pc]"
+          className="border-2 border-white sm:w-1/3 w-[15pc] text-lg px-4 py-1 z-40 absolute sm:right-[50%] right-[5%] top-[21pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -61,7 +60,8 @@ const View1 = () => {
           width={300}
           height={300}
           id="mapa"
-          className="w-[41pc] border-1px border-red-500 absolute top-0 right-[0] sm:right-[6%] mp"
+          style={{ transform: "translate(-6%, -50%)" }}
+          className="w-[41pc] border border-none absolute top-[50%] left-[50%] sm:left-[50%] "
         />
       </div>
     </>

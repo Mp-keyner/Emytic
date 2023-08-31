@@ -26,8 +26,8 @@ const View11 = () => {
   };
   return (
     <>
-      <div className="relative border-1 border-solid border-red-500 bg-red-400 h-screen">
-        <div className="absolute bottom-[4pc] right-[0pc] w-[10pc] flex flex-col items-center bg-blue-500">
+      <div className="relative border-1 border-solid bg-customColor h-screen">
+        <div className="absolute bottom-[4pc] right-[0pc] w-[10pc] flex flex-col items-center ">
           <h2>Presiona para </h2>
           <Image
             onClick={AddAnimation}
@@ -38,7 +38,7 @@ const View11 = () => {
         </div>
 
         <div
-          className="border-2 border-red-500 w-[67pc] text-lg px-4 py-1 z-40 absolute bg-white text-black mess right-[11pc] top-[4pc]"
+          className="border-2  w-[67pc] text-lg px-4 py-1 z-40 absolute  right-[11pc] top-[4pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

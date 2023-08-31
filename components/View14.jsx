@@ -24,7 +24,7 @@ const View11 = () => {
         id="twelve"
         className="relative border-1 border-solid border-black-500 bg-gray-400 h-screen"
       >
-        <div className="absolute bottom-[4pc] right-[0pc] w-[10pc] flex flex-col items-center bg-blue-500">
+        <div className="absolute bottom-[4pc] right-[0pc] w-[10pc] flex flex-col items-center">
           <h2>Presiona para </h2>
           <Image
             onClick={AddAnimation}

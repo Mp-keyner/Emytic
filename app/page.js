@@ -51,7 +51,7 @@ export default function Home() {
         <Fscreen setShowFunction={setShow} />
       ) : (
         <>
-          <NO />
+          < NO />
           <div id="Secon">
             <View1 />
           </div>

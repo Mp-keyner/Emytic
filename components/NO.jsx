@@ -42,7 +42,7 @@ const NO = () => {
         href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;700&family=Ubuntu:wght@300&display=swap"
         rel="stylesheet"
       />
-      <div className="border-1 border-solid border-red-500 bg-customColor h-screen text-white">
+      <div className=" bg-customColor h-screen text-white">
         <h1
           className="text-[4pc] sm:text-[8pc] font-bold z-40 absolute left-[1pc]"
           data-aos="fade-up"
@@ -92,7 +92,7 @@ const NO = () => {
           />
         </div>
         <div
-          className="border-2 border-red-500 sm:w-1/3 w-[20pc] xl:top-[41%] text-lg px-4 py-1 z-40 absolute bg-white text-black mess sm:right-[14%] sm:top-[27%] right-[2%] top-[14%]"
+          className="border border-white text-lg px-4 py-1 z-40 absolute text-[white] sm:w-1/3 w-[20pc] sm:right-[14%] sm:top-[27%] right-[2%] top-[14%] xl:top-[35%] xl:rigth-[16%]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

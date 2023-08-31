@@ -13,7 +13,6 @@ const View11 = () => {
       inline: "nearest",
     });
 
-    row.style.backgroundColor = "blue";
     row.style.transition = "all 1s";
     row.style.top = "15%";
     row.style.left = "14%";
@@ -24,7 +23,7 @@ const View11 = () => {
     <>
       <div
         id="twelve"
-        className="relative border-1 border-solid bg-customColor h-screen"
+        className="relative border-1 border-solid bg-blue-600 h-screen"
       >
         <div className="absolute bottom-[4pc] right-[0pc] w-[10pc] flex flex-col items-center">
           <h2>Presiona para </h2>

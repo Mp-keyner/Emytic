@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
- 
+
 const View11 = () => {
   const AddAnimation = () => {
     const row = document.getElementById("row");
@@ -17,7 +17,6 @@ const View11 = () => {
       inline: "nearest",
     });
 
-    row.style.backgroundColor = "red";
     row.style.transition = "all 1s";
     row.style.top = "60%";
     row.style.left = "7%";
@@ -27,8 +26,8 @@ const View11 = () => {
   };
   return (
     <>
-      <div className="relative border-1 border-solid border-red-500 bg-red-400 h-screen">
-        <div className="absolute bottom-[4pc] right-[0pc] w-[10pc] flex flex-col items-center bg-blue-500">
+      <div className="relative border-1 border-solid bg-blue-600 h-screen">
+        <div className="absolute bottom-[4pc] right-[0pc] w-[10pc] flex flex-col items-center ">
           <h2>Presiona para </h2>
           <Image
             onClick={AddAnimation}
@@ -39,7 +38,7 @@ const View11 = () => {
         </div>
 
         <div
-          className="border-2 border-red-500 w-[34pc] text-lg px-4 py-1 z-40 absolute bg-white text-black mess left-[50%] top-[50%]"
+          className="border-2  w-[34pc] text-lg px-4 py-1 z-40 absolute  left-[50%] top-[50%]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -54,7 +53,7 @@ const View11 = () => {
         </div>
 
         <div
-          className="border-2 border-red-500 w-[20pc] text-lg px-4 py-1 z-40 absolute bg-white text-black mess right-[18%] top-[9%]"
+          className="border-2  w-[20pc] text-lg px-4 py-1 z-40 absolute  right-[18%] top-[9%]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -65,7 +64,7 @@ const View11 = () => {
           </p>
         </div>
         <Image
-          className="w-[17pc] border-2 border-red-500 absolute left-[0pc] bottom-[0pc]"
+          className="w-[17pc]   absolute left-[0pc] bottom-[0pc]"
           data-aos="fade-left" // Definición única de data-aos
           data-aos-out="fade-left"
           src="/img/pantaParamos.png"

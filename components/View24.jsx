@@ -20,7 +20,6 @@ const View1 = () => {
         inline: "nearest",
       });
 
-      row.style.backgroundColor = "red";
       row.style.transition = "all 1s";
       row.style.top = "36%";
       row.style.left = "85%";
@@ -32,7 +31,7 @@ const View1 = () => {
     <>
       <div
         id="secon"
-        className="relative border-1 border-solid border-red-500 bg-red-400 h-screen"
+        className="relative border-1 border-solid bg-blue-600 h-screen"
       >
         <div className="absolute sm:bottom-[13pc] z-50 bottom-[0] right-[0pc] w-[10pc] flex flex-col items-center text-center">
           <h2>Presiona para empezar</h2>
@@ -44,7 +43,7 @@ const View1 = () => {
           />
         </div>
         <div
-          className="border-2 border-red-500 sm:w-1/3 w-[15pc] text-lg px-4 py-1 z-40 absolute bg-white text-black mess sm:right-[50%] right-[5%] top-[34%]"
+          className="border-2  sm:w-1/3 w-[15pc] text-lg px-4 py-1 z-40 absolute  sm:right-[50%] right-[5%] top-[34%]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -62,7 +61,7 @@ const View1 = () => {
           width={300}
           height={300}
           id="mapa4"
-          className="w-[41pc] border-1px border-red-500 absolute top-0 right-[0] sm:right-[6%] mp"
+          className="w-[41pc] border-1px  absolute top-0 right-[0] sm:right-[6%] mp"
         />
       </div>
     </>

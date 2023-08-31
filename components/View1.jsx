@@ -15,15 +15,30 @@ const View1 = () => {
     mapa.addEventListener("animationend", () => {
       // Realizar el desplazamiento al siguiente elemento
       Three.scrollIntoView({
-        behavior: "smooth", 
+        behavior: "smooth",
         block: "start",
         inline: "nearest",
       });
 
       row.style.transition = "all 1s";
-      row.style.top = "60%";
-      row.style.left = "74%";
-      row.style.width = "300px";
+
+      switch (screen.width) {
+        case 1280:
+          row.style.top = "60%";
+          row.style.left = "74%";
+          row.style.width = "300px";
+          console.log(screen.width, "number Uno");
+          break;
+        case 393:
+          row.style.top = "88%";
+          row.style.left = "26%";
+          row.style.width = "12pc";
+          console.log(screen.width, "number Dos");
+          break;
+
+        default:
+          break;
+      }
       console.log("objectsdftgyhuji");
     });
   };
@@ -43,7 +58,7 @@ const View1 = () => {
           />
         </div>
         <div
-          className="border-2 border-white sm:w-1/3 w-[15pc] text-lg px-4 py-1 z-40 absolute sm:right-[50%] right-[5%] top-[21pc]"
+          className="border-2 border-white sm:w-1/3 w-[15pc] text-lg px-4 py-1 z-40 absolute sm:right-[50%] right-[5%] sm:top-[21pc] top-[25pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -61,7 +76,7 @@ const View1 = () => {
           height={300}
           id="mapa"
           style={{ transform: "translate(-6%, -50%)" }}
-          className="w-[41pc] border border-none absolute top-[50%] left-[50%] sm:left-[50%] "
+          className="w-[41pc] border border-none absolute xl:top-[50%] top-[25%] xl:left-[50%] left-[5%] sm:left-[50%] "
         />
       </div>
     </>

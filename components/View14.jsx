@@ -13,7 +13,6 @@ const View11 = () => {
       inline: "nearest",
     });
 
-    row.style.backgroundColor = "blue";
     row.style.transition = "all 1s";
     row.style.opacity = 0;
     console.log("objectsdftgyhuji");
@@ -22,7 +21,7 @@ const View11 = () => {
     <>
       <div
         id="twelve"
-        className="relative border-1 border-solid border-black-500 bg-gray-400 h-screen"
+        className="relative border-1 border-solid bg-blue-600 h-screen"
       >
         <div className="absolute bottom-[4pc] right-[0pc] w-[10pc] flex flex-col items-center">
           <h2>Presiona para </h2>
@@ -34,7 +33,7 @@ const View11 = () => {
           />
         </div>
         <Image
-          className="w-[13pc] border-2 border-red-500 absolute right-[7pc] top-[15pc]"
+          className="w-[13pc] border-none  absolute right-[7pc] top-[15pc]"
           data-aos="fade-left" // Definición única de data-aos
           data-aos-out="fade-left"
           src="/img/tortuga.svg"
@@ -43,7 +42,7 @@ const View11 = () => {
         />
 
         <div
-          className="border-2 border-red-500 w-1/3 text-lg px-4 py-1 z-40 absolute bg-white text-black mess right-[39pc] top-[2pc]"
+          className="border-2  w-1/3 text-lg px-4 py-1 z-40 absolute  right-[39pc] top-[2pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -51,7 +50,7 @@ const View11 = () => {
           <p>Hoy niños vamos a aprender que…</p>
         </div>
         <div
-          className="border-2 border-red-500 w-1/3 text-lg px-4 py-1 z-40 absolute bg-white text-black mess right-[27pc] top-[9pc]"
+          className="border-2  w-1/3 text-lg px-4 py-1 z-40 absolute  right-[27pc] top-[9pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -67,7 +66,7 @@ const View11 = () => {
           </p>
         </div>
         <div
-          className="border-2 border-red-500 w-1/3 text-lg px-4 py-1 z-40 absolute bg-white text-black mess right-[27pc] top-[24pc]"
+          className="border-2  w-1/3 text-lg px-4 py-1 z-40 absolute  right-[27pc] top-[24pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

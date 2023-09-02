@@ -19,7 +19,7 @@ const Fscreen = ({ setShowFunction }) => {
       <div className="z-40 sm:w-[30pc] w-[20pc] sm:border p-[1pc]">
         <h1 className="text-center text-[2pc] ">Antes de empezar</h1>
         <p className="z-40 text-[1.4pc]">
-          Activa el modo de pantalla, competa para potenciar la experiencia{" "}
+          Activa el modo de pantalla, completa para potenciar la experiencia{" "}
         </p>
         <br />
         <button

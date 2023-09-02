@@ -3,6 +3,7 @@ import Image from "next/image";
 
 const Fscreen = ({ setShowFunction }) => {
   const requestFullScreen = () => {
+    alert("Please wait...");
     console.log("dia dia ");
     // Verificar si el navegador admite el modo de pantalla completa
     if (document.documentElement.requestFullscreen) {

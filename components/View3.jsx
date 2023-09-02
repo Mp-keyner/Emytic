@@ -58,7 +58,7 @@ const View1 = () => {
           className="w-[9pc] sm:w-[18pc] z-30 position: absolute top-[6%] sm:top-[10pc] right-[0pc]"
         />
         <div
-          className="border-2  sm:w-1/2 w-[20pc] text-lg px-4 py-1 z-40 absolute text-[1pc] top-[23%] left-[10%] sm:right-[15pc] sm:top-[3pc]"
+          className="border-2  sm:w-1/2 w-[23pc] text-lg px-4 py-1 z-40 absolute text-[1pc] top-[23%] left-[4%] sm:right-[15pc] sm:top-[3pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

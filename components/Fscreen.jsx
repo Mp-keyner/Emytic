@@ -40,7 +40,7 @@ const Fscreen = ({ setShowFunction }) => {
         priority={true} // {false} | {true}
         width={400}
         height={600}
-        className="w-[100%] position: absolute bottom-[0vh] right-[7pc] sm:right-[-6pc] xl:right-[0]"
+        className="w-[100%] position: absolute bottom-[0vh] right-[7pc] sm:right-[-6pc] md:right-[0] xl:right-[0]"
         data-aos="fade-right"
         data-aos-out="fade-left"
         id="Arbol"

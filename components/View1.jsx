@@ -22,23 +22,23 @@ const View1 = () => {
 
       row.style.transition = "all 1s";
 
-      switch (screen.width) {
-        case 1280:
+      switch (true) {
+        case screen.width >= 1200 && screen.width <= 1600:
           row.style.top = "60%";
           row.style.left = "74%";
           row.style.width = "300px";
-          console.log(screen.width, "number Uno");
+          console.log(screen.width, "En el rango de 1200 a 1600");
           break;
-        case 393:
+        case screen.width === 393:
           row.style.top = "88%";
           row.style.left = "26%";
           row.style.width = "12pc";
-          console.log(screen.width, "number Dos");
+          console.log(screen.width, "Igual a 393");
           break;
-
         default:
           break;
       }
+      
       console.log("objectsdftgyhuji");
     });
   };

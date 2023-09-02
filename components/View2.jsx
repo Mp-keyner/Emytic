@@ -15,23 +15,41 @@ const View1 = () => {
 
     row.style.transition = "all 1s";
 
-    switch (screen.width) {
-      case 1280:
+    // switch (screen.width) {
+    //   case 1280:
+    //     row.style.top = "72%";
+    //     row.style.left = "12%";
+    //     row.style.width = "13pc";
+    //     console.log(screen.width, "number Uno");
+    //     break;
+    //   case 393:
+    //     row.style.top = "88%";
+    //     row.style.left = "26%";
+    //     row.style.width = "12pc";
+    //     console.log(screen.width, "number Dos");
+    //     break;
+
+    //   default:
+    //     break;
+    // }
+
+    switch (true) {
+      case screen.width >= 1200 && screen.width <= 1600:
         row.style.top = "72%";
         row.style.left = "12%";
         row.style.width = "13pc";
         console.log(screen.width, "number Uno");
         break;
-      case 393:
+      case screen.width === 393:
         row.style.top = "88%";
         row.style.left = "26%";
-        row.style.width = "12pc";
+        row.style.width = "7pc";
         console.log(screen.width, "number Dos");
         break;
-
       default:
         break;
     }
+
     console.log("objectsdftgyhuji");
   };
   return (

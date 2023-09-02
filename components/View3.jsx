@@ -35,7 +35,7 @@ const View1 = () => {
           />
         </div>
         <div
-          className="w-[5pc] border-2  text-lg px-4 py-1 z-40 absolute  left-[15pc] top-[23pc]"
+          className="w-[5pc] border-2  text-lg px-4 py-1 z-40 absolute left-[38%] sm:left-[15pc] top-[81%] sm:top-[23pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -47,7 +47,7 @@ const View1 = () => {
           priority={true} // {false} | {true}
           width={400}
           height={600}
-          className="w-[36pc] z-10 position: absolute top-[0pc] right-[0pc]"
+          className="sm:w-[36pc] w-[14pc] z-10 position: absolute top-[0pc] right-[0pc]"
           data-aos="fade-right"
         />
         <Image
@@ -55,10 +55,10 @@ const View1 = () => {
           data-aos="fade-right"
           width={100}
           height={100}
-          className="w-[18pc] z-30 position: absolute top-[10pc] right-[0pc]"
+          className="w-[9pc] sm:w-[18pc] z-30 position: absolute top-[6%] sm:top-[10pc] right-[0pc]"
         />
         <div
-          className="border-2  w-1/2 text-lg px-4 py-1 z-40 absolute    right-[15pc] top-[3pc]"
+          className="border-2  sm:w-1/2 w-[20pc] text-lg px-4 py-1 z-40 absolute text-[1pc] top-[23%] left-[10%] sm:right-[15pc] sm:top-[3pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

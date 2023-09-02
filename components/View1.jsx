@@ -29,7 +29,7 @@ const View1 = () => {
           row.style.width = "300px";
           console.log(screen.width, "En el rango de 1200 a 1600");
           break;
-        case screen.width === 393:
+        case screen.width >= 393 && screen.width <= 450:
           row.style.top = "88%";
           row.style.left = "26%";
           row.style.width = "12pc";

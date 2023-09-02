@@ -40,7 +40,7 @@ const View1 = () => {
         row.style.width = "13pc";
         console.log(screen.width, "number Uno");
         break;
-      case screen.width === 393:
+      case screen.width >= 393 && screen.width <= 450:
         row.style.top = "88%";
         row.style.left = "26%";
         row.style.width = "7pc";

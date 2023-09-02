@@ -25,7 +25,7 @@ const View1 = () => {
         id="secon"
         className="relative border-1 border-solid  bg-blue-600 h-screen"
       >
-        <div className="absolute top-[3pc] left-[0pc] w-[10pc] flex flex-col items-center text-center ">
+        <div className="absolute z-50 top-[3pc] left-[0pc] w-[10pc] flex flex-col items-center text-center ">
           <h2>Presiona para empezar</h2>
           <Image
             onClick={AddAnimation}
@@ -35,7 +35,7 @@ const View1 = () => {
           />
         </div>
         <div
-          className="w-[23pc] border-2   text-lg px-4 py-1 z-40 absolute sm:left-[29pc] left-[0pc] top-[15pc]"
+          className="w-[23pc] border-2   text-lg px-4 py-1 z-40 absolute sm:left-[29pc] left-[3%] top-[47%] sm:top-[15pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

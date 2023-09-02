@@ -14,15 +14,30 @@ const View4 = () => {
     });
 
     row.style.transition = "all 1s";
-    row.style.top = "62%";
+    switch (true) {
+      case screen.width >= 1200 && screen.width <= 1600:
+        row.style.top = "62%";
     row.style.left = "12%";
     row.style.width = "300px";
+        console.log(screen.width, "number Uno");
+        break;
+      case screen.width >= 393 && screen.width <= 450:
+        row.style.top = "88%";
+        row.style.left = "26%";
+        row.style.width = "10pc";
+        console.log(screen.width, "number Dos");
+        break;
+      default:
+        break;
+    }
+
+    
     console.log("objectsdftgyhuji");
   };
   return (
     <>
       <div className="relative border-1 border-solid bg-blue-600 h-screen">
-        <div className="absolute bottom-[25pc] right-[0pc] w-[10pc] flex flex-col items-center text-center ">
+        <div className="absolute bottom-[1%] sm:bottom-[25pc] right-[0pc] w-[10pc] flex flex-col items-center text-center ">
           <h2>Presiona para continuar</h2>
 
           <Image
@@ -33,7 +48,7 @@ const View4 = () => {
           />
         </div>
         <div
-          className=" border-2  w-1/3 text-lg px-4 py-1 z-40 absolute   right-[12pc] top-[16pc]"
+          className=" border-2 w-[20pc] sm:w-1/3 text-lg px-4 py-1 z-40 absolute  left-[10%] sm:right-[12pc] top-[46%] sm:top-[16pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

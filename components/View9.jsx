@@ -50,7 +50,7 @@ const View9 = () => {
           height={150}
         />
         <Image
-          className="border-2 z-40 absolute left-[5pc] border-none top-[20pc]"
+          className="border-2 z-40 absolute left-[13%] sm:left-[5pc] border-none w-[8pc] top-[44pc] sm:top-[20pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           src="/img/face/3.svg"
@@ -75,7 +75,7 @@ const View9 = () => {
         />
 
         <div
-          className="w-[44pc] h-[7pc] border-2  text-[4pc] px-4 py-1 z-40 absolute left-[27%] top-[14pc]"
+          className="w-[23pc] text-[2.05pc] sm:w-[44pc] h-[4pc] sm:h-[7pc] border-2  sm:text-[4pc] px-4 py-1 z-40 absolute left-[3%] sm:left-[27%] top-[50%] sm:top-[14pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

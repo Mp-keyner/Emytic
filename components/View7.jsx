@@ -54,7 +54,7 @@ const View1 = () => {
           data-aos-out="fade-left"
           id="mensaje"
         >
-          <table class="styled-table">
+          <table class="styled-table text-[0.4pc]">
             <thead>
               <tr>
                 <th>Edad</th>

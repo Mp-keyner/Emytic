@@ -33,7 +33,7 @@ const View1 = () => {
           />
         </div>
         <div
-          className="w-[52pc] h-[15pc] border-2   text-lg px-4 py-1 z-40 absolute  text-black  left-[12pc] top-[2pc]"
+          className="w-[23pc] text-[0-6pc] sm:w-[52pc] h-[15pc] border-2   text-lg px-4 py-1 z-40 absolute  text-black left-[3%] sm:left-[12pc] top-[2pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -74,37 +74,22 @@ const View1 = () => {
           </table>
         </div>
         <div
-          className="w-[52pc] h-[12pc] border-none text-lg px-4 py-1 z-40 absolute  text-black  left-[21pc] top-[20pc]"
+          className="w-[52pc] h-[12pc] border-none text-lg px-4 py-1 z-40 absolute  grid grid-cols-3 text-[0.6pc] text-black  left-[21pc] top-[20pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
         >
-          <table class="styled-table-tow">
-            <tbody>
-              <tr>
-                <td>
-                  <p>Ganar un examen con excelente nota</p>
-                </td>
-                <td>
-                  <p>Quedarme solo en la oscuridad</p>
-                </td>
-                <td>
-                  <p>Recibir una fiesta sorpresa</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>No conseguir mi juguete favorito</p>
-                </td>
-                <td>
-                  <p>Probar un alimento que no me gusta</p>
-                </td>
-                <td>
-                  <p>Perder a un ser querido</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <p>Ganar un examen con excelente nota</p>
+
+          <p>Quedarme solo en la oscuridad</p>
+
+          <p>Recibir una fiesta sorpresa</p>
+
+          <p>No conseguir mi juguete favorito</p>
+
+          <p>Probar un alimento que no me gusta</p>
+
+          <p>Perder a un ser querido</p>
         </div>
       </div>
     </>

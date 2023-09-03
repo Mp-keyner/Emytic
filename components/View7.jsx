@@ -57,40 +57,76 @@ const View1 = () => {
           <table class="styled-table">
             <thead>
               <tr>
-                <th>ID</th>
-                <th>Nombre</th>
                 <th>Edad</th>
-                <th>Email</th>
-                <th>Email</th>
-                <th>Email</th>
+                <th>Edad</th>
+                <th>Edad</th>
+                <th>Edad</th>
+                <th>Edad</th>
+                <th>Edad</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>
-                  <Image src="/img/face/1.svg" width={100} height={100} />1
+                  <Image
+                    src="/img/face/1.svg"
+                    width={100}
+                    height={100}
+                    className="w-[2pc]"
+                  />
+                  1
                 </td>
                 <td>
-                  <Image src="/img/face/2.svg" width={100} height={100} />2
+                  <Image
+                    src="/img/face/2.svg"
+                    width={100}
+                    height={100}
+                    className="w-[2pc]"
+                  />
+                  2
                 </td>
                 <td>
-                  <Image src="/img/face/3.svg" width={100} height={100} />3
+                  <Image
+                    src="/img/face/3.svg"
+                    width={100}
+                    height={100}
+                    className="w-[2pc]"
+                  />
+                  3
                 </td>
                 <td>
-                  <Image src="/img/face/4.svg" width={100} height={100} />4
+                  <Image
+                    src="/img/face/4.svg"
+                    width={100}
+                    height={100}
+                    className="w-[2pc]"
+                  />
+                  4
                 </td>
                 <td>
-                  <Image src="/img/face/5.svg" width={100} height={100} />5
+                  <Image
+                    src="/img/face/5.svg"
+                    width={100}
+                    height={100}
+                    className="w-[2pc]"
+                  />
+                  5
                 </td>
                 <td>
-                  <Image src="/img/face/6.svg" width={100} height={100} />6
+                  <Image
+                    src="/img/face/6.svg"
+                    width={100}
+                    height={100}
+                    className="w-[2pc]"
+                  />
+                  6
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
         <div
-          className="w-[23pc] border-2  text-lg px-4 py-1 z-40 absolute left-[3%] sm:left-[13pc] top-[40pc] sm:top-[25pc]"
+          className="w-[23pc] border-2  text-lg px-4 py-1 z-40 absolute left-[3%] sm:left-[13pc] top-[34pc] sm:top-[25pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

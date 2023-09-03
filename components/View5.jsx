@@ -23,9 +23,9 @@ const View1 = () => {
         console.log(screen.width, "number Uno");
         break;
       case screen.width >= 393 && screen.width <= 450:
-        row.style.top = "90%";
+        row.style.top = "92%";
         row.style.left = "31%";
-        row.style.width = "10pc";
+        row.style.width = "9pc";
         console.log(screen.width, "number Dos");
         break;
       default:

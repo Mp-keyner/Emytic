@@ -14,9 +14,23 @@ const View1 = () => {
     });
 
     row.style.transition = "all 1s";
-    row.style.top = "77%";
-    row.style.left = "12%";
-    row.style.width = "13pc";
+    switch (true) {
+      case screen.width >= 1200 && screen.width <= 1600:
+        row.style.top = "77%";
+        row.style.left = "12%";
+        row.style.width = "13pc";
+        console.log(screen.width, "number Uno");
+        break;
+      case screen.width >= 393 && screen.width <= 450:
+        row.style.top = "90%";
+        row.style.left = "31%";
+        row.style.width = "10pc";
+        console.log(screen.width, "number Dos");
+        break;
+      default:
+        break;
+    }
+
     console.log("objectsdftgyhuji");
   };
   return (
@@ -25,7 +39,7 @@ const View1 = () => {
         id="secon"
         className="relative border-1 border-solid  h-screen bg-blue-600"
       >
-        <div className="absolute top-[3pc] left-[0pc] w-[10pc] flex flex-col text-center items-center ">
+        <div className="absolute top-[3pc] z-50 left-[0pc] w-[10pc] flex flex-col text-center items-center ">
           <h2>Presiona para empezar</h2>
           <Image
             onClick={AddAnimation}
@@ -35,7 +49,7 @@ const View1 = () => {
           />
         </div>
         <div
-          className="w-[52pc] h-[15pc] border-2   text-lg px-4 py-1 z-40 absolute left-[13pc] top-[3pc]"
+          className="w-[23pc] sm:w-[52pc] h-[12pc] sm:h-[15pc] border-2   text-lg px-4 py-1 z-40 absolute left-[3%] sm:left-[13pc] top-[18pc] sm:top-[3pc] text-[0.8pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -76,7 +90,7 @@ const View1 = () => {
           </table>
         </div>
         <div
-          className="w-[23pc] border-2  text-lg px-4 py-1 z-40 absolute left-[13pc] top-[25pc]"
+          className="w-[23pc] border-2  text-lg px-4 py-1 z-40 absolute left-[3%] sm:left-[13pc] top-[40pc] sm:top-[25pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -88,7 +102,7 @@ const View1 = () => {
           priority={true} // {false} | {true}
           width={400}
           height={600}
-          className="w-[36pc] z-10 position: absolute top-[0pc] right-[0pc]"
+          className="w-[16pc] sm:w-[36pc] z-10 position: absolute top-[0pc] right-[0pc]"
           data-aos="fade-right"
         />
         <Image
@@ -96,7 +110,7 @@ const View1 = () => {
           data-aos="fade-right"
           width={100}
           height={100}
-          className="w-[18pc] z-30 position: absolute top-[10pc] right-[0pc]"
+          className="w-[10pc] sm:w-[18pc] z-30 position: absolute top-[4pc] sm:top-[10pc] right-[0pc]"
         />
       </div>
     </>

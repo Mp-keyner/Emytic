@@ -14,9 +14,23 @@ const View1 = () => {
     });
 
     row.style.transition = "all 1s";
-    row.style.top = "79%";
-    row.style.left = "10%";
-    row.style.width = "13pc";
+
+    switch (true) {
+      case screen.width >= 1200 && screen.width <= 1600:
+        row.style.top = "79%";
+        row.style.left = "10%";
+        row.style.width = "13pc";
+        console.log(screen.width, "number Uno");
+        break;
+      case screen.width >= 393 && screen.width <= 450:
+        row.style.top = "90%";
+        row.style.left = "31%";
+        row.style.width = "10pc";
+        console.log(screen.width, "number Dos");
+        break;
+      default:
+        break;
+    }
     console.log("objectsdftgyhuji");
   };
   return (

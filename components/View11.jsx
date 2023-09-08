@@ -14,9 +14,22 @@ const View11 = () => {
     });
 
     row.style.transition = "all 1s";
-    row.style.top = "17%";
-    row.style.left = "93%";
-    row.style.width = "8pc";
+    switch (true) {
+      case screen.width >= 1200 && screen.width <= 1600:
+        row.style.top = "17%";
+        row.style.left = "93%";
+        row.style.width = "8pc";
+        console.log(screen.width, "number Uno");
+        break;
+      case screen.width >= 393 && screen.width <= 450:
+        row.style.opacity = 1;
+        row.style.top = "88%";
+        row.style.left = "30%";
+        console.log(screen.width, "number Dos");
+        break;
+      default:
+        break;
+    }
     console.log("objectsdftgyhuji");
   };
   const handleKeyDown = (e) => {
@@ -31,9 +44,23 @@ const View11 = () => {
       });
 
       row.style.transition = "all 1s";
-      row.style.top = "17%";
-      row.style.left = "93%";
-      row.style.width = "8pc";
+      switch (true) {
+        case screen.width >= 1200 && screen.width <= 1600:
+          row.style.top = "17%";
+          row.style.left = "93%";
+          row.style.width = "8pc";
+          console.log(screen.width, "number Uno");
+          break;
+        case screen.width >= 393 && screen.width <= 450:
+          row.style.opacity = 1;
+          row.style.top = "88%";
+          row.style.left = "30%";
+          console.log(screen.width, "number Dos");
+          break;
+        default:
+          break;
+      }
+
       console.log("objectsdftgyhuji");
       console.log("objectsdftgyhuji");
       console.log("Tecla pre");
@@ -56,7 +83,7 @@ const View11 = () => {
           />
         </div>
         <Image
-          className="w-[24pc] absolute right-[1pc] top-[0pc]"
+          className="w-[20pc] sm:w-[24pc] absolute right-[1pc] top-[0pc]"
           data-aos="fade-left" // Definición única de data-aos
           data-aos-out="fade-left"
           src="/img/tortuga.svg"
@@ -64,7 +91,7 @@ const View11 = () => {
           height={500}
         />
         <div
-          className="border-2  w-1/3 blu text-lg px-4 py-1 z-40 absolute  right-[20pc] top-[10pc]"
+          className="border-2 w-[22pc] sm:w-1/3 blu text-lg px-4 py-1 z-40 absolute left-[5%] sm:left-[43%] top-[10pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -75,7 +102,7 @@ const View11 = () => {
           </p>
         </div>
         <div
-          className="border-2  w-1/3 blu text-lg px-4 py-1 z-40 absolute  right-[39pc] top-[23pc]"
+          className="border-2 w-[22pc] sm:w-1/3 blu text-lg px-4 py-1 z-40 absolute left-[5%] sm:left-[18%] top-[23pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

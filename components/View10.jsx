@@ -21,9 +21,23 @@ const View1 = () => {
       });
 
       row.style.transition = "all 1s";
-      row.style.top = "78%";
-      row.style.width = "12pc";
-      row.style.left = "11%";
+
+      switch (true) {
+        case screen.width >= 1200 && screen.width <= 1600:
+          row.style.top = "78%";
+          row.style.width = "12pc";
+          row.style.left = "11%";
+          console.log(screen.width, "number Uno");
+          break;
+        case screen.width >= 393 && screen.width <= 450:
+          row.style.opacity = 1;
+          row.style.top = "88%";
+          row.style.left = "30%";
+          console.log(screen.width, "number Dos");
+          break;
+        default:
+          break;
+      }
       console.log("objectsdftgyhuji");
     });
   };
@@ -38,8 +52,22 @@ const View1 = () => {
       });
 
       row.style.transition = "all 1s";
-      row.style.top = "78%";
-      row.style.left = "11%";
+      switch (true) {
+        case screen.width >= 1200 && screen.width <= 1600:
+          row.style.top = "78%";
+          row.style.left = "11%";
+          console.log(screen.width, "number Uno");
+          break;
+        case screen.width >= 393 && screen.width <= 450:
+          row.style.opacity = 1;
+          row.style.top = "88%";
+          row.style.left = "30%";
+          console.log(screen.width, "number Dos");
+          break;
+        default:
+          break;
+      }
+
       console.log("objectsdftgyhuji");
       console.log("objectsdftgyhuji");
       console.log("Tecla pre");
@@ -62,7 +90,7 @@ const View1 = () => {
           />
         </div>
         <div
-          className="border-2 w-[23pc] sm:w-1/3 text-lg px-4 py-1 blu z-40 absolute left-[3%] sm:right-[39pc] top-[21pc]"
+          className="border-2 w-[23pc] sm:w-1/3 text-lg px-4 py-1 blu z-40 absolute left-[3%] sm:left-[18%] top-[21pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

@@ -88,7 +88,7 @@ const View9 = () => {
           height={150}
         />
         <Image
-          className="border-2 z-40 absolute left-[6%] border-none top-[15pc] sm:top-[2pc]"
+          className="border-2 z-40 absolute left-[6%] sm:left-[66%] border-none top-[15pc] sm:top-[2pc]"
           data-aos="fade-left" // Definición única de data-aos
           data-aos-out="fade-left"
           src="/img/face/2.svg"

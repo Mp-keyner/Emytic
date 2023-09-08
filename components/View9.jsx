@@ -14,11 +14,23 @@ const View9 = () => {
     });
 
     row.style.transition = "all 1s";
-    row.style.top = "82%";
-    row.style.left = "11%";
-    row.style.opacity = 1;
-    row.style.width = "13pc";
-    console.log("objectsdftgyhuji");
+    switch (true) {
+      case screen.width >= 1200 && screen.width <= 1600:
+        row.style.top = "82%";
+        row.style.left = "11%";
+        row.style.opacity = 1;
+        row.style.width = "13pc";
+        console.log(screen.width, "number Uno");
+        break;
+      case screen.width >= 393 && screen.width <= 450:
+        row.style.opacity = 1;
+        row.style.top = "88%";
+        row.style.left = "30%";
+        console.log(screen.width, "number Dos");
+        break;
+      default:
+        break;
+    }
   };
   const handleKeyDown = (e) => {
     if (e.keyCode === 48) {
@@ -31,11 +43,24 @@ const View9 = () => {
       });
 
       row.style.transition = "all 1s";
-      row.style.transition = "all 1s";
-      row.style.top = "82%";
-      row.style.left = "11%";
-      row.style.opacity = 1;
-      row.style.width = "13pc";
+      switch (true) {
+        case screen.width >= 1200 && screen.width <= 1600:
+          row.style.top = "82%";
+          row.style.left = "11%";
+          row.style.opacity = 1;
+          row.style.width = "13pc";
+          console.log(screen.width, "number Uno");
+          break;
+        case screen.width >= 393 && screen.width <= 450:
+          row.style.opacity = 1;
+          row.style.top = "88%";
+          row.style.left = "30%";
+          console.log(screen.width, "number Dos");
+          break;
+        default:
+          break;
+      }
+
       console.log("objectsdftgyhuji");
       console.log("Tecla pre");
     }
@@ -63,7 +88,7 @@ const View9 = () => {
           height={150}
         />
         <Image
-          className="border-2 z-40 absolute left-[80%] border-none top-[2pc]"
+          className="border-2 z-40 absolute left-[6%] border-none top-[15pc] sm:top-[2pc]"
           data-aos="fade-left" // Definición única de data-aos
           data-aos-out="fade-left"
           src="/img/face/2.svg"
@@ -79,7 +104,7 @@ const View9 = () => {
           height={150}
         />
         <Image
-          className="border-2 z-40 absolute left-[32pc] border-none top-[26pc]"
+          className="border-2 z-40 absolute left-[14pc] sm:left-[32pc] border-none top-[37pc] sm:top-[26pc]"
           data-aos="fade-dowm" // Definición única de data-aos
           data-aos-out="fade-down"
           src="/img/face/4.svg"
@@ -87,7 +112,7 @@ const View9 = () => {
           height={150}
         />
         <Image
-          className="border-2 z-40 absolute left-[66pc] border-none top-[22pc]"
+          className="border-2 z-40 absolute left-[55%] sm:left-[66pc] border-none top-[17pc] sm:top-[22pc]"
           data-aos="fade-left" // Definición única de data-aos
           data-aos-out="fade-left"
           src="/img/face/5.svg"

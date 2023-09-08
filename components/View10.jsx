@@ -52,8 +52,8 @@ const View1 = () => {
         id="secon"
         className="relative border-1 border-solid fondoMap h-screen"
       >
-        <div className="absolute bottom-[13pc] text-center right-[0pc] w-[10pc] flex flex-col items-center">
-          <h2>Presiona para empezar</h2>
+        <div className="absolute bottom-[0%] z-50 sm:bottom-[13pc] text-center right-[0pc] w-[10pc] flex flex-col items-center">
+          <h2>Presiona para continuar</h2>
           <Image
             onClick={AddAnimation}
             src="/img/row.svg"
@@ -62,7 +62,7 @@ const View1 = () => {
           />
         </div>
         <div
-          className="border-2 w-1/3 text-lg px-4 py-1 blu z-40 absolute  right-[39pc] top-[21pc]"
+          className="border-2 w-[23pc] sm:w-1/3 text-lg px-4 py-1 blu z-40 absolute left-[3%] sm:right-[39pc] top-[21pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

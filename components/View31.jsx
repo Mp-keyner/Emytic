@@ -27,11 +27,30 @@ const View1 = () => {
       console.log("objectsdftgyhuji");
     });
   };
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 67) {
+      const ThirtyThree = document.getElementById("ThirtyThree");
+
+      ThirtyThree.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+
+      row.style.transition = "all 1s";
+      row.style.top = "28%";
+      row.style.left = "74%";
+      row.style.width = "300px";
+      console.log("objectsdftgyhuji");
+      console.log("Tecla pre");
+    }
+  };
+  window.addEventListener("keydown", handleKeyDown);
   return (
     <>
       <div
         id="secon"
-        className="relative border-1 border-solid bg-blue-600 h-screen"
+        className="relative border-1 border-solid fondoMap h-screen"
       >
         <div className="absolute sm:bottom-[13pc] z-50 bottom-[0] right-[0pc] w-[10pc] flex flex-col items-center text-center">
           <h2>Presiona para empezar</h2>

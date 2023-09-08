@@ -19,11 +19,32 @@ const View11 = () => {
     row.style.width = "8pc";
     console.log("objectsdftgyhuji");
   };
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 87) {
+      const Thirteen = document.getElementById("Thirteen");
+
+      // Realizar el desplazamiento al siguiente elemento
+      Thirteen.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+
+      row.style.transition = "all 1s";
+      row.style.top = "17%";
+      row.style.left = "93%";
+      row.style.width = "8pc";
+      console.log("objectsdftgyhuji");
+      console.log("objectsdftgyhuji");
+      console.log("Tecla pre");
+    }
+  };
+  window.addEventListener("keydown", handleKeyDown);
   return (
     <>
       <div
         id="twelve"
-        className="relative border-1 border-solid bg-blue-600 h-screen"
+        className="relative border-1 border-solid fondo6 h-screen"
       >
         <div className="absolute bottom-[4pc] right-[0pc] w-[10pc] flex flex-col items-center ">
           <h2>Presiona para </h2>
@@ -43,7 +64,7 @@ const View11 = () => {
           height={500}
         />
         <div
-          className="border-2  w-1/3 text-lg px-4 py-1 z-40 absolute  right-[20pc] top-[10pc]"
+          className="border-2  w-1/3 blu text-lg px-4 py-1 z-40 absolute  right-[20pc] top-[10pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -54,18 +75,7 @@ const View11 = () => {
           </p>
         </div>
         <div
-          className="border-2  w-1/3 text-lg px-4 py-1 z-40 absolute  right-[39pc] top-[23pc]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
-        >
-          <p>
-            Esta es mi amiga Tuti la tortuga y con ella aprenderemos cosas
-            maravillosas… ¡HOLA TUTI! Saluda a los niños
-          </p>
-        </div>
-        <div
-          className="border-2  w-1/3 text-lg px-4 py-1 z-40 absolute  right-[39pc] top-[23pc]"
+          className="border-2  w-1/3 blu text-lg px-4 py-1 z-40 absolute  right-[39pc] top-[23pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

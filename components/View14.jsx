@@ -17,11 +17,29 @@ const View11 = () => {
     row.style.opacity = 0;
     console.log("objectsdftgyhuji");
   };
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 84) {
+      const Sixteen = document.getElementById("Sixteen");
+
+      // Realizar el desplazamiento al siguiente elemento
+      Sixteen.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+
+      row.style.transition = "all 1s";
+      row.style.opacity = 0;
+      console.log("objectsdftgyhuji");
+      console.log("Tecla pre");
+    }
+  };
+  window.addEventListener("keydown", handleKeyDown);
   return (
     <>
       <div
         id="twelve"
-        className="relative border-1 border-solid bg-blue-600 h-screen"
+        className="relative border-1 border-solid fondo6 h-screen"
       >
         <div className="absolute bottom-[4pc] right-[0pc] w-[10pc] flex flex-col items-center">
           <h2>Presiona para </h2>
@@ -42,7 +60,7 @@ const View11 = () => {
         />
 
         <div
-          className="border-2  w-1/3 text-lg px-4 py-1 z-40 absolute  right-[39pc] top-[2pc]"
+          className="border-2  w-1/3 text-lg blu px-4 py-1 z-40 absolute  right-[39pc] top-[2pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -50,7 +68,7 @@ const View11 = () => {
           <p>Hoy niños vamos a aprender que…</p>
         </div>
         <div
-          className="border-2  w-1/3 text-lg px-4 py-1 z-40 absolute  right-[27pc] top-[9pc]"
+          className="border-2 blu w-1/3 text-lg px-4 py-1 z-40 absolute  right-[27pc] top-[9pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -66,7 +84,7 @@ const View11 = () => {
           </p>
         </div>
         <div
-          className="border-2  w-1/3 text-lg px-4 py-1 z-40 absolute  right-[27pc] top-[24pc]"
+          className="border-2 blu w-1/3 text-lg px-4 py-1 z-40 absolute  right-[27pc] top-[24pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

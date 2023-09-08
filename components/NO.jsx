@@ -33,6 +33,31 @@ const NO = () => {
       inline: "nearest",
     });
   };
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 49) {
+      const Secon = document.getElementById("secon");
+      console.log("Tecla taka taka");
+      // Código de la tecla de flecha abajo
+      Secon.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+      row.style.transition = "all 1s";
+      if (screen.width > 400) {
+        row.style.top = "80%";
+        row.style.left = "10%";
+      } else if (screen.width < 400) {
+        row.style.top = "86%";
+        row.style.left = "26%";
+      }
+      row.style.width = "13pc";
+      console.log("objectsdftgyhuji");
+    }
+  };
+
+  // Agregar el evento de escucha cuando el componente se monta
+  window.addEventListener("keydown", handleKeyDown);
 
   return (
     <>
@@ -42,7 +67,7 @@ const NO = () => {
         href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;700&family=Ubuntu:wght@300&display=swap"
         rel="stylesheet"
       />
-      <div className=" bg-customColor h-screen text-white">
+      <div className=" fondo1 h-screen text-white">
         <h1
           className="text-[4pc] sm:text-[8pc] font-bold z-40 absolute left-[1pc]"
           data-aos="fade-up"
@@ -83,16 +108,17 @@ const NO = () => {
           data-aos-out="fade-left"
           className="absolute sm:bottom-[13pc] bottom-[7pc] z-[1pc] right-[0pc] w-[10pc] flex flex-col items-center text-center"
         >
-          <h2>Presiona para empezar</h2>
+          <h2>Presiona para continuar</h2>
           <Image
             onClick={AddAnimation}
             src="/img/row.svg"
             width={100}
             height={100}
+            className="cursor-pointer"
           />
         </div>
         <div
-          className="border border-white text-lg px-4 py-1 z-40 absolute text-[white] sm:w-1/3 w-[20pc] sm:right-[14%] sm:top-[27%] right-[2%] top-[14%] xl:top-[35%] xl:rigth-[16%]"
+          className="border border-white text-lg px-4 blu py-1 z-40 absolute text-[white] sm:w-1/3 w-[20pc] sm:right-[14%] sm:top-[27%] right-[2%] top-[14%] xl:top-[35%] xl:rigth-[16%]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

@@ -38,15 +38,45 @@ const View1 = () => {
         default:
           break;
       }
-      
-      console.log("objectsdftgyhuji");
+      console.log("Tecla pre");
     });
   };
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 50) {
+      const Three = document.getElementById("Three");
+      Three.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+
+      row.style.transition = "all 1s";
+
+      switch (true) {
+        case screen.width >= 1200 && screen.width <= 1600:
+          row.style.top = "60%";
+          row.style.left = "74%";
+          row.style.width = "300px";
+          console.log(screen.width, "En el rango de 1200 a 1600");
+          break;
+        case screen.width >= 393 && screen.width <= 450:
+          row.style.top = "88%";
+          row.style.left = "26%";
+          row.style.width = "12pc";
+          console.log(screen.width, "Igual a 393");
+          break;
+        default:
+          break;
+      }
+      console.log("Tecla pre");
+    }
+  };
+  window.addEventListener("keydown", handleKeyDown);
   return (
     <>
       <div
         id="secon"
-        className="relative border-1 border-soli  bg-customColor h-screen"
+        className="relative border-1 border-sol fondoMap h-screen"
       >
         <div className="absolute sm:bottom-[13pc] z-50 bottom-[0] right-[0pc] w-[10pc] flex flex-col items-center text-center">
           <h2>Presiona para empezar</h2>
@@ -55,10 +85,11 @@ const View1 = () => {
             src="/img/row.svg"
             width={100}
             height={100}
+            className="cursor-pointer"
           />
         </div>
         <div
-          className="border-2 border-white sm:w-1/3 w-[15pc] text-lg px-4 py-1 z-40 absolute sm:right-[50%] right-[5%] sm:top-[21pc] top-[25pc]"
+          className="border-2 border-white bg-customColor sm:w-1/3 w-[15pc] text-lg px-4 py-1 z-40 absolute sm:right-[50%] right-[5%] sm:top-[21pc] top-[25pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

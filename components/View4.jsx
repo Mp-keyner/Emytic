@@ -17,8 +17,8 @@ const View4 = () => {
     switch (true) {
       case screen.width >= 1200 && screen.width <= 1600:
         row.style.top = "62%";
-    row.style.left = "12%";
-    row.style.width = "300px";
+        row.style.left = "12%";
+        row.style.width = "300px";
         console.log(screen.width, "number Uno");
         break;
       case screen.width >= 393 && screen.width <= 450:
@@ -31,12 +31,43 @@ const View4 = () => {
         break;
     }
 
-    
     console.log("objectsdftgyhuji");
   };
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 53) {
+      const Six = document.getElementById("Six");
+
+      Six.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+
+      row.style.transition = "all 1s";
+
+      switch (true) {
+        case screen.width >= 1200 && screen.width <= 1600:
+          row.style.top = "62%";
+          row.style.left = "12%";
+          row.style.width = "300px";
+          console.log(screen.width, "number Uno");
+          break;
+        case screen.width >= 393 && screen.width <= 450:
+          row.style.top = "88%";
+          row.style.left = "26%";
+          row.style.width = "10pc";
+          console.log(screen.width, "number Dos");
+          break;
+        default:
+          break;
+      }
+      console.log("Tecla pre");
+    }
+  };
+  window.addEventListener("keydown", handleKeyDown);
   return (
     <>
-      <div className="relative border-1 border-solid bg-blue-600 h-screen">
+      <div className="relative border-1 border-solid fondo4 h-screen">
         <div className="absolute bottom-[1%] sm:bottom-[25pc] right-[0pc] w-[10pc] flex flex-col items-center text-center ">
           <h2>Presiona para continuar</h2>
 
@@ -48,7 +79,7 @@ const View4 = () => {
           />
         </div>
         <div
-          className=" border-2 w-[20pc] sm:w-1/3 text-lg px-4 py-1 z-40 absolute  left-[10%] sm:right-[12pc] top-[46%] sm:top-[16pc]"
+          className=" border-2 w-[20pc] sm:w-1/3 text-lg px-4 py-1 z-40 absolute blu left-[10%] sm:left-[53%] top-[46%] sm:top-[16pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -61,7 +92,7 @@ const View4 = () => {
           </p>
         </div>
         <div
-          className=" border-2  w-1/3 text-lg px-4 py-1 z-40 absolute   right-[39pc] top-[8pc]"
+          className=" border-2  w-1/3 text-lg px-4 py-1 z-40 absolute blu right-[39pc] top-[8pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

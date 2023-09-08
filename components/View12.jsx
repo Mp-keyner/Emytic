@@ -23,9 +23,30 @@ const View11 = () => {
     row.style.width = "200px";
     console.log("objectsdftgyhuji");
   };
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 69) {
+      const Fourteen = document.getElementById("Fourteen");
+
+      // Realizar el desplazamiento al siguiente elemento
+      Fourteen.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+
+      row.style.transition = "all 1s";
+      row.style.top = "43%";
+      row.style.left = "11%";
+      row.style.width = "200px";
+      console.log("objectsdftgyhuji");
+      console.log("objectsdftgyhuji");
+      console.log("Tecla pre");
+    }
+  };
+  window.addEventListener("keydown", handleKeyDown);
   return (
     <>
-      <div className="relative border-1 border-solid bg-blue-600 h-screen">
+      <div className="relative border-1 border-solid fondo6 h-screen">
         <div className="absolute bottom-[4pc] right-[0pc] w-[10pc] flex flex-col items-center ">
           <h2>Presiona para </h2>
           <Image
@@ -37,7 +58,7 @@ const View11 = () => {
         </div>
 
         <div
-          className="border-2  w-[67pc] text-lg px-4 py-1 z-40 absolute  right-[11pc] top-[4pc]"
+          className="border-2  w-[67pc] blu text-lg px-4 py-1 z-40 absolute  right-[11pc] top-[4pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

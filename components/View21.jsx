@@ -21,11 +21,31 @@ const View11 = () => {
 
     console.log("objectsdftgyhuji");
   };
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 83) {
+      const TwentyThree = document.getElementById("TwentyThree");
+
+      TwentyThree.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+
+      row.style.transition = "all 1s";
+      row.style.top = "0%";
+      row.style.right = "0%";
+      row.style.width = "8pc";
+      row.style.opacity = 0;
+      console.log("objectsdftgyhuji");
+      console.log("Tecla pre");
+    }
+  };
+  window.addEventListener("keydown", handleKeyDown);
   return (
     <>
       <div
         id="twelve"
-        className="relative border-1 border-solid bg-blue-600 h-screen"
+        className="relative border-1 border-solid fondo4 h-screen"
       >
         <div className="absolute top-[4pc] text-center left-[0pc] w-[10pc] flex flex-col items-center">
           <h2>Presiona para continuar</h2>
@@ -45,7 +65,7 @@ const View11 = () => {
           height={500}
         />
         <div
-          className="border-2  w-1/3 text-lg px-4 py-1 z-40 absolute  right-[20pc] top-[10pc]"
+          className="border-2  w-1/3 text-lg px-4 py-1 z-40 absolute blu right-[20pc] top-[10pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -57,7 +77,7 @@ const View11 = () => {
           </p>
         </div>
         <div
-          className="border-2  w-1/3 text-lg px-4 py-1 z-40 absolute  right-[36pc] top-[23pc]"
+          className="border-2  w-1/3 text-lg px-4 py-1 z-40 absolute blu right-[36pc] top-[23pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -68,7 +88,7 @@ const View11 = () => {
           </p>
         </div>
         <div
-          className="border-2  w-[13pc] flex items-center gap-[1pc] text-lg px-4 py-1 z-40 absolute  left-[25%] top-[16%]"
+          className="border-2  w-[13pc] blu flex items-center gap-[1pc] text-lg px-4 py-1 z-40 absolute  left-[25%] top-[16%]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -78,7 +98,7 @@ const View11 = () => {
           <Image src="/img/check.svg" width={50} height={50} />
         </div>
         <div
-          className="border-2  w-[13pc] flex items-center gap-[1pc] text-lg px-4 py-1 z-40 absolute  left-[25%] top-[37%]"
+          className="border-2 blu w-[13pc] flex items-center gap-[1pc] text-lg px-4 py-1 z-40 absolute  left-[25%] top-[37%]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -88,7 +108,7 @@ const View11 = () => {
           <Image src="/img/check.svg" width={50} height={50} />
         </div>
         <div
-          className="border-2  w-[13pc] flex items-center gap-[1pc] text-lg px-4 py-1 z-40 absolute  left-[60%] top-[16%]"
+          className="border-2 blu w-[13pc] flex items-center gap-[1pc] text-lg px-4 py-1 z-40 absolute  left-[60%] top-[16%]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -98,7 +118,7 @@ const View11 = () => {
           <Image src="/img/check.svg" width={50} height={50} />
         </div>
         <div
-          className="border-2  w-[13pc] flex items-center gap-[1pc] text-lg px-4 py-1 z-40 absolute  left-[60%] top-[83%]"
+          className="border-2 blu w-[13pc] flex items-center gap-[1pc] text-lg px-4 py-1 z-40 absolute  left-[60%] top-[83%]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -108,7 +128,7 @@ const View11 = () => {
           <Image src="/img/check.svg" width={50} height={50} />
         </div>
         <div
-          className="border-2  w-[13pc] flex items-center gap-[1pc] text-lg px-4 py-1 z-40 absolute  left-[89%] top-[83%]"
+          className="border-2 blu w-[13pc] flex items-center gap-[1pc] text-lg px-4 py-1 z-40 absolute  left-[89%] top-[83%]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

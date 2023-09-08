@@ -14,12 +14,12 @@ const Fscreen = ({ setShowFunction }) => {
   };
 
   return (
-    <div className="relative bg-customColor h-screen text-white flex justify-center flex-col sm:p-[9pc] p-[1pc] overflow-hidden ">
+    <div className="relative fondo2 h-screen text-white flex justify-center flex-col sm:p-[9pc] p-[1pc] overflow-hidden ">
       <br />
-      <div className="z-40 sm:w-[30pc] w-[20pc] sm:border p-[1pc]">
+      <div className="z-40 sm:w-[30pc] w-[20pc] blu sm:border p-[1pc]">
         <h1 className="text-center text-[2pc] ">Antes de empezar</h1>
         <p className="z-40 text-[1.4pc]">
-          Activa el modo de pantalla, completa para potenciar la experiencia{" "}
+          Activa el modo de pantalla, completa para potenciar la experiencia
         </p>
         <br />
         <button
@@ -46,12 +46,12 @@ const Fscreen = ({ setShowFunction }) => {
         data-aos-out="fade-left"
         id="Arbol"
       />
+
       <Image
         src="/img/1.svg"
         width={300}
         height={500}
-        className="fixed sm:top-[60%] top-[74%] sm:left-[81%] left-[68%] transform z-40 sm:w-[16pc] w-[10pc]"
-        style={{ transform: "translate(-50%, -50%)" }}
+        className="fixed sm:top-[33%] top-[74%] sm:left-[56%] right-[0%] transform z-40 sm:w-[16pc] w-[10pc]"
         id="row"
         data-aos="fade-down"
       />

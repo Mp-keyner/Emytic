@@ -19,9 +19,26 @@ const View1 = () => {
     // row.style.width = "13pc";
     console.log("objectsdftgyhuji");
   };
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 89) {
+      const Seventeen = document.getElementById("Seventeen");
+
+      Seventeen.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+
+      row.style.transition = "all 1s";
+      row.style.opacity = 0;
+      console.log("objectsdftgyhuji");
+      console.log("Tecla pre");
+    }
+  };
+  window.addEventListener("keydown", handleKeyDown);
   return (
     <>
-      <div className="relative border-1 border-solid bg-blue-600 h-screen p-[1pc]">
+      <div className="relative border-1 border-solid fondo6 h-screen p-[1pc]">
         <h1 className="text-[2pc] font-semibold">Descubre el mensaje oculto</h1>
         <br />
         <div className="absolute top-[3pc] right-[0pc] w-[10pc] flex flex-col items-center text-center z-[1]">
@@ -33,11 +50,11 @@ const View1 = () => {
             height={100}
           />
         </div>
-        <div className="p-[1pc] border w-[21pc]">
+        <div className="p-[1pc] bg-white border w-[21pc]">
           <img src="/img/ce/3.svg" alt="nn" className="w-[22pc]" />
         </div>
-        <div className="absolute top-[4pc] right-[1pc] contaAni gap-[1pc] w-[54pc]">
-          <div className="p-[1pc] border-b border-white border-solid tat">
+        <div className="absolute top-[4pc] blu right-[1pc] contaAni gap-[1pc] w-[54pc]">
+          <div className="p-[1pc] border-b  border-white border-solid tat">
             <img src="/img/Animal/16.svg" alt="nn" className="w-[22pc]" />
             <img src="/img/Animal/4.svg" alt="nn" className="w-[22pc]" />
             <img src="/img/Animal/17.svg" alt="nn" className="w-[22pc]" />
@@ -100,7 +117,7 @@ const View1 = () => {
         </div>
 
         <div className="flex gap-[2pc] absolute bottom-[6pc] justify-center w-[97%]">
-          <div className="flex gap-[0.6pc] border border-1 border-solid border-black">
+          <div className="flex gap-[0.6pc] ">
             <input
               type="text"
               value="M"
@@ -127,7 +144,7 @@ const View1 = () => {
               className="bg-white text-black text-center w-[2pc]"
             />
           </div>
-          <div className="flex gap-[0.6pc] border border-1 border-solid border-black">
+          <div className="flex gap-[0.6pc] ">
             <input
               type="text"
               className="bg-white text-black text-center w-[2pc]"
@@ -141,7 +158,7 @@ const View1 = () => {
               className="bg-white text-black text-center w-[2pc]"
             />
           </div>
-          <div className="flex gap-[0.6pc] border border-1 border-solid border-black">
+          <div className="flex gap-[0.6pc] ">
             <input
               type="text"
               className="bg-white text-black text-center w-[2pc]"
@@ -180,13 +197,13 @@ const View1 = () => {
               className="bg-white text-black text-center w-[2pc]"
             />
           </div>
-          <div className="flex gap-[0.6pc] border border-1 border-solid border-black">
+          <div className="flex gap-[0.6pc] ">
             <input
               type="text"
               className="bg-white text-black text-center w-[2pc]"
             />
           </div>
-          <div className="flex gap-[0.6pc] border border-1 border-solid border-black">
+          <div className="flex gap-[0.6pc] ">
             <input
               type="text"
               className="bg-white text-black text-center w-[2pc]"
@@ -210,7 +227,7 @@ const View1 = () => {
           </div>
         </div>
         <div className="flex gap-[2pc] bottom-[3pc] absolute justify-center w-[97%]">
-          <div className="flex gap-[0.6pc] border border-1 border-solid border-black">
+          <div className="flex gap-[0.6pc] ">
             <input
               type="text"
               className="bg-white text-black text-center w-[2pc]"
@@ -236,7 +253,7 @@ const View1 = () => {
               className="bg-white text-black text-center w-[2pc]"
             />
           </div>
-          <div className="flex gap-[0.6pc] border border-1 border-solid border-black">
+          <div className="flex gap-[0.6pc] ">
             <input
               type="text"
               className="bg-white text-black text-center w-[2pc]"

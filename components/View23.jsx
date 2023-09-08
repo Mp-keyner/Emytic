@@ -20,11 +20,31 @@ const View23 = () => {
     row.style.opacity = 1;
     console.log("objectsdftgyhuji");
   };
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 70) {
+      const TwentyFive = document.getElementById("TwentyFive");
+
+      TwentyFive.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+
+      row.style.transition = "all 1s";
+      row.style.top = "49%";
+      row.style.left = "2%";
+      row.style.width = "13pc";
+      row.style.opacity = 1;
+      console.log("objectsdftgyhuji");
+      console.log("Tecla pre");
+    }
+  };
+  window.addEventListener("keydown", handleKeyDown);
   return (
     <>
-      <div className="relative border-1 border-solid bg-blue-600 h-screen">
+      <div className="relative border-1 border-solid fondo5 h-screen">
         <div className="absolute top-[3pc] left-[0pc] text-center w-[10pc] flex flex-col items-center ">
-          <h2>Presiona para empezar</h2>
+          <h2>Presiona para continuar</h2>
           <Image
             onClick={AddAnimation}
             src="/img/row.svg"
@@ -75,7 +95,7 @@ const View23 = () => {
         />
 
         <div
-          className="w-[44pc] h-[7pc] border-2   text-[4pc] px-4 py-1 z-40 absolute  left-[18pc] top-[14pc]"
+          className="w-[44pc] h-[7pc] border-2 blu text-[4pc] px-4 py-1 z-40 absolute  left-[18pc] top-[14pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

@@ -33,11 +33,44 @@ const View1 = () => {
 
     console.log("objectsdftgyhuji");
   };
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 56) {
+      const Nine = document.getElementById("Nine");
+
+      Nine.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+
+      row.style.transition = "all 1s";
+
+      switch (true) {
+        case screen.width >= 1200 && screen.width <= 1600:
+          row.style.top = "77%";
+          row.style.left = "12%";
+          row.style.width = "13pc";
+          console.log(screen.width, "number Uno");
+          break;
+        case screen.width >= 393 && screen.width <= 450:
+          row.style.top = "90%";
+          row.style.left = "31%";
+          row.style.width = "10pc";
+          console.log(screen.width, "number Dos");
+          break;
+        default:
+          break;
+      }
+
+      console.log("Tecla pre");
+    }
+  };
+  window.addEventListener("keydown", handleKeyDown);
   return (
     <>
       <div
         id="secon"
-        className="relative border-1 border-solid  h-screen bg-blue-600"
+        className="relative border-1 border-solid  h-screen fondo5"
       >
         <div className="absolute top-[3pc] z-50 left-[0pc] w-[10pc] flex flex-col text-center items-center ">
           <h2>Presiona para empezar</h2>
@@ -49,12 +82,12 @@ const View1 = () => {
           />
         </div>
         <div
-          className="w-[23pc] sm:w-[52pc] h-[12pc] sm:h-[15pc] border-2   text-lg px-4 py-1 z-40 absolute left-[3%] sm:left-[13pc] top-[18pc] sm:top-[3pc] text-[0.6pc]"
+          className="w-[23pc] sm:w-[52pc] h-[12pc] sm:h-[15pc] border-2 blu text-lg px-4 py-1 z-40 absolute left-[3%] sm:left-[13pc] top-[18pc] sm:top-[3pc] text-[0.6pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
         >
-          <table class="styled-table text-[0.4pc]">
+          <table class="styled-table text-[0.4pc] sm:text-[1pc]">
             <thead>
               <tr>
                 <th>Edad</th>
@@ -72,7 +105,7 @@ const View1 = () => {
                     src="/img/face/1.svg"
                     width={100}
                     height={100}
-                    className="w-[2pc]"
+                    className="w-[2pc] sm:w-[7pc]"
                   />
                   1
                 </td>
@@ -81,7 +114,7 @@ const View1 = () => {
                     src="/img/face/2.svg"
                     width={100}
                     height={100}
-                    className="w-[2pc]"
+                    className="w-[2pc] sm:w-[7pc]"
                   />
                   2
                 </td>
@@ -90,7 +123,7 @@ const View1 = () => {
                     src="/img/face/3.svg"
                     width={100}
                     height={100}
-                    className="w-[2pc]"
+                    className="w-[2pc] sm:w-[7pc]"
                   />
                   3
                 </td>
@@ -99,7 +132,7 @@ const View1 = () => {
                     src="/img/face/4.svg"
                     width={100}
                     height={100}
-                    className="w-[2pc]"
+                    className="w-[2pc] sm:w-[7pc]"
                   />
                   4
                 </td>
@@ -108,7 +141,7 @@ const View1 = () => {
                     src="/img/face/5.svg"
                     width={100}
                     height={100}
-                    className="w-[2pc]"
+                    className="w-[2pc] sm:w-[7pc]"
                   />
                   5
                 </td>
@@ -117,7 +150,7 @@ const View1 = () => {
                     src="/img/face/6.svg"
                     width={100}
                     height={100}
-                    className="w-[2pc]"
+                    className="w-[2pc] sm:w-[7pc]"
                   />
                   6
                 </td>
@@ -126,7 +159,7 @@ const View1 = () => {
           </table>
         </div>
         <div
-          className="w-[23pc] border-2  text-lg px-4 py-1 z-40 absolute left-[3%] sm:left-[13pc] top-[34pc] sm:top-[25pc]"
+          className="w-[23pc] border-2  text-lg px-4 py-1 z-40 blu absolute left-[3%] sm:left-[13pc] top-[34pc] sm:top-[25pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

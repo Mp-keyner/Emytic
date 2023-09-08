@@ -24,9 +24,29 @@ const View11 = () => {
     row.style.opacity = 1;
     console.log("objectsdftgyhuji");
   };
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 80) {
+      const TwentyOne = document.getElementById("TwentyOne");
+
+      TwentyOne.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+
+      row.style.transition = "all 1s";
+      row.style.top = "23%";
+      row.style.left = "90%";
+      row.style.width = "200px";
+      row.style.opacity = 1;
+      console.log("objectsdftgyhuji");
+      console.log("Tecla pre");
+    }
+  };
+  window.addEventListener("keydown", handleKeyDown);
   return (
     <>
-      <div className="relative border-1 border-solid bg-blue-600 h-screen">
+      <div className="relative border-1 border-solid fondo4 h-screen">
         <div className="absolute bottom-[4pc] right-[0pc] w-[10pc] flex flex-col items-center ">
           <h2>Presiona para </h2>
           <Image
@@ -38,7 +58,7 @@ const View11 = () => {
         </div>
 
         <div
-          className="border-2 w-[44pc] text-lg px-4 py-1 z-40 absolute right-[11pc] top-[5%]"
+          className="border-2 w-[44pc] text-lg px-4 py-1 blu z-40 absolute right-[11pc] top-[5%]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -68,7 +88,7 @@ const View11 = () => {
           </p>
         </div>
         <div
-          className="border-2  w-[20pc] text-lg px-4 py-1 z-40 absolute  left-[2%] bottom-[34%]"
+          className="border-2 blu w-[20pc] text-lg px-4 py-1 z-40 absolute  left-[2%] bottom-[34%]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

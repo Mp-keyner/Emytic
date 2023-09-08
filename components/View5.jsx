@@ -33,11 +33,43 @@ const View1 = () => {
     }
     console.log("objectsdftgyhuji");
   };
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 54) {
+      const Seven = document.getElementById("Seven");
+
+      Seven.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+
+      row.style.transition = "all 1s";
+
+      switch (true) {
+        case screen.width >= 1200 && screen.width <= 1600:
+          row.style.top = "79%";
+          row.style.left = "10%";
+          row.style.width = "13pc";
+          console.log(screen.width, "number Uno");
+          break;
+        case screen.width >= 393 && screen.width <= 450:
+          row.style.top = "92%";
+          row.style.left = "31%";
+          row.style.width = "9pc";
+          console.log(screen.width, "number Dos");
+          break;
+        default:
+          break;
+      }
+      console.log("Tecla pre");
+    }
+  };
+  window.addEventListener("keydown", handleKeyDown);
   return (
     <>
       <div
         id="secon"
-        className="relative border-1 border-solid  bg-blue-600 h-screen"
+        className="relative border-1 border-solid  fondo1 h-screen"
       >
         <div className="absolute z-50 top-[3pc] left-[0pc] w-[10pc] flex flex-col items-center text-center ">
           <h2>Presiona para empezar</h2>
@@ -49,7 +81,7 @@ const View1 = () => {
           />
         </div>
         <div
-          className="w-[23pc] border-2   text-lg px-4 py-1 z-40 absolute sm:left-[29pc] left-[3%] top-[47%] sm:top-[15pc]"
+          className="w-[23pc] border-2 blu text-black text-lg px-4 py-1 z-40 absolute sm:left-[29pc] left-[3%] top-[47%] sm:top-[15pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

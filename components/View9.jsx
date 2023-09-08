@@ -20,9 +20,30 @@ const View9 = () => {
     row.style.width = "13pc";
     console.log("objectsdftgyhuji");
   };
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 48) {
+      const Eleven = document.getElementById("Eleven");
+
+      Eleven.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+
+      row.style.transition = "all 1s";
+      row.style.transition = "all 1s";
+      row.style.top = "82%";
+      row.style.left = "11%";
+      row.style.opacity = 1;
+      row.style.width = "13pc";
+      console.log("objectsdftgyhuji");
+      console.log("Tecla pre");
+    }
+  };
+  window.addEventListener("keydown", handleKeyDown);
   return (
     <>
-      <div className="relative border-1 border-solid bg-blue-600 h-screen">
+      <div className="relative border-1 border-solid fondo5 h-screen">
         <div className="absolute top-[3pc] left-[0pc] text-center w-[10pc] flex flex-col items-center">
           <h2>Presiona para empezar</h2>
           <Image
@@ -75,7 +96,7 @@ const View9 = () => {
         />
 
         <div
-          className="w-[23pc] text-[2.05pc] sm:w-[44pc] h-[4pc] sm:h-[7pc] border-2  sm:text-[4pc] px-4 py-1 z-40 absolute left-[3%] sm:left-[27%] top-[50%] sm:top-[14pc]"
+          className="w-[23pc] text-[2.05pc] sm:w-[44pc] h-[4pc] blu sm:h-[7pc] border-2  sm:text-[4pc] px-4 py-1 z-40 absolute left-[3%] sm:left-[27%] top-[50%] sm:top-[14pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

@@ -20,9 +20,29 @@ const View11 = () => {
     row.style.transform = "translate(0)";
     console.log("objectsdftgyhuji");
   };
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 75) {
+      const TwentyNine = document.getElementById("TwentyNine");
+
+      TwentyNine.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+
+      row.style.transition = "all 1s";
+      row.style.top = "36%";
+      row.style.left = "85%";
+      row.style.width = "12pc";
+      row.style.transform = "translate(0)";
+      console.log("objectsdftgyhuji");
+      console.log("Tecla pre");
+    }
+  };
+  window.addEventListener("keydown", handleKeyDown);
   return (
     <>
-      <div className="relative border-1 border-solid bg-blue-600 h-screen">
+      <div className="relative border-1 border-solid fondo1 h-screen">
         <div className="absolute top-[4pc] right-[0pc] w-[10pc] flex flex-col items-center ">
           <h2>Presiona para </h2>
           <Image
@@ -34,7 +54,7 @@ const View11 = () => {
         </div>
 
         <div
-          className="border-2  w-[20pc] text-lg px-4 py-1 z-40 absolute right-[-12%] top-[50%]"
+          className="border-2 blu w-[20pc] text-lg px-4 py-1 z-40 absolute right-[-12%] top-[50%]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -61,7 +81,7 @@ const View11 = () => {
             width={500}
             height={500}
           />
-          <p className="grid grid-cols-2">
+          <p className="grid grid-cols-2 blu">
             <b>Ayudar</b>
             <b>Compartir</b>
             <b>Respetar</b>

@@ -22,15 +22,35 @@ const View1 = () => {
 
       row.style.transition = "all 1s";
       row.style.top = "78%";
+      row.style.width = "12pc";
       row.style.left = "11%";
       console.log("objectsdftgyhuji");
     });
   };
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 81) {
+      const twelve = document.getElementById("twelve");
+
+      twelve.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+
+      row.style.transition = "all 1s";
+      row.style.top = "78%";
+      row.style.left = "11%";
+      console.log("objectsdftgyhuji");
+      console.log("objectsdftgyhuji");
+      console.log("Tecla pre");
+    }
+  };
+  window.addEventListener("keydown", handleKeyDown);
   return (
     <>
       <div
         id="secon"
-        className="relative border-1 border-solid bg-customColor h-screen"
+        className="relative border-1 border-solid fondoMap h-screen"
       >
         <div className="absolute bottom-[13pc] text-center right-[0pc] w-[10pc] flex flex-col items-center">
           <h2>Presiona para empezar</h2>
@@ -42,7 +62,7 @@ const View1 = () => {
           />
         </div>
         <div
-          className="border-2 w-1/3 text-lg px-4 py-1 z-40 absolute  right-[39pc] top-[21pc]"
+          className="border-2 w-1/3 text-lg px-4 py-1 blu z-40 absolute  right-[39pc] top-[21pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

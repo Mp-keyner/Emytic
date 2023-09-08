@@ -52,11 +52,42 @@ const View1 = () => {
 
     console.log("objectsdftgyhuji");
   };
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 51) {
+      const Fourth = document.getElementById("Fourth");
+      Fourth.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+
+      row.style.transition = "all 1s";
+
+      switch (true) {
+        case screen.width >= 1200 && screen.width <= 1600:
+          row.style.top = "72%";
+          row.style.left = "12%";
+          row.style.width = "13pc";
+          console.log(screen.width, "number Uno");
+          break;
+        case screen.width >= 393 && screen.width <= 450:
+          row.style.top = "88%";
+          row.style.left = "26%";
+          row.style.width = "7pc";
+          console.log(screen.width, "number Dos");
+          break;
+        default:
+          break;
+      }
+      console.log("Tecla pre");
+    }
+  };
+  window.addEventListener("keydown", handleKeyDown);
   return (
     <>
-      <div className="relative border-1 border-solid  bg-blue-600 h-screen">
+      <div className="relative border-1 border-solid fondo2 h-screen">
         <div className="absolute sm:bottom-[13pc] bottom-[1pc] right-[0pc] w-[10pc] flex flex-col items-center text-center ">
-          <h2>Presiona para empezar</h2>
+          <h2>Presiona para continuar</h2>
 
           <Image
             onClick={AddAnimation}
@@ -66,7 +97,7 @@ const View1 = () => {
           />
         </div>
         <div
-          className="w-[12pc] border-2  text-lg px-4 py-1 z-40 absolute  right-[36%] sm:top-[15pc] top-[60%]"
+          className="w-[12pc] border-2  text-lg px-4 py-1 z-40 absolute blu right-[36%] sm:top-[15pc] top-[60%]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -74,7 +105,7 @@ const View1 = () => {
           <p>¡Hola Pepe, estos son mis amigos!</p>
         </div>
         <div
-          className=" border-2  sm:w-1/3 w-[12pc] text-lg px-4 py-1 z-40 absolute  sm:right-[51%] right-[2%] sm:top-[8pc] top-[4%]"
+          className=" border-2  sm:w-1/3 w-[12pc] text-lg px-4 py-1 blu z-40 absolute  sm:right-[51%] right-[2%] sm:top-[8pc] top-[4%]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

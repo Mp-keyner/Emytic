@@ -22,7 +22,7 @@ const View11 = () => {
   };
   return (
     <>
-      <div className="relative border-1 border-solid bg-blue-600 h-screen">
+      <div className="relative border-1 border-solid fondo8 h-screen">
         <div className="absolute bottom-[4pc] right-[0pc] w-[10pc] flex flex-col items-center z-50">
           <h2>Presiona para </h2>
           <Image
@@ -34,7 +34,7 @@ const View11 = () => {
         </div>
 
         <div
-          className="border-2  w-[54pc] text-lg px-4 py-1 z-40 absolute  left-[49%] top-[16%]"
+          className="border-2 blu w-[54pc] text-lg px-4 py-1 z-40 absolute text-black left-[49%] top-[16%]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
@@ -51,7 +51,7 @@ const View11 = () => {
           </p>
         </div>
         <div
-          className="border-2  w-[24pc] text-lg px-4 py-1 z-40 absolute  left-[33%] top-[58%]"
+          className="border-2 blu w-[24pc] text-lg px-4 py-1 z-40 absolute text-black left-[33%] top-[58%]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

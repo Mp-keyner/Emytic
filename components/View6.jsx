@@ -33,11 +33,43 @@ const View1 = () => {
 
     console.log("objectsdftgyhuji");
   };
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 55) {
+      const Eight = document.getElementById("Eight");
+
+      Eight.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+
+      row.style.transition = "all 1s";
+
+      switch (true) {
+        case screen.width >= 1200 && screen.width <= 1600:
+          row.style.top = "81%";
+          row.style.left = "10%";
+          row.style.width = "13pc";
+          console.log(screen.width, "number Uno");
+          break;
+        case screen.width >= 393 && screen.width <= 450:
+          row.style.top = "88%";
+          row.style.left = "31%";
+          row.style.width = "7pc";
+          console.log(screen.width, "number Dos");
+          break;
+        default:
+          break;
+      }
+      console.log("Tecla pre");
+    }
+  };
+  window.addEventListener("keydown", handleKeyDown);
   return (
     <>
       <div
         id="secon"
-        className="relative border-1 border-solid  bg-blue-600 h-screen"
+        className="relative border-1 border-solid fondo5 h-screen"
       >
         <div className="absolute top-[3pc] z-50 left-[0pc] w-[10pc] text-center flex flex-col items-center ">
           <h2>Presiona para empezar</h2>
@@ -49,10 +81,11 @@ const View1 = () => {
           />
         </div>
         <div
-          className="w-[23pc] border-2   text-lg px-4 py-1 z-40 absolute left-[0.7pc] sm:left-[27pc] top-[25pc]"
+          className="w-[23pc] border-2 text-lg px-4 py-1 z-40 absolute left-[0.7pc] sm:left-[50%] blu top-[25pc] sm:top-[40%]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
+          style={{ transform: " translate(-50%, -50%)" }}
         >
           <p>
             Las emociones son estados de las personas, que permiten que
@@ -62,7 +95,7 @@ const View1 = () => {
           </p>
         </div>
         <div
-          className="w-[23pc] border-2   text-lg px-4 py-1 z-40 absolute sm:left-[13pc] left-[0.7pc] top-[39pc]"
+          className="w-[23pc] border-2 blu text-lg px-4 py-1 z-40 absolute sm:left-[13pc] sm:top-[60%] left-[0.7pc] top-[39pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"

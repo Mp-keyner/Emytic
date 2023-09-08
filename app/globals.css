@@ -193,3 +193,46 @@ body {
   display: grid;
   grid-template-columns: repeat(2, auto);
 }
+
+.fondo1 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/8.png?alt=media&token=e213c385-d239-4ec4-8774-dbad992d2600");
+}
+
+.fondoMap {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/mapa.png?alt=media&token=c7be8ad7-4526-48c3-b8cc-5972adb7224b");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fondo2 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/11.png?alt=media&token=4f76245c-8c5a-422f-abd6-36081942e294");
+}
+
+.blu {
+  backdrop-filter: blur(40px); /* Controla la cantidad de desenfoque */
+}
+.fondo3 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/9.png?alt=media&token=118629a5-7503-449d-a803-ae9583e893fb");
+}
+.fondo4 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/11.png?alt=media&token=4f76245c-8c5a-422f-abd6-36081942e294");
+  background-position: bottom center;
+}
+.fondo5 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/8.png?alt=media&token=e213c385-d239-4ec4-8774-dbad992d2600");
+  background-position: bottom center;
+}
+.fondo6 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/14.png?alt=media&token=a5892626-d9a2-4445-a9d9-80c2842257b8");
+  background-position: bottom center;
+}
+.fondo7 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/selva.png?alt=media&token=032acb0a-3031-49e1-b146-c650276487a0");
+  background-position: bottom;
+}
+.fondo8 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/selva.png?alt=media&token=032acb0a-3031-49e1-b146-c650276487a0");
+  background-position: bottom;
+  background-size: cover;
+}

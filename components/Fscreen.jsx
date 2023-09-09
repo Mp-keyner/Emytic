@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const Fscreen = ({ setShowFunction }) => {
+const Fscreen = ({ setShowFunction, Show }) => {
   const requestFullScreen = () => {
     alert("Please wait...");
     console.log("dia dia ");
@@ -9,7 +9,8 @@ const Fscreen = ({ setShowFunction }) => {
     if (document.documentElement.requestFullscreen) {
       // Solicitar entrar en modo de pantalla completa en respuesta a un clic
       document.documentElement.requestFullscreen();
-      setShowFunction();
+      setShowFunction(!Show);
+      console.log(Show);
     }
   };
 

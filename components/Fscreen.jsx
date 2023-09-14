@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Sppiner from "./Sppiner";
 
 const Fscreen = ({ setShowFunction }) => {
+  const [wiew, setWiew] = useState(false);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setWiew(true);
+    }, 10000); // 10000 milisegundos = 10 segundos
+
+    // Limpia el temporizador cuando el componente se desmonta o se actualiza
+    return () => clearTimeout(timer);
+  }, []); //
   const requestFullScreen = () => {
-    alert("Please wait...");
     console.log("dia dia ");
     // Verificar si el navegador admite el modo de pantalla completa
     if (document.documentElement.requestFullscreen) {
@@ -14,28 +23,7 @@ const Fscreen = ({ setShowFunction }) => {
   };
 
   return (
-    <div className="relative fondo2 h-screen text-white flex justify-center flex-col sm:p-[9pc] p-[1pc] overflow-hidden ">
-      <br />
-      <div className="z-40 sm:w-[30pc] w-[20pc] blu sm:border p-[1pc]">
-        <h1 className="text-center text-[2pc] ">Antes de empezar</h1>
-        <p className="z-40 text-[1.4pc]">
-          Activa el modo de pantalla, completa para potenciar la experiencia
-        </p>
-        <br />
-        <button
-          className="border border-solid border-white w-[7pc] h-[3pc] rounded-lg z-40"
-          onClick={requestFullScreen}
-        >
-          Comenzar
-        </button>
-      </div>
-      <h1
-        className="text-[4pc] sm:text-[8pc] font-bold z-40 absolute left-[2pc] top-[3pc]"
-        data-aos="fade-up"
-        id="titulo"
-      >
-        EMYTIC
-      </h1>
+    <div className="relative bg-customColor h-screen text-white flex justify-center flex-col sm:p-[9pc] p-[1pc] overflow-hidden ">
       <Image
         src="/img/Arbol.svg"
         priority={true} // {false} | {true}
@@ -48,14 +36,6 @@ const Fscreen = ({ setShowFunction }) => {
       />
 
       <Image
-        src="/img/1.svg"
-        width={300}
-        height={500}
-        className="fixed sm:top-[33%] top-[74%] sm:left-[56%] right-[0%] transform z-40 sm:w-[16pc] w-[10pc]"
-        id="row"
-        data-aos="fade-down"
-      />
-      <Image
         src="/img/Arbol2.svg"
         priority={true} // {false} | {true}
         width={400}
@@ -65,6 +45,28 @@ const Fscreen = ({ setShowFunction }) => {
         data-aos-out="fade-left"
         id="Arbol"
       />
+      <div className="w-[100%] position: absolute bottom-[0vh] right-[0] flex h-screen items-center justify-center flex-col gap-16 blU">
+        <div className="flex items-center justify-center flex-col">
+          <Image
+            src={
+              "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/login.png?alt=media&token=8ae8b189-5077-403d-b5c4-20bdcd319d89"
+            }
+            width={300}
+            height={300}
+            className="w-[30pc]"
+          />
+        </div>
+        {wiew ? (
+          <button
+            className="border border-solid border-white w-[7pc] h-[3pc] rounded-lg z-40"
+            onClick={requestFullScreen}
+          >
+            Comenzar
+          </button>
+        ) : (
+          <Sppiner />
+        )}
+      </div>
     </div>
   );
 };

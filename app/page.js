@@ -5,7 +5,7 @@ import View1 from "@/components/View1";
 import View2 from "@/components/View2";
 import View3 from "@/components/View3";
 import View4 from "@/components/View4";
-import View5 from "@/components/View5"; 
+import View5 from "@/components/View5";
 import View6 from "@/components/View6";
 import View7 from "@/components/View7";
 import View8 from "@/components/View8";
@@ -38,6 +38,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import Fscreen from "@/components/Fscreen";
+import Sopa from "@/components/Sopa";
 
 export default function Home() {
   const [Show, setShow] = useState(true);
@@ -51,7 +52,7 @@ export default function Home() {
         <Fscreen setShowFunction={setShow} />
       ) : (
         <>
-          < NO />
+          <NO />
           <div id="Secon">
             <View1 />
           </div>

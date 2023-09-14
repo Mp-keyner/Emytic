@@ -18,7 +18,8 @@ const Fscreen = ({ setShowFunction }) => {
     if (document.documentElement.requestFullscreen) {
       // Solicitar entrar en modo de pantalla completa en respuesta a un clic
       document.documentElement.requestFullscreen();
-      setShowFunction();
+      setShowFunction(!Show);
+      console.log(Show);
     }
   };
 

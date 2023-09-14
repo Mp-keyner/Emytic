@@ -49,7 +49,7 @@ export default function Home() {
   return (
     <>
       {Show ? (
-        <Fscreen setShowFunction={setShow} />
+        <Fscreen setShowFunction={setShow} Show={Show}/>
       ) : (
         <>
           <NO />

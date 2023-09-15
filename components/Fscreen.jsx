@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Sppiner from "./Sppiner";
 
-const Fscreen = ({ setShowFunction }) => {
+const Fscreen = ({ setShowFunction, Show }) => {
   const [wiew, setWiew] = useState(false);
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -49,9 +49,8 @@ const Fscreen = ({ setShowFunction }) => {
       <div className="w-[100%] position: absolute bottom-[0vh] right-[0] flex h-screen items-center justify-center flex-col gap-16 blU">
         <div className="flex items-center justify-center flex-col">
           <Image
-            src={
-              "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/login.png?alt=media&token=8ae8b189-5077-403d-b5c4-20bdcd319d89"
-            }
+            src="/img/lo.png"
+            priority={true}
             width={300}
             height={300}
             className="w-[30pc]"

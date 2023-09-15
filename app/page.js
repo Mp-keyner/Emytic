@@ -39,6 +39,7 @@ import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import Fscreen from "@/components/Fscreen";
 import Sopa from "@/components/Sopa";
+import MusicPlayer from "@/components/MusicPlayer";
 
 export default function Home() {
   const [Show, setShow] = useState(true);
@@ -48,8 +49,9 @@ export default function Home() {
 
   return (
     <>
+      <MusicPlayer />
       {Show ? (
-        <Fscreen setShowFunction={setShow} Show={Show}/>
+        <Fscreen setShowFunction={setShow} Show={Show} />
       ) : (
         <>
           <NO />

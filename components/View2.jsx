@@ -86,8 +86,8 @@ const View1 = () => {
   return (
     <>
       <div className="relative border-1 border-solid fondo2 h-screen">
-        <div className="absolute sm:bottom-[13pc] bottom-[1pc] right-[0pc] w-[10pc] flex flex-col items-center text-center ">
-          <h2>Presiona para continuar</h2>
+        <div className="absolute sm:bottom-[13pc] bottom-[1pc] right-[1pc] w-[10pc] flex flex-col items-center text-center ">
+          <h2>Presiona para saber por que pepe tenia rabia</h2>
 
           <Image
             onClick={AddAnimation}
@@ -96,24 +96,20 @@ const View1 = () => {
             height={100}
           />
         </div>
-        <div
-          className="w-[12pc] border-2  text-lg px-4 py-1 z-40 absolute blu right-[36%] sm:top-[15pc] top-[60%]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
-        >
-          <p>¡Hola Pepe, estos son mis amigos!</p>
+
+        <div className="z-40 absolute right-[36%] sm:top-[17pc] top-[60%]">
+          <div className="bocadillo-cuadrado2">
+            <p>¡Hola Pepe, estos son mis amigos!</p>
+          </div>
         </div>
-        <div
-          className=" border-2  sm:w-1/3 w-[12pc] text-lg px-4 py-1 blu z-40 absolute  sm:right-[51%] right-[2%] sm:top-[8pc] top-[4%]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
-        >
-          <p>
-            ¡Hola amigos, soy Pepe, el loro! Hoy estaba un poco enojado y triste
-            a la vez ¿Quieres saber por que?
-          </p>
+
+        <div className="z-40 absolute sm:right-[59%] right-[2%] sm:top-[8pc] top-[4%]">
+          <div className="bocadillo-cuadrado3">
+            <p>
+              ¡Hola amigos, soy Pepe, el loro! Hoy estaba un poco enojado y
+              triste a la vez ¿Quieres saber por que?
+            </p>
+          </div>
         </div>
         <Image
           src="/img/Arbol2.svg"

@@ -106,7 +106,7 @@ const NO = () => {
         <div
           data-aos="fade-left"
           data-aos-out="fade-left"
-          className="absolute sm:bottom-[13pc] bottom-[7pc] z-[1pc] right-[0pc] w-[10pc] flex flex-col items-center text-center"
+          className="absolute sm:bottom-[13pc] bottom-[7pc] z-[1pc] right-[0pc] w-[10pc] flex flex-col items-center text-center text-black"
         >
           <h2>Presiona para continuar</h2>
           <Image
@@ -117,19 +117,17 @@ const NO = () => {
             className="cursor-pointer"
           />
         </div>
-        <div
-          className="border border-white text-lg px-4 blu py-1 z-40 absolute text-[white] sm:w-1/3 w-[20pc] sm:right-[14%] sm:top-[27%] right-[2%] top-[14%] xl:top-[35%] xl:rigth-[16%]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
-        >
-          <p>
-            Hola soy <b>EMYTIC</b>, juntos realizaremos un divertido viaje por
-            las regiones de Colombia, para conocer nuevos amigos que nos
-            enseñaran sobre tus emociones y nos contaran unas historias muy
-            interesante.
-            <b>Vamos sígueme!</b>
-          </p>
+
+        <div className="z-40 absolute sm:right-[24%] sm:top-[27%] right-[2%] top-[14%] xl:top-[35%] xl:rigth-[16%]">
+          <div className="bocadillo-cuadrado1">
+            <p>
+              Hola soy <b>EMYTIC</b>, juntos realizaremos un divertido viaje por
+              las regiones de Colombia, para conocer nuevos amigos que nos
+              enseñaran sobre tus emociones y nos contaran unas historias muy
+              interesante.
+              <b>Vamos sígueme!</b>
+            </p>
+          </div>
         </div>
       </div>
     </>

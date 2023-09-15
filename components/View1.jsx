@@ -88,18 +88,7 @@ const View1 = () => {
             className="cursor-pointer"
           />
         </div>
-        <div
-          className="border-2 border-white bg-customColor sm:w-1/3 w-[15pc] text-lg px-4 py-1 z-40 absolute sm:right-[50%] right-[5%] sm:top-[21pc] top-[25pc]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
-        >
-          <p>
-            Nuestro primer viaje es a la región Caribe, esta ubicada al{" "}
-            <b>norte de Colombia</b>, tiene lindas playas , las personas son
-            alegres y les gusta bailar con la pollera colora
-          </p>
-        </div>
+
         <Image
           data-aos="fade-up-left"
           src={"/img/map/1.svg"}
@@ -109,6 +98,15 @@ const View1 = () => {
           style={{ transform: "translate(-6%, -50%)" }}
           className="w-[41pc] border border-none absolute xl:top-[50%] top-[25%] xl:left-[50%] left-[5%] sm:left-[50%] "
         />
+        <div className="z-40 absolute sm:right-[58%] right-[5%] sm:top-[24pc] top-[25pc]">
+          <div className="bocadillo-cuadrado1">
+            <p>
+              Nuestro primer viaje es a la región Caribe, esta ubicada al{" "}
+              <b>norte de Colombia</b>, tiene lindas playas , las personas son
+              alegres y les gusta bailar con la pollera colora
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );

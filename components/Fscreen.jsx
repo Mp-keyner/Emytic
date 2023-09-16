@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Sppiner from "./Sppiner";
+import MusicPlayer from "./MusicPlayer";
 
 const Fscreen = ({ setShowFunction, Show }) => {
   const [wiew, setWiew] = useState(false);
@@ -12,16 +13,16 @@ const Fscreen = ({ setShowFunction, Show }) => {
     // Limpia el temporizador cuando el componente se desmonta o se actualiza
     return () => clearTimeout(timer);
   }, []); //
-  const requestFullScreen = () => {
-    console.log("dia dia ");
-    // Verificar si el navegador admite el modo de pantalla completa
-    if (document.documentElement.requestFullscreen) {
-      // Solicitar entrar en modo de pantalla completa en respuesta a un clic
-      document.documentElement.requestFullscreen();
-      setShowFunction(!Show);
-      console.log(Show);
-    }
-  };
+  // function requestFullScreen() {
+  //   console.log("dia dia ");
+  //   // Verificar si el navegador admite el modo de pantalla completa
+  //   if (document.documentElement.requestFullscreen) {
+  //     // Solicitar entrar en modo de pantalla completa en respuesta a un clic
+  //     document.documentElement.requestFullscreen();
+  //     setShowFunction(!Show);
+  //     console.log(Show);
+  //   }
+  // }
 
   return (
     <div className="relative bg-customColor h-screen text-white flex justify-center flex-col sm:p-[9pc] p-[1pc] overflow-hidden ">
@@ -46,23 +47,17 @@ const Fscreen = ({ setShowFunction, Show }) => {
         data-aos-out="fade-left"
         id="Arbol"
       />
-      <div className="w-[100%] position: absolute bottom-[0vh] right-[0] flex h-screen items-center justify-center flex-col gap-16 blU">
+      <div className="w-[100%] position: absolute bottom-[0vh] right-[0] flex h-screen items-center justify-center flex-col gap-6 blU">
         <div className="flex items-center justify-center flex-col">
           <Image
-            src="/img/lo.png"
-            priority={true}
-            width={300}
-            height={300}
-            className="w-[30pc]"
+            src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/lo.png?alt=media&token=fe3fd1e8-1660-4aee-aa59-8c3d1641ac3d"
+            width={400}
+            height={400}
+            className="w-[50pc]"
           />
         </div>
         {wiew ? (
-          <button
-            className="border border-solid border-white w-[7pc] h-[3pc] rounded-lg z-40"
-            onClick={requestFullScreen}
-          >
-            Comenzar
-          </button>
+          <MusicPlayer setShowFunction={setShowFunction} Show={Show} />
         ) : (
           <Sppiner />
         )}

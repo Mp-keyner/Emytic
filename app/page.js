@@ -39,9 +39,12 @@ import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import Fscreen from "@/components/Fscreen";
 import Sopa from "@/components/Sopa";
-import MusicPlayer from "@/components/MusicPlayer";
+import ReproductorAudioInfinito from "@/components/MusicPlayer";
 
 export default function Home() {
+  const audioSource =
+    "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/msu.mp3?alt=media&token=a854db54-bc91-4f4d-a10d-df17c7a45113";
+
   const [Show, setShow] = useState(true);
   useEffect(() => {
     AOS.init();
@@ -49,7 +52,6 @@ export default function Home() {
 
   return (
     <>
-      <MusicPlayer />
       {Show ? (
         <Fscreen setShowFunction={setShow} Show={Show} />
       ) : (

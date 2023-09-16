@@ -1,33 +1,31 @@
-import React, { useState } from "react";
+import React from "react";
+import useSound from "use-sound";
 
-const MusicPlayer = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  const toggleAudio = () => {
-    const audioElement = document.getElementById("music");
-
-    if (isPlaying) {
-      audioElement.pause();
-    } else {
-      audioElement.play();
+const MusicPlayer = ({ setShowFunction, Show }) => {
+  const [play] = useSound(
+    "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/msu.mp3?alt=media&token=a854db54-bc91-4f4d-a10d-df17c7a45113"
+  );
+  function requestFullScreen() {
+    console.log("dia dia ");
+    // Verificar si el navegador admite el modo de pantalla completa
+    if (document.documentElement.requestFullscreen) {
+      // Solicitar entrar en modo de pantalla completa en respuesta a un clic
+      document.documentElement.requestFullscreen();
+      setShowFunction(!Show);
+      console.log(Show);
     }
-
-    setIsPlaying(!isPlaying);
+  }
+  const active = () => {
+    play();
+    requestFullScreen();
   };
-
   return (
-    <div className="">
-      <button onClick={toggleAudio}>
-        {isPlaying ? "Pausar música" : "Reproducir música"}
-      </button>
-      <audio id="music" autoPlay controls>
-        <source
-          src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/msu.mp3?alt=media&token=a854db54-bc91-4f4d-a10d-df17c7a45113" // Reemplaza con la URL de tu archivo de música
-          type="audio/mpeg"
-        />
-        Tu navegador no admite la reproducción de audio.
-      </audio>
-    </div>
+    <button
+      className="border border-solid border-white w-[7pc] h-[3pc] rounded-lg z-40 text-white flecha"
+      onClick={active}
+    >
+      Comenzar
+    </button>
   );
 };
 

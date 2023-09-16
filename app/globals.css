@@ -9,7 +9,9 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
+* {
+  cursor: pointer;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -266,6 +268,7 @@ body {
   border-radius: 8px;
   color: black;
   padding: 1pc;
+  transition: all 0.2s ease-in-out;
 }
 .bocadillo-cuadrado:before {
   border: 25px solid white;
@@ -290,6 +293,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s ease-in-out;
 }
 .bocadillo-cuadrado1:before {
   border: 25px solid white;
@@ -315,6 +319,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s ease-in-out;
 }
 .bocadillo-cuadrado2:before {
   border: 25px solid white;
@@ -340,6 +345,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s ease-in-out;
 }
 .bocadillo-cuadrado3:before {
   border: 25px solid white;
@@ -351,6 +357,37 @@ body {
   bottom: 8px;
   left: calc(-15%);
   transform: rotate(90deg);
+}
+.flecha {
+  transition: all 0.2s ease-in-out;
+  animation: hello 2s infinite;
+}
+@keyframes hello {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.flecha:hover {
+  transform: scale(1.1);
+  animation-play-state: paused;
+}
+.bocadillo-cuadrado3:hover,
+.bocadillo-cuadrado2:hover,
+.bocadillo-cuadrado1:hover,
+.bocadillo-cuadrado:hover {
+  transform: scale(1.05);
 }
 
 .lds-roller {

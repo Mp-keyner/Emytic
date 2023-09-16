@@ -95,7 +95,7 @@ const NO = () => {
           data-aos="fade-down"
         />
         <Image
-          src="/img/6.svg"
+          src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F40.png?alt=media&token=ffa78c81-86d9-4519-9567-0c4c72fdeb0b"
           width={300}
           height={500}
           className="absolute top-[74%] sm:top-[35%] left-[-1pc] w-[12pc] sm:w-[19pc]"
@@ -106,7 +106,7 @@ const NO = () => {
         <div
           data-aos="fade-left"
           data-aos-out="fade-left"
-          className="absolute sm:bottom-[13pc] bottom-[7pc] z-[1pc] right-[0pc] w-[10pc] flex flex-col items-center text-center text-black"
+          className="absolute sm:bottom-[13pc] bottom-[7pc] z-[1pc] right-[0pc] w-[10pc] flex flex-col items-center text-center text-black "
         >
           <h2>Presiona para continuar</h2>
           <Image
@@ -114,7 +114,7 @@ const NO = () => {
             src="/img/row.svg"
             width={100}
             height={100}
-            className="cursor-pointer"
+            className="cursor-pointer flecha"
           />
         </div>
 

@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Sppiner from "./Sppiner";
 import MusicPlayer from "./MusicPlayer";
+import Mapa from "./mapa";
+import Playo from "./Play";
 
-const Fscreen = ({ setShowFunction, Show }) => {
+const Fscreen = ({ setShowFunction, Show, volumen, setVolumen }) => {
   const [wiew, setWiew] = useState(false);
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -13,16 +15,17 @@ const Fscreen = ({ setShowFunction, Show }) => {
     // Limpia el temporizador cuando el componente se desmonta o se actualiza
     return () => clearTimeout(timer);
   }, []); //
-  // function requestFullScreen() {
-  //   console.log("dia dia ");
-  //   // Verificar si el navegador admite el modo de pantalla completa
-  //   if (document.documentElement.requestFullscreen) {
-  //     // Solicitar entrar en modo de pantalla completa en respuesta a un clic
-  //     document.documentElement.requestFullscreen();
-  //     setShowFunction(!Show);
-  //     console.log(Show);
-  //   }
-  // }
+  function requestFullScreen() {
+    console.log("dia dia ");
+    // Verificar si el navegador admite el modo de pantalla completa
+    if (document.documentElement.requestFullscreen) {
+      // Solicitar entrar en modo de pantalla completa en respuesta a un clic
+      document.documentElement.requestFullscreen();
+      setShowFunction(!Show);
+      setVolumen(!volumen);
+      console.log(Show);
+    }
+  }
 
   return (
     <div className="relative bg-customColor h-screen text-white flex justify-center flex-col sm:p-[9pc] p-[1pc] overflow-hidden ">
@@ -51,13 +54,17 @@ const Fscreen = ({ setShowFunction, Show }) => {
         <div className="flex items-center justify-center flex-col">
           <Image
             src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/lo.png?alt=media&token=fe3fd1e8-1660-4aee-aa59-8c3d1641ac3d"
-            width={400}
-            height={400}
-            className="w-[50pc]"
+            width={800}
+            height={800}
           />
         </div>
         {wiew ? (
-          <MusicPlayer setShowFunction={setShowFunction} Show={Show} />
+          <button
+            onClick={requestFullScreen}
+            className="border border-solid border-white w-[7pc] h-[3pc] rounded-lg z-40 text-white flecha"
+          >
+            Comenzar
+          </button>
         ) : (
           <Sppiner />
         )}

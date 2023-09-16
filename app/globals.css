@@ -383,11 +383,43 @@ body {
   transform: scale(1.1);
   animation-play-state: paused;
 }
+.bocadillo-cuadrado4 {
+  position: relative;
+  min-height: 90px;
+  width: 300px;
+  background: white;
+  box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+  border-radius: 8px;
+  color: black;
+  padding: 1pc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+.bocadillo-cuadrado4:before {
+  border: 25px solid white;
+  content: "";
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  bottom: 17px;
+  left: calc(100%);
+  transform: rotate(270deg);
+}
 .bocadillo-cuadrado3:hover,
 .bocadillo-cuadrado2:hover,
 .bocadillo-cuadrado1:hover,
 .bocadillo-cuadrado:hover {
   transform: scale(1.05);
+}
+.noSelect {
+  user-select: none;
+  -webkit-user-select: none; /* Para navegadores basados en WebKit como Safari */
+  -moz-user-select: none; /* Para navegadores basados en Gecko como Firefox */
+  -ms-user-select: none; /* Para Internet Explorer/Edge */
 }
 
 .lds-roller {

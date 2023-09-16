@@ -18,6 +18,7 @@ const MusicPlayer = ({ setShowFunction, Show }) => {
   const active = () => {
     play();
     requestFullScreen();
+    console.log("Active");
   };
   return (
     <button

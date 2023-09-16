@@ -40,20 +40,29 @@ import { useEffect, useState } from "react";
 import Fscreen from "@/components/Fscreen";
 import Sopa from "@/components/Sopa";
 import ReproductorAudioInfinito from "@/components/MusicPlayer";
+import Mapa from "@/components/mapa";
+import Playo from "@/components/Play";
 
 export default function Home() {
   const audioSource =
     "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/msu.mp3?alt=media&token=a854db54-bc91-4f4d-a10d-df17c7a45113";
 
   const [Show, setShow] = useState(true);
+  const [volumen, setVolumen] = useState(true);
   useEffect(() => {
     AOS.init();
   }, []);
 
   return (
     <>
+      <Playo volumen={volumen} setVolumen={setVolumen} />
       {Show ? (
-        <Fscreen setShowFunction={setShow} Show={Show} />
+        <Fscreen
+          setShowFunction={setShow}
+          Show={Show}
+          volumen={volumen}
+          setVolumen={setVolumen}
+        />
       ) : (
         <>
           <NO />

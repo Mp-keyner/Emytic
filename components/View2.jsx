@@ -94,6 +94,7 @@ const View1 = () => {
             src="/img/row.svg"
             width={100}
             height={100}
+            className="cursor-pointer flecha"
           />
         </div>
 
@@ -120,11 +121,12 @@ const View1 = () => {
           data-aos="fade-right"
         />
         <Image
-          src="/img/6.svg"
+          src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F40.png?alt=media&token=ffa78c81-86d9-4519-9567-0c4c72fdeb0b"
           data-aos="fade-right"
           width={100}
           height={100}
-          className="w-[18pc] z-40 position: absolute top-[10pc] left-[0pc]"
+          className="w-[18pc] z-40 position: absolute top-[10pc] left-[-2pc]"
+          title="Pepe el loro..."
         />
       </div>
     </>

@@ -78,14 +78,14 @@ const View1 = () => {
         id="secon"
         className="relative border-1 border-sol fondoMap h-screen"
       >
-        <div className="absolute sm:bottom-[13pc] z-50 bottom-[0] right-[0pc] w-[10pc] flex flex-col items-center text-center">
-          <h2>Presiona para empezar</h2>
+        <div className=" absolute sm:bottom-[13pc] z-50 bottom-[0] right-[0pc] w-[10pc] flex flex-col items-center text-center">
+          <h2>Presiona para continuar con esta aventura</h2>
           <Image
             onClick={AddAnimation}
             src="/img/row.svg"
             width={100}
             height={100}
-            className="cursor-pointer"
+            className="flecha cursor-pointer"
           />
         </div>
 
@@ -95,10 +95,11 @@ const View1 = () => {
           width={300}
           height={300}
           id="mapa"
-          style={{ transform: "translate(-6%, -50%)" }}
+          style={{ transform: "translate(-17%, -45%)" }}
           className="w-[41pc] border border-none absolute xl:top-[50%] top-[25%] xl:left-[50%] left-[5%] sm:left-[50%] "
+          title="Mapa de Colombia"
         />
-        <div className="z-40 absolute sm:right-[58%] right-[5%] sm:top-[24pc] top-[25pc]">
+        <div className="z-40 absolute sm:right-[58%] right-[5%] sm:top-[62%] top-[25pc]">
           <div className="bocadillo-cuadrado1">
             <p>
               Nuestro primer viaje es a la región Caribe, esta ubicada al{" "}

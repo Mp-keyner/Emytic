@@ -158,6 +158,7 @@ body {
   padding: 8px 12px;
   text-align: left;
   color: white;
+  text-align: center;
 }
 
 .styled-table th {
@@ -398,6 +399,21 @@ body {
   justify-content: center;
   transition: all 0.2s ease-in-out;
 }
+.bocadillo-cuadrado5 {
+  position: relative;
+  min-height: 90px;
+  width: 300px;
+  background: white;
+  box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+  border-radius: 8px;
+  color: black;
+  padding: 1pc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
 .bocadillo-cuadrado4:before {
   border: 25px solid white;
   content: "";
@@ -409,6 +425,8 @@ body {
   left: calc(100%);
   transform: rotate(270deg);
 }
+.bocadillo-cuadrado5:hover,
+.bocadillo-cuadrado4:hover,
 .bocadillo-cuadrado3:hover,
 .bocadillo-cuadrado2:hover,
 .bocadillo-cuadrado1:hover,
@@ -421,7 +439,24 @@ body {
   -moz-user-select: none; /* Para navegadores basados en Gecko como Firefox */
   -ms-user-select: none; /* Para Internet Explorer/Edge */
 }
-
+.alegria:hover {
+  content: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F1.png?alt=media&token=88ce0385-2b21-41a3-8998-59da5b7b8b38");
+}
+.Enojo:hover {
+  content: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F2.png?alt=media&token=7b930cf5-4568-4378-b016-75a904b7ed4b");
+}
+.Tristeza:hover {
+  content: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F3.png?alt=media&token=e6dc324f-a409-4203-81ad-e880f7d7122f");
+}
+.Miedo:hover {
+  content: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F4.png?alt=media&token=6a39090c-ee37-49e8-b331-5c12722c2a78");
+}
+.Sorpresa:hover {
+  content: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F5.png?alt=media&token=47bdd4bf-eb63-4386-b2b4-6cd8e1c2e85d");
+}
+.Desagrado:hover {
+  content: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F6.png?alt=media&token=76e98c7b-ae0a-491f-99ed-7643698ea6b4");
+}
 .lds-roller {
   display: inline-block;
   position: relative;

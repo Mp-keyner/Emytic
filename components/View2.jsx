@@ -87,7 +87,7 @@ const View1 = () => {
     <>
       <div className="relative border-1 border-solid fondo2 h-screen">
         <div className="absolute sm:bottom-[13pc] bottom-[1pc] right-[1pc] w-[10pc] flex flex-col items-center text-center ">
-          <h2>Presiona para saber por que pepe tenia rabia</h2>
+          <h2>Presiona para saber por que pepe estaba enojado</h2>
 
           <Image
             onClick={AddAnimation}
@@ -98,13 +98,20 @@ const View1 = () => {
           />
         </div>
 
-        <div className="z-40 absolute right-[36%] sm:top-[17pc] top-[60%]">
+        <div
+          data-aos="fade-up"
+          className="z-40 absolute right-[36%] sm:top-[17pc] top-[60%]"
+        >
           <div className="bocadillo-cuadrado2">
             <p>¡Hola Pepe, estos son mis amigos!</p>
           </div>
         </div>
 
-        <div className="z-40 absolute sm:right-[59%] right-[2%] sm:top-[8pc] top-[4%]">
+        <div
+          className="z-40 absolute sm:right-[59%] right-[2%] sm:top-[8pc] top-[4%]"
+          data-aos="fade-up"
+          data-aos-delay="2500"
+        >
           <div className="bocadillo-cuadrado3">
             <p>
               ¡Hola amigos, soy Pepe, el loro! Hoy estaba un poco enojado y
@@ -123,8 +130,8 @@ const View1 = () => {
         <Image
           src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F40.png?alt=media&token=ffa78c81-86d9-4519-9567-0c4c72fdeb0b"
           data-aos="fade-right"
-          width={100}
-          height={100}
+          width={600}
+          height={600}
           className="w-[18pc] z-40 position: absolute top-[10pc] left-[-2pc]"
           title="Pepe el loro..."
         />

@@ -79,28 +79,34 @@ const View4 = () => {
           />
         </div>
         <div
-          className=" border-2 w-[20pc] sm:w-1/3 text-lg px-4 py-1 z-40 absolute blu left-[10%] sm:left-[53%] top-[46%] sm:top-[16pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
-          id="mensaje"
+          className="z-40 absolute left-[10%] sm:left-[53%] top-[46%] sm:top-[16pc]"
         >
-          <p>
-            Tranquilo Pepe, a cualquiera le puede pasar lo importante es que te
-            calmaste y así es más fácil ver que te enoja y que te hace muy
-            feliz. Amiguitos…vamos responder en tu cuaderno “Feliz” las
-            siguientes Preguntas
-          </p>
+          <div
+            className="bocadillo-cuadrado2"
+            style={{ minHeight: "67px" }}
+            data-aos-delay="2500"
+          >
+            <p>
+              Tranquilo Pepe, a cualquiera le puede pasar lo importante es que
+              te calmaste y así es más fácil ver que te enoja y que te hace muy
+              feliz. Amiguitos…vamos responder en tu cuaderno “Feliz” las
+              siguientes Preguntas
+            </p>
+          </div>
         </div>
         <div
-          className=" border-2  w-1/3 text-lg px-4 py-1 z-40 absolute blu right-[39pc] top-[8pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
-          id="mensaje"
+          className="z-40 absolute left-[20%] top-[33%]"
         >
-          <p>
-            De pronto, llegó mamá y con su abrazo, mi cuerpo se sintió relajao y
-            respiraba mejor, y sentí calma
-          </p>
+          <div className="bocadillo-cuadrado1" style={{ minHeight: "67px" }}>
+            <p>
+              De pronto, llegó mamá y con su abrazo, mi cuerpo se sintió relajao
+              y respiraba mejor, y sentí calma
+            </p>
+          </div>
         </div>
         <Image
           src="/img/Arbol2.svg"
@@ -111,11 +117,12 @@ const View4 = () => {
           data-aos="fade-right"
         />
         <Image
-          src="/img/6.svg"
+          src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F40.png?alt=media&token=ffa78c81-86d9-4519-9567-0c4c72fdeb0b"
           data-aos="fade-right"
-          width={100}
-          height={100}
+          width={500}
+          height={500}
           className="w-[18pc] z-40 position: absolute top-[10pc] left-[0pc]"
+          title="Pepe el loro..."
         />
       </div>
     </>

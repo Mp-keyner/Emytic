@@ -99,7 +99,10 @@ const View1 = () => {
           className="w-[41pc] border border-none absolute xl:top-[50%] top-[25%] xl:left-[50%] left-[5%] sm:left-[50%] "
           title="Mapa de Colombia"
         />
-        <div className="z-40 absolute sm:right-[58%] right-[5%] sm:top-[62%] top-[25pc]">
+        <div
+          data-aos="fade-right"
+          className="z-40 absolute sm:right-[58%] right-[5%] sm:top-[62%] top-[25pc]"
+        >
           <div className="bocadillo-cuadrado1">
             <p>
               Nuestro primer viaje es a la región Caribe, esta ubicada al{" "}

@@ -110,7 +110,7 @@ const NO = () => {
           data-aos-out="fade-left"
           className="absolute sm:bottom-[13pc] bottom-[7pc] z-[1pc] right-[0pc] w-[10pc] flex flex-col items-center text-center text-black "
         >
-          <h2>Presiona para continuar</h2>
+          <h2>Presiona para empezar</h2>
           <Image
             onClick={AddAnimation}
             src="/img/row.svg"
@@ -120,7 +120,10 @@ const NO = () => {
           />
         </div>
 
-        <div className="z-40 absolute sm:right-[24%] sm:top-[27%] right-[2%] top-[14%] xl:top-[35%] xl:rigth-[16%]">
+        <div
+          data-aos="fade-left"
+          className="z-40 absolute sm:right-[24%] sm:top-[27%] right-[2%] top-[14%] xl:top-[35%] xl:rigth-[16%]"
+        >
           <div className="bocadillo-cuadrado1">
             <p>
               Hola soy <b>EMYTIC</b>, juntos realizaremos un divertido viaje por

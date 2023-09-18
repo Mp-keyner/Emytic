@@ -49,10 +49,10 @@ const View1 = () => {
           />
         </div>
         <div
-          className="w-[23pc] sm:w-[52pc] h-[12pc] sm:h-[15pc] border-2 text-lg px-4 py-1 z-40 absolute left-[3%] blu sm:left-[13pc] top-[13pc] sm:top-[3pc] text-[0.6pc]"
+          className="w-[23pc] bg-[#00000096] sm:w-[52pc] h-[12pc] sm:h-[15pc] border-2 blu text-lg px-4 py-1 z-40 absolute left-[3%] sm:left-[50%] top-[18pc] sm:top-[30%] text-[0.6pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
-          id="mensaje"
+          style={{ transform: "translate(-50%, -50%)" }}
         >
           <table class="styled-table text-[0.4pc] sm:text-[1pc]">
             <thead>
@@ -73,6 +73,8 @@ const View1 = () => {
                     width={100}
                     height={100}
                     className="w-[2pc] sm:w-[7pc]"
+                    value="alegris"
+                    title="alegris"
                   />
                   1
                 </td>
@@ -131,7 +133,10 @@ const View1 = () => {
           data-aos-out="fade-left"
           id="mensaje"
         >
-          <p>Ganar un examen con excelente nota</p>
+          <label htmlFor="">
+            <p>Ganar un examen con excelente nota</p>
+            <input type="text" placeholder="Como te sientes" />
+          </label>
 
           <p>Quedarme solo en la oscuridad</p>
 

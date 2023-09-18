@@ -72,35 +72,34 @@ const View1 = () => {
         className="relative border-1 border-solid fondo5 h-screen"
       >
         <div className="absolute top-[3pc] z-50 left-[0pc] w-[10pc] text-center flex flex-col items-center ">
-          <h2>Presiona para empezar</h2>
+          <h2>Presiona para continuar a la actividad</h2>
           <Image
             onClick={AddAnimation}
             src="/img/row.svg"
             width={100}
             height={100}
+            className="flecha"
           />
         </div>
+
         <div
-          className="w-[23pc] border-2 text-lg px-4 py-1 z-40 absolute left-[50%] sm:left-[50%] blu top-[25pc] sm:top-[40%]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
-          style={{ transform: " translate(-50%, -50%)" }}
+          className="z-40 absolute left-[50%] sm:left-[50%] top-[40%] sm:top-[40%]"
+          style={{ transform: "translate(-50%, -50%)" }}
         >
-          <p>
-            Las emociones son estados de las personas, que permiten que
-            reaccione frente a diversas situaciones y puedan comunicarse con los
-            demás Para conocerlas debes sentirlas, pero es importante el mensaje
-            que con ellas les muestras a lo demás.
-          </p>
+          <div className="bocadillo-cuadrado5">
+            <p>
+              Las emociones son <b>estados de las personas</b>, que permiten que
+              reaccione frente a diversas situaciones y puedan comunicarse con
+              los demás Para conocerlas debes sentirlas, pero es importante el
+              mensaje que con ellas les muestras a lo demás.
+            </p>
+          </div>
         </div>
-        <div
-          className="w-[23pc] border-2 blu text-lg px-4 py-1 z-40 absolute sm:left-[13pc] sm:top-[60%] left-[0.7pc] top-[39pc]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
-        >
-          <p>Pepe buscando información encontré esto..</p>
+
+        <div className="z-40 absolute sm:left-[13pc] sm:top-[60%] left-[0.7pc] top-[39pc]">
+          <div className="bocadillo-cuadrado1" style={{ minHeight: "67px" }}>
+            <p>Pepe buscando información encontré esto..</p>
+          </div>
         </div>
         <Image
           src="/img/5.1.svg"
@@ -111,10 +110,10 @@ const View1 = () => {
           data-aos="fade-right"
         />
         <Image
-          src="/img/6.1.svg"
+          src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F39.png?alt=media&token=5b155cb2-6871-47a5-8735-5bdbb3c639e8"
           data-aos="fade-right"
-          width={100}
-          height={100}
+          width={500}
+          height={500}
           className="w-[18pc] z-30 position: absolute top-[10pc] right-[0pc]"
         />
       </div>

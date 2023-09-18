@@ -72,7 +72,7 @@ const View1 = () => {
         className="relative border-1 border-solid fondo4 h-screen"
       >
         <div className="absolute top-[2pc] z-50 left-[0pc] w-[10pc] flex flex-col items-center text-center ">
-          <h2>Presiona para continuar</h2>
+          <h2>Presiona para continuar con la historia de pepe</h2>
           <Image
             onClick={AddAnimation}
             src="/img/row.svg"
@@ -81,16 +81,9 @@ const View1 = () => {
             className="flecha"
           />
         </div>
-        <div
-          className="w-[5pc] border-2  text-lg px-4 py-1 z-40 absolute left-[38%] sm:left-[15pc] top-[81%] sm:top-[23pc]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
-        >
-          <p>!...¡</p>
-        </div>
+
         <div className="z-40 absolute left-[38%] sm:left-[15pc] top-[81%] sm:top-[23pc]">
-          <div className="bocadillo-cuadrado4 ">
+          <div className="bocadillo-cuadrado1" style={{ minHeight: "67px" }}>
             <p>!...¡</p>
           </div>
         </div>
@@ -105,8 +98,8 @@ const View1 = () => {
         <Image
           src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F39.png?alt=media&token=5b155cb2-6871-47a5-8735-5bdbb3c639e8"
           data-aos="fade-right"
-          width={100}
-          height={100}
+          width={500}
+          height={500}
           className="w-[9pc] sm:w-[18pc] z-30 position: absolute top-[6%] sm:top-[10pc] right-[0pc]"
         />
 

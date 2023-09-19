@@ -2,8 +2,6 @@ import Image from "next/image";
 import React, { useState } from "react";
 
 const MyComponent = () => {
-  let Alegria = as;
-  let as = inputValues.input1;
   const [inputValues, setInputValues] = useState({
     input1: "",
     input2: "",
@@ -41,7 +39,7 @@ const MyComponent = () => {
   return (
     <div className="flex items-center justify-center flex-col gap-[1pc] h-[100vh]">
       <div
-        className="w-[23pc] bg-[#00000096] sm:w-[52pc] h-[12pc] sm:h-[15pc] border-2 blu text-lg px-4 py-1 z-40 text-[0.6pc]"
+        className="w-[23pc] bocadillo-cuadrado5 sm:w-[52pc] h-[12pc] sm:h-[15pc] border-2 text-lg px-4 py-1 z-40 text-[0.6pc]"
         data-aos="fade-right" // Definición única de data-aos
         data-aos-out="fade-left"
       >
@@ -143,8 +141,7 @@ const MyComponent = () => {
 
       <section className="flex gap-[1pc] flex-wrap items-center justify-center text-center">
         <div
-          className={`w-[25%] text-center p-4 border border-black rounded-md`}
-          style={{ backgroundColor: Alegria }}
+          className={`w-[25%] text-center p-4 border bg-white border-black rounded-md`}
         >
           <p>Ganar un examen con excelente nota</p>
           <input
@@ -160,6 +157,7 @@ const MyComponent = () => {
         <div className="w-[25%] text-center p-4 border border-black bg-white rounded-md ">
           <p>Quedarme solo en la oscuridad</p>
           <input
+            className="border border-black px-[0.8pc] w-[7pc] text-center bg-transparent"
             type="text"
             placeholder="Arrastra una imagen aquí"
             onDrop={(e) => handleImageDrag(e, "input2")}
@@ -171,6 +169,7 @@ const MyComponent = () => {
         <div className="w-[25%] text-center p-4 border border-black bg-white rounded-md ">
           <p>Recibir una fiesta sorpresa</p>
           <input
+            className="border border-black px-[0.8pc] w-[7pc] text-center bg-transparent"
             type="text"
             placeholder="Arrastra una imagen aquí"
             onDrop={(e) => handleImageDrag(e, "input3")}
@@ -182,6 +181,7 @@ const MyComponent = () => {
         <div className="w-[25%] text-center p-4 border border-black bg-white rounded-md ">
           <p>Perder a un ser querido</p>
           <input
+            className="border border-black px-[0.8pc] w-[7pc] text-center bg-transparent"
             type="text"
             placeholder="Arrastra una imagen aquí"
             onDrop={(e) => handleImageDrag(e, "input4")}
@@ -193,6 +193,7 @@ const MyComponent = () => {
         <div className="w-[25%] text-center p-4 border border-black bg-white rounded-md ">
           <p>Probar un alimento que no me gusta</p>
           <input
+            className="border border-black px-[0.8pc] w-[7pc] text-center bg-transparent"
             type="text"
             placeholder="Arrastra una imagen aquí"
             onDrop={(e) => handleImageDrag(e, "input5")}
@@ -204,6 +205,7 @@ const MyComponent = () => {
         <div className="w-[25%] text-center p-4 border border-black bg-white rounded-md ">
           <p>No conseguir mi juguete favorito</p>
           <input
+            className="border border-black px-[0.8pc] w-[7pc] text-center bg-transparent"
             type="text"
             placeholder="Arrastra una imagen aquí"
             onDrop={(e) => handleImageDrag(e, "input6")}

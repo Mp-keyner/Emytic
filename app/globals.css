@@ -153,11 +153,16 @@ body {
   margin-top: 20px;
 }
 
-.styled-table th,
-.styled-table td {
+.styled-table th {
   padding: 8px 12px;
   text-align: left;
   color: white;
+  text-align: center;
+}
+.styled-table td {
+  padding: 8px 12px;
+  text-align: left;
+  color: black;
   text-align: center;
 }
 
@@ -177,7 +182,7 @@ body {
 .styled-table-tow td {
   padding: 8px 12px;
   text-align: left;
-  color: white;
+  color: black;
 }
 
 .styled-table-tow th {

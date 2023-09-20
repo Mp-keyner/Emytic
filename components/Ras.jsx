@@ -37,9 +37,9 @@ const MyComponent = () => {
   };
 
   return (
-    <div className="flex items-center justify-center flex-col gap-[1pc] h-[100vh]">
+    <div className="relative flex fondo1 items-center justify-center flex-col gap-[1pc] h-[100vh]">
       <div
-        style={{ width: "23pc" }}
+        style={{ width: "90%" }}
         className="w-[23pc] bocadillo-cuadrado5 sm:w-[52pc] h-[10pc] sm:h-[15pc] border-2 text-lg px-4 py-1 z-40 text-[0.6pc]"
         data-aos="fade-right" // Definición única de data-aos
         data-aos-out="fade-left"
@@ -48,22 +48,22 @@ const MyComponent = () => {
           <thead>
             <tr>
               <th>
-                <p className="w-[2pc]">Alegria</p>
+                <p className="w-[2pc] sm:w-[9pc]">Alegria</p>
               </th>
               <th>
-                <p className="w-[2pc]">Enojo</p>
+                <p className="w-[2pc] sm:w-[9pc]">Enojo</p>
               </th>
               <th>
-                <p className="w-[2pc]">Tristeza</p>
+                <p className="w-[2pc] sm:w-[9pc]">Tristeza</p>
               </th>
               <th>
-                <p className="w-[2pc]">Miedo</p>
+                <p className="w-[2pc] sm:w-[9pc]">Miedo</p>
               </th>
               <th>
-                <p className="w-[2pc]">Sorpresa</p>
+                <p className="w-[2pc] sm:w-[9pc]">Sorpresa</p>
               </th>
               <th>
-                <p className="w-[2pc]">Desagrado</p>
+                <p className="w-[2pc] sm:w-[9pc]">Desagrado</p>
               </th>
             </tr>
           </thead>
@@ -86,7 +86,6 @@ const MyComponent = () => {
                 <Image
                   src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FcarasBlancas%2F2.png?alt=media&token=c69d47eb-46d2-40f8-baa8-6375aa606731"
                   width={100}
-                  style={{ width: "2pc" }}
                   height={100}
                   className="w-[2pc] sm:w-[7pc] Enojo border-[3px] border-black rounded-full"
                   title="Enojo"
@@ -152,7 +151,22 @@ const MyComponent = () => {
           </tbody>
         </table>
       </div>
-
+      <Image
+        className="w-[18pc]  z-0  absolute left-[0%] top-[0%]"
+        data-aos="fade-left" // Definición única de data-aos
+        data-aos-out="fade-left"
+        src="/img/selva1.svg"
+        width={500}
+        height={500}
+      />
+      <Image
+        className="w-[18pc]  z-0  absolute right-[0%] top-[0%]"
+        data-aos="fade-left" // Definición única de data-aos
+        data-aos-out="fade-left"
+        src="/img/selva2.svg"
+        width={500}
+        height={500}
+      />
       <section className="flex gap-[1pc] flex-wrap items-center justify-center text-center">
         <div
           className={`w-[75%] sm:w-[25%] text-center p-4 border bg-white border-black rounded-md`}
@@ -166,6 +180,7 @@ const MyComponent = () => {
             onDragOver={(e) => e.preventDefault()}
             value={inputValues.input1}
             onChange={(e) => handleInputChange(e, "input1")}
+            disabled
           />
         </div>
         <div className=" w-[75%] sm:w-[25%] text-center p-4 border border-black bg-white rounded-md ">
@@ -178,6 +193,7 @@ const MyComponent = () => {
             onDragOver={(e) => e.preventDefault()}
             value={inputValues.input2}
             onChange={(e) => handleInputChange(e, "input2")}
+            disabled
           />
         </div>
         <div className="w-[75%] sm:w-[25%] text-center p-4 border border-black bg-white rounded-md ">
@@ -190,6 +206,7 @@ const MyComponent = () => {
             onDragOver={(e) => e.preventDefault()}
             value={inputValues.input3}
             onChange={(e) => handleInputChange(e, "input3")}
+            disabled
           />
         </div>
         <div className="w-[75%] sm:w-[25%] text-center p-4 border border-black bg-white rounded-md ">
@@ -202,6 +219,7 @@ const MyComponent = () => {
             onDragOver={(e) => e.preventDefault()}
             value={inputValues.input4}
             onChange={(e) => handleInputChange(e, "input4")}
+            disabled
           />
         </div>
         <div className="w-[75%] sm:w-[25%] text-center p-4 border border-black bg-white rounded-md ">
@@ -214,6 +232,7 @@ const MyComponent = () => {
             onDragOver={(e) => e.preventDefault()}
             value={inputValues.input5}
             onChange={(e) => handleInputChange(e, "input5")}
+            disabled
           />
         </div>
         <div className="w-[75%] sm:w-[25%] text-center p-4 border border-black bg-white rounded-md ">
@@ -226,6 +245,7 @@ const MyComponent = () => {
             onDragOver={(e) => e.preventDefault()}
             value={inputValues.input6}
             onChange={(e) => handleInputChange(e, "input6")}
+            disabled
           />
         </div>
       </section>

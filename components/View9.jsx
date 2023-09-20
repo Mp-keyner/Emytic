@@ -77,56 +77,18 @@ const View9 = () => {
             width={100}
             height={100}
           />
-        </div>
-
-        <Image
-          className="border-2 z-40 absolute left-[15pc] border-none top-[2pc]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          src="/img/face/1.svg"
-          width={150}
-          height={150}
-        />
-        <Image
-          className="border-2 z-40 absolute left-[6%] sm:left-[66%] border-none top-[15pc] sm:top-[2pc]"
-          data-aos="fade-left" // Definición única de data-aos
-          data-aos-out="fade-left"
-          src="/img/face/2.svg"
-          width={150}
-          height={150}
-        />
-        <Image
-          className="border-2 z-40 absolute left-[13%] sm:left-[5pc] border-none w-[8pc] top-[44pc] sm:top-[20pc]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          src="/img/face/3.svg"
-          width={150}
-          height={150}
-        />
-        <Image
-          className="border-2 z-40 absolute left-[14pc] sm:left-[32pc] border-none top-[37pc] sm:top-[26pc]"
-          data-aos="fade-dowm" // Definición única de data-aos
-          data-aos-out="fade-down"
-          src="/img/face/4.svg"
-          width={150}
-          height={150}
-        />
-        <Image
-          className="border-2 z-40 absolute left-[55%] sm:left-[66pc] border-none top-[17pc] sm:top-[22pc]"
-          data-aos="fade-left" // Definición única de data-aos
-          data-aos-out="fade-left"
-          src="/img/face/5.svg"
-          width={150}
-          height={150}
-        />
-
-        <div
-          className="w-[23pc] text-[2.05pc] sm:w-[44pc] h-[4pc] blu sm:h-[7pc] border-2  sm:text-[4pc] px-4 py-1 z-40 absolute left-[3%] sm:left-[27%] top-[50%] sm:top-[14pc]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
-        >
-          <p>¿CÓMO TE SIENTES?</p>
+          <div>
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FcarasBlancas%2F1.png?alt=media&token=8fe4a84f-0e14-4a78-86ba-026d0f88c24c"
+              width={100}
+              height={100}
+              className="w-[2pc] sm:w-[7pc] alegria border-[3px] border-black rounded-full"
+              title="alegria"
+              onDragStart={(e) =>
+                e.dataTransfer.setData("text/plain", e.target.title)
+              }
+            />
+          </div>
         </div>
       </div>
     </>

@@ -86,6 +86,22 @@ const NO = () => {
           id="Arbol"
         />
         <Image
+          className="w-[18pc]  z-0  absolute left-[0%] top-[0%]"
+          data-aos="fade-left" // Definición única de data-aos
+          data-aos-out="fade-left"
+          src="/img/selva1.svg"
+          width={500}
+          height={500}
+        />
+        <Image
+          className="w-[18pc]  z-0  absolute right-[0%] top-[0%]"
+          data-aos="fade-left" // Definición única de data-aos
+          data-aos-out="fade-left"
+          src="/img/selva2.svg"
+          width={500}
+          height={500}
+        />
+        <Image
           src="/img/1.svg"
           width={300}
           height={500}

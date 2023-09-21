@@ -56,38 +56,37 @@ const View11 = () => {
             height={100}
           />
         </div>
-
         <div
-          className="border-2  w-[34pc] text-lg px-4 py-1 z-40 absolute blu left-[50%] top-[50%]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
+          data-aos="fade-right"
+          className="z-40 absolute left-[50%] top-[50%]"
           style={{ transform: "translate(-50%, -50%)" }}
         >
-          <p>
-            Pregunta Si un compañero tropieza el cuaderno de tu amigo y se cae
-            al piso, y no lo levanta, porque lo debes recoger él. ¿Qué haces?
-            Así como la gripa se contagia, las emociones también, en que
-            situaciones has contagiado a tus amiguitos de felicidad
-          </p>
+          <div className="bocadillo-cuadrado5">
+            <p>
+              Pregunta Si un compañero tropieza el cuaderno de tu amigo y se cae
+              al piso, y no lo levanta, porque lo debes recoger él. ¿Qué haces?
+              Así como la gripa se contagia, las emociones también, en que
+              situaciones has contagiado a tus amiguitos de felicidad
+            </p>
+          </div>
         </div>
 
         <div
-          className="border-2  w-[20pc] text-lg px-4 py-1 z-40 absolute blu right-[18%] top-[9%]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
+          data-aos="fade-right"
+          className="z-40 absolute right-[18%] top-[9%]"
         >
-          <p>
-            Amiguitos, en tu cuadernillo mientras coloreas a Soso, piensa y
-            pregúntales a tus compañeros
-          </p>
+          <div className="bocadillo-cuadrado2">
+            <p>
+              Amiguitos, en tu cuadernillo mientras coloreas a Soso, piensa y
+              pregúntales a tus compañeros
+            </p>
+          </div>
         </div>
         <Image
           className="w-[17pc]   absolute left-[0pc] bottom-[0pc]"
           data-aos="fade-left" // Definición única de data-aos
           data-aos-out="fade-left"
-          src="/img/pantaParamos.png"
+          src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F35.png?alt=media&token=a3dec0a5-7875-48ce-a6c9-07f14b4eeb60"
           width={500}
           height={500}
         />

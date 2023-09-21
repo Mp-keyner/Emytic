@@ -60,12 +60,12 @@ const View11 = () => {
           className="w-[24pc] absolute right-[1pc] top-[0pc]"
           data-aos="fade-left" // Definición única de data-aos
           data-aos-out="fade-left"
-          src="/img/panda.png"
+          src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F35.png?alt=media&token=a3dec0a5-7875-48ce-a6c9-07f14b4eeb60"
           width={500}
           height={500}
         />
         <Image
-          className="w-[78pc] absolute right-[1pc] bottom-[0pc]"
+          className="w-[78pc] absolute   right-[1pc] bottom-[0pc]"
           data-aos="fade-left" // Definición única de data-aos
           data-aos-out="fade-left"
           src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/13.png?alt=media&token=04e64342-f3a5-49b3-881a-59de998fc84e"
@@ -73,26 +73,27 @@ const View11 = () => {
           height={500}
         />
         <div
-          className="border-2  w-1/3 text-lg px-4 py-1 z-40 absolute blu right-[20pc] top-[10pc]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
+          data-aos="fade-right"
+          className="z-40 absolute right-[20pc] top-[10pc]"
         >
-          <p>
-            Hola niños! Soy Soso, un poco perezoso pero muy cariñoso, y tengo
-            algo para contarte
-          </p>
+          <div className="bocadillo-cuadrado4">
+            <p>
+              Hola niños! <b>Soy Soso</b>, un poco perezoso pero muy cariñoso, y
+              tengo algo para contarte
+            </p>
+          </div>
         </div>
+
         <div
-          className="border-2  w-1/3 text-lg px-4 py-1 z-40 absolute blu right-[36pc] top-[23pc]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
+          data-aos="fade-right"
+          className="z-40 absolute sm:left-[23%] left-[5%] sm:top-[62%] top-[25pc]"
         >
-          <p>
-            Holaaa Preséntate a mis amigos, les he dicho que eres un oso anteojo
-            muy especial
-          </p>
+          <div className="bocadillo-cuadrado3">
+            <p>
+              Holaaa Preséntate a mis amigos, les he dicho que eres un oso
+              anteojo muy especial
+            </p>
+          </div>
         </div>
       </div>
     </>

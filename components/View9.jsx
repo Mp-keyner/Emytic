@@ -128,7 +128,7 @@ const View9 = () => {
           />
         </div>
 
-        <div className="Div1 flex items-center justify-center flex-col bg-red-500 h-screen gap-[1pc]">
+        <div className="Div1 flex items-center justify-center flex-col  h-screen gap-[1pc]">
           <div className="Div2 flex items-center justify-between w-[50pc]">
             <Image
               onClick={Alegria}

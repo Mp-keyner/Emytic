@@ -11,7 +11,7 @@ const Playo = ({ setVolumen, volumen }) => {
   };
   volumen ? stop() : play();
   return (
-    <div className="fixed blu p-[0pc 1pc] text-[2.5pc] z-50 no-select right-0 top-0">
+    <div className="fixed p-[0pc 1pc] text-[2.5pc] z-50 no-select right-0 top-0">
       <p onClick={Music} title={volumen ? "Stop" : "Play"}>
         {volumen ? "🔇" : "🔊"}
       </p>

@@ -11,6 +11,7 @@
 }
 * {
   cursor: pointer;
+  outline: none;
 }
 html {
   scroll-behavior: smooth;
@@ -28,7 +29,7 @@ html {
 }
 
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
   font-family: "Kanit", sans-serif;
   color: #000;
   background: linear-gradient(
@@ -459,6 +460,10 @@ body {
   right: calc(-15%);
   transform: rotate(268deg);
 }
+.zon {
+  transition: all 0.2s ease-in-out;
+}
+.zon:hover,
 .bocadillo-cuadrado6:hover,
 .bocadillo-cuadrado5:hover,
 .bocadillo-cuadrado4:hover,
@@ -493,6 +498,7 @@ body {
 .Desagrado:hover {
   content: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F6.png?alt=media&token=76e98c7b-ae0a-491f-99ed-7643698ea6b4");
 }
+
 .lds-roller {
   display: inline-block;
   position: relative;

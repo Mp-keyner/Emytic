@@ -86,7 +86,7 @@ const View11 = () => {
           className="w-[20pc] sm:w-[24pc] absolute right-[1pc] top-[0pc]"
           data-aos="fade-left" // Definición única de data-aos
           data-aos-out="fade-left"
-          src="/img/tortuga.svg"
+          src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F36.png?alt=media&token=b1e9ba48-6f49-4587-a356-b9a3d3dc6568"
           width={500}
           height={500}
         />
@@ -94,7 +94,7 @@ const View11 = () => {
         <div
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
-          className="z-40 absolute left-[5%] sm:left-[43%] top-[10pc]"
+          className="z-40 absolute right-[5%] sm:right-[28%] top-[10pc]"
         >
           <div className="bocadillo-cuadrado6">
             <p>

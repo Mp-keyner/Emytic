@@ -430,12 +430,43 @@ body {
   left: calc(100%);
   transform: rotate(270deg);
 }
+.D3 {
+  transition: all 0.3s ease-in-out;
+}
+.bocadillo-cuadrado6 {
+  position: relative;
+  min-height: 90px;
+  width: 300px;
+  background: white;
+  box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+  border-radius: 8px;
+  color: black;
+  padding: 1pc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+.bocadillo-cuadrado6:before {
+  border: 25px solid white;
+  content: "";
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  top: 8px;
+  right: calc(-15%);
+  transform: rotate(268deg);
+}
+.bocadillo-cuadrado6:hover,
 .bocadillo-cuadrado5:hover,
 .bocadillo-cuadrado4:hover,
 .bocadillo-cuadrado3:hover,
 .bocadillo-cuadrado2:hover,
 .bocadillo-cuadrado1:hover,
-.bocadillo-cuadrado:hover {
+.bocadillo-cuadrado:hover,
+.D3:hover {
   transform: scale(1.05);
 }
 .noSelect {

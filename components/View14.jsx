@@ -60,39 +60,48 @@ const View11 = () => {
         />
 
         <div
-          className="border-2  w-1/3 text-lg blu px-4 py-1 z-40 absolute  right-[39pc] top-[2pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
-          id="mensaje"
+          className="z-40 absolute left-[20%] top-[4%]"
         >
-          <p>Hoy niños vamos a aprender que…</p>
+          <div className="bocadillo-cuadrado1" style={{ minHeight: "80px" }}>
+            <p>Hoy niños vamos a aprender que…</p>
+          </div>
         </div>
         <div
-          className="border-2 blu w-1/3 text-lg px-4 py-1 z-40 absolute  right-[27pc] top-[9pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
-          id="mensaje"
+          className="z-40 absolute left-[50%] top-[50%]"
+          style={{ transform: " translate(-50%, -50%)" }}
         >
-          <p>
-            <b>Aprende</b>
-          </p>
-          <p>
-            Hay situaciones que pueden generarnos emociones negativas como ira,
-            enojo, ansiedad entre otras. Sin embargo, también hay otras
-            situaciones que nos generan emociones positivas como alegría, amor y
-            humor que nos permiten disfrutar la vida.
-          </p>
+          <div
+            className="bocadillo-cuadrado5 flex flex-col"
+            style={{ minHeight: "120px" }}
+          >
+            <p>
+              <b>Aprende</b>
+            </p>
+            <p>
+              Hay situaciones que pueden generarnos emociones negativas como
+              ira, enojo, ansiedad entre otras. Sin embargo, también hay otras
+              situaciones que nos generan emociones positivas como alegría, amor
+              y humor que nos permiten disfrutar la vida.
+            </p>
+          </div>
         </div>
+
         <div
-          className="border-2 blu w-1/3 text-lg px-4 py-1 z-40 absolute  right-[27pc] top-[24pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
-          id="mensaje"
+          className="z-40 absolute left-[50%] top-[85%]"
+          style={{ transform: " translate(-50%, -50%)" }}
         >
-          <p>
-            Lo importante es ser capaz de afrontar retos y situaciones, sin
-            dejar que afecte nuestras emociones
-          </p>
+          <div className="bocadillo-cuadrado5" style={{ minHeight: "120px" }}>
+            <p>
+              Lo importante es ser capaz de afrontar retos y situaciones, sin
+              dejar que afecte nuestras emociones
+            </p>
+          </div>
         </div>
       </div>
     </>

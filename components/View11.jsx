@@ -90,27 +90,32 @@ const View11 = () => {
           width={500}
           height={500}
         />
+
         <div
-          className="border-2 w-[22pc] sm:w-1/3 blu text-lg px-4 py-1 z-40 absolute left-[5%] sm:left-[43%] top-[10pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
-          id="mensaje"
+          className="z-40 absolute left-[5%] sm:left-[43%] top-[10pc]"
         >
-          <p>
-            ¡HOLA EMYTIC! Que alegría poder encontrarnos, justo en estos momento
-            voy a leer una fabula, ¿ Niños quieren escucharla?
-          </p>
+          <div className="bocadillo-cuadrado6">
+            <p>
+              ¡HOLA EMYTIC! Que alegría poder encontrarnos, justo en estos
+              momento voy a leer una fabula,
+              <br />¿ Niños quieren escucharla?
+            </p>
+          </div>
         </div>
+
         <div
-          className="border-2 w-[22pc] sm:w-1/3 blu text-lg px-4 py-1 z-40 absolute left-[5%] sm:left-[18%] top-[23pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
-          id="mensaje"
+          className="z-40 absolute left-[5%] sm:left-[18%] top-[23pc] sm:top-[60%]"
         >
-          <p>
-            Esta es mi amiga Tuti la tortuga y con ella aprenderemos cosas
-            maravillosas… ¡HOLA TUTI! Saluda a los niños
-          </p>
+          <div className="bocadillo-cuadrado1" style={{ minHeight: "120px" }}>
+            <p>
+              Esta es mi amiga Tuti la tortuga y con ella aprenderemos cosas
+              maravillosas… <b>¡HOLA TUTI!</b> Saluda a los niños
+            </p>
+          </div>
         </div>
       </div>
     </>

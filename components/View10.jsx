@@ -90,18 +90,19 @@ const View1 = () => {
           />
         </div>
         <div
-          className="border-2 w-[23pc] sm:w-1/3 text-lg px-4 py-1 blu z-40 absolute left-[3%] sm:left-[18%] top-[21pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
-          id="mensaje"
+          className="z-40 absolute left-[3%] sm:left-[18%] top-[21pc]"
         >
-          <p>
-            Ahora vamos a conocer a otro amigo en la región pacifico, la cual
-            esta ubicada al <b>occidente</b> de nuestro país Colombia, aquí
-            podemos escuchar diversos sonidos como los cantos de las ballenas
-            jorobada, el sonido de la marimba, de la naturaleza y de la
-            Felicidad.
-          </p>
+          <div className="bocadillo-cuadrado1">
+            <p>
+              Ahora vamos a conocer a otro amigo en la región pacifico, la cual
+              esta ubicada al <b>occidente</b> de nuestro país Colombia, aquí
+              podemos escuchar diversos sonidos como los cantos de las ballenas
+              jorobada, el sonido de la marimba, de la naturaleza y de la
+              Felicidad.
+            </p>
+          </div>
         </div>
         <Image
           data-aos="fade-up-left"
@@ -109,7 +110,9 @@ const View1 = () => {
           width={300}
           height={300}
           id="mapados"
-          className="w-[41pc] border-1px border-red-500 absolute top-0 right-[] sm:right-[6%] mp"
+          style={{ transform: "translate(-17%, -45%)" }}
+          className="w-[41pc] border border-none absolute xl:top-[50%] top-[25%] xl:left-[50%] left-[5%] sm:left-[50%] "
+          title="Mapa de Colombia"
         />
       </div>
     </>

@@ -62,47 +62,52 @@ const View11 = () => {
           width={500}
           height={500}
         />
+
         <div
-          className="border-2  w-1/3 text-lg px-4 blu py-1 z-40 absolute  right-[11pc] top-[6pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
-          id="mensaje"
+          className="z-40 absolute right-[11pc] top-[6pc] sm:right-[17%] sm:top-[10%]"
         >
-          <p>
-            ¡Si!, no debemos burlarnos de los demás. Hay que aprender que todos
-            somos iguales y únicos, que tenemos capacidades aunque nos demoremos
-            un poquito más…Como yo! jajajaja
-          </p>
+          <div className="bocadillo-cuadrado6" style={{ minHeight: "120px" }}>
+            <p>
+              ¡Si!, no debemos burlarnos de los demás. Hay que aprender que
+              todos somos iguales y únicos, que tenemos capacidades aunque nos
+              demoremos un poquito más…Como yo! jajajaja
+            </p>
+          </div>
         </div>
         <div
-          className="border-2 blu w-1/3 text-lg px-4 py-1 z-40 absolute  right-[39pc] top-[2pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
-          id="mensaje"
+          className="z-40 absolute left-[19%]  top-[2pc] "
         >
-          <p>
-            ¡ Tuti que bonita historia! Como te habrás sentido cuando la liebre
-            se burlo de ti, lo importante es que pese a la risa de la liebre,
-            pudiste sacar una sonrisa de felicidad. Amiguitos vamos a trabajar,
-            en tu cuadernillo están estas preguntas, vamos comenta con tus
-            compañeros y responde
-          </p>
+          <div className="bocadillo-cuadrado1" style={{ minHeight: "120px" }}>
+            <p>
+              ¡ Tuti que bonita historia! Como te habrás sentido cuando la
+              liebre se burlo de ti, lo importante es que pese a la risa de la
+              liebre, pudiste sacar una sonrisa de felicidad. Amiguitos vamos a
+              trabajar, en tu cuadernillo están estas preguntas, vamos comenta
+              con tus compañeros y responde
+            </p>
+          </div>
         </div>
         <div
-          className="border-2 blu w-1/3 text-lg px-4 py-1 z-40 absolute  right-[27pc] top-[20pc]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
-          id="mensaje"
+          className="z-40 absolute  left-[50%] top-[50%] "
+          style={{ transform: " translate(-50%, 5%)" }}
         >
-          <p>
-            Responde y comenta: <br />
-            1. ¿Cómo fue la actitud del conejo? <br />
-            2. ¿Cómo fue la actitud de Tuti, la tortuga? <br />
-            3. Crees que la actitud de la tortuga fue la correcta?, ¿por qué?{" "}
-            <br />
-            4. ¿Cómo te has sentido cuando se han burlado de ti y que has hecho?{" "}
-            <br />
-          </p>
+          <div className="bocadillo-cuadrado5" style={{ minHeight: "120px" }}>
+            <p>
+              Responde y comenta: <br />
+              1. ¿Cómo fue la actitud del conejo? <br />
+              2. ¿Cómo fue la actitud de Tuti, la tortuga? <br />
+              3. Crees que la actitud de la tortuga fue la correcta?, ¿por qué?{" "}
+              <br />
+              4. ¿Cómo te has sentido cuando se han burlado de ti y que has
+              hecho? <br />
+            </p>
+          </div>
         </div>
       </div>
     </>

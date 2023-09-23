@@ -15,6 +15,8 @@ const View11 = () => {
 
     row.style.transition = "all 1s";
     row.style.opacity = 0;
+    row.style.top = 0;
+    row.style.left = 0;
     console.log("objectsdftgyhuji");
   };
   const handleKeyDown = (e) => {

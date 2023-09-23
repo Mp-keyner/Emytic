@@ -43,7 +43,7 @@ import ReproductorAudioInfinito from "@/components/MusicPlayer";
 import Mapa from "@/components/mapa";
 import Playo from "@/components/Play";
 import Ras from "@/components/Ras";
-import Slo from "@/components/Slo";
+import Dnd from "@/components/Dnd";
 
 export default function Home() {
   const audioSource =
@@ -57,7 +57,16 @@ export default function Home() {
 
   return (
     <>
-      <Playo volumen={volumen} setVolumen={setVolumen} />
+      <h1 className="text-white">hello peolpe</h1>
+      <Dnd/>
+    </> 
+  );
+}
+
+// <View />
+
+
+{/* <Playo volumen={volumen} setVolumen={setVolumen} />
       {Show ? (
         <Fscreen
           setShowFunction={setShow}
@@ -111,7 +120,7 @@ export default function Home() {
             <View14 />
           </div>
           <div id="Sixteen">
-            <Slo />
+            <View15 />
           </div>
           <div id="Seventeen">
             <View16 />
@@ -168,10 +177,4 @@ export default function Home() {
             <View33 />
           </div>
         </>
-      )}
-    </>
-  );
-}
-
-// <View />
-//
+      )} */}

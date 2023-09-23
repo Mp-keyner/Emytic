@@ -1,6 +1,6 @@
 import React, { use, useState } from 'react'
 import { DndContext, closestCenter } from '@dnd-kit/core'
-import { SortableContext, useSortable, verticalListSortingStrategy } from '@dnd-kit/sortable'
+import { SortableContext, arrayMove, useSortable, verticalListSortingStrategy } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
 
 
@@ -36,20 +36,25 @@ const Usert = ({ user }) => {
 
 
 const Dnd = () => {
-  const [people, setPeople] = useState([
+  const initialState = [
     { name: 'keyner', id: 1 },
     { name: 'oswaldo', id: 2 },
     { name: 'pedro', id: 3 },
-  ])
+  ]
+  const [people, setPeople] = useState(initialState)
   const HandleDragEnd = (event) => {
     const { active, over } = event
     console.log('Drag End')
+    const oldIndex = people.findIndex((person) => person.id == active.id)
+    const newIndex = people.findIndex((person) => person.id == over.id)
     console.log('Active', active)
     console.log('Over', over)
+    const NewOder = arrayMove(people, oldIndex, newIndex)
+    setPeople(NewOder)
   }
   return (
     <>
-      <div className='h-[10pc]'>
+      <div >
         <DndContext
           collisionDetection={closestCenter}
           onDragEnd={HandleDragEnd}
@@ -67,6 +72,9 @@ const Dnd = () => {
           <p className='text-white'>Hello pedro</p>
         </DndContext>
       </div>
+      <button className='text-white border border-white rounded-md p-[0.7pc]' onClick={() => setPeople(initialState)}>
+        CLick
+      </button>
     </>
   )
 }

@@ -56,14 +56,16 @@ export default function Home() {
 
   const [Show, setShow] = useState(true);
   const [volumen, setVolumen] = useState(true);
+  const [tal, setTal] = useState(0)
   useEffect(() => {
     AOS.init();
+    var isMobile = window.innerWidth <= 768;
+    setTal(isMobile);
   }, []);
-
-  const isMobile = screen.width <= 768;
+  console.log(tal);
   return (
     <div>
-      {isMobile ? <MobileComponent /> : <>
+      {tal ? <MobileComponent /> : <>
         <Playo volumen={volumen} setVolumen={setVolumen} />
         {Show ? (
           <Fscreen

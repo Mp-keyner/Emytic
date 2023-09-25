@@ -80,6 +80,7 @@ const View1 = () => {
           src={"/img/map/1.svg"}
           width={300}
           height={300}
+          alt=""
           id="mapa3"
           style={{ transform: "translate(-17%, -45%)" }}
           className="w-[41pc] border border-none absolute xl:top-[50%] top-[25%] xl:left-[50%] left-[5%] sm:left-[50%] "

@@ -1,7 +1,8 @@
 import React, { use, useState } from 'react'
 import { DndContext, closestCenter } from '@dnd-kit/core'
-import { SortableContext, arrayMove, useSortable, verticalListSortingStrategy } from '@dnd-kit/sortable'
+import { SortableContext, arrayMove, horizontalListSortingStrategy, useSortable, verticalListSortingStrategy } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
+import Image from 'next/image'
 
 
 const Usert = ({ user }) => {
@@ -25,9 +26,9 @@ const Usert = ({ user }) => {
       ref={setNodeRef}
       {...attributes}
       {...listeners}
-      className=' h-[5pc] w-[8pc] m-[1pc]'
+      className='p-[1pc] flex items-center justify-center '
     >
-      <span className='text-white p-[1pc] border border-white'>{user.name}</span>
+      <span className=' p-[1pc] border border-black rounded-md Nene'>{user.name}</span>
     </div>
   )
 }
@@ -35,12 +36,7 @@ const Usert = ({ user }) => {
 
 
 
-const Dnd = () => {
-  const initialState = [
-    { name: 'keyner', id: 1 },
-    { name: 'oswaldo', id: 2 },
-    { name: 'pedro', id: 3 },
-  ]
+const Dnd = ({ initialState, FinalState }) => {
   const [people, setPeople] = useState(initialState)
   const HandleDragEnd = (event) => {
     const { active, over } = event
@@ -51,17 +47,18 @@ const Dnd = () => {
     console.log('Over', over)
     const NewOder = arrayMove(people, oldIndex, newIndex)
     setPeople(NewOder)
+    console.log(people)
   }
   return (
-    <>
-      <div >
+    <div className='flex flex-col gap-[1pc]'>
+      <div className='border border-black  flex items-center justify-center w-[60pc]'>
         <DndContext
           collisionDetection={closestCenter}
           onDragEnd={HandleDragEnd}
         >
           <SortableContext
             items={people}
-            strategy={verticalListSortingStrategy}
+            strategy={horizontalListSortingStrategy}
           >
             {
               people.map((user) => (
@@ -69,13 +66,31 @@ const Dnd = () => {
               ))
             }
           </SortableContext>
-          <p className='text-white'>Hello pedro</p>
         </DndContext>
       </div>
-      <button className='text-white border border-white rounded-md p-[0.7pc]' onClick={() => setPeople(initialState)}>
-        CLick
-      </button>
-    </>
+      <div className='flex items-center gap-[1pc]'>
+        <button className='text-[#ffca09] border border-[#ffca09] rounded-md p-[0.7pc] flex items-center reiniciar' onClick={() => setPeople(initialState)}>
+          <Image
+            className='w-[1.5pc]'
+            src='https://finances-roan.vercel.app/static/media/repeat.293fa1b1ce3c7a1759e23dd071251a70.svg'
+            width={300}
+            height={300}
+            alt='imagen de reset'
+          />
+          Rreiniciar
+        </button>
+        <button className='text-[#fff] border border-[#fff] rounded-md p-[0.7pc] flex items-center reiniciar' onClick={() => setPeople(FinalState)}>
+          <Image
+            className='w-[1.5pc]'
+            src='/img/Resolver.svg'
+            width={300}
+            height={300}
+            alt='imagen de reset'
+          />
+          Resolver
+        </button>
+      </div>
+    </div>
   )
 }
 

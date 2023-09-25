@@ -50,54 +50,42 @@ const View11 = () => {
             src="/img/row.svg"
             width={100}
             height={100}
+            alt=''
           />
         </div>
 
+
         <div
-          className="border-2 blu w-[20pc] text-lg px-4 py-1 z-40 absolute right-[-12%] top-[50%]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
-          style={{ transform: "translate(-50%, -50%)" }}
+          data-aos="fade-right"
+          className="z-40 absolute right-[12%] top-[48%]"
         >
-          <p>
-            Hola chicos: En esta sopa de letras encontraras 8 palabras
-            importante para mantener buenas relaciones con los demás.
-            <b>¡Descúbrelas!</b>
-          </p>
+          <div className="bocadillo-cuadrado5">
+            <p>
+              Hola chicos: En esta sopa de letras encontraras 8 palabras
+              importante para mantener buenas relaciones con los demás.
+              <b>Dale Click para ¡Descúbrirlas!</b>
+            </p>
+          </div>
         </div>
-        <div
-          className="h-[90vh] flex flex-col justify-center items-center w-[41pc] text-lg px-4 py-1 z-40 absolute  left-[50%] top-[50%]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
+        <a href="https://sopa-six.vercel.app/"
+          target="_blank"
+          data-aos="fade-right"
           style={{ transform: "translate(-50%, -50%)" }}
-        >
-          <Image
-            className="w-[71%]  z-40 "
-            data-aos="fade-left" // Definición única de data-aos
-            data-aos-out="fade-left"
-            src="/img/sopa.svg"
-            width={500}
-            height={500}
-          />
-          <p className="grid grid-cols-2 blu">
-            <b>Ayudar</b>
-            <b>Compartir</b>
-            <b>Respetar</b>
-            <b>Colaborar</b>
-            <b>Dialogar</b>
-            <b>Saludar</b>
-          </p>
-        </div>
+          className="z-50 absolute left-[50%] top-[50%]">
+          <div className="bocadillo-cuadrado5">
+            Sopa de Letras
+          </div>
+        </a>
+
 
         <Image
-          className="w-[17pc]  z-40  absolute right-[0pc] bottom-[-2.3pc]"
+          className="w-[17pc]  z-40  absolute right-[0pc] bottom-[0]"
           data-aos="fade-left" // Definición única de data-aos
           data-aos-out="fade-left"
-          src="/img/5.svg"
+          src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F38.png?alt=media&token=183919e7-9b95-4529-9ee3-4a5bdd5f6ef9"
           width={500}
           height={500}
+          alt=''
         />
         <Image
           className="w-[41pc]   absolute left-[0pc] bottom-[-6.3pc]"
@@ -106,6 +94,7 @@ const View11 = () => {
           src="/img/4.svg"
           width={500}
           height={500}
+          alt=''
         />
       </div>
     </>

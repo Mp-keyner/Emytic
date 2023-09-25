@@ -54,6 +54,7 @@ const View11 = () => {
             src="/img/row.svg"
             width={100}
             height={100}
+            alt=""
           />
         </div>
         <div

@@ -54,88 +54,70 @@ const View11 = () => {
             src="/img/row.svg"
             width={100}
             height={100}
+            alt=""
           />
         </div>
         <Image
-          className="w-[17pc]  absolute right-[1pc] top-[0pc]"
+          className="w-[17pc]  absolute right-[5%] top-[5%]"
           data-aos="fade-left" // Definición única de data-aos
           data-aos-out="fade-left"
-          src="/img/panda.png"
+          src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F35.png?alt=media&token=a3dec0a5-7875-48ce-a6c9-07f14b4eeb60"
           width={500}
           height={500}
+          alt=""
         />
+
         <div
-          className="border-2  w-1/3 text-lg px-4 py-1 z-40 absolute blu right-[20pc] top-[10pc]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
+          data-aos="fade-right"
+          className="z-40 absolute right-[20%] top-[10%]"
         >
-          <p>
-            Aprende Soy dueño de mis propias emociones, por eso me amo, me
-            respeto, aun teniendo problemas y dificultades sé, que puedo
-            superarlos y seguir adelante.
-          </p>
+          <div className="bocadillo-cuadrado2">
+            <p>
+              Aprende Soy dueño de mis propias emociones, por eso me amo, me
+              respeto, aun teniendo problemas y dificultades sé, que puedo
+              superarlos y seguir adelante.
+            </p>
+          </div>
         </div>
         <div
-          className="border-2  w-1/3 text-lg px-4 py-1 z-40 absolute blu right-[36pc] top-[23pc]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
+          data-aos="fade-right"
+          className="z-40 absolute left-[21%] top-[64%]"
         >
-          <p>
-            Soso vamos a enseñarle a nuestros amigos lo que aprendimos y
-            aprendimos que…
-          </p>
+          <div className="bocadillo-cuadrado3">
+            <p>
+              Soso vamos a enseñarle a nuestros amigos lo que aprendimos y
+              aprendimos que…
+            </p>
+          </div>
         </div>
         <div
-          className="border-2  w-[13pc] blu flex items-center gap-[1pc] text-lg px-4 py-1 z-40 absolute  left-[25%] top-[16%]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
-          style={{ transform: "translate(-50%, -50%)" }}
+          data-aos="fade-right"
+          className="z-40 absolute left-[25%] top-[16%]"
         >
-          <p>Soy Capaz</p>
-          <Image src="/img/check.svg" width={50} height={50} />
+          <div className="bocadillo-cuadrado5 text-[2pc]">
+            <p>Soy Capaz</p>
+            <Image src="/img/check.svg" width={50} height={50} alt='' />
+          </div>
         </div>
+
         <div
-          className="border-2 blu w-[13pc] flex items-center gap-[1pc] text-lg px-4 py-1 z-40 absolute  left-[25%] top-[37%]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
-          style={{ transform: "translate(-50%, -50%)" }}
+          data-aos="fade-right"
+          className="z-40 absolute  left-[25%] top-[37%]"
         >
-          <p>Soy Fuerte</p>
-          <Image src="/img/check.svg" width={50} height={50} />
+          <div className="bocadillo-cuadrado5 text-[2pc]">
+            <p>Soy Fuerte</p>
+            <Image src="/img/check.svg" width={50} height={50} alt='' />
+          </div>
         </div>
+
         <div
-          className="border-2 blu w-[13pc] flex items-center gap-[1pc] text-lg px-4 py-1 z-40 absolute  left-[60%] top-[16%]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
-          style={{ transform: "translate(-50%, -50%)" }}
+          data-aos="fade-right"
+          className="z-40 absolute left-[60%] top-[66%]"
         >
-          <p>No me rindo</p>
-          <Image src="/img/check.svg" width={50} height={50} />
-        </div>
-        <div
-          className="border-2 blu w-[13pc] flex items-center gap-[1pc] text-lg px-4 py-1 z-40 absolute  left-[60%] top-[83%]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
-          style={{ transform: "translate(-50%, -50%)" }}
-        >
-          <p>Soy fantástico</p>
-          <Image src="/img/check.svg" width={50} height={50} />
-        </div>
-        <div
-          className="border-2 blu w-[13pc] flex items-center gap-[1pc] text-lg px-4 py-1 z-40 absolute  left-[89%] top-[83%]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
-          style={{ transform: "translate(-50%, -50%)" }}
-        >
-          <p>Soy valiente</p>
-          <Image src="/img/check.svg" width={50} height={50} />
+          <div className="bocadillo-cuadrado5 text-[2pc]">
+            <p>No me rindo</p>
+            <Image src="/img/check.svg" width={50} height={50} alt='' />
+          </div>
         </div>
       </div>
     </>

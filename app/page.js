@@ -60,7 +60,7 @@ export default function Home() {
     AOS.init();
   }, []);
 
-  const isMobile = window.innerWidth <= 768;
+  const isMobile = screen.width <= 768;
   return (
     <div>
       {isMobile ? <MobileComponent /> : <>

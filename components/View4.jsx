@@ -68,7 +68,10 @@ const View4 = () => {
   return (
     <>
       <div className="relative border-1 border-solid fondo4 h-screen">
-        <div className="absolute bottom-[1%] sm:bottom-[25pc] right-[0pc] w-[10pc] flex flex-col items-center text-center ">
+        <div className="absolute bottom-[1%] sm:bottom-[25pc] right-[0pc] w-[10pc] flex flex-col items-center text-center "
+          data-aos="fade-right"
+          data-aos-delay="1500">
+
           <h2>Presiona para continuar</h2>
 
           <Image
@@ -76,6 +79,7 @@ const View4 = () => {
             src="/img/row.svg"
             width={100}
             height={100}
+            alt=''
           />
         </div>
         <div
@@ -86,7 +90,7 @@ const View4 = () => {
           <div
             className="bocadillo-cuadrado2"
             style={{ minHeight: "67px" }}
-            data-aos-delay="2500"
+            data-aos-delay="1500"
           >
             <p>
               Tranquilo Pepe, a cualquiera le puede pasar lo importante es que
@@ -99,9 +103,11 @@ const View4 = () => {
         <div
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
+          data-aos-delay="500"
           className="z-40 absolute left-[20%] top-[33%]"
         >
-          <div className="bocadillo-cuadrado1" style={{ minHeight: "67px" }}>
+          <div className="bocadillo-cuadrado1" style={{ minHeight: "67px" }}
+          >
             <p>
               De pronto, llegó mamá y con su abrazo, mi cuerpo se sintió relajao
               y respiraba mejor, y sentí calma

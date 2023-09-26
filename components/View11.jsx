@@ -73,13 +73,14 @@ const View11 = () => {
         id="twelve"
         className="relative border-1 border-solid fondo6 h-screen"
       >
-        <div className="absolute bottom-[4pc] right-[0pc] w-[10pc] flex flex-col items-center ">
-          <h2>Presiona para </h2>
+        <div className="absolute bottom-[4pc] right-[0pc] w-[10pc] flex flex-col items-center text-center ">
+          <h2>Presiona para empezar con la historia</h2>
           <Image
             onClick={AddAnimation}
             src="/img/row.svg"
             width={100}
             height={100}
+            alt=''
           />
         </div>
         <Image
@@ -89,6 +90,7 @@ const View11 = () => {
           src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F36.png?alt=media&token=b1e9ba48-6f49-4587-a356-b9a3d3dc6568"
           width={500}
           height={500}
+          alt=''
         />
 
         <div

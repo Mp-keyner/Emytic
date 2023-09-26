@@ -93,8 +93,11 @@ const View1 = () => {
   window.addEventListener("keydown", handleKeyDown);
   return (
     <>
-      <div className="relative border-1 border-solid fondo2 h-screen">
-        <div className="absolute sm:bottom-[13pc] bottom-[1pc] right-[1pc] w-[10pc] flex flex-col items-center text-center ">
+      <div className="relative border-1 border-solid fondo2 h-screen"
+      >
+        <div className="absolute sm:bottom-[13pc] bottom-[1pc] right-[1pc] w-[10pc] flex flex-col items-center text-center"
+          data-aos-delay="1500"
+          data-aos="fade-up-left">
           <h2>Presiona para saber por que pepe estaba enojado</h2>
 
           <Image
@@ -110,6 +113,7 @@ const View1 = () => {
 
         <div
           data-aos="fade-up"
+          data-aos-delay="500"
           className="z-40 absolute right-[36%] sm:top-[17pc] top-[60%]"
         >
           <div className="bocadillo-cuadrado2">
@@ -136,6 +140,7 @@ const View1 = () => {
           height={600}
           className="w-[36pc] z-10 position: absolute top-[0pc] left-[0pc]"
           data-aos="fade-right"
+          alt=''
         />
         <Image
           src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F40.png?alt=media&token=ffa78c81-86d9-4519-9567-0c4c72fdeb0b"
@@ -144,6 +149,7 @@ const View1 = () => {
           height={600}
           className="w-[18pc] z-40 position: absolute top-[10pc] left-[-2pc]"
           title="Pepe el loro..."
+          alt=''
         />
       </div>
     </>

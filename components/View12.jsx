@@ -47,8 +47,8 @@ const View11 = () => {
   return (
     <>
       <div className="relative border-1 border-solid fondo6 h-screen">
-        <div className="absolute bottom-[4pc] right-[0pc] w-[10pc] flex flex-col items-center ">
-          <h2>Presiona para </h2>
+        <div className="absolute bottom-[4pc] right-[0pc] w-[10pc] flex flex-col items-center text-center">
+          <h2>Presiona para continuar a la actividad</h2>
           <Image
             onClick={AddAnimation}
             src="/img/row.svg"

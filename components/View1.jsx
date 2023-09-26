@@ -141,6 +141,7 @@ const View1 = () => {
         />
         <div
           data-aos="fade-right"
+          data-aos-delay="500"
           className="z-40 absolute sm:right-[58%] right-[5%] sm:top-[62%] top-[25pc]"
         >
           <div className="bocadillo-cuadrado1">

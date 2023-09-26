@@ -1,97 +1,134 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+import Image from 'next/image'
+import React from 'react'
 
-const NO = () => {
-    useEffect(() => {
-        AOS.init();
-        window.scrollTo(0, 0);
-    }, []);
+const View36 = () => {
+  return (
+    <div className="relative border-1 border-solid  fondo8 h-[100vh]">
 
-
-
-    return (
-        <>
-            <div className="relative fondo1 h-screen text-white">
-                <h1
-                    className="text-[4pc] sm:text-[8pc] font-bold z-40 absolute left-[1pc]"
-                    data-aos="fade-up"
-                    id="titulo"
-                >
-                    EMYTIC
-                </h1>
-                <Image
-                    src="/img/Arbol.svg"
-                    priority={true} // {false} | {true}
-                    width={400}
-                    height={600}
-                    className="w-[100%] position: absolute bottom-[0vh] right-[7pc]"
-                    data-aos="fade-right"
-                    data-aos-out="fade-left"
-                    id="Arbol"
-                    alt=""
-                />
-                <Image
-                    className="w-[18pc]  z-0  absolute left-[0%] top-[0%]"
-                    data-aos="fade-left" // Definición única de data-aos
-                    data-aos-out="fade-left"
-                    src="/img/selva1.svg"
-                    width={500}
-                    height={500}
-                    alt=""
-                />
-                <Image
-                    className="w-[18pc]  z-0  absolute right-[0%] top-[0%]"
-                    data-aos="fade-left" // Definición única de data-aos
-                    data-aos-out="fade-left"
-                    src="/img/selva2.svg"
-                    width={500}
-                    height={500}
-                    alt=""
-                />
-                <Image
-                    src="/img/1.svg"
-                    width={300}
-                    height={500}
-                    className="absolute sm:top-[60%] top-[57%] sm:left-[43%] left-[23%] transform z-40 w-[10pc] sm:w-[16pc]"
-                    style={{ transform: "translate(-50%, -50%)" }}
-                    data-aos="fade-down"
-                    title="EMYT"
-                    alt=""
-                />
-                <Image
-                    src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F40.png?alt=media&token=ffa78c81-86d9-4519-9567-0c4c72fdeb0b"
-                    width={300}
-                    height={500}
-                    className="absolute top-[74%] sm:top-[35%] left-[-1pc] w-[12pc] sm:w-[19pc]"
-                    data-aos="fade-right"
-                    id="loro"
-                    data-aos-out="fade-left"
-                    title="Pepe el loro..."
-                    alt=""
-                />
 
                 <div
-                    data-aos="fade-left"
-                    className="z-40 absolute sm:right-[24%] sm:top-[27%] right-[2%] top-[14%] xl:top-[35%] xl:rigth-[16%]"
+                  className="bocadillo-cuadrado1 absolute z-50 left-[33%] top-[58%]"
+                  data-aos="fade-right" // Definición única de data-aos
+                  data-aos-out="fade-left"
+                  id="mensaje"
+                  style={{ transform: "translate(-50%, -50%)" }}
                 >
-                    <div className="bocadillo-cuadrado1">
-                        <p>
-                            Hola soy <b>EMYTIC</b>, juntos realizaremos un divertido viaje por
-                            las regiones de Colombia, para conocer nuevos amigos que nos
-                            enseñaran sobre tus emociones y nos contaran unas historias muy
-                            interesante.
-                            <b>Vamos sígueme!</b>
-                        </p>
-                    </div>
+                  <p>
+                    Eres único, se vale sentir tus emociones, pero debes expresarlas con responsabilidad, comparte, sonríe y disfruta de la compañía de los demás. Recuerda que pequeñas acciones nos llevan a grandes cambios, y que juntos podemos construir un mundo mejor
+                  </p>
                 </div>
-            </div>
-        </>
-    );
-};
 
-export default NO;
+                <Image
+                  src="/img/1.svg"
+                  width={300}
+                  height={500}
+                  className="absolute top-[30%] left-[10%] transform z-40 w-[10pc] sm:w-[16pc]"
+                  style={{ transform: "translate(-50%, -50%)" }}
+                  data-aos="fade-down"
+                  title="EMYT"
+                  alt=""
+                />
+                <Image
+                  src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F35.png?alt=media&token=a3dec0a5-7875-48ce-a6c9-07f14b4eeb60"
+                  width={300}
+                  height={500}
+                  className="absolute top-[30%] right-[6%] transform z-40 w-[10pc] sm:w-[16pc]"
+                  style={{ transform: "translate(-50%, -50%)" }}
+                  data-aos="fade-down"
+                  title="Soso"
+                  alt=""
+                />
+                <h1
+                  className="text-[4pc] sm:text-[8pc] font-bold z-40 absolute left-[16pc] top-[2%]"
+                  data-aos="fade-up"
+                  id="titulo"
+                >
+                  EMYTIC
+                </h1>
+                <Image
+                  src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F36.png?alt=media&token=b1e9ba48-6f49-4587-a356-b9a3d3dc6568"
+                  width={300}
+                  height={500}
+                  className="absolute bottom-[10%] right-[6%] transform z-40 w-[10pc] sm:w-[16pc]"
+                  data-aos="fade-down"
+                  alt=""
+                />
+                <Image
+                  className="w-[17pc]  z-40  absolute left-[0pc] bottom-[-1%]"
+                  data-aos="fade-left" // Definición única de data-aos
+                  data-aos-out="fade-left"
+                  src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F34.png?alt=media&token=09cf0f4f-3902-4992-a21e-89b3d3b32d91"
+                  width={500}
+                  height={500}
+                  alt=""
+                />
+                <Image
+                  className="w-[18pc] z-0  absolute left-[0%] top-[0%]"
+                  data-aos="fade-left" // Definición única de data-aos
+                  data-aos-out="fade-left"
+                  src="/img/selva1.svg"
+                  width={500}
+                  height={500}
+                  alt=""
+                />
+                <Image
+                  className="w-[18pc] z-0  absolute right-[0%] top-[0%]"
+                  data-aos="fade-left" // Definición única de data-aos
+                  data-aos-out="fade-left"
+                  src="/img/selva2.svg"
+                  width={500}
+                  height={500}
+                  alt=""
+                />
+                <div className="flex absolute bottom-0">
+                  <Image
+                    className="w-[20pc]  "
+                    data-aos="fade-left" // Definición única de data-aos
+                    data-aos-out="fade-left"
+                    src="/img/selva3.svg"
+                    width={500}
+                    height={500}
+                    alt=""
+                  />
+                  <Image
+                    className="w-[20pc]  "
+                    data-aos="fade-left" // Definición única de data-aos
+                    data-aos-out="fade-left"
+                    src="/img/selva3.svg"
+                    width={500}
+                    height={500}
+                    alt=""
+                  />
+                  <Image
+                    className="w-[20pc]  "
+                    data-aos="fade-left" // Definición única de data-aos
+                    data-aos-out="fade-left"
+                    src="/img/selva3.svg"
+                    width={500}
+                    height={500}
+                    alt=""
+                  />
+                  <Image
+                    className="w-[20pc]  "
+                    data-aos="fade-left" // Definición única de data-aos
+                    data-aos-out="fade-left"
+                    src="/img/selva3.svg"
+                    width={500}
+                    height={500}
+                    alt=""
+                  />
+                  <Image
+                    className="w-[20pc]  "
+                    data-aos="fade-left" // Definición única de data-aos
+                    data-aos-out="fade-left"
+                    src="/img/selva3.svg"
+                    width={500}
+                    height={500}
+                    alt=""
+                  />
+                </div>
+              </div>
+  )
+}
+
+export default View36

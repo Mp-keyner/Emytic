@@ -116,7 +116,7 @@ const View9 = () => {
     window.addEventListener("keydown", handleKeyDown);
     return (
         <>
-            <div className="absolute z-50 w-[100%]">
+            <div className=" z-50 w-[100%]">
                 <div className="relative border-1 border-solid fondo5 h-screen">
                     <div className="absolute top-[3pc] left-[0pc] text-center w-[10pc] flex flex-col items-center">
                         <h2>Presiona para empezar</h2>

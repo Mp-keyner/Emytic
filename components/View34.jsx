@@ -55,18 +55,18 @@ const View11 = () => {
                 </div>
 
                 <a
-                    className="bocadillo-cuadrado5 absolute left-[49%] top-[25%]"
+                    className="bocadillo-cuadrado5 absolute left-[49%] top-[25%] z-50"
                     data-aos="fade-right" // Definición única de data-aos
                     data-aos-out="fade-left"
                     id="mensaje"
-                    href="http://127.0.0.1:5501/Memorias.html"
+                    href="https://sopa-six.vercel.app/Memorias.html"
                     target="_blank"
                     style={{ transform: "translate(-50%, -50%)" }}
                 >
                     Juego de Memoria con tus amigos
                 </a>
                 <div
-                    className="bocadillo-cuadrado1 absolute left-[33%] top-[58%]"
+                    className="bocadillo-cuadrado1 absolute left-[33%] top-[58%] z-50"
                     data-aos="fade-right" // Definición única de data-aos
                     data-aos-out="fade-left"
                     id="mensaje"

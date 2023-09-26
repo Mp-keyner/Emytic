@@ -61,7 +61,7 @@ const View11 = () => {
           className="z-40 absolute top-[50%] left-[50%]"
           style={{ transform: "translate(-50%, -50%)" }}
         >
-          <div className="bocadillo-cuadrado5" style={{ width: '60pc', fontSize: '1.3pc' }}>
+          <div className="bocadillo-cuadrado5" style={{ width: '60pc', fontSize: '1pc' }}>
             <p>
               Había una vez un conejo muy presumido y vanidoso que se pasaba todo
               el día diciendo lo rápido que era corriendo y buscando la forma que

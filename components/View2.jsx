@@ -106,18 +106,7 @@ const View1 = () => {
             alt=''
           />
         </div>
-        <div className="absolute sm:bottom-[13pc] top-[1pc] right-[1pc] w-[10pc] flex flex-col items-center text-center ">
-          <h2>Presiona para retroceder</h2>
 
-          <Image
-            onClick={AddAnimationNO}
-            src="/img/row.svg"
-            width={100}
-            height={100}
-            className="cursor-pointer flecha"
-            alt=''
-          />
-        </div>
 
         <div
           data-aos="fade-up"

@@ -116,7 +116,7 @@ const View1 = () => {
         id="secon"
         className="relative border-1 border-sol fondoMap h-screen"
       >
-        {/* <div className=" absolute sm:bottom-[13pc] z-50 bottom-[0] right-[0pc] w-[10pc] flex flex-col items-center text-center">
+        <div className=" absolute sm:bottom-[13pc] z-50 bottom-[0] right-[0pc] w-[10pc] flex flex-col items-center text-center">
           <h2>Presiona para continuar con esta aventura</h2>
           <Image
             onClick={AddAnimation}
@@ -126,7 +126,7 @@ const View1 = () => {
             className="flecha cursor-pointer"
             alt=""
           />
-        </div> */}
+        </div>
 
         <Image
           data-aos="fade-up-left"

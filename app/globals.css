@@ -125,6 +125,16 @@ body {
   }
 }
 
+@keyframes aumentarYDesvanecerNO {
+  0% {
+    width: 78pc;
+  }
+
+  100% {
+    width: 41pc;
+  }
+}
+
 @keyframes mapaDos {
   0% {
     width: 41pc;
@@ -167,6 +177,11 @@ body {
 
 .mi-animacion {
   animation: aumentarYDesvanecer 2s ease-in-out forwards;
+  /* 5s es la duración de la animación */
+}
+
+.mi-animacionNO {
+  animation: aumentarYDesvanecerNO 2s ease-in-out forwards;
   /* 5s es la duración de la animación */
 }
 
@@ -603,6 +618,12 @@ body {
   justify-content: flex-end;
   width: 40pc;
   position: relative;
+}
+
+.girdS {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 60pc;
 }
 
 .lds-roller {

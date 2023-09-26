@@ -54,6 +54,7 @@ const View9 = () => {
   const AddAnimation = () => {
     const row = document.getElementById("row");
     const ThirtyTow = document.getElementById("ThirtyTow");
+    const ThirtyOne = document.getElementById("ThirtyOne");
 
     ThirtyTow.scrollIntoView({
       behavior: "smooth",

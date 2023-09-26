@@ -4,10 +4,10 @@ import React from "react";
 const View11 = () => {
     const AddAnimation = () => {
         const row = document.getElementById("row");
-        const ThirtyNine = document.getElementById("ThirtyNine");
+        const ThirtySix = document.getElementById("ThirtySix");
 
         // Realizar el desplazamiento al siguiente elemento
-        ThirtyNine.scrollIntoView({
+        ThirtySix.scrollIntoView({
             behavior: "smooth",
             block: "start",
             inline: "nearest",
@@ -54,34 +54,28 @@ const View11 = () => {
                     />
                 </div>
 
-                <a
-                    className="bocadillo-cuadrado5 absolute left-[49%] top-[25%]"
-                    data-aos="fade-right" // Definición única de data-aos
-                    data-aos-out="fade-left"
-                    id="mensaje"
-                    href="http://127.0.0.1:5501/Memorias.html"
-                    target="_blank"
-                    style={{ transform: "translate(-50%, -50%)" }}
-                >
-                    Juego de Memoria con tus amigos
-                </a>
                 <div
-                    className="bocadillo-cuadrado1 absolute left-[33%] top-[58%]"
-                    data-aos="fade-right" // Definición única de data-aos
-                    data-aos-out="fade-left"
-                    id="mensaje"
+                    data-aos="fade-right"
+                    className="z-40 absolute top-[50%] right-[5%]"
                     style={{ transform: "translate(-50%, -50%)" }}
                 >
-                    <p>
-                        Antes de terminar esta fantastica aventura supera el juego.
-                    </p>
+                    <div className="bocadillo-cuadrado5" style={{ width: '21pc', fontSize: '1pc' }}>
+                        <p>
+                            Claro que sí, mira yo tengo una amiga llamada Milu, ella  vivía con sus padres en un pequeño pueblo y notaba que todos los días cuando iba para el colegio,  las calles estaban llenas de basura. Con los días la gente empezó  a enfermarse por  los insectos que se juntaban en esas basuras.
+                            Preocupada por lo que estaba pasando, le preguntó a su profesora como podía ayudar, y
+                            la maestra le dijo  - Milu seria fantástico que todos aprendiéramos a cuidar nuestro entorno, con pequeñas acciones, como una campaña entre los vecinos para reciclar la basura por bolsas de colores y no volver arrojarla al piso.
+                            Milu entendió que el cambio empezaba por las acciones de ella, para luego contagiar de buenas acciones a los demás.
+                            Así como hizo mi amiga, te invito a que tomes la iniciativa en tu escuela, en tu casa para realizar pequeñas acciones que nos llevan a grandes soluciones
+                            ¿Te gustaría ayudar?
+                        </p>
+                    </div>
                 </div>
 
                 <Image
-                    className="w-[17pc]  z-40  absolute left-[0pc] bottom-[-1%]"
+                    className="w-[17pc]  z-40  absolute right-[0pc] top-[1%]"
                     data-aos="fade-left" // Definición única de data-aos
                     data-aos-out="fade-left"
-                    src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F34.png?alt=media&token=09cf0f4f-3902-4992-a21e-89b3d3b32d91"
+                    src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F33.png?alt=media&token=adf31456-021a-4f5e-834a-2d1587b2e1ec"
                     width={500}
                     height={500}
                     alt=""
@@ -104,6 +98,19 @@ const View11 = () => {
                     height={500}
                     alt=""
                 />
+
+                <div
+                    data-aos="fade-right" // Definición única de data-aos
+                    data-aos-out="fade-left"
+                    className="z-40 absolute left-[3%] sm:left-[22%] top-[21pc]"
+                >
+                    <div className="bocadillo-cuadrado1">
+                        <p>Se que te sientes triste, pero busquemos la forma de aprender a cuidar nuestro entorno, quizás si le hablamos a los demás de que debemos cuidar nuestra casa, también nos ayudaran a buscar una solución pues solo así tendremos un hogar donde estar.</p>
+                    </div>
+                </div>
+                <div className="flex items-center absolute z-50 w-[100%] justify-center gap-[1pc] top-[30%] ">
+
+                </div>
                 <div className="flex absolute bottom-0">
                     <Image
                         className="w-[20pc]  "
@@ -112,6 +119,7 @@ const View11 = () => {
                         src="/img/selva3.svg"
                         width={500}
                         height={500}
+
                         alt=""
                     />
                     <Image

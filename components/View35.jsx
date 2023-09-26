@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import React, { useState } from "react";
 
 const View9 = () => {
@@ -54,9 +53,9 @@ const View9 = () => {
 
     const AddAnimation = () => {
         const row = document.getElementById("row");
-        const ThirtyEich = document.getElementById("ThirtyEich");
+        const Forty = document.getElementById("Forty");
 
-        ThirtyEich.scrollIntoView({
+        Forty.scrollIntoView({
             behavior: "smooth",
             block: "start",
             inline: "nearest",
@@ -116,7 +115,7 @@ const View9 = () => {
     window.addEventListener("keydown", handleKeyDown);
     return (
         <>
-            <div className="absolute z-50 w-[100%]">
+            <div className="relative z-50 w-[100%]">
                 <div className="relative border-1 border-solid fondo5 h-screen">
                     <div className="absolute top-[3pc] left-[0pc] text-center w-[10pc] flex flex-col items-center">
                         <h2>Presiona para empezar</h2>

@@ -3,6 +3,33 @@ import Link from "next/link";
 import React from "react";
 
 const View1 = () => {
+  const AddAnimationNO = () => {
+    console.log(window.screen.width, "width");
+    console.log(window.screen.height, "height");
+    const Secon = document.getElementById("Secon");
+    const mapa = document.getElementById("mapa");
+
+    mapa.src = "/img/map/1.svg";
+    mapa.classList.remove("mi-animacion");
+    mapa.classList.add("mi-animacionNO");
+
+    row.style.transition = "all 1s";
+    if (screen.width > 400) {
+      row.style.top = "80%";
+      row.style.left = "10%";
+    } else if (screen.width < 400) {
+      row.style.top = "86%";
+      row.style.left = "26%";
+    }
+    row.style.width = "13pc";
+    console.log("objectsdftgyhuji");
+
+    Secon.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  };
   const AddAnimation = () => {
     const row = document.getElementById("row");
     const Fourth = document.getElementById("Fourth");
@@ -14,25 +41,6 @@ const View1 = () => {
     });
 
     row.style.transition = "all 1s";
-
-    // switch (screen.width) {
-    //   case 1280:
-    //     row.style.top = "72%";
-    //     row.style.left = "12%";
-    //     row.style.width = "13pc";
-    //     console.log(screen.width, "number Uno");
-    //     break;
-    //   case 393:
-    //     row.style.top = "88%";
-    //     row.style.left = "26%";
-    //     row.style.width = "12pc";
-    //     console.log(screen.width, "number Dos");
-    //     break;
-
-    //   default:
-    //     break;
-    // }
-
     switch (true) {
       case screen.width >= 1200 && screen.width <= 1600:
         row.style.top = "72%";
@@ -95,6 +103,19 @@ const View1 = () => {
             width={100}
             height={100}
             className="cursor-pointer flecha"
+            alt=''
+          />
+        </div>
+        <div className="absolute sm:bottom-[13pc] top-[1pc] right-[1pc] w-[10pc] flex flex-col items-center text-center ">
+          <h2>Presiona para retroceder</h2>
+
+          <Image
+            onClick={AddAnimationNO}
+            src="/img/row.svg"
+            width={100}
+            height={100}
+            className="cursor-pointer flecha"
+            alt=''
           />
         </div>
 

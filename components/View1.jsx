@@ -4,6 +4,44 @@ import React from "react";
 import SvgComponent from "./SvgComponent";
 
 const View1 = () => {
+  const AddAnimationNO = () => {
+    const row = document.getElementById("row");
+    const Secon = document.getElementById("Secon");
+    const mapa = document.getElementById("mapa");
+    const animationName = event.animationName;
+
+    mapa.src = "/img/map/1.svg";
+    mapa.classList.add("mi-animacion");
+    console.log(animationName)
+    if (animationName === "mi-animacion") {
+      mapa.addEventListener("animationend", () => {
+        // Realizar el desplazamiento al siguiente elemento
+        Secon.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
+        row.style.transition = "all 1s";
+        switch (true) {
+          case screen.width >= 1200 && screen.width <= 1600:
+            row.style.top = "60%";
+            row.style.left = "74%";
+            row.style.width = "300px";
+            console.log(screen.width, "En el rango de 1200 a 1600");
+            break;
+          case screen.width >= 393 && screen.width <= 450:
+            row.style.top = "88%";
+            row.style.left = "26%";
+            row.style.width = "12pc";
+            console.log(screen.width, "Igual a 393");
+            break;
+          default:
+            break;
+        }
+        console.log("Tecla pre");
+      });
+    }
+  }
   const AddAnimation = () => {
     const row = document.getElementById("row");
     const Three = document.getElementById("Three");
@@ -78,7 +116,7 @@ const View1 = () => {
         id="secon"
         className="relative border-1 border-sol fondoMap h-screen"
       >
-        <div className=" absolute sm:bottom-[13pc] z-50 bottom-[0] right-[0pc] w-[10pc] flex flex-col items-center text-center">
+        {/* <div className=" absolute sm:bottom-[13pc] z-50 bottom-[0] right-[0pc] w-[10pc] flex flex-col items-center text-center">
           <h2>Presiona para continuar con esta aventura</h2>
           <Image
             onClick={AddAnimation}
@@ -88,7 +126,7 @@ const View1 = () => {
             className="flecha cursor-pointer"
             alt=""
           />
-        </div>
+        </div> */}
 
         <Image
           data-aos="fade-up-left"

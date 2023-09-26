@@ -64,7 +64,7 @@ const Fscreen = ({ setShowFunction, Show, volumen, setVolumen }) => {
                 ) : (
                     <Sppiner />
                 )}
-            </div>
+            </div> 
         </div>
     );
 };

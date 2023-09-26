@@ -7,13 +7,11 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const NO = () => {
-    useEffect(() => {
-        AOS.init();
-        window.scrollTo(0, 0);
-    }, []);
-
-
-
+    const SalirFull = () => {
+        if (document.documentElement.exitFullscreen) {
+            document.documentElement.exitFullscreen();
+        }
+    }
     return (
         <>
             <div className="relative fondo1 h-screen text-white">
@@ -74,18 +72,35 @@ const NO = () => {
                     title="Pepe el loro..."
                     alt=""
                 />
-
+                <Image
+                    className="w-[17pc]  z-40  absolute right-[0pc] top-[1%]"
+                    data-aos="fade-left" // Definición única de data-aos
+                    data-aos-out="fade-left"
+                    src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F33.png?alt=media&token=adf31456-021a-4f5e-834a-2d1587b2e1ec"
+                    width={500}
+                    height={500}
+                    alt=""
+                />
+                <Image
+                    className="w-[17pc]  z-40  absolute right-[0pc] bottom-[1%]"
+                    data-aos="fade-left" // Definición única de data-aos
+                    data-aos-out="fade-left"
+                    src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F35.png?alt=media&token=a3dec0a5-7875-48ce-a6c9-07f14b4eeb60"
+                    width={500}
+                    height={500}
+                    alt=""
+                />
+                <div className="absolute z-50 w-[20pc] flex gap-[1pc] top-[2%] left-[50%]" data-aos="fade-left">
+                    <a href="https://emytic.vercel.app/" className="border border-white px-[1pc] py-[0.6pc] rounded-md">Reiniciar</a>
+                    {/* <button className="border border-white px-[1pc] py-[0.6pc] rounded-md" onClick={SalirFull}>Salir</button> */}
+                </div>
                 <div
                     data-aos="fade-left"
                     className="z-40 absolute sm:right-[24%] sm:top-[27%] right-[2%] top-[14%] xl:top-[35%] xl:rigth-[16%]"
                 >
-                    <div className="bocadillo-cuadrado1">
+                    <div className="bocadillo-cuadrado3">
                         <p>
-                            Hola soy <b>EMYTIC</b>, juntos realizaremos un divertido viaje por
-                            las regiones de Colombia, para conocer nuevos amigos que nos
-                            enseñaran sobre tus emociones y nos contaran unas historias muy
-                            interesante.
-                            <b>Vamos sígueme!</b>
+                            Muchas gracias por hacer parte de esta increible aventura nos vemos en otra ocacion¡¡
                         </p>
                     </div>
                 </div>

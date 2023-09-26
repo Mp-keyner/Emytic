@@ -36,9 +36,9 @@ const View1 = () => {
   };
   const handleKeyDown = (e) => {
     if (e.keyCode === 56) {
-      const Nine = document.getElementById("Nine");
+      const ten = document.getElementById("ten");
 
-      Nine.scrollIntoView({
+      ten.scrollIntoView({
         behavior: "smooth",
         block: "start",
         inline: "nearest",

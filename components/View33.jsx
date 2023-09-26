@@ -5,10 +5,10 @@ const View11 = () => {
   const [StateX, setStateX] = useState('')
   const AddAnimation = () => {
     const row = document.getElementById("row");
-    const ThirtyFive = document.getElementById("ThirtyFive");
+    const ThirtyEich = document.getElementById("ThirtyEich");
 
     // Realizar el desplazamiento al siguiente elemento
-    ThirtyFive.scrollIntoView({
+    ThirtyEich.scrollIntoView({
       behavior: "smooth",
       block: "start",
       inline: "nearest",
@@ -18,6 +18,7 @@ const View11 = () => {
     row.style.top = "60%";
     row.style.left = "7%";
     row.style.width = "200px";
+    row.style.opacity = 0;
     row.style.transform = "translate(0)";
     console.log("objectsdftgyhuji");
   };

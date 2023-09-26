@@ -14,10 +14,9 @@ const View34 = () => {
     });
 
     row.style.transition = "all 1s";
-    row.style.top = "17%";
-    row.style.left = "93%";
-    row.style.width = "8pc";
-    row.style.opacity = 0;
+    row.style.bottom = "17%";
+    row.style.left = "5%";
+    row.style.width = "13pc";
     console.log("objectsdftgyhuji");
   };
   const handleKeyDown = (e) => {

@@ -90,7 +90,7 @@ const View11 = () => {
             <input type="radio" />
           </div>
           <div className="flex items-center gap-[1pc]">
-            <p className="w-[21pc]"> Dejar los grifos dek gua abiertos para que el agua se desperdicie</p>
+            <p className="w-[21pc]"> Dejar los grifos de agua abiertos para que el agua se desperdicie</p>
             <input type="radio" />
           </div>
           <div className="flex items-center gap-[1pc]">

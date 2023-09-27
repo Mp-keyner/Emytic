@@ -100,7 +100,7 @@ const NO = () => {
                 >
                     <div className="bocadillo-cuadrado3">
                         <p>
-                            Muchas gracias por hacer parte de esta increible aventura nos vemos en otra ocacion¡¡
+                            Muchas gracias por hacer parte de esta increible aventura nos vemos en otra ocacion...
                         </p>
                     </div>
                 </div>

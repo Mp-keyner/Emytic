@@ -41,13 +41,14 @@ const View1 = () => {
       <div className="relative border-1 border-solid fondo6 h-screen p-[1pc]">
         <h1 className="text-[2pc] font-semibold">Descubre el mensaje oculto</h1>
         <br />
-        <div className="absolute top-[3pc] right-[0pc] w-[10pc] flex flex-col items-center text-center z-[1]">
-          <h2>Presiona para empezar f</h2>
+        <div className="absolute top-[16%] right-[0pc] w-[10pc] flex flex-col items-center text-center z-[1] ">
+          <h2>Presiona para empezar</h2>
           <Image
             onClick={AddAnimation}
             src="/img/row.svg"
             width={100}
             height={100}
+            alt=''
           />
         </div>
         <div className="p-[1pc] bg-white border w-[21pc]">

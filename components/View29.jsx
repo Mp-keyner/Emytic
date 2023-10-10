@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import Modal from "./Modal";
 
 const View11 = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [tarea, setTarea] = useState('')
   const AddAnimation = () => {
     const row = document.getElementById("row");
     const ThirtyOne = document.getElementById("ThirtyOne");
@@ -22,9 +24,25 @@ const View11 = () => {
     row.style.opacity = 0;
     console.log("objectsdftgyhuji");
   };
-  const ShowTask = () => {
+  const ShowTask1 = () => {
     console.log("tarea");
     setIsModalOpen(true);
+    setTarea('Haz un dibujo a tu compañero con el que menos hablas y dile que deseas conocerlo mas.')
+  };
+  const ShowTask2 = () => {
+    console.log("tarea");
+    setIsModalOpen(true);
+    setTarea('Comparte tu merienda con un compañero que no haya llevado.')
+  };
+  const ShowTask3 = () => {
+    console.log("tarea");
+    setIsModalOpen(true);
+    setTarea('Acercate a ese compeñero que no comprendio algun tema y ayudalo a entenderlo.')
+  };
+  const ShowTask4 = () => {
+    console.log("tarea");
+    setIsModalOpen(true);
+    setTarea('Regala abrazos a todos tus compañeros')
   };
   const closeModal = () => {
     setIsModalOpen(false);
@@ -54,32 +72,35 @@ const View11 = () => {
     <>
       <div className="relative border-1 border-solid fondo5 h-screen">
         <div className="absolute z-50 top-[4pc] right-[0pc] w-[10pc] flex flex-col items-center ">
-          <h2>Presiona para </h2>
+          <h2>Presiona para decir como te sientes</h2>
           <Image
             onClick={AddAnimation}
             src="/img/row.svg"
             width={100}
             height={100}
+            className="flecha cursor-pointer"
+            alt=""
           />
         </div>
-
         <div
-          className="border-2 blu w-[20pc] text-lg px-4 py-1 z-40 absolute right-[-12%] top-[50%]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
-          style={{ transform: "translate(-50%, -50%)" }}
+          data-aos="fade-right"
+          className="z-40 absolute right-[-11%] top-[50%]"
+          style={{ transform: "translate(-50%, -50%)", height: '3pc' }}
         >
-          <p>Escoge un regalo y descubre la tarea que guarda:</p>
+          <div className="bocadillo-cuadrado">
+            <p>Escoge un regalo y descubre la tarea que guarda:</p>
+
+          </div>
         </div>
 
         <Image
-          className="w-[17pc] z-40  absolute right-[0pc] bottom-[-2.3pc]"
+          className="w-[17pc] z-40  absolute right-[0pc] bottom-[0]"
           data-aos="fade-left" // Definición única de data-aos
           data-aos-out="fade-left"
-          src="/img/5.svg"
+          src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F38.png?alt=media&token=183919e7-9b95-4529-9ee3-4a5bdd5f6ef9"
           width={500}
           height={500}
+          alt=''
         />
         <Image
           className="w-[41pc]  absolute left-[-20%] bottom-[-6.3pc]"
@@ -88,6 +109,7 @@ const View11 = () => {
           src="/img/4.svg"
           width={500}
           height={500}
+          alt=''
         />
         <Image
           className="w-[41pc]  absolute right-[-20%] bottom-[-6.3pc]"
@@ -96,6 +118,7 @@ const View11 = () => {
           src="/img/4.svg"
           width={500}
           height={500}
+          alt=''
         />
         <div
           style={{ transform: "translate(-50%, -50%)" }}
@@ -105,47 +128,34 @@ const View11 = () => {
             src="/img/regaloT.svg"
             width={200}
             height={200}
-            onClick={ShowTask}
+            onClick={ShowTask1}
+            alt=''
           />
           <Image
             src="/img/regaloT.svg"
             width={200}
             height={200}
-            onClick={ShowTask}
+            onClick={ShowTask2}
+            alt=''
           />
           <Image
             src="/img/regaloT.svg"
             width={200}
             height={200}
-            onClick={ShowTask}
+            onClick={ShowTask3}
+            alt=''
           />
           <Image
             src="/img/regaloT.svg"
             width={200}
             height={200}
-            onClick={ShowTask}
+            onClick={ShowTask4}
+            alt=''
           />
         </div>
         {/* Modal */}
         {isModalOpen && (
-          <div
-            style={{ backdropFilter: "blur(10px)" }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-[#ffffff29]"
-          >
-            <div className="modal-overlay fixed inset-0"></div>
-            <div className="modal-content bg-blue-900 rounded-lg p-4 z-20">
-              <Image
-                onClick={closeModal}
-                src="/img/x.svg"
-                width={50}
-                height={50}
-                className="absolute top-0 right-0 m-2"
-              />
-              {/* Contenido del modal */}
-              <h2 className="text-lg font-bold mb-2">Tarea del regalo</h2>
-              <p>Esta es la tarea que guarda el regalo.</p>
-            </div>
-          </div>
+          <Modal closeModal={closeModal} mensaje={tarea} />
         )}
       </div>
     </>

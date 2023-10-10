@@ -125,6 +125,8 @@ const View9 = () => {
             src="/img/row.svg"
             width={100}
             height={100}
+            className="flecha cursor-pointer"
+            alt=""
           />
         </div>
 
@@ -137,6 +139,7 @@ const View9 = () => {
               height={100}
               className="w-[2pc] sm:w-[8pc] alegria border-[3px] border-black rounded-full"
               title="alegria"
+              alt=''
             />
             <Image
               onClick={Enojo}
@@ -148,6 +151,7 @@ const View9 = () => {
               onDragStart={(e) =>
                 e.dataTransfer.setData("text/plain", e.target.title)
               }
+              alt=''
             />
           </div>
           <div className="D3 bg-white flex items-center flex-col border-[2px] border-black rounded-md p-[1pc]">
@@ -162,6 +166,7 @@ const View9 = () => {
               onDragStart={(e) =>
                 e.dataTransfer.setData("text/plain", e.target.title)
               }
+              alt=''
             />
           </div>
           <div className="Div3 flex items-center justify-between w-[50pc]">
@@ -175,6 +180,7 @@ const View9 = () => {
               onDragStart={(e) =>
                 e.dataTransfer.setData("text/plain", e.target.title)
               }
+              alt=''
             />
             <Image
               onClick={Sorpresa}
@@ -186,6 +192,7 @@ const View9 = () => {
               onDragStart={(e) =>
                 e.dataTransfer.setData("text/plain", e.target.title)
               }
+              alt=''
             />
           </div>
         </div>

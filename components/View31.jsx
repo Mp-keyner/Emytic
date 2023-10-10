@@ -59,20 +59,22 @@ const View1 = () => {
             src="/img/row.svg"
             width={100}
             height={100}
+            className="flecha cursor-pointer"
+            alt=""
           />
         </div>
         <div
-          className="border-2  sm:w-1/3 w-[15pc] text-lg px-4 py-1 z-40 absolute sm:right-[50%] right-[5%] top-[21pc]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
+          data-aos="fade-right"
+          className="z-40 absolute sm:right-[50%] right-[5%] top-[21pc]"
         >
-          <p>
-            Amiguitos hemos llegado a la región Amazonas, el hogar de muchas
-            especies, una casa verde y majestuosa, ubicada al{" "}
-            <b>sur de nuestro país Colombia</b>, y bañada del río amazonas,
-            Vamos a conocer a Timi la mona Titi
-          </p>
+          <div className="bocadillo-cuadrado1">
+            <p>
+              Amiguitos hemos llegado a la región Amazonas, el hogar de muchas
+              especies, una casa verde y majestuosa, ubicada al{" "}
+              <b>sur de nuestro país Colombia</b>, y bañada del río amazonas,
+              Vamos a conocer a Timi la mona Titi
+            </p>
+          </div>
         </div>
         <Image
           data-aos="fade-up-left"
@@ -80,7 +82,10 @@ const View1 = () => {
           width={300}
           height={300}
           id="mapa5"
-          className="w-[41pc] border-1px border-red-500 absolute top-0 right-[0] sm:right-[6%] mp"
+          style={{ transform: "translate(-17%, -45%)" }}
+          className="w-[41pc] border border-none absolute xl:top-[50%] top-[25%] xl:left-[50%] left-[5%] sm:left-[50%] "
+          title="Mapa de Colombia"
+          alt=""
         />
       </div>
     </>

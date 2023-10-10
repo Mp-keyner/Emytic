@@ -1,13 +1,14 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const View11 = () => {
+  const [StateX, setStateX] = useState('')
   const AddAnimation = () => {
     const row = document.getElementById("row");
-    const Thirty = document.getElementById("Thirty");
+    const ThirtyEich = document.getElementById("ThirtyEich");
 
     // Realizar el desplazamiento al siguiente elemento
-    Thirty.scrollIntoView({
+    ThirtyEich.scrollIntoView({
       behavior: "smooth",
       block: "start",
       inline: "nearest",
@@ -17,6 +18,7 @@ const View11 = () => {
     row.style.top = "60%";
     row.style.left = "7%";
     row.style.width = "200px";
+    row.style.opacity = 0;
     row.style.transform = "translate(0)";
     console.log("objectsdftgyhuji");
   };
@@ -30,46 +32,31 @@ const View11 = () => {
             src="/img/row.svg"
             width={100}
             height={100}
+            alt=""
           />
         </div>
 
+
         <div
-          className="border-2 blu w-[54pc] text-lg px-4 py-1 z-40 absolute text-black left-[49%] top-[16%]"
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
-          id="mensaje"
-          style={{ transform: "translate(-50%, -50%)" }}
+          className="z-40 absolute left-[49%] top-[10%]"
         >
-          <p>
-            Si, Emytic, quiero contarte que desde hace días me di cuenta que
-            muchas personas no cuidan su hogar, la tierra que tenemos… En el
-            bosque donde vivo con mi familia, la tala y quema de arboles esta
-            debilitando mi casa, las especies de animales se están extinguiendo
-            y no hacemos nada por salvarlos… me da tristeza que desaparezca lo
-            que somos… Colombia es una tierra hermosa, con parques naturales que
-            debemos preservar, como por ejemplo:
-          </p>
-        </div>
-        <div
-          className="border-2 blu w-[24pc] text-lg px-4 py-1 z-40 absolute text-black left-[33%] top-[58%]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
-          style={{ transform: "translate(-50%, -50%)" }}
-        >
-          <p>
-            La base de una buena comunicación es el dialogo, solo así podemos
-            reconocer nuestras diferencias y aprendemos a respetar a los demás.
-          </p>
+          <div className="bocadillo-cuadrado5">
+            <p>
+              Juguemos y ayudemos a Milu a crear estrategias para mejorar nuestro entorno y cuidar nuestra vida
+            </p>
+          </div>
         </div>
 
         <Image
           className="w-[17pc]  z-40  absolute right-[5%] top-[-1%]"
           data-aos="fade-left" // Definición única de data-aos
           data-aos-out="fade-left"
-          src="/img/mono2.svg"
+          src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F33.png?alt=media&token=adf31456-021a-4f5e-834a-2d1587b2e1ec"
           width={500}
           height={500}
+          alt=""
         />
         <Image
           className="w-[18pc]  z-0  absolute left-[0%] top-[0%]"
@@ -78,6 +65,7 @@ const View11 = () => {
           src="/img/selva1.svg"
           width={500}
           height={500}
+          alt=""
         />
         <Image
           className="w-[18pc]  z-0  absolute right-[0%] top-[0%]"
@@ -86,7 +74,38 @@ const View11 = () => {
           src="/img/selva2.svg"
           width={500}
           height={500}
+          alt=""
         />
+        <div className="Se z-50 absolute top-[60%] left-[50%] bg-white border border-black p-[1pc]" style={{ transform: "translate(-50%, -50%)" }}>
+          <div className="flex items-center gap-[1pc] ">
+            <p className="w-[21pc]">Reciclar las basuras</p>
+            <input type="radio" />
+          </div>
+          <div className="flex items-center gap-[1pc]">
+            <p className="w-[21pc]">Tirar las basuras al piso</p>
+            <input type="radio" />
+          </div>
+          <div className="flex items-center gap-[1pc]">
+            <p className="w-[21pc]">Hacer campañasde aseo en mi barrio</p>
+            <input type="radio" />
+          </div>
+          <div className="flex items-center gap-[1pc]">
+            <p className="w-[21pc]"> Dejar los grifos de agua abiertos para que el agua se desperdicie</p>
+            <input type="radio" />
+          </div>
+          <div className="flex items-center gap-[1pc]">
+            <p className="w-[21pc]">colocar letreros que ensucien las paredes</p>
+            <input type="radio" />
+          </div>
+          <div className="flex items-center gap-[1pc]">
+            <p className="w-[21pc]">Sembrar arboles</p>
+            <input type="radio" />
+          </div>
+          <div className="flex items-center gap-[1pc]">
+            <p className="w-[21pc]">Apagar las luces cuando no sea necesario utilizarla</p>
+            <input type="radio" />
+          </div>
+        </div>
         <div className="flex absolute bottom-0">
           <Image
             className="w-[20pc]  "
@@ -95,6 +114,7 @@ const View11 = () => {
             src="/img/selva3.svg"
             width={500}
             height={500}
+            alt=""
           />
           <Image
             className="w-[20pc]  "
@@ -103,6 +123,7 @@ const View11 = () => {
             src="/img/selva3.svg"
             width={500}
             height={500}
+            alt=""
           />
           <Image
             className="w-[20pc]  "
@@ -111,6 +132,7 @@ const View11 = () => {
             src="/img/selva3.svg"
             width={500}
             height={500}
+            alt=""
           />
           <Image
             className="w-[20pc]  "
@@ -119,6 +141,7 @@ const View11 = () => {
             src="/img/selva3.svg"
             width={500}
             height={500}
+            alt=""
           />
           <Image
             className="w-[20pc]  "
@@ -127,9 +150,10 @@ const View11 = () => {
             src="/img/selva3.svg"
             width={500}
             height={500}
+            alt=""
           />
         </div>
-      </div>
+      </div >
     </>
   );
 };

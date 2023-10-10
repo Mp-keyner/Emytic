@@ -59,20 +59,22 @@ const View1 = () => {
             src="/img/row.svg"
             width={100}
             height={100}
+            className="flecha cursor-pointer"
+            alt=''
           />
         </div>
         <div
-          className="border-2 blu sm:w-1/3 w-[15pc] text-lg px-4 py-1 z-40 absolute  sm:right-[50%] right-[5%] top-[34%]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
+          data-aos="fade-right"
+          className="z-40 absolute sm:right-[58%] right-[5%] sm:top-[36%] top-[25pc]"
         >
-          <p>
-            Nuestro siguiente viaje, es al <b>oriente a la región Orinoquia</b>,
-            aquí a las personas les gusta zapatear al son de arpa, al ritmo del
-            joropo, tengo muchos amigos como Chiqui el chigüiro, Beni el venado,
-            pero hoy conocerás a alguien muy veloz… Vamos!
-          </p>
+          <div className="bocadillo-cuadrado1">
+            <p>
+              Nuestro siguiente viaje, es al <b>oriente a la región Orinoquia</b>,
+              aquí a las personas les gusta zapatear al son de arpa, al ritmo del
+              joropo, tengo muchos amigos como Chiqui el chigüiro, Beni el venado,
+              pero hoy conocerás a alguien muy veloz… Vamos!
+            </p>
+          </div>
         </div>
         <Image
           data-aos="fade-up-left"
@@ -80,7 +82,10 @@ const View1 = () => {
           width={300}
           height={300}
           id="mapa4"
-          className="w-[41pc] border-1px  absolute top-0 right-[0] sm:right-[6%] mp"
+          style={{ transform: "translate(-17%, -45%)" }}
+          className="w-[41pc] border border-none absolute xl:top-[50%] top-[25%] xl:left-[50%] left-[5%] sm:left-[50%] "
+          title="Mapa de Colombia"
+          alt=""
         />
       </div>
     </>

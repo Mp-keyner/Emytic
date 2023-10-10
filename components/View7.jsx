@@ -6,9 +6,9 @@ import MyComponent from "./Ras";
 const View1 = () => {
   const AddAnimation = () => {
     const row = document.getElementById("row");
-    const Nine = document.getElementById("Nine");
+    const ten = document.getElementById("ten");
 
-    Nine.scrollIntoView({
+    ten.scrollIntoView({
       behavior: "smooth",
       block: "start",
       inline: "nearest",
@@ -36,9 +36,9 @@ const View1 = () => {
   };
   const handleKeyDown = (e) => {
     if (e.keyCode === 56) {
-      const Nine = document.getElementById("Nine");
+      const ten = document.getElementById("ten");
 
-      Nine.scrollIntoView({
+      ten.scrollIntoView({
         behavior: "smooth",
         block: "start",
         inline: "nearest",

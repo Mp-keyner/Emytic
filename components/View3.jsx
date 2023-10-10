@@ -71,7 +71,9 @@ const View1 = () => {
         id="secon"
         className="relative border-1 border-solid fondo4 h-screen"
       >
-        <div className="absolute top-[2pc] z-50 left-[0pc] w-[10pc] flex flex-col items-center text-center ">
+        <div className="absolute top-[2pc] z-50 left-[0pc] w-[10pc] flex flex-col items-center text-center "
+          data-aos-delay="1500"
+          data-aos="fade-up-left">
           <h2>Presiona para continuar con la historia de pepe</h2>
           <Image
             onClick={AddAnimation}
@@ -79,10 +81,12 @@ const View1 = () => {
             width={100}
             height={100}
             className="flecha"
+            alt=''
           />
         </div>
 
-        <div className="z-40 absolute left-[38%] sm:left-[15pc] top-[81%] sm:top-[23pc]">
+        <div className="z-40 absolute left-[38%] sm:left-[15pc] top-[81%] sm:top-[23pc]"
+          data-aos="fade-right">
           <div className="bocadillo-cuadrado1" style={{ minHeight: "67px" }}>
             <p>!...¡</p>
           </div>
@@ -94,16 +98,21 @@ const View1 = () => {
           height={600}
           className="sm:w-[36pc] w-[14pc] z-10 position: absolute top-[0pc] right-[0pc]"
           data-aos="fade-right"
+          alt=''
         />
         <Image
           src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F39.png?alt=media&token=5b155cb2-6871-47a5-8735-5bdbb3c639e8"
           data-aos="fade-right"
           width={500}
           height={500}
+          alt=''
           className="w-[9pc] sm:w-[18pc] z-30 position: absolute top-[6%] sm:top-[10pc] right-[0pc]"
         />
 
-        <div className="z-40 absolute  top-[23%] right-[4%] sm:right-[22%] sm:top-[3pc] w-[40pc]">
+        <div className="z-40 absolute  top-[23%] right-[4%] sm:right-[22%] sm:top-[3pc] w-[40pc]"
+          data-aos="fade-right"
+          data-aos-delay="500"
+        >
           <div className="bocadillo-cuadrado4" style={{ width: "40pc" }}>
             <p>
               Esta mañana camino a la escuela, me tropecé con una piedra y ajá,

@@ -6,7 +6,7 @@ import SvgComponent from "./SvgComponent";
 const View1 = () => {
   const AddAnimation = () => {
     const row = document.getElementById("row");
-    const twelve = document.getElementById("twelve");
+    const Twelve = document.getElementById("Twelve");
     const mapados = document.getElementById("mapados");
 
     mapados.src = "/img/map/1.2.svg";
@@ -14,7 +14,7 @@ const View1 = () => {
 
     mapados.addEventListener("animationend", () => {
       // Realizar el desplazamiento al siguiente elemento
-      twelve.scrollIntoView({
+      Twelve.scrollIntoView({
         behavior: "smooth",
         block: "start",
         inline: "nearest",

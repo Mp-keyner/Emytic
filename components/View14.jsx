@@ -15,6 +15,8 @@ const View11 = () => {
 
     row.style.transition = "all 1s";
     row.style.opacity = 0;
+    row.style.top = 0;
+    row.style.left = 0;
     console.log("objectsdftgyhuji");
   };
   const handleKeyDown = (e) => {
@@ -42,8 +44,8 @@ const View11 = () => {
         id="twelve"
         className="relative border-1 border-solid fondo6 h-screen"
       >
-        <div className="absolute bottom-[4pc] right-[0pc] w-[10pc] flex flex-col items-center">
-          <h2>Presiona para </h2>
+        <div className="absolute bottom-[4pc] right-[0pc] w-[10pc] flex flex-col items-center text-center">
+          <h2>Presiona para continuar</h2>
           <Image
             onClick={AddAnimation}
             src="/img/row.svg"

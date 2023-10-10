@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const View11 = () => {
+const View34 = () => {
   const AddAnimation = () => {
     const row = document.getElementById("row");
     const ThirtyFourt = document.getElementById("ThirtyFourt");
@@ -14,27 +14,27 @@ const View11 = () => {
     });
 
     row.style.transition = "all 1s";
-    row.style.top = "60%";
-    row.style.left = "7%";
-    row.style.width = "200px";
-    row.style.transform = "translate(0)";
+    row.style.bottom = "17%";
+    row.style.left = "5%";
+    row.style.width = "13pc";
     console.log("objectsdftgyhuji");
   };
   const handleKeyDown = (e) => {
-    if (e.keyCode === 86) {
-      const ThirtyFourt = document.getElementById("ThirtyFourt");
+    if (e.keyCode === 79) {
+      const Twenty = document.getElementById("Twenty");
 
-      ThirtyFourt.scrollIntoView({
+      Twenty.scrollIntoView({
         behavior: "smooth",
         block: "start",
         inline: "nearest",
       });
 
       row.style.transition = "all 1s";
-      row.style.top = "60%";
-      row.style.left = "7%";
-      row.style.width = "200px";
-      row.style.transform = "translate(0)";
+      row.style.transition = "all 1s";
+      row.style.top = "17%";
+      row.style.left = "93%";
+      row.style.width = "8pc";
+      row.style.opacity = 0;
       console.log("objectsdftgyhuji");
       console.log("Tecla pre");
     }
@@ -42,70 +42,59 @@ const View11 = () => {
   window.addEventListener("keydown", handleKeyDown);
   return (
     <>
-      <div className="relative border-1 border-solid  fondo8 h-screen">
-        <div className="absolute bottom-[4pc] right-[0pc] w-[10pc] flex flex-col items-center z-50">
+      <div
+        id="twelve"
+        className="relative border-1 border-solid fondo8 h-screen"
+      >
+        <div className="absolute top-[4pc] text-center left-[0pc] w-[10pc] flex flex-col items-center ">
           <h2>Presiona para continuar</h2>
           <Image
             onClick={AddAnimation}
             src="/img/row.svg"
             width={100}
             height={100}
+            alt=''
           />
         </div>
+        <Image
+          className="w-[24pc] absolute left-[1pc] bottom-[0pc]"
+          data-aos="fade-left" // Definición única de data-aos
+          data-aos-out="fade-left"
+          src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F34.png?alt=media&token=09cf0f4f-3902-4992-a21e-89b3d3b32d91"
+          width={500}
+          height={500}
+          alt=''
+        />
+        <Image
+          className="w-[78pc] absolute   right-[1pc] bottom-[0pc]"
+          data-aos="fade-left" // Definición única de data-aos
+          data-aos-out="fade-left"
+          src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/13.png?alt=media&token=04e64342-f3a5-49b3-881a-59de998fc84e"
+          width={500}
+          height={500}
+          alt=''
+        />
+        <div
+          data-aos="fade-right"
+          className="z-40 absolute right-[25%] top-[40%]"
+        >
+          <div className="bocadillo-cuadrado4">
+            <p>
+              Hola, <b>Timi</b>, como estas, te he notado pensativa en el dia de hoy...
+            </p>
+          </div>
+        </div>
 
         <div
-          className="border-2 blu w-[24pc] text-lg text-black px-4 py-1 z-40 absolute left-[49%] top-[25%]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
-          style={{ transform: "translate(-50%, -50%)" }}
+          data-aos="fade-right"
+          className="z-40 absolute sm:left-[23%] left-[5%] sm:top-[62%] top-[25pc]"
         >
-          <p>
-            <b>Aprende:</b>
-            <br />
-            Es importante mantener buenas relaciones con otras personas. Esto
-            implica saludar, respetar, compartir y ayudar a los demás. Cuando
-            logramos una buena comunicación, podemos solucionar conflictos,
-            encontramos buenos amigos y somos felices.
-          </p>
+          <div className="bocadillo-cuadrado3">
+            <p>
+              Holaaa Emytic ¡Que alegria verte!
+            </p>
+          </div>
         </div>
-        <div
-          className="border-2 blu  w-[24pc] text-black text-lg px-4 py-1 z-40 absolute left-[33%] top-[58%]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
-          style={{ transform: "translate(-50%, -50%)" }}
-        >
-          <p>
-            La base de una buena comunicación es el dialogo, solo así podemos
-            reconocer nuestras diferencias y aprendemos a respetar a los demás.
-          </p>
-        </div>
-
-        <Image
-          className="w-[17pc]  z-40  absolute left-[0pc] bottom-[-1%]"
-          data-aos="fade-left" // Definición única de data-aos
-          data-aos-out="fade-left"
-          src="/img/mono1.svg"
-          width={500}
-          height={500}
-        />
-        <Image
-          className="w-[18pc] z-0  absolute left-[0%] top-[0%]"
-          data-aos="fade-left" // Definición única de data-aos
-          data-aos-out="fade-left"
-          src="/img/selva1.svg"
-          width={500}
-          height={500}
-        />
-        <Image
-          className="w-[18pc] z-0  absolute right-[0%] top-[0%]"
-          data-aos="fade-left" // Definición única de data-aos
-          data-aos-out="fade-left"
-          src="/img/selva2.svg"
-          width={500}
-          height={500}
-        />
         <div className="flex absolute bottom-0">
           <Image
             className="w-[20pc]  "
@@ -114,6 +103,7 @@ const View11 = () => {
             src="/img/selva3.svg"
             width={500}
             height={500}
+            alt=""
           />
           <Image
             className="w-[20pc]  "
@@ -122,6 +112,7 @@ const View11 = () => {
             src="/img/selva3.svg"
             width={500}
             height={500}
+            alt=""
           />
           <Image
             className="w-[20pc]  "
@@ -130,6 +121,7 @@ const View11 = () => {
             src="/img/selva3.svg"
             width={500}
             height={500}
+            alt=""
           />
           <Image
             className="w-[20pc]  "
@@ -138,6 +130,7 @@ const View11 = () => {
             src="/img/selva3.svg"
             width={500}
             height={500}
+            alt=""
           />
           <Image
             className="w-[20pc]  "
@@ -146,6 +139,7 @@ const View11 = () => {
             src="/img/selva3.svg"
             width={500}
             height={500}
+            alt=""
           />
         </div>
       </div>
@@ -153,4 +147,7 @@ const View11 = () => {
   );
 };
 
-export default View11;
+export default View34;
+
+//     top: 91pc;
+// left: 49pc;

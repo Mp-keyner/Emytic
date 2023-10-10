@@ -1,4 +1,585 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600&display=swap");
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
 * {
-  touch-action: manipulation;
-  /* Otros estilos para el elemento draggable */
+  cursor: pointer;
+  outline: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  /* overflow: hidden; */
+  font-family: "Kanit", sans-serif;
+  color: #000;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+.mess {
+  background-image: url("/img/mensaje.svg");
+}
+
+@keyframes slideAndFade {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-7pc);
+    opacity: 0;
+  }
+}
+
+.fading-of-elements-right {
+  animation: slideAndFade 0.5s ease-in-out forwards; /* Ajusta la duración según tus preferencias */
+}
+@keyframes slideAndFade2 {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-7pc);
+    opacity: 0;
+  }
+}
+
+.fading-of-elements-top {
+  animation: slideAndFade2 0.5s ease-in-out forwards; /* Ajusta la duración según tus preferencias */
+}
+
+/* Estilos normales para el SVG */
+.svg-container {
+  width: 24px;
+  height: 24px;
+  /* Otros estilos que desees aplicar */
+  border: 1px solid red;
+  fill: green !important;
+}
+
+/* Estilos de hover para el SVG */
+.svg-container:hover {
+  fill: blue !important; /* Cambia el color de relleno en hover */
+  transform: scale(1.2); /* Cambia el tamaño en hover */
+  /* Otros estilos de hover que desees aplicar */
+}
+
+@keyframes aumentarYDesvanecer {
+  0% {
+    width: 41pc;
+  }
+  100% {
+    width: 78pc;
+  }
+}
+@keyframes mapaDos {
+  0% {
+    width: 41pc;
+  }
+  100% {
+    width: 78pc;
+  }
+}
+@keyframes mapaTres {
+  0% {
+    width: 41pc;
+  }
+  100% {
+    width: 78pc;
+  }
+}
+@keyframes mapaCuatro {
+  0% {
+    width: 41pc;
+  }
+  100% {
+    width: 78pc;
+  }
+}
+@keyframes mapaFive {
+  0% {
+    width: 41pc;
+  }
+  100% {
+    width: 78pc;
+  }
+}
+
+.mi-animacion {
+  animation: aumentarYDesvanecer 2s ease-in-out forwards; /* 5s es la duración de la animación */
+}
+.miAnimacion2 {
+  animation: mapaDos 2s ease-in-out forwards; /* 5s es la duración de la animación */
+}
+.miAnimacion3 {
+  animation: mapaTres 2s ease-in-out forwards; /* 5s es la duración de la animación */
+}
+.miAnimacion4 {
+  animation: mapaCuatro 2s ease-in-out forwards; /* 5s es la duración de la animación */
+}
+.miAnimacion5 {
+  animation: mapaFive 2s ease-in-out forwards; /* 5s es la duración de la animación */
+}
+
+.mp {
+  transition: all 0.5s ease-in-out forwards;
+}
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.styled-table th {
+  padding: 8px 12px;
+  text-align: left;
+  color: white;
+  text-align: center;
+}
+.styled-table td {
+  padding: 8px 12px;
+  text-align: left;
+  color: black;
+  text-align: center;
+}
+
+.styled-table th {
+  background-color: #333;
+  font-weight: bold;
+}
+.styled-table-tow {
+  width: 50pc;
+  border-collapse: collapse;
+  border: 1px solid #ffffff;
+  margin-top: 20px;
+  color: white;
+}
+
+.styled-table-tow th,
+.styled-table-tow td {
+  padding: 8px 12px;
+  text-align: left;
+  color: black;
+}
+
+.styled-table-tow th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.tat img {
+  width: 3pc;
+}
+
+.tat {
+  display: flex;
+  align-items: center;
+}
+.contaAni {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.fondo1 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/8.png?alt=media&token=e213c385-d239-4ec4-8774-dbad992d2600");
+}
+
+.fondoMap {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/mapa.png?alt=media&token=c7be8ad7-4526-48c3-b8cc-5972adb7224b");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fondo2 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/11.png?alt=media&token=4f76245c-8c5a-422f-abd6-36081942e294");
+}
+
+.blu {
+  backdrop-filter: blur(40px); /* Controla la cantidad de desenfoque */
+}
+@keyframes blurAnimation {
+  0% {
+    backdrop-filter: blur(0px);
+  }
+  100% {
+    backdrop-filter: blur(8px);
+  }
+}
+.blU {
+  backdrop-filter: blur(0px);
+  /* Otras propiedades de estilo aquí */
+
+  /* Propiedades de animación */
+  animation-name: blurAnimation;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.fondo3 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/9.png?alt=media&token=118629a5-7503-449d-a803-ae9583e893fb");
+}
+.fondo4 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/11.png?alt=media&token=4f76245c-8c5a-422f-abd6-36081942e294");
+  background-position: bottom center;
+}
+.fondo5 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/8.png?alt=media&token=e213c385-d239-4ec4-8774-dbad992d2600");
+  background-position: bottom center;
+}
+.fondo6 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/14.png?alt=media&token=a5892626-d9a2-4445-a9d9-80c2842257b8");
+  background-position: bottom center;
+}
+.fondo7 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/selva.png?alt=media&token=032acb0a-3031-49e1-b146-c650276487a0");
+  background-position: bottom;
+}
+.fondo8 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/selva.png?alt=media&token=032acb0a-3031-49e1-b146-c650276487a0");
+  background-position: bottom;
+  background-size: cover;
+}
+
+.bocadillo-cuadrado {
+  position: relative;
+  min-height: 200px;
+  width: 300px;
+  background: white;
+  box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+  border-radius: 8px;
+  color: black;
+  padding: 1pc;
+  transition: all 0.2s ease-in-out;
+}
+.bocadillo-cuadrado:before {
+  border: 25px solid white;
+  content: "";
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  bottom: -48px;
+  left: calc(50% - 25px);
+}
+.bocadillo-cuadrado1 {
+  position: relative;
+  min-height: 200px;
+  width: 300px;
+  background: white;
+  box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+  border-radius: 8px;
+  color: black;
+  padding: 1pc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+.bocadillo-cuadrado1:before {
+  border: 25px solid white;
+  content: "";
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  bottom: 8px;
+  left: calc(-15%);
+  transform: rotate(90deg);
+}
+.bocadillo-cuadrado2 {
+  position: relative;
+  min-height: 90px;
+  width: 300px;
+  background: white;
+  box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+  border-radius: 8px;
+  color: black;
+  padding: 1pc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+.bocadillo-cuadrado2:before {
+  border: 25px solid white;
+  content: "";
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  bottom: 8px;
+  left: calc(100%);
+  transform: rotate(270deg);
+}
+.bocadillo-cuadrado3 {
+  position: relative;
+  min-height: 90px;
+  width: 300px;
+  background: white;
+  box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+  border-radius: 8px;
+  color: black;
+  padding: 1pc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+.bocadillo-cuadrado3:before {
+  border: 25px solid white;
+  content: "";
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  bottom: 8px;
+  left: calc(-15%);
+  transform: rotate(90deg);
+}
+.flecha {
+  transition: all 0.2s ease-in-out;
+  animation: hello 2s infinite;
+}
+@keyframes hello {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.flecha:hover {
+  transform: scale(1.1);
+  animation-play-state: paused;
+}
+.bocadillo-cuadrado4 {
+  position: relative;
+  min-height: 90px;
+  width: 300px;
+  background: white;
+  box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+  border-radius: 8px;
+  color: black;
+  padding: 1pc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+.bocadillo-cuadrado5 {
+  position: relative;
+  min-height: 90px;
+  width: 300px;
+  background: white;
+  box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+  border-radius: 8px;
+  color: black;
+  padding: 1pc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+.bocadillo-cuadrado4:before {
+  border: 25px solid white;
+  content: "";
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  bottom: 17px;
+  left: calc(100%);
+  transform: rotate(270deg);
+}
+.D3 {
+  transition: all 0.3s ease-in-out;
+}
+.bocadillo-cuadrado6 {
+  position: relative;
+  min-height: 90px;
+  width: 300px;
+  background: white;
+  box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+  border-radius: 8px;
+  color: black;
+  padding: 1pc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+.bocadillo-cuadrado6:before {
+  border: 25px solid white;
+  content: "";
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  top: 8px;
+  right: calc(-15%);
+  transform: rotate(268deg);
+}
+.zon {
+  transition: all 0.2s ease-in-out;
+}
+.zon:hover,
+.bocadillo-cuadrado6:hover,
+.bocadillo-cuadrado5:hover,
+.bocadillo-cuadrado4:hover,
+.bocadillo-cuadrado3:hover,
+.bocadillo-cuadrado2:hover,
+.bocadillo-cuadrado1:hover,
+.bocadillo-cuadrado:hover,
+.D3:hover {
+  transform: scale(1.05);
+}
+.noSelect {
+  user-select: none;
+  -webkit-user-select: none; /* Para navegadores basados en WebKit como Safari */
+  -moz-user-select: none; /* Para navegadores basados en Gecko como Firefox */
+  -ms-user-select: none; /* Para Internet Explorer/Edge */
+}
+.alegria:hover {
+  content: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F1.png?alt=media&token=88ce0385-2b21-41a3-8998-59da5b7b8b38");
+}
+.Enojo:hover {
+  content: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F2.png?alt=media&token=7b930cf5-4568-4378-b016-75a904b7ed4b");
+}
+.Tristeza:hover {
+  content: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F3.png?alt=media&token=e6dc324f-a409-4203-81ad-e880f7d7122f");
+}
+.Miedo:hover {
+  content: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F4.png?alt=media&token=6a39090c-ee37-49e8-b331-5c12722c2a78");
+}
+.Sorpresa:hover {
+  content: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F5.png?alt=media&token=47bdd4bf-eb63-4386-b2b4-6cd8e1c2e85d");
+}
+.Desagrado:hover {
+  content: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F6.png?alt=media&token=76e98c7b-ae0a-491f-99ed-7643698ea6b4");
+}
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

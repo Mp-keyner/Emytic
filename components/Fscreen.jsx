@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Sppiner from "./Sppiner";
 import MusicPlayer from "./MusicPlayer";
-import Mapa from "./mapa";
+import Mapa from "./Drop";
 import Playo from "./Play";
 
 const Fscreen = ({ setShowFunction, Show, volumen, setVolumen }) => {

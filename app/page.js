@@ -41,7 +41,7 @@ import Fscreen from "@/components/Fscreen";
 import Playo from "@/components/Play";
 import Ras from "@/components/Ras";
 import Slo from "@/components/Slo";
-import Drop from "@/components/Mapa";
+import Drop from "@/components/Drop";
 
 export default function Home() {
   const audioSource =

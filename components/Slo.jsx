@@ -106,7 +106,7 @@ const View1 = () => {
       <div className="relative border-1 border-solid fondo6 h-screen p-[1pc]">
         <h1 className="text-[2pc] font-semibold">Descubre el mensaje oculto</h1>
         <br />
-        <div className="absolute top-[3pc] right-[0pc] w-[10pc] flex flex-col items-center text-center z-[1]">
+        <div className="absolute top-[15%] right-[0pc] w-[10pc] flex flex-col items-center text-center z-[1]">
           <h2>Presiona para empezar</h2>
           <Image
             onClick={AddAnimation}
@@ -115,7 +115,7 @@ const View1 = () => {
             height={100}
           />
         </div>
-        <div className="p-[1pc] bg-white border-[3px] border-black w-[21pc] text-center">
+        <div className="p-[1pc]  bg-white  border-[3px] border-black w-[21pc] text-center">
           <div className="flex items-center gap-[1pc]">
             <label>
               <img

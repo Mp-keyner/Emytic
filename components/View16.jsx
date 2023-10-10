@@ -92,7 +92,7 @@ const View9 = () => {
     <>
       <div className="relative border-1 border-solid fondo5 h-screen">
         <div className="absolute top-[3pc] left-[0pc] text-center w-[10pc] flex flex-col items-center">
-          <h2>Presiona para empezar</h2>
+          <h2>Presiona para empezar o</h2>
           <Image
             onClick={AddAnimation}
             src="/img/row.svg"

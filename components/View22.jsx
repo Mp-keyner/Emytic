@@ -137,25 +137,25 @@ const View11 = () => {
         </div>
 
         <div
-          className="border-2 blu w-[30pc] text-lg px-4 py-1 z-40 absolute  right-[52%] top-[9%]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
+          data-aos="fade-right"
+          className="z-40 absolute right-[52%] top-[7%]"
         >
-          <p>
-            <span className="text-[1.4pc]">
-              <b>Actividad</b>
-            </span>
-            <br />
-            Ordena las letras y encuentra esas emociones que nos hacen sentir
-            bien y a nuestros amigos también
-          </p>
+          <div className="bocadillo-cuadrado5">
+            <p>
+              <span className="text-[1.4pc]">
+                <b>Actividad</b>
+              </span>
+              <br />
+              Ordena las letras y encuentra esas emociones que nos hacen sentir
+              bien y a nuestros amigos también
+            </p>
+          </div>
         </div>
         <Image
           className="w-[17pc] absolute left-[0pc] bottom-[0pc]"
           data-aos="fade-left" // Definición única de data-aos
           data-aos-out="fade-left"
-          src="/img/pantaParamos.png"
+          src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F35.png?alt=media&token=a3dec0a5-7875-48ce-a6c9-07f14b4eeb60"
           width={500}
           height={500}
         />

@@ -42,7 +42,7 @@ const View1 = () => {
         <h1 className="text-[2pc] font-semibold">Descubre el mensaje oculto</h1>
         <br />
         <div className="absolute top-[3pc] right-[0pc] w-[10pc] flex flex-col items-center text-center z-[1]">
-          <h2>Presiona para empezar</h2>
+          <h2>Presiona para empezar f</h2>
           <Image
             onClick={AddAnimation}
             src="/img/row.svg"

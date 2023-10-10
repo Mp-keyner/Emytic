@@ -1,40 +1,79 @@
-import React from "react";
-import { useSound } from "use-sound";
+import React, { useState } from "react";
+import {
+  DndContext,
+  closestCenter,
+  KeyboardSensor,
+  PointerSensor,
+  TouchSensor, // Agregar TouchSensor
+  useSensor,
+  useSensors,
+} from "@dnd-kit/core";
+import {
+  arrayMove,
+  SortableContext,
+  sortableKeyboardCoordinates,
+  verticalListSortingStrategy,
+} from "@dnd-kit/sortable";
+import { useSortable } from "@dnd-kit/sortable";
+import { CSS } from "@dnd-kit/utilities";
 
-function Mapa() {
-  const soundUrl = "/sounds/guitar-loop.mp3";
+function Drop() {
+  const [items, setItems] = useState([1, 2, 3]);
+  const sensors = useSensors(
+    useSensor(PointerSensor),
+    useSensor(TouchSensor), // Agregar TouchSensor
+    useSensor(KeyboardSensor, {
+      coordinateGetter: sortableKeyboardCoordinates,
+    })
+  );
 
-  const [play, { stop, isPlaying }] = useSound(soundUrl, { volume: 0.5 }); // Establece el volumen inicial
+  return (
+    <DndContext
+      sensors={useSensors(useSensor(TouchSensor))}
+      collisionDetection={closestCenter}
+      onDragEnd={handleDragEnd}
+    >
+      <SortableContext items={items} strategy={verticalListSortingStrategy}>
+        {items.map((id) => (
+          <SortableItem key={id} id={id}>
+            Cuadro {id}
+          </SortableItem>
+        ))}
+      </SortableContext>
+    </DndContext>
+  );
 
-  const handlePlay = () => {
-    console.log("Play");
-    if (!isPlaying) {
-      play();
+  function handleDragEnd(event) {
+    const { active, over } = event;
+
+    if (active.id !== over.id) {
+      setItems((items) => {
+        const oldIndex = items.indexOf(active.id);
+        const newIndex = items.indexOf(over.id);
+
+        return arrayMove(items, oldIndex, newIndex);
+      });
     }
-  };
+  }
+}
 
-  const handleStop = () => {
-    console.log("stop");
-    if (isPlaying) {
-      stop();
-    }
-  };
+export function SortableItem(props) {
+  const { attributes, listeners, setNodeRef, transform, transition } =
+    useSortable({ id: props.id });
 
-  const handleVolumeDown = () => {
-    console.log(vlumen);
-    const currentVolume = isPlaying ? 0.1 : 0; // Ajusta el volumen solo si la música está reproduciéndose
-    play({ volume: currentVolume });
+  const style = {
+    transform: CSS.Transform.toString(transform),
+    transition,
+    border: "1px solid black",
+    padding: "8px",
+    margin: "8px",
   };
 
   return (
-    <div className="absolute z-50">
-      <button style={{ border: "1px solid red" }} onClick={handlePlay}>
-        Reproducir Música
-      </button>
-      <button onClick={handleStop}>Detener Música</button>
-      <button onClick={handleVolumeDown}>Bajar Volumen</button>
+    <div ref={setNodeRef} style={style} {...attributes} {...listeners}>
+      {props.children}
     </div>
   );
 }
 
-export default Mapa;
+export default Drop;

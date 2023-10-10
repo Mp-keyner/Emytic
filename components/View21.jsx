@@ -64,58 +64,65 @@ const View11 = () => {
           width={500}
           height={500}
         />
+
         <div
-          className="border-2  w-1/3 text-lg px-4 py-1 z-40 absolute blu right-[20pc] top-[10pc]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
+          data-aos="fade-right"
+          className="z-40 absolute right-[20pc] top-[10pc]"
         >
-          <p>
-            Aprende Soy dueño de mis propias emociones, por eso me amo, me
-            respeto, aun teniendo problemas y dificultades sé, que puedo
-            superarlos y seguir adelante.
-          </p>
+          <div className="bocadillo-cuadrado2">
+            <p>
+              Aprende Soy dueño de mis propias emociones, por eso me amo, me
+              respeto, aun teniendo problemas y dificultades sé, que puedo
+              superarlos y seguir adelante.
+            </p>
+          </div>
+        </div>
+
+        <div
+          data-aos="fade-right"
+          className="z-40 absolute sm:right-[55%] right-[5%] sm:top-[62%] top-[25pc]"
+        >
+          <div className="bocadillo-cuadrado3">
+            <p>
+              Soso vamos a enseñarle a nuestros amigos lo que aprendimos y
+              aprendimos que…
+            </p>
+          </div>
         </div>
         <div
-          className="border-2  w-1/3 text-lg px-4 py-1 z-40 absolute blu right-[36pc] top-[23pc]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
-        >
-          <p>
-            Soso vamos a enseñarle a nuestros amigos lo que aprendimos y
-            aprendimos que…
-          </p>
-        </div>
-        <div
-          className="border-2  w-[13pc] blu flex items-center gap-[1pc] text-lg px-4 py-1 z-40 absolute  left-[25%] top-[16%]"
+          className="border-2  w-[13pc] blu flex items-center gap-[1pc] text-lg px-4 py-1 z-40 absolute  "
           data-aos="fade-right" // Definición única de data-aos
           data-aos-out="fade-left"
           id="mensaje"
           style={{ transform: "translate(-50%, -50%)" }}
+        ></div>
+        <div
+          data-aos="fade-right"
+          className="z-40 absolute left-[15%] top-[10%]"
         >
-          <p>Soy Capaz</p>
-          <Image src="/img/check.svg" width={50} height={50} />
+          <div className="bocadillo-cuadrado5" style={{ fontSize: "1.5pc" }}>
+            <p>Soy Capaz</p>
+            <Image src="/img/check.svg" width={50} height={50} />
+          </div>
+        </div>
+
+        <div
+          data-aos="fade-right"
+          className="z-40 absolute left-[25%] top-[37%]"
+        >
+          <div className="bocadillo-cuadrado5" style={{ fontSize: "1.5pc" }}>
+            <p>Soy Fuerte</p>
+            <Image src="/img/check.svg" width={50} height={50} />
+          </div>
         </div>
         <div
-          className="border-2 blu w-[13pc] flex items-center gap-[1pc] text-lg px-4 py-1 z-40 absolute  left-[25%] top-[37%]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
-          style={{ transform: "translate(-50%, -50%)" }}
+          data-aos="fade-right"
+          className="z-40 absolute left-[60%] bottom-[16%]"
         >
-          <p>Soy Fuerte</p>
-          <Image src="/img/check.svg" width={50} height={50} />
-        </div>
-        <div
-          className="border-2 blu w-[13pc] flex items-center gap-[1pc] text-lg px-4 py-1 z-40 absolute  left-[60%] top-[16%]"
-          data-aos="fade-right" // Definición única de data-aos
-          data-aos-out="fade-left"
-          id="mensaje"
-          style={{ transform: "translate(-50%, -50%)" }}
-        >
-          <p>No me rindo</p>
-          <Image src="/img/check.svg" width={50} height={50} />
+          <div className="bocadillo-cuadrado5" style={{ fontSize: "1.5pc" }}>
+            <p>No me rindo</p>
+            <Image src="/img/check.svg" width={50} height={50} />
+          </div>
         </div>
         <div
           className="border-2 blu w-[13pc] flex items-center gap-[1pc] text-lg px-4 py-1 z-40 absolute  left-[60%] top-[83%]"

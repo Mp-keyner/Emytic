@@ -1,85 +1,114 @@
-"use client";
-import React from "react";
-import Image from "next/image";
-
-const View = () => {
-  const ko = () => {
-    console.log("keyner");
-  };
-  const handleClick = () => {
-    console.log("¡Haz hecho clic en el div o etiqueta!");
-  };
-  return (
+<Playo volumen={volumen} setVolumen={setVolumen} />;
+{
+  Show ? (
+    <Fscreen
+      setShowFunction={setShow}
+      Show={Show}
+      volumen={volumen}
+      setVolumen={setVolumen}
+    />
+  ) : (
     <>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600&display=swap"
-        rel="stylesheet"
-      />
-
-      <main>
-        <div className="border-1 border-solid border-red-500 bg-customColor h-screen text-white">
-          <h1 className="text-center" onClick={handleClick}>
-            EMYTIC
-          </h1>
-          <div className="flex justify-between items-center h-[96%] relative">
-            <div className="w-[50%] pl-[1.5pc]">
-              <Image
-                src="/img/Rocking Horse.svg"
-                priority={true} // {false} | {true}
-                width={400}
-                height={600}
-                className="w-[100%] position: absolute top-[-42.6pc] right-[7pc]"
-              />
-            </div>
-            <div className="w-[50%] flex justify-end">
-              <Image
-                src="/img/1.svg"
-                width={300}
-                height={500}
-                style={{ zIndex: 999 }}
-                className="absolute top-[12pc] left-[34%]"
-              />
-              <Image
-                src="/img/6.svg"
-                width={300}
-                height={500}
-                className="absolute top-[21pc] left-[-1pc]"
-              />
-              <div className="w-[27%] bg-red-500">
-                <h2>Presiona para empezar</h2>
-                <button onClick={ko} style={{ background: "blue" }}>
-                  CLck
-                </button>
-                <Image src="/img/row.svg" width={100} height={100} />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Divs adicionales con contenido */}
-        <div
-          id="secon"
-          className="border-1 border-solid border-red-500 bg-red-400 h-screen"
-        >
-          Contenido aquí
-        </div>
-        <div
-          id="secon"
-          className="border-1 border-solid border-blue-500 bg-blue-400 h-screen"
-        >
-          Contenido aquí
-        </div>
-        <div
-          id="secon"
-          className="border-1 border-solid border-red-500 bg-yellow-400 h-screen"
-        >
-          Contenido aquí
-        </div>
-      </main>
+      <NO />
+      <div id="Secon">
+        <View1 />
+      </div>
+      <div id="Three">
+        <View2 />
+      </div>
+      <div id="Fourth">
+        <View3 />
+      </div>
+      <div id="Five">
+        <View4 />
+      </div>
+      <div id="Six">
+        <View5 />
+      </div>
+      <div id="Seven">
+        <View6 />
+      </div>
+      <div id="Eight">
+        <View7 />
+      </div>
+      <div id="Nine">
+        <View8 />
+      </div>
+      <div id="ten">
+        <View9 />
+      </div>
+      <div id="Eleven">
+        <View10 />
+      </div>
+      <div id="Twelve">
+        <View11 />
+      </div>
+      <div id="Thirteen">
+        <View12 />
+      </div>
+      <div id="Fourteen">
+        <View13 />
+      </div>
+      <div id="Fifteen">
+        <View14 />
+      </div>
+      <div id="Sixteen">
+        <Slo />
+      </div>
+      <div id="Seventeen">
+        <View16 />
+      </div>
+      <div id="Eightteen">
+        <View17 />
+      </div>
+      <div id="Nineteen">
+        <View18 />
+      </div>
+      <div id="Twenty">
+        <View19 />
+      </div>
+      <div id="TwentyOne">
+        <View20 />
+      </div>
+      <div id="TwentyTwo">
+        <View21 />
+      </div>
+      <div id="TwentyThree">
+        <View22 />
+      </div>
+      <div id="TwentyFour">
+        <View23 />
+      </div>
+      <div id="TwentyFive">
+        <View24 />
+      </div>
+      <div id="TwentySix">
+        <View25 />
+      </div>
+      <div id="TwentySeven">
+        <View26 />
+      </div>
+      <div id="TwentyEight">
+        <View27 />
+      </div>
+      <div id="TwentyNine">
+        <View28 />
+      </div>
+      <div id="Thirty">
+        <View29 />
+      </div>
+      <div id="ThirtyOne">
+        <View30 />
+      </div>
+      <div id="ThirtyTow">
+        <View31 />
+      </div>
+      <div id="ThirtyThree">
+        <View32 />
+      </div>
+      <div id="ThirtyFourt">
+        <View33 />
+      </div>
     </>
   );
-};
-
-export default View;
+}

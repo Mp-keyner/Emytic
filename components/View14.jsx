@@ -30,6 +30,7 @@ const View11 = () => {
 
       row.style.transition = "all 1s";
       row.style.opacity = 0;
+      row.style.right = 0;
       console.log("objectsdftgyhuji");
       console.log("Tecla pre");
     }

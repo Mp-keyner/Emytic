@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 // import Ras from "@/components/Ras";
 // import Slo from "@/components/Slo";
 import Drop from "@/components/Drop";
+import Situaciones from "@/components/Situaciones";
 
 export default function Home() {
   // const audioSource =
@@ -24,7 +25,7 @@ export default function Home() {
   console.log(tal);
   return (
     <>
-      <Drop />
+      <Situaciones />
     </>
   );
 }

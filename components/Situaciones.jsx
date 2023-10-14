@@ -1,10 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Styles.css";
 
 const Situaciones = () => {
+  const [screen, setScreen] = useState("");
+  const [View1, setView1] = useState("");
+  useEffect(() => {
+    setScreen(window.screen.height);
+    setView1(window.innerHeight);
+  }, []);
   const Sentimientoa = [
     {
       id: 1,
@@ -96,9 +102,8 @@ const Situaciones = () => {
       </div>
       <div style={styles.Footer}>
         <h2>Presiona para saber por que pepe estaba enojado</h2>
-        <p>{window.screen.height}-- </p>
-
-        <p>{window.innerHeight}</p>
+        <p>{screen}--</p>
+        <p>{View1}</p>
         <Image
           //   onClick={AddAnimation}
           src="/img/row.svg"

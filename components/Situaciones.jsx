@@ -62,7 +62,7 @@ const Situaciones = () => {
     },
   ];
   return (
-    <dii>
+    <dii style={styles.ContainerApp}>
       <div style={styles.containerFace}>
         <div style={styles.Faces}>
           {Sentimientoa.map((item) => (
@@ -92,6 +92,18 @@ const Situaciones = () => {
           </div>
         ))}
       </div>
+      <div style={styles.Footer}>
+        <h2>Presiona para saber por que pepe estaba enojado</h2>
+
+        <Image
+          //   onClick={AddAnimation}
+          src="/img/row.svg"
+          width={100}
+          height={100}
+          className="flecha"
+          alt=""
+        />
+      </div>
     </dii>
   );
 };
@@ -99,10 +111,18 @@ const Situaciones = () => {
 export default Situaciones;
 
 const styles = {
+  ContainerApp: {
+    backgroundColor: "#333",
+    height: "100vh",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    flexDirection: "column",
+  },
   containerFace: {
     backgroundColor: "#79c606",
     width: "100%",
-    height: "30vh",
+    // height: "30vh",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -110,13 +130,13 @@ const styles = {
   situaciones: {
     backgroundColor: "blue",
     width: "100%",
-    height: "53vh",
+    height: "22pc",
     display: "flex",
     alignItems: "center",
     flexDirection: "column",
     gap: "1pc",
     overflowY: "scroll",
-    padding: "1pc 0",
+    padding: "1pc",
   },
   Faces: {
     background: "#79c606",
@@ -147,7 +167,7 @@ const styles = {
   },
   containerSituaciones: {
     border: "1px solid red",
-    width: "376px",
+    width: "100%",
     minHeight: "6pc",
     display: "flex",
     alignItems: "center",
@@ -161,5 +181,11 @@ const styles = {
     marginLeft: "1pc",
     fontSize: "1.4pc",
     width: "16pc",
+  },
+  Footer: {
+    border: "1px solid red",
+    display: "flex",
+    alignItems: "center",
+    padding: "0 1pc",
   },
 };

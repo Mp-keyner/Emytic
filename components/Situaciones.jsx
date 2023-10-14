@@ -62,7 +62,7 @@ const Situaciones = () => {
     },
   ];
   return (
-    <div style={{ cursor: Touch }}>
+    <dii>
       <div style={styles.containerFace}>
         <div style={styles.Faces}>
           {Sentimientoa.map((item) => (
@@ -92,7 +92,7 @@ const Situaciones = () => {
           </div>
         ))}
       </div>
-    </div>
+    </dii>
   );
 };
 

@@ -3,10 +3,15 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import "./Styles.css";
+import Select from "./Select";
 
 const Situaciones = () => {
+  const [showSelect, setShowSelect] = useState(false);
   const [screen, setScreen] = useState("");
   const [vista, setvista] = useState("");
+  const [face, setFace] = useState(
+    "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FcarasBlancas%2F1.png?alt=media&token=8fe4a84f-0e14-4a78-86ba-026d0f88c24c"
+  );
   useEffect(() => {
     setScreen(window.screen.height);
     setvista(window.innerHeight);
@@ -69,7 +74,7 @@ const Situaciones = () => {
       description: "No conseguir mi juguete favorito",
     },
   ];
-  const vite = vista;
+  console.log(showSelect);
 
   const styles = {
     ContainerApp: {
@@ -124,19 +129,24 @@ const Situaciones = () => {
       margin: "3px",
       transition: "all 0.2s ease-in-out",
       padding: "2px 0",
-      // boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
     },
     containerSituaciones: {
-      border: "1px solid red",
+      //   border: "1px solid red",
       width: "100%",
       minHeight: "6pc",
       display: "flex",
       alignItems: "center",
+      padding: "0 5px",
+      boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
     },
     FaceOption: {
       width: "6pc",
-      height: "1pc",
+      height: "90%",
       border: "1px solid red",
+      backgroundImage: `url(${face})`,
+      backgroundSize: "4.5pc",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
     },
     situacion: {
       marginLeft: "1pc",
@@ -178,7 +188,10 @@ const Situaciones = () => {
         {Situaciones.map((item) => (
           <div key={item.id} style={styles.containerSituaciones}>
             <p style={styles.situacion}>{item.description}</p>
-            <div style={styles.FaceOption}></div>
+            <div
+              style={styles.FaceOption}
+              onClick={() => setShowSelect(true)}
+            ></div>
           </div>
         ))}
       </div>
@@ -195,6 +208,7 @@ const Situaciones = () => {
           alt=""
         />
       </div>
+      {showSelect && <Select vista={vista} setShowSelect={setShowSelect} />}
     </dii>
   );
 };

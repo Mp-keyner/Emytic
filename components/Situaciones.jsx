@@ -94,7 +94,9 @@ const Situaciones = () => {
       </div>
       <div style={styles.Footer}>
         <h2>Presiona para saber por que pepe estaba enojado</h2>
+        <p>{window.screen.height}-- </p>
 
+        <p>{window.innerHeight}</p>
         <Image
           //   onClick={AddAnimation}
           src="/img/row.svg"

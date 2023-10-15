@@ -34,27 +34,27 @@ const Situaciones = () => {
     },
     {
       id: 2,
-      name: "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F1.png?alt=media&token=88ce0385-2b21-41a3-8998-59da5b7b8b38",
+      name: "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F3.png?alt=media&token=e6dc324f-a409-4203-81ad-e880f7d7122f",
       title: "Alegria",
     },
     {
       id: 3,
-      name: "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F1.png?alt=media&token=88ce0385-2b21-41a3-8998-59da5b7b8b38",
+      name: "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F2.png?alt=media&token=7b930cf5-4568-4378-b016-75a904b7ed4b",
       title: "Alegria",
     },
     {
       id: 4,
-      name: "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F1.png?alt=media&token=88ce0385-2b21-41a3-8998-59da5b7b8b38",
+      name: "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F4.png?alt=media&token=6a39090c-ee37-49e8-b331-5c12722c2a78",
       title: "Alegria",
     },
     {
       id: 5,
-      name: "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F1.png?alt=media&token=88ce0385-2b21-41a3-8998-59da5b7b8b38",
+      name: "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F5.png?alt=media&token=47bdd4bf-eb63-4386-b2b4-6cd8e1c2e85d",
       title: "Alegria",
     },
     {
       id: 6,
-      name: "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F1.png?alt=media&token=88ce0385-2b21-41a3-8998-59da5b7b8b38",
+      name: "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F6.png?alt=media&token=76e98c7b-ae0a-491f-99ed-7643698ea6b4",
       title: "Alegria",
     },
   ];
@@ -164,7 +164,7 @@ const Situaciones = () => {
       boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
     },
     FaceOption: {
-      width: "6pc",
+      width: "20%",
       height: "90%",
       // border: "1px solid red",
       backgroundSize: "4.5pc",
@@ -174,13 +174,14 @@ const Situaciones = () => {
     situacion: {
       marginLeft: "1pc",
       fontSize: "1.4pc",
-      width: "16pc",
+      width: "80%",
     },
     Footer: {
       // border: "1px solid red",
       display: "flex",
       alignItems: "center",
       padding: "0 1pc",
+      marginBottom: "0.6pc",
     },
   };
 
@@ -203,7 +204,7 @@ const Situaciones = () => {
   };
 
   return (
-    <dii style={styles.ContainerApp} className="fondo4">
+    <dii style={styles.ContainerApp} className="fondo8">
       <div style={styles.containerFace}>
         <div style={styles.Faces}>
           {Sentimientoa.map((item) => (
@@ -244,10 +245,12 @@ const Situaciones = () => {
         ))}
       </div>
       <div style={styles.Footer}>
-        <h2>Presiona para saber por que pepe estaba enojado</h2>
+        <h2 className="text-white text-[1.2pc]">
+          Presiona para saber por que pepe estaba enojado
+        </h2>
         <Image
           //   onClick={AddAnimation}
-          src="/img/row.svg"
+          src="/img/row2.svg"
           width={100}
           height={100}
           className="flecha"
@@ -256,7 +259,7 @@ const Situaciones = () => {
       </div>
       {showSelect && (
         <Select
-          screen={screen}
+          screen={vista}
           setShowSelect={setShowSelect}
           showSelect={showSelect}
           setStatusChange={setStatusChange}

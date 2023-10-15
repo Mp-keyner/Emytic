@@ -8,10 +8,20 @@ import Select from "./Select";
 const Situaciones = () => {
   const [showSelect, setShowSelect] = useState(false);
   const [screen, setScreen] = useState("");
-  const [vista, setvista] = useState("");
+  const [StatusChange, setStatusChange] = useState("");
+  const tal =
+    "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FcarasBlancas%2F1.png?alt=media&token=8fe4a84f-0e14-4a78-86ba-026d0f88c24c";
+  const [face1, setFace1] = useState(tal);
+  const [face2, setFace2] = useState(tal);
+  const [face3, setFace3] = useState(tal);
+  const [face4, setFace4] = useState(tal);
+  const [face5, setFace5] = useState(tal);
+  const [face6, setFace6] = useState(tal);
   const [face, setFace] = useState(
     "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FcarasBlancas%2F1.png?alt=media&token=8fe4a84f-0e14-4a78-86ba-026d0f88c24c"
   );
+  const [vista, setvista] = useState("");
+  console.log(face1);
   useEffect(() => {
     setScreen(window.screen.height);
     setvista(window.innerHeight);
@@ -52,33 +62,46 @@ const Situaciones = () => {
     {
       id: 1,
       description: "Ganar un examen con excelente nota",
+      statusFace: face1,
+      setStatusFace: setFace1,
     },
     {
       id: 2,
-      description: "Quedarme solo en la oscuridad",
+      description: "Ganar un examen con excelente nota",
+      statusFace: face2,
+      setStatusFace: setFace2,
     },
     {
       id: 3,
-      description: "Recibir una fiesta sorpresa",
+      description: "Ganar un examen con excelente nota",
+      statusFace: face3,
+      setStatusFace: setFace3,
     },
     {
       id: 4,
-      description: "Perder a un ser querido",
+      description: "Ganar un examen con excelente nota",
+      statusFace: face4,
+      setStatusFace: setFace4,
     },
     {
       id: 5,
-      description: "Probar un alimento que no me gusta",
+      description: "Ganar un examen con excelente nota",
+      statusFace: face5,
+      setStatusFace: setFace5,
     },
     {
       id: 6,
-      description: "No conseguir mi juguete favorito",
+      description: "Ganar un examen con excelente nota",
+      statusFace: face6,
+      setStatusFace: setFace6,
     },
   ];
   console.log(showSelect);
-
+  console.log(vista + " kk");
+  console.log(screen);
   const styles = {
     ContainerApp: {
-      backgroundColor: "#333",
+      // backgroundColor: "#333",
       height: `${vista}px`,
       display: "flex",
       justifyContent: "space-between",
@@ -86,7 +109,7 @@ const Situaciones = () => {
       flexDirection: "column",
     },
     containerFace: {
-      backgroundColor: "#79c606",
+      // backgroundColor: "#79c606",
       width: "100%",
       // height: "30vh",
       display: "flex",
@@ -94,7 +117,7 @@ const Situaciones = () => {
       alignItems: "center",
     },
     situaciones: {
-      backgroundColor: "blue",
+      // backgroundColor: "blue",
       width: "100%",
       height: "22pc",
       display: "flex",
@@ -105,7 +128,8 @@ const Situaciones = () => {
       padding: "1pc",
     },
     Faces: {
-      background: "#79c606",
+      // background: "#79c606",
+      boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
       width: "96%",
       // height: "80%",
       padding: "1pc",
@@ -142,8 +166,7 @@ const Situaciones = () => {
     FaceOption: {
       width: "6pc",
       height: "90%",
-      border: "1px solid red",
-      backgroundImage: `url(${face})`,
+      // border: "1px solid red",
       backgroundSize: "4.5pc",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
@@ -154,15 +177,33 @@ const Situaciones = () => {
       width: "16pc",
     },
     Footer: {
-      border: "1px solid red",
+      // border: "1px solid red",
       display: "flex",
       alignItems: "center",
       padding: "0 1pc",
     },
   };
 
+  const ChangeFace = (x, id) => {
+    return () => {
+      console.log(x);
+      // y("keynere");
+      setShowSelect(true);
+      setStatusChange(id);
+      console.log(id);
+    };
+  };
+  const Status = {
+    setFace1,
+    setFace2,
+    setFace3,
+    setFace4,
+    setFace5,
+    setFace6,
+  };
+
   return (
-    <dii style={styles.ContainerApp}>
+    <dii style={styles.ContainerApp} className="fondo4">
       <div style={styles.containerFace}>
         <div style={styles.Faces}>
           {Sentimientoa.map((item) => (
@@ -186,19 +227,24 @@ const Situaciones = () => {
       </div>
       <div style={styles.situaciones}>
         {Situaciones.map((item) => (
-          <div key={item.id} style={styles.containerSituaciones}>
+          <div
+            key={item.id}
+            style={styles.containerSituaciones}
+            className="blu"
+          >
             <p style={styles.situacion}>{item.description}</p>
             <div
-              style={styles.FaceOption}
-              onClick={() => setShowSelect(true)}
+              style={{
+                ...styles.FaceOption,
+                backgroundImage: `url(${item.statusFace})`,
+              }}
+              onClick={ChangeFace(item.statusFace, item.id)}
             ></div>
           </div>
         ))}
       </div>
       <div style={styles.Footer}>
         <h2>Presiona para saber por que pepe estaba enojado</h2>
-        <p>{screen}--</p>
-        <p>{vista}</p>
         <Image
           //   onClick={AddAnimation}
           src="/img/row.svg"
@@ -208,7 +254,16 @@ const Situaciones = () => {
           alt=""
         />
       </div>
-      {showSelect && <Select vista={vista} setShowSelect={setShowSelect} />}
+      {showSelect && (
+        <Select
+          screen={screen}
+          setShowSelect={setShowSelect}
+          showSelect={showSelect}
+          setStatusChange={setStatusChange}
+          StatusChange={StatusChange}
+          Status={Status}
+        />
+      )}
     </dii>
   );
 };

@@ -1,6 +1,7 @@
 "use client";
 
 import Situaciones from "@/components/Situaciones";
+import Letras from "@/components/Letras";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
@@ -19,7 +20,7 @@ export default function Home() {
   }, []);
   return (
     <>
-      <Situaciones />
+      <Letras />
     </>
   );
 }

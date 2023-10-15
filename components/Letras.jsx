@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import "./Styles.css";
-import Select from "./Select";
+import Select from "./SelectLetras";
 
 const Situaciones = () => {
   const [showSelect, setShowSelect] = useState(false);
@@ -58,40 +58,46 @@ const Situaciones = () => {
       title: "Desagrado",
     },
   ];
-  const Situaciones = [
+  const Palabras = [
     {
       id: 1,
-      description: "Ganar un examen con excelente nota",
+      description: ["M", "A", "N", "E", "J", "O"],
       statusFace: face1,
       setStatusFace: setFace1,
     },
     {
       id: 2,
-      description: "Quedarme solo en la oscuridad",
+      description: ["M", "I", "S"],
       statusFace: face2,
       setStatusFace: setFace2,
     },
     {
       id: 3,
-      description: "Recibir una fiesta sorpresa",
+      description: ["E", "M", "O", "C", "I", "O", "N", "E", "S"],
       statusFace: face3,
       setStatusFace: setFace3,
     },
     {
       id: 4,
-      description: "Perder a un ser querido",
+      description: ["Y"],
       statusFace: face4,
       setStatusFace: setFace4,
     },
     {
       id: 5,
-      description: "Probar un alimento que no me gusta",
+      description: ["T", "E", "N", "G", "O"],
       statusFace: face5,
       setStatusFace: setFace5,
     },
     {
       id: 6,
-      description: "No conseguir mi juguete favorito",
+      description: ["B", "U", "E", "N", "A", "S"],
+      statusFace: face6,
+      setStatusFace: setFace6,
+    },
+    {
+      id: 7,
+      description: ["R", "E", "L", "A", "C", "I", "O", "N", "E", "S"],
       statusFace: face6,
       setStatusFace: setFace6,
     },
@@ -117,9 +123,9 @@ const Situaciones = () => {
       alignItems: "center",
     },
     situaciones: {
-      // backgroundColor: "blue",
+      backgroundColor: "blue",
       width: "100%",
-      height: "22pc",
+      height: "90%",
       display: "flex",
       alignItems: "center",
       flexDirection: "column",
@@ -160,14 +166,15 @@ const Situaciones = () => {
       minHeight: "6pc",
       display: "flex",
       alignItems: "center",
+      justifyContent: "space-around",
       padding: "0 5px",
       boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
     },
     FaceOption: {
-      width: "20%",
+      width: "4.5pc",
       height: "90%",
       // border: "1px solid red",
-      backgroundSize: "4.5pc",
+      backgroundSize: "100%",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
     },
@@ -183,6 +190,11 @@ const Situaciones = () => {
       padding: "0 1pc",
       marginBottom: "0.6pc",
     },
+    letras: {
+      width: "10%",
+      backgroundColor: "red",
+      height: "50%",
+    },
   };
 
   const ChangeFace = (x, id) => {
@@ -190,7 +202,7 @@ const Situaciones = () => {
       console.log(x);
       // y("keynere");
       setShowSelect(true);
-      setStatusChange(id);
+      setStatusChange(id + 1);
       console.log(id);
     };
   };
@@ -205,42 +217,22 @@ const Situaciones = () => {
 
   return (
     <dii style={styles.ContainerApp} className="fondo8">
-      <div style={styles.containerFace}>
-        <div style={styles.Faces}>
-          {Sentimientoa.map((item) => (
-            <div
-              key={item.id}
-              style={styles.containerFaceImages}
-              className="containerFaceImages"
-            >
-              <Image
-                src={item.name}
-                width={100}
-                height={100}
-                title={item.name}
-                alt="Alegria"
-                style={styles.FaceSentimientos}
-              />
-              <p>{item.title}</p>
-            </div>
-          ))}
-        </div>
-      </div>
       <div style={styles.situaciones}>
-        {Situaciones.map((item) => (
+        {Palabras.map((item) => (
           <div
             key={item.id}
             style={styles.containerSituaciones}
             className="blu"
           >
-            <p style={styles.situacion}>{item.description}</p>
-            <div
-              style={{
-                ...styles.FaceOption,
-                backgroundImage: `url(${item.statusFace})`,
-              }}
-              onClick={ChangeFace(item.statusFace, item.id)}
-            ></div>
+            {item.description.map((subItem, index) => (
+              <div
+                key={subItem.id}
+                style={styles.letras}
+                onClick={ChangeFace(item.statusFace, index)}
+              >
+                {item.id}
+              </div>
+            ))}
           </div>
         ))}
       </div>
@@ -272,3 +264,5 @@ const Situaciones = () => {
 };
 
 export default Situaciones;
+
+// onClick={ChangeFace(item.statusFace, item.id)}

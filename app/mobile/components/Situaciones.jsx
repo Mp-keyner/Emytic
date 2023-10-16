@@ -102,7 +102,7 @@ const Situaciones = () => {
   const styles = {
     ContainerApp: {
       // backgroundColor: "#333",
-      height: `${vista}px`,
+      height: `${screen}px`,
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",

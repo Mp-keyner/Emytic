@@ -163,11 +163,11 @@ const Letras = () => {
   ];
   console.log(showSelect);
   console.log(vista + " kk");
-  console.log(screen);
+  console.log(screen + "screen");
   const styles = {
     ContainerApp: {
       // backgroundColor: "#333",
-      height: `${vista}px`,
+      height: `${screen}px`,
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",

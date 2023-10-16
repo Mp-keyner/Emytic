@@ -10,6 +10,7 @@ import View3 from "./components/View3";
 import View4 from "./components/View4";
 import View5 from "./components/View5";
 import View6 from "./components/View6";
+import Letras from "./components/Letras";
 
 const PageMobile = () => {
   return (
@@ -37,6 +38,7 @@ const PageMobile = () => {
         <View4 />
         <View5 />
         <View6 />
+        <Letras />
       </AppProvider>
     </div>
   );

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import "./Styles.css";
-import Select from "./Select";
+import Select from "./Styles.css";
 
 const Situaciones = () => {
   const [showSelect, setShowSelect] = useState(false);

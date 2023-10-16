@@ -120,15 +120,13 @@ const Select = ({
       id: 1,
       name: "Aa",
       letra: "A",
-      image:
-        "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F3.png?alt=media&token=e6dc324f-a409-4203-81ad-e880f7d7122f",
+      image: "/img/Animal/4.svg",
     },
     {
       id: 2,
       name: "Bb",
       letra: "B",
-      image:
-        "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F3.png?alt=media&token=e6dc324f-a409-4203-81ad-e880f7d7122f",
+      image: "/img/Animal/5.svg",
     },
     {
       id: 3,
@@ -220,13 +218,13 @@ const Select = ({
           case 5:
             setFace15(name);
             break;
-          case 5:
+          case 6:
             setFace16(name);
             break;
-          case 5:
+          case 7:
             setFace17(name);
             break;
-          case 5:
+          case 8:
             setFace18(name);
             break;
 
@@ -235,117 +233,95 @@ const Select = ({
         }
         break;
       case 4:
-        setFace4(name);
+        switch (idIndex) {
+          case 0:
+            setFace19(name);
+            break;
+          default:
+            break;
+        }
         break;
       case 5:
-        setFace5(name);
+        switch (idIndex) {
+          case 0:
+            setFace20(name);
+            break;
+          case 1:
+            setFace21(name);
+            break;
+          case 2:
+            setFace22(name);
+            break;
+          case 3:
+            setFace23(name);
+            break;
+          case 4:
+            setFace24(name);
+            break;
+          default:
+            break;
+        }
         break;
       case 6:
-        setFace6(name);
+        switch (idIndex) {
+          case 0:
+            setFace25(name);
+            break;
+          case 1:
+            setFace26(name);
+            break;
+          case 2:
+            setFace27(name);
+            break;
+          case 3:
+            setFace28(name);
+            break;
+          case 4:
+            setFace29(name);
+            break;
+          case 5:
+            setFace30(name);
+            break;
+          default:
+            break;
+        }
         break;
       case 7:
-        setFace7(name);
+        switch (idIndex) {
+          case 0:
+            setFace31(name);
+            break;
+          case 1:
+            setFace32(name);
+            break;
+          case 2:
+            setFace33(name);
+            break;
+          case 3:
+            setFace34(name);
+            break;
+          case 4:
+            setFace35(name);
+            break;
+          case 5:
+            setFace36(name);
+            break;
+          case 6:
+            setFace37(name);
+            break;
+          case 7:
+            setFace38(name);
+            break;
+          case 8:
+            setFace39(name);
+            break;
+          case 9:
+            setFace40(name);
+            break;
+          default:
+            break;
+        }
         break;
-      case 8:
-        setFace8(name);
-        break;
-      case 9:
-        setFace9(name);
-        break;
-      case 10:
-        setFace10(name);
-        break;
-      case 11:
-        setFace11(name);
-        break;
-      case 12:
-        setFace12(name);
-        break;
-      case 13:
-        setFace13(name);
-        break;
-      case 14:
-        setFace14(name);
-        break;
-      case 15:
-        setFace15(name);
-        break;
-      case 16:
-        setFace16(name);
-        break;
-      case 17:
-        setFace17(name);
-        break;
-      case 18:
-        setFace18(name);
-        break;
-      case 19:
-        setFace19(name);
-        break;
-      case 20:
-        setFace20(name);
-        break;
-      case 21:
-        setFace21(name);
-        break;
-      case 22:
-        setFace22(name);
-        break;
-      case 23:
-        setFace23(name);
-        break;
-      case 24:
-        setFace24(name);
-        break;
-      case 25:
-        setFace25(name);
-        break;
-      case 26:
-        setFace26(name);
-        break;
-      case 27:
-        setFace27(name);
-        break;
-      case 28:
-        setFace28(name);
-        break;
-      case 29:
-        setFace29(name);
-        break;
-      case 30:
-        setFace30(name);
-        break;
-      case 31:
-        setFace31(name);
-        break;
-      case 32:
-        setFace32(name);
-        break;
-      case 33:
-        setFace33(name);
-        break;
-      case 34:
-        setFace34(name);
-        break;
-      case 35:
-        setFace35(name);
-        break;
-      case 36:
-        setFace36(name);
-        break;
-      case 37:
-        setFace37(name);
-        break;
-      case 38:
-        setFace38(name);
-        break;
-      case 39:
-        setFace39(name);
-        break;
-      case 40:
-        setFace40(name);
-        break;
-
       default:
         break;
     }

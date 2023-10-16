@@ -182,7 +182,7 @@ const Situaciones = () => {
       alignItems: "center",
     },
     situaciones: {
-      backgroundColor: "blue",
+      // backgroundColor: "blue",
       width: "100%",
       height: "90%",
       display: "flex",
@@ -251,8 +251,11 @@ const Situaciones = () => {
     },
     letras: {
       width: "10%",
-      backgroundColor: "red",
+      // backgroundColor: "red",
+      border: "1px solid black",
       height: "50%",
+      textAlign: "center",
+      fontSize: "2pc",
     },
   };
 

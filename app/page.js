@@ -1,14 +1,10 @@
 "use client";
 
+import Situaciones from "@/components/Situaciones";
+import Letras from "@/components/Letras";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
-// import Fscreen from "@/components/Fscreen";
-// import Playo from "@/components/Play";
-// import Ras from "@/components/Ras";
-// import Slo from "@/components/Slo";
-import Drop from "@/components/Drop";
-import Situaciones from "@/components/Situaciones";
 
 import NO from "../components/NO";
 import View1 from "@/components/View1";

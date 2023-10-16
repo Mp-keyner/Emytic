@@ -13,7 +13,7 @@ const Select = ({
   const { setFace1, setFace2, setFace3, setFace4, setFace5, setFace6 } = Status;
   const styles = {
     constainerSelect: {
-      // backgroundColor: "red",
+      backgroundColor: "red",
       width: "100%",
       height: `${screen}px`,
       position: "absolute",

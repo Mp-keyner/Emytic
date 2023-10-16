@@ -308,6 +308,33 @@ body {
   left: calc(-15%);
   transform: rotate(90deg);
 }
+.bocadillo-cuadrado-mobile1 {
+  position: relative;
+  min-height: 200px;
+  width: 300px;
+  background: white;
+  box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+  border-radius: 8px;
+  color: black;
+  padding: 1pc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+.bocadillo-cuadrado-mobile1:before {
+  border: 25px solid white;
+  content: "";
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  bottom: 8px;
+  bottom: calc(-19%);
+  left: calc(10%);
+}
+
 .bocadillo-cuadrado2 {
   position: relative;
   min-height: 90px;
@@ -334,6 +361,32 @@ body {
   left: calc(100%);
   transform: rotate(270deg);
 }
+.bocadillo-cuadrado-mobile2 {
+  position: relative;
+  min-height: 90px;
+  width: 300px;
+  background: white;
+  box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+  border-radius: 8px;
+  color: black;
+  padding: 1pc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+.bocadillo-cuadrado-mobile2:before {
+  border: 25px solid white;
+  content: "";
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  bottom: -45px;
+  left: calc(75%);
+  transform: rotate(0deg);
+}
 .bocadillo-cuadrado3 {
   position: relative;
   min-height: 90px;
@@ -358,6 +411,32 @@ body {
   position: absolute;
   bottom: 8px;
   left: calc(-15%);
+  transform: rotate(90deg);
+}
+.bocadillo-cuadrado-mobile3 {
+  position: relative;
+  min-height: 90px;
+  width: 200px;
+  background: white;
+  box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+  border-radius: 8px;
+  color: black;
+  padding: 1pc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+.bocadillo-cuadrado-mobile3:before {
+  border: 25px solid white;
+  content: "";
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  top: 20px;
+  left: calc(-25%);
   transform: rotate(90deg);
 }
 .flecha {

@@ -12,7 +12,7 @@ const View1 = () => {
 
     mapa.src = "/img/map/1.svg";
     mapa.classList.add("mi-animacion");
-    console.log(animationName)
+    console.log(animationName);
     if (animationName === "mi-animacion") {
       mapa.addEventListener("animationend", () => {
         // Realizar el desplazamiento al siguiente elemento
@@ -41,7 +41,7 @@ const View1 = () => {
         console.log("Tecla pre");
       });
     }
-  }
+  };
   const AddAnimation = () => {
     const row = document.getElementById("row");
     const Three = document.getElementById("Three");
@@ -142,7 +142,7 @@ const View1 = () => {
         <div
           data-aos="fade-right"
           data-aos-delay="500"
-          className="z-40 absolute sm:right-[58%] right-[5%] sm:top-[62%] top-[25pc]"
+          className="z-40 absolute sm:right-[58%] sm:bg-slate-700 right-[5%] sm:top-[62%] top-[25pc]"
         >
           <div className="bocadillo-cuadrado1">
             <p>

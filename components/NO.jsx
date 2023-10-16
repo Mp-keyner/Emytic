@@ -138,7 +138,7 @@ const NO = () => {
 
         <div
           data-aos="fade-left"
-          className="z-40 absolute sm:right-[24%] sm:top-[27%] right-[2%] top-[14%] xl:top-[35%] xl:rigth-[16%]"
+          className="z-40 absolute sm:bg-slate-500 sm:top-[27%] right-[2%] top-[14%] xl:top-[35%] xl:rigth-[16%]"
         >
           <div className="bocadillo-cuadrado1">
             <p>

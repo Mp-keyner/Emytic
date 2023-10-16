@@ -11,17 +11,55 @@ const Situaciones = () => {
   const [StatusChange, setStatusChange] = useState("");
   const tal =
     "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FcarasBlancas%2F1.png?alt=media&token=8fe4a84f-0e14-4a78-86ba-026d0f88c24c";
-  const [face1, setFace1] = useState(tal);
-  const [face2, setFace2] = useState(tal);
-  const [face3, setFace3] = useState(tal);
-  const [face4, setFace4] = useState(tal);
-  const [face5, setFace5] = useState(tal);
-  const [face6, setFace6] = useState(tal);
+  const [face1, setFace1] = useState("M");
+  const [face2, setFace2] = useState("A");
+  const [face3, setFace3] = useState("N");
+  const [face4, setFace4] = useState("E");
+  const [face5, setFace5] = useState("J");
+  const [face6, setFace6] = useState("O");
+  const [face7, setFace7] = useState("M");
+  const [face8, setFace8] = useState("I");
+  const [face9, setFace9] = useState("S");
+  const [face10, setFace10] = useState("E");
+  const [face11, setFace11] = useState("M");
+  const [face12, setFace12] = useState("O");
+  const [face13, setFace13] = useState("C");
+  const [face14, setFace14] = useState("I");
+  const [face15, setFace15] = useState("O");
+  const [face16, setFace16] = useState("N");
+  const [face17, setFace17] = useState("E");
+  const [face18, setFace18] = useState("S");
+  const [face19, setFace19] = useState("Y");
+  const [face20, setFace20] = useState("T");
+  const [face21, setFace21] = useState("E");
+  const [face22, setFace22] = useState("N");
+  const [face23, setFace23] = useState("G");
+  const [face24, setFace24] = useState("O");
+  const [face25, setFace25] = useState("B");
+  const [face26, setFace26] = useState("U");
+  const [face27, setFace27] = useState("E");
+  const [face28, setFace28] = useState("N");
+  const [face29, setFace29] = useState("A");
+  const [face30, setFace30] = useState("S");
+  const [face31, setFace31] = useState("R");
+  const [face32, setFace32] = useState("E");
+  const [face33, setFace33] = useState("L");
+  const [face34, setFace34] = useState("A");
+  const [face35, setFace35] = useState("C");
+  const [face36, setFace36] = useState("I");
+  const [face37, setFace37] = useState("O");
+  const [face38, setFace38] = useState("N");
+  const [face39, setFace39] = useState("E");
+  const [face40, setFace40] = useState("S");
+  const [idIndex, setIdIndex] = useState(0);
   const [face, setFace] = useState(
     "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FcarasBlancas%2F1.png?alt=media&token=8fe4a84f-0e14-4a78-86ba-026d0f88c24c"
   );
+  console.log(face1, face2, face3, face4, face5, face6);
+  console.log(face7, face8, face9);
+  console.log(face3);
+  console.log(face25, face26, face27, face28, face29, face30);
   const [vista, setvista] = useState("");
-  console.log(face1);
   useEffect(() => {
     setScreen(window.screen.height);
     setvista(window.innerHeight);
@@ -61,45 +99,66 @@ const Situaciones = () => {
   const Palabras = [
     {
       id: 1,
-      description: ["M", "A", "N", "E", "J", "O"],
+      description: [face1, face2, face3, face4, face5, face6],
       statusFace: face1,
       setStatusFace: setFace1,
     },
     {
       id: 2,
-      description: ["M", "I", "S"],
+      description: [face7, face8, face9],
       statusFace: face2,
       setStatusFace: setFace2,
     },
     {
       id: 3,
-      description: ["E", "M", "O", "C", "I", "O", "N", "E", "S"],
+      description: [
+        face10,
+        face11,
+        face12,
+        face13,
+        face14,
+        face15,
+        face16,
+        face17,
+        face18,
+      ],
       statusFace: face3,
       setStatusFace: setFace3,
     },
     {
       id: 4,
-      description: ["Y"],
+      description: [face19],
       statusFace: face4,
       setStatusFace: setFace4,
     },
     {
       id: 5,
-      description: ["T", "E", "N", "G", "O"],
+      description: [face20, face21, face22, face23, face24],
       statusFace: face5,
       setStatusFace: setFace5,
     },
     {
       id: 6,
-      description: ["B", "U", "E", "N", "A", "S"],
+      description: [face25, face26, face27, face28, face29, face30],
       statusFace: face6,
       setStatusFace: setFace6,
     },
     {
       id: 7,
-      description: ["R", "E", "L", "A", "C", "I", "O", "N", "E", "S"],
+      description: [
+        face31,
+        face32,
+        face33,
+        face34,
+        face35,
+        face36,
+        face37,
+        face38,
+        face39,
+        face40,
+      ],
       statusFace: face6,
-      setStatusFace: setFace6,
+      setStatusFace: setFace7,
     },
   ];
   console.log(showSelect);
@@ -197,13 +256,16 @@ const Situaciones = () => {
     },
   };
 
-  const ChangeFace = (x, id) => {
+  const ChangeFace = (x, id, idFather) => {
     return () => {
       console.log(x);
       // y("keynere");
       setShowSelect(true);
-      setStatusChange(id + 1);
-      console.log(id);
+      setStatusChange(idFather);
+
+      setIdIndex(id);
+      console.log(idIndex, "numero de la letra");
+      console.log(StatusChange, "numero de la fila ");
     };
   };
   const Status = {
@@ -213,6 +275,40 @@ const Situaciones = () => {
     setFace4,
     setFace5,
     setFace6,
+    setFace7,
+    setFace8,
+    setFace9,
+    setFace10,
+    setFace11,
+    setFace12,
+    setFace13,
+    setFace14,
+    setFace15,
+    setFace16,
+    setFace17,
+    setFace18,
+    setFace19,
+    setFace20,
+    setFace21,
+    setFace22,
+    setFace23,
+    setFace24,
+    setFace25,
+    setFace26,
+    setFace27,
+    setFace28,
+    setFace29,
+    setFace30,
+    setFace31,
+    setFace32,
+    setFace33,
+    setFace34,
+    setFace35,
+    setFace36,
+    setFace37,
+    setFace38,
+    setFace39,
+    setFace40,
   };
 
   return (
@@ -228,9 +324,9 @@ const Situaciones = () => {
               <div
                 key={subItem.id}
                 style={styles.letras}
-                onClick={ChangeFace(item.statusFace, index)}
+                onClick={ChangeFace(item.statusFace, index, item.id)}
               >
-                {item.id}
+                {subItem}
               </div>
             ))}
           </div>
@@ -257,6 +353,7 @@ const Situaciones = () => {
           setStatusChange={setStatusChange}
           StatusChange={StatusChange}
           Status={Status}
+          idIndex={idIndex}
         />
       )}
     </dii>

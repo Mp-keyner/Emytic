@@ -11,6 +11,7 @@ import View4 from "./components/View4";
 import View5 from "./components/View5";
 import View6 from "./components/View6";
 import Letras from "./components/Letras";
+import Situaciones from "./components/Situaciones";
 
 const PageMobile = () => {
   return (
@@ -38,6 +39,7 @@ const PageMobile = () => {
         <View4 />
         <View5 />
         <View6 />
+        <Situaciones />
         <Letras />
       </AppProvider>
     </div>

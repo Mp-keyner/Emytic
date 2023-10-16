@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import "./Styles.css";
 import Select from "./SelectLetras";
 
-const Situaciones = () => {
+const Letras = () => {
   const [showSelect, setShowSelect] = useState(false);
   const [screen, setScreen] = useState("");
   const [StatusChange, setStatusChange] = useState("");
@@ -363,6 +363,6 @@ const Situaciones = () => {
   );
 };
 
-export default Situaciones;
+export default Letras;
 
 // onClick={ChangeFace(item.statusFace, item.id)}

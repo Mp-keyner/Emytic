@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import "./Styles.css";
-import Select from "./Styles.css";
+import Select from "./Select";
 
 const Situaciones = () => {
   const [showSelect, setShowSelect] = useState(false);
@@ -102,7 +102,7 @@ const Situaciones = () => {
   const styles = {
     ContainerApp: {
       // backgroundColor: "#333",
-      height: `${screen}px`,
+      height: `${vista}px`,
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",

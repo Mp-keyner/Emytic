@@ -167,7 +167,7 @@ const Letras = () => {
   const styles = {
     ContainerApp: {
       // backgroundColor: "#333",
-      height: `${screen}px`,
+      height: `${vista}px`,
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",

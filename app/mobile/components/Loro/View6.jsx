@@ -1,16 +1,16 @@
 import React, { useContext } from "react";
-import { AppContext } from "./Context";
+import { AppContext } from "../Context";
 import Image from "next/image";
 
-const View4 = () => {
+const View6 = () => {
   const { handleClick } = useContext(AppContext);
 
   return (
     <div className="h-screen fondo2 relative">
       <div className="absolute bottom-4 flex flex-col justify-center items-center text-center w-52 font-bold">
-        <h2>Presiona para continuar con la historia de pepe</h2>
+        <h2>Presiona para continuar con esta aventura</h2>
         <Image
-          onClick={() => handleClick(6)}
+          onClick={() => handleClick(8)}
           src="/img/row.svg"
           width={100}
           height={100}
@@ -19,25 +19,22 @@ const View4 = () => {
         />
       </div>
       <div
-        className="bocadillo-cuadrado-mobile2 fixed left-14 -bottom-72 z-50"
+        className="bocadillo-cuadrado-mobile2 fixed left-16 top-96 z-50"
         data-aos="fade-right"
         data-aos-delay="500"
       >
-        <p>
-          Tranquilo Pepe, a cualquiera le puede pasar lo importante es que te
-          calmaste y así es más fácil ver que te enoja y que te hace muy feliz.
-          Amiguitos…vamos responder en tu cuaderno “Feliz” las siguientes
-          Preguntas
-        </p>
+        <p>Pepe buscando información encontré esto...</p>
       </div>
       <div
-        className="bocadillo-cuadrado-mobile3 fixed z-50 left-40 -top-32 overflow-scroll"
+        className="bocadillo-cuadrado-mobile3 fixed left-40 -top-4 z-50 h-64 overflow-scroll"
         data-aos="fade-right"
         data-aos-delay="500"
       >
-        <p className="">
-          De pronto, llegó mamá y con su abrazo, mi cuerpo se sintió relajao y
-          respiraba mejor, y sentí calma
+        <p className="h-full">
+          Las emociones son <b>estados de las personas</b>, que permiten que
+          reaccione frente a diversas situaciones y puedan comunicarse con los
+          demás Para conocerlas debes sentirlas, pero es importante el mensaje
+          que con ellas les muestras a lo demás.
         </p>
       </div>
       <Image
@@ -62,4 +59,4 @@ const View4 = () => {
   );
 };
 
-export default View4;
+export default View6;

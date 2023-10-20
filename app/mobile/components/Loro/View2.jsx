@@ -1,16 +1,16 @@
-import React, { useContext } from "react";
-import { AppContext } from "./Context";
 import Image from "next/image";
+import React, { useContext } from "react";
+import { AppContext } from "../Context";
 
-const View4 = () => {
+const View2 = () => {
   const { handleClick } = useContext(AppContext);
 
   return (
-    <div className="h-screen fondo2 relative">
+    <div className="h-screen relative fondo2">
       <div className="absolute bottom-4 flex flex-col justify-center items-center text-center w-52 font-bold">
-        <h2>Presiona para continuar con esta aventura</h2>
+        <h2>Presiona para sabes por qué pepe está enojado</h2>
         <Image
-          onClick={() => handleClick(7)}
+          onClick={() => handleClick(4)}
           src="/img/row.svg"
           width={100}
           height={100}
@@ -19,17 +19,21 @@ const View4 = () => {
         />
       </div>
       <div
-        className="bocadillo-cuadrado-mobile2 fixed left-14 -bottom-72 z-50"
+        className="bocadillo-cuadrado-mobile2 fixed left-6 top-96"
         data-aos="fade-right"
         data-aos-delay="500"
       >
+        <p>¡Hola Pepe, estos son mis amigos!</p>
+      </div>
+      <div
+        className="bocadillo-cuadrado-mobile3 fixed z-50 left-44 -top-8"
+        data-aos="fade-right"
+        data-aos-delay="1500"
+      >
         <p>
-          1. En que parte del cuerpo sintió Pepe: <b>La tristeza</b> -{" "}
-          <b>El enojo</b> - <b>La calma</b>
-          <br />
-          2. ¿Alguna vez te has sentido triste y enojado?
-          <br />
-          3. ¿Cuándo te sientes así, que haces?
+          ¡Hola amigos, soy Pepe, el loro!
+          <br /> Hoy estaba un poco enojado y triste a la vez ¿Quieres saber por
+          que?
         </p>
       </div>
       <Image
@@ -54,4 +58,4 @@ const View4 = () => {
   );
 };
 
-export default View4;
+export default View2;

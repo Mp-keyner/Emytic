@@ -1,11 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
-import "./Styles.css";
+import React, { useContext, useEffect, useState } from "react";
+import "../Styles.css";
 import Select from "./Select";
+import { AppContext } from "../Context";
 
 const Situaciones = () => {
+  const { handleClick } = useContext(AppContext);
   const [showSelect, setShowSelect] = useState(false);
   const [screen, setScreen] = useState("");
   const [StatusChange, setStatusChange] = useState("");
@@ -102,7 +104,7 @@ const Situaciones = () => {
   const styles = {
     ContainerApp: {
       // backgroundColor: "#333",
-      height: `${vista}px`,
+      height: "100vh",
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",
@@ -204,7 +206,7 @@ const Situaciones = () => {
   };
 
   return (
-    <dii style={styles.ContainerApp} className="fondo8">
+    <div style={styles.ContainerApp} className="fondo8">
       <div style={styles.containerFace}>
         <div style={styles.Faces}>
           {Sentimientoa.map((item) => (
@@ -249,7 +251,7 @@ const Situaciones = () => {
           Presiona para saber por que pepe estaba enojado
         </h2>
         <Image
-          //   onClick={AddAnimation}
+          onClick={() => handleClick(8)}
           src="/img/row2.svg"
           width={100}
           height={100}
@@ -267,7 +269,7 @@ const Situaciones = () => {
           Status={Status}
         />
       )}
-    </dii>
+    </div>
   );
 };
 

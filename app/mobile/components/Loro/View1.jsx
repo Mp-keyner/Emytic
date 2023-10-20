@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useContext } from "react";
-import { AppContext } from "./Context";
+import { AppContext } from "../Context";
 
 const View1 = () => {
   const { handleClick } = useContext(AppContext);
@@ -34,7 +34,7 @@ const View1 = () => {
         data-aos-delay="500"
         className="absolute left-9 bottom-64"
       >
-        <div className="bocadillo-cuadrado-mobile1 ">
+        <div className="bocadillo-cuadrado-mobile1">
           <p>
             Nuestro primer viaje es a la región Caribe, esta ubicada al
             <b>norte de Colombia</b>, tiene lindas playas , las personas son

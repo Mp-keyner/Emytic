@@ -38,28 +38,41 @@ const AppProvider = ({ children }) => {
           "fixed z-50 bottom-44 right-1 w-[10pc] opacity-100 duration-500"
         );
         window.scrollTo({ top: innerHeight * pageNumber, behavior: "smooth" });
-        console.log(pageNumber);
         break;
       case 6:
         setEmyticClass(
           "fixed z-50 bottom-48 right-1 w-[10pc] opacity-100 duration-500"
         );
         window.scrollTo({ top: innerHeight * pageNumber, behavior: "smooth" });
-        console.log(pageNumber);
         break;
       case 7:
         setEmyticClass(
-          "fixed z-50 bottom-48 right-1 w-[10pc] opacity-100 duration-500"
+          "fixed z-50 bottom-48 right-1 w-[10pc] opacity-100 duration-500 opacity-0"
         );
         window.scrollTo({ top: innerHeight * pageNumber, behavior: "smooth" });
-        console.log(pageNumber);
         break;
       case 8:
         setEmyticClass(
-          "fixed z-50 bottom-44 right-1 w-[10pc] opacity-100 duration-500"
+          "fixed z-50 bottom-44 right-1 w-[10pc] opacity-100 duration-500 opacity-0"
         );
         window.scrollTo({ top: innerHeight * pageNumber, behavior: "smooth" });
-        console.log(pageNumber);
+        break;
+      case 9:
+        setEmyticClass("fixed z-50 bottom-20 left-5 w-[10pc] duration-500");
+        window.scrollTo({ top: innerHeight * pageNumber, behavior: "smooth" });
+        break;
+      case 10:
+        setEmyticClass(
+          "fixed z-50 bottom-32 right-10 w-[10pc] opacity-100 duration-500"
+        );
+        window.scrollTo({ top: innerHeight * pageNumber, behavior: "smooth" });
+        break;
+      case 11:
+        setEmyticClass(
+          "fixed z-50 bottom-0 right-10 w-[10pc] opacity-100 duration-500 opacity-0"
+        );
+        window.scrollTo({ top: innerHeight * pageNumber, behavior: "smooth" });
+        console.log("sisa");
         break;
     }
   };

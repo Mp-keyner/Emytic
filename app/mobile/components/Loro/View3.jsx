@@ -1,16 +1,16 @@
-import Image from "next/image";
 import React, { useContext } from "react";
-import { AppContext } from "./Context";
+import { AppContext } from "../Context";
+import Image from "next/image";
 
-const View2 = () => {
+const View3 = () => {
   const { handleClick } = useContext(AppContext);
 
   return (
-    <div className="h-screen relative fondo2">
+    <div className="h-screen fondo2 relative">
       <div className="absolute bottom-4 flex flex-col justify-center items-center text-center w-52 font-bold">
-        <h2>Presiona para sabes por qué pepe está enojado</h2>
+        <h2>Presiona para continuar con la historia de pepe</h2>
         <Image
-          onClick={() => handleClick(4)}
+          onClick={() => handleClick(5)}
           src="/img/row.svg"
           width={100}
           height={100}
@@ -23,17 +23,22 @@ const View2 = () => {
         data-aos="fade-right"
         data-aos-delay="500"
       >
-        <p>¡Hola Pepe, estos son mis amigos!</p>
+        <p>¡!</p>
       </div>
       <div
-        className="bocadillo-cuadrado-mobile3 fixed z-50 left-44 -top-8"
+        className="bocadillo-cuadrado-mobile3 fixed z-50 left-44 -top-8 h-64 overflow-scroll"
         data-aos="fade-right"
-        data-aos-delay="1500"
+        data-aos-delay="500"
       >
-        <p>
-          ¡Hola amigos, soy Pepe, el loro!
-          <br /> Hoy estaba un poco enojado y triste a la vez ¿Quieres saber por
-          que?
+        <p className="h-full pb-4">
+          Esta mañana camino a la escuela, me tropecé con una piedra y ajá, caí
+          sobre un charco de barro… me ensucie todo!, mi mamá me había bañado
+          muy bien y por distraído me paso esto, me puse muy triste, tenia el
+          genio bajito… y cuando estoy triste mi cuerpo se siente sin energía, y
+          mi pecho me duele, Todos lo pelaos en la calle se rieron de mi…y
+          aunque en mi mente me decía-cógela suave, de un momento a otro sentía
+          tronco e calor, y respiraba como si echara chispitas, estaba tan
+          enojado y no sabia que hacer.
         </p>
       </div>
       <Image
@@ -58,4 +63,4 @@ const View2 = () => {
   );
 };
 
-export default View2;
+export default View3;

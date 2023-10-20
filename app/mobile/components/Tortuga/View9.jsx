@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { AppContext } from "./Context";
+import { AppContext } from "../Context";
 import Image from "next/image";
 
-const View3 = () => {
+const View9 = () => {
   const { handleClick } = useContext(AppContext);
 
   return (
@@ -63,4 +63,4 @@ const View3 = () => {
   );
 };
 
-export default View3;
+export default View9;

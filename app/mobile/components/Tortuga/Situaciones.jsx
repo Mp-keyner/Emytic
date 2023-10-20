@@ -99,8 +99,8 @@ const Situaciones = () => {
     },
   ];
   console.log(showSelect);
-  console.log(vista + " kk");
-  console.log(screen);
+  console.log(vista + " vista");
+  console.log(screen, "creen");
   const styles = {
     ContainerApp: {
       // backgroundColor: "#333",

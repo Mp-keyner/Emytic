@@ -1,6 +1,6 @@
 import React from "react";
 
-const Select = ({
+const SelectLetras = ({
   screen,
   setShowSelect,
   setStatusChange,
@@ -132,27 +132,145 @@ const Select = ({
       id: 3,
       name: "Cc",
       letra: "C",
-      image:
-        "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F2.png?alt=media&token=7b930cf5-4568-4378-b016-75a904b7ed4b",
+      image: "/img/Animal/6.svg",
     },
     {
       id: 4,
       name: "Dd",
       letra: "D",
-      image:
-        "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F4.png?alt=media&token=6a39090c-ee37-49e8-b331-5c12722c2a78",
+      image: "/img/Animal/7.svg",
     },
     {
       id: 5,
-      name: "Sorpresa",
-      image:
-        "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F5.png?alt=media&token=47bdd4bf-eb63-4386-b2b4-6cd8e1c2e85d",
+      name: "Ee",
+      letra: "E",
+      image: "/img/Animal/8.svg",
     },
     {
       id: 6,
-      name: "Desagrado",
-      image:
-        "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FCarasColor%2F6.png?alt=media&token=76e98c7b-ae0a-491f-99ed-7643698ea6b4",
+      name: "Ff",
+      letra: "F",
+      image: "/img/Animal/9.svg",
+    },
+    {
+      id: 7,
+      name: "Gg",
+      letra: "G",
+      image: "/img/Animal/10.svg",
+    },
+    {
+      id: 8,
+      name: "Hh",
+      letra: "H",
+      image: "/img/Animal/11.svg",
+    },
+    {
+      id: 9,
+      name: "Ii",
+      letra: "I",
+      image: "/img/Animal/12.svg",
+    },
+    {
+      id: 10,
+      name: "Jj",
+      letra: "J",
+      image: "/img/Animal/13.svg",
+    },
+    {
+      id: 11,
+      name: "Kk",
+      letra: "K",
+      image: "/img/Animal/14.svg",
+    },
+    {
+      id: 12,
+      name: "Ll",
+      letra: "L",
+      image: "/img/Animal/15.svg",
+    },
+    {
+      id: 13,
+      name: "Mm",
+      letra: "M",
+      image: "/img/Animal/16.svg",
+    },
+    {
+      id: 14,
+      name: "Nn",
+      letra: "N",
+      image: "/img/Animal/17.svg",
+    },
+    {
+      id: 15,
+      name: "Oo",
+      letra: "O",
+      image: "/img/Animal/18.svg",
+    },
+    {
+      id: 16,
+      name: "Pp",
+      letra: "P",
+      image: "/img/Animal/19.svg",
+    },
+    {
+      id: 17,
+      name: "Qq",
+      letra: "Q",
+      image: "/img/Animal/20.svg",
+    },
+    {
+      id: 18,
+      name: "Rr",
+      letras: "R",
+      image: "/img/Animal/21.svg",
+    },
+    {
+      id: 19,
+      name: "Ss",
+      letra: "S",
+      image: "/img/Animal/22.svg",
+    },
+    {
+      id: 20,
+      name: "Tt",
+      letra: "T",
+      image: "/img/Animal/23.svg",
+    },
+    {
+      id: 21,
+      name: "Uu",
+      letra: "U",
+      image: "/img/Animal/24.svg",
+    },
+    {
+      id: 22,
+      name: "Vv",
+      letra: "V",
+      image: "/img/Animal/25.svg",
+    },
+    {
+      id: 23,
+      name: "Ww",
+      letra: "W",
+      image: "/img/Animal/26.svg",
+    },
+    {
+      id: 24,
+      name: "Xx",
+      letra: "X",
+      image: "/img/Animal/27.svg",
+    },
+    {
+      id: 25,
+      name: "Yy",
+      letra: "Y",
+      image: "/img/Animal/28.svg",
+    },
+    {
+      id: 26,
+      name: "Zz",
+      letra: "Z",
+      image: "/img/Animal/29.svg",
     },
   ];
   const funcions = (name) => {
@@ -358,4 +476,4 @@ const Select = ({
   );
 };
 
-export default Select;
+export default SelectLetras;

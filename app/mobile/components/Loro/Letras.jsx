@@ -3,8 +3,8 @@
 import Image from "next/image";
 import React, { useContext, useEffect, useState } from "react";
 import "../Styles.css";
-import Select from "./SelectLetras";
 import { AppContext } from "../Context";
+import SelectLetras from "./SelectLetras";
 
 const Letras = () => {
   const { handleClick } = useContext(AppContext);
@@ -14,23 +14,119 @@ const Letras = () => {
   const tal =
     "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FcarasBlancas%2F1.png?alt=media&token=8fe4a84f-0e14-4a78-86ba-026d0f88c24c";
   const [face1, setFace1] = useState("M");
-  const [face2, setFace2] = useState("A");
-  const [face3, setFace3] = useState("N");
-  const [face4, setFace4] = useState("E");
-  const [face5, setFace5] = useState("J");
-  const [face6, setFace6] = useState("O");
-  const [face7, setFace7] = useState("M");
-  const [face8, setFace8] = useState("I");
-  const [face9, setFace9] = useState("S");
-  const [face10, setFace10] = useState("E");
-  const [face11, setFace11] = useState("M");
+  const [face2, setFace2] = useState(
+    <img
+      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
+      alt="si si"
+      style={{ maxWidth: "3pc" }}
+    />
+  ); //A
+  const [face3, setFace3] = useState(
+    <img
+      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
+      alt="si si"
+      style={{ maxWidth: "3pc" }}
+    />
+  ); //N
+  const [face4, setFace4] = useState(
+    <img
+      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
+      alt="si si"
+      style={{ maxWidth: "3pc" }}
+    />
+  ); //E
+  const [face5, setFace5] = useState(
+    <img
+      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
+      alt="si si"
+      style={{ maxWidth: "3pc" }}
+    />
+  ); //J
+  const [face6, setFace6] = useState(
+    <img
+      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
+      alt="si si"
+      style={{ maxWidth: "3pc" }}
+    />
+  ); //O
+  const [face7, setFace7] = useState(
+    <img
+      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
+      alt="si si"
+      style={{ maxWidth: "3pc" }}
+    />
+  ); //M
+  const [face8, setFace8] = useState(
+    <img
+      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
+      alt="si si"
+      style={{ maxWidth: "3pc" }}
+    />
+  ); //I
+  const [face9, setFace9] = useState(
+    <img
+      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
+      alt="si si"
+      style={{ maxWidth: "3pc" }}
+    />
+  ); //S
+  const [face10, setFace10] = useState(
+    <img
+      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
+      alt="si si"
+      style={{ maxWidth: "3pc" }}
+    />
+  ); //E
+  const [face11, setFace11] = useState(
+    <img
+      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
+      alt="si si"
+      style={{ maxWidth: "3pc" }}
+    />
+  ); //M
   const [face12, setFace12] = useState("O");
-  const [face13, setFace13] = useState("C");
-  const [face14, setFace14] = useState("I");
-  const [face15, setFace15] = useState("O");
-  const [face16, setFace16] = useState("N");
-  const [face17, setFace17] = useState("E");
-  const [face18, setFace18] = useState("S");
+  const [face13, setFace13] = useState(
+    <img
+      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
+      alt="si si"
+      style={{ maxWidth: "3pc" }}
+    />
+  ); //c
+  const [face14, setFace14] = useState(
+    <img
+      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
+      alt="si si"
+      style={{ maxWidth: "3pc" }}
+    />
+  ); //I
+  const [face15, setFace15] = useState(
+    <img
+      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
+      alt="si si"
+      style={{ maxWidth: "3pc" }}
+    />
+  ); //O
+  const [face16, setFace16] = useState(
+    <img
+      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
+      alt="si si"
+      style={{ maxWidth: "3pc" }}
+    />
+  ); //N
+  const [face17, setFace17] = useState(
+    <img
+      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
+      alt="si si"
+      style={{ maxWidth: "3pc" }}
+    />
+  ); //E
+  const [face18, setFace18] = useState(
+    <img
+      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
+      alt="si si"
+      style={{ maxWidth: "3pc" }}
+    />
+  ); //S
   const [face19, setFace19] = useState("Y");
   const [face20, setFace20] = useState("T");
   const [face21, setFace21] = useState("E");
@@ -258,6 +354,9 @@ const Letras = () => {
       height: "50%",
       textAlign: "center",
       fontSize: "2pc",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
     },
   };
 
@@ -351,8 +450,8 @@ const Letras = () => {
         />
       </div>
       {showSelect && (
-        <Select
-          screen={vista}
+        <SelectLetras
+          screen={screen}
           setShowSelect={setShowSelect}
           showSelect={showSelect}
           setStatusChange={setStatusChange}

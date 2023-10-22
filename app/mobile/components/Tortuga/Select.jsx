@@ -15,7 +15,6 @@ const Select = ({
     constainerSelect: {
       // backgroundColor: "red",
       width: "100%",
-      height: `${screen}px`,
       position: "absolute",
       overflow: "hidden",
     },

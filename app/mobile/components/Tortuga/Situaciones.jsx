@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React, { useContext, useEffect, useState } from "react";
-import "../Styles.css";
+import "../Style  s.css";
 import Select from "./Select";
 import { AppContext } from "../Context";
 

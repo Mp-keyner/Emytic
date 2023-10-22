@@ -261,7 +261,7 @@ const Situaciones = () => {
       </div>
       {showSelect && (
         <Select
-          screen={vista}
+          screen={screen}
           setShowSelect={setShowSelect}
           showSelect={showSelect}
           setStatusChange={setStatusChange}

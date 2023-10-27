@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { AppContext, AppProvider } from "./components/Context";
 import Image from "next/image";
 import MainView from "./components/MainView";
@@ -18,26 +18,16 @@ import View11 from "./components/Tortuga/View11";
 import View12 from "./components/Tortuga/View12";
 import Letras from "./components/Loro/Letras";
 import Situaciones from "./components/Loro/Situaciones";
+import Emytic from "./components/Emytic";
 
 const PageMobile = () => {
+  useEffect(() => {
+    console.log("aPpp montada");
+  }, []);
   return (
     <div className="relative">
       <AppProvider>
-        <AppContext.Consumer>
-          {({ emyticClass }) => {
-            // console.log(emyticClass);
-            return (
-              <Image
-                src="/img/1.svg"
-                width={300}
-                height={500}
-                className={emyticClass}
-                id="row"
-                title="EMYT"
-              />
-            );
-          }}
-        </AppContext.Consumer>
+        <Emytic />
         <div id="Loro">
           <MainView />
           <View1 />

@@ -10,7 +10,7 @@ const Fscreen = ({ setShowFunction, Show, volumen, setVolumen }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setWiew(true);
-    }, 10000); // 10000 milisegundos = 10 segundos
+    }, 100); // 10000 milisegundos = 10 segundos
 
     // Limpia el temporizador cuando el componente se desmonta o se actualiza
     return () => clearTimeout(timer);

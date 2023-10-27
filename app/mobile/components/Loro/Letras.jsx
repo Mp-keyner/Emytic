@@ -21,180 +21,116 @@ const Letras = () => {
     <img src="/img/Animal/17.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   ); //N
   const [face4, setFace4] = useState(
-    <img src="/img/Animal/8.svg" alt="si si" style={{ maxWidth: "3pc" }} />
+    <img src="/img/Animal/8.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   ); //E
   const [face5, setFace5] = useState(
-    <img src="/img/Animal/13.svg" alt="si si" style={{ maxWidth: "3pc" }} />
+    <img src="/img/Animal/13.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   ); //J
   const [face6, setFace6] = useState(
-    <img src="/img/Animal/18.svg" alt="si si" style={{ maxWidth: "3pc" }} />
+    <img src="/img/Animal/18.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   ); //O
   const [face7, setFace7] = useState(
-    <img src="/img/Animal/16.svg" alt="si si" style={{ maxWidth: "3pc" }} />
+    <img src="/img/Animal/16.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   ); //M
   const [face8, setFace8] = useState(
-    <img src="/img/Animal/12.svg" alt="si si" style={{ maxWidth: "3pc" }} />
+    <img src="/img/Animal/12.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   ); //I
   const [face9, setFace9] = useState(
-    <img src="/img/Animal/22.svg" alt="si si" style={{ maxWidth: "3pc" }} />
+    <img src="/img/Animal/22.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   ); //S
   const [face10, setFace10] = useState(
-    <img src="/img/Animal/8.svg " alt="si si" style={{ maxWidth: "3pc" }} />
+    <img src="/img/Animal/8.svg " alt="si si" style={{ maxWidth: "2.5pc" }} />
   ); //E
   const [face11, setFace11] = useState(
-    <img src="/img/Animal/16.svg" alt="si si" style={{ maxWidth: "3pc" }} />
+    <img src="/img/Animal/16.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   ); //M
   const [face12, setFace12] = useState("O");
   const [face13, setFace13] = useState(
-    <img src="/img/Animal/18.svg" alt="si si" style={{ maxWidth: "3pc" }} />
+    <img src="/img/Animal/18.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   ); //c
   const [face14, setFace14] = useState(
-    <img src="/img/Animal/6.svg" alt="si si" style={{ maxWidth: "3pc" }} />
+    <img src="/img/Animal/6.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   ); //I
   const [face15, setFace15] = useState(
-    <img src="/img/Animal/12.svg" alt="si si" style={{ maxWidth: "3pc" }} />
+    <img src="/img/Animal/12.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   ); //O
   const [face16, setFace16] = useState(
-    <img src="/img/Animal/18.svg" alt="si si" style={{ maxWidth: "3pc" }} />
+    <img src="/img/Animal/18.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   ); //N
   const [face17, setFace17] = useState(
-    <img src="/img/Animal/17.svg" alt="si si" style={{ maxWidth: "3pc" }} />
+    <img src="/img/Animal/17.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   ); //E
   const [face18, setFace18] = useState(
-    <img src="/img/Animal/8.svg" alt="si si" style={{ maxWidth: "3pc" }} />
+    <img src="/img/Animal/8.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   ); //S
   const [face19, setFace19] = useState(
-    <img src="/img/Animal/28.svg" alt="si si" style={{ maxWidth: "3pc" }} />
+    <img src="/img/Animal/28.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   );
   const [face20, setFace20] = useState(
-    <img src="/img/Animal/23.svg" alt="si si" style={{ maxWidth: "3pc" }} />
+    <img src="/img/Animal/23.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   );
   const [face21, setFace21] = useState(
-    <img src="/img/Animal/8.svg" alt="si si" style={{ maxWidth: "3pc" }} />
+    <img src="/img/Animal/8.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   );
   const [face22, setFace22] = useState(
-    <img src="/img/Animal/17.svg" alt="si si" style={{ maxWidth: "3pc" }} />
+    <img src="/img/Animal/17.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   );
   const [face23, setFace23] = useState(
-    <img src="/img/Animal/10.svg" alt="si si" style={{ maxWidth: "3pc" }} />
+    <img src="/img/Animal/10.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   );
   const [face24, setFace24] = useState(
-    <img src="/img/Animal/8.svg" alt="si si" style={{ maxWidth: "3pc" }} />
+    <img src="/img/Animal/18.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   );
   const [face25, setFace25] = useState(
-    <img
-      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
-      alt="si si"
-      style={{ maxWidth: "3pc" }}
-    />
+    <img src="/img/Animal/5.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   );
   const [face26, setFace26] = useState(
-    <img
-      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
-      alt="si si"
-      style={{ maxWidth: "3pc" }}
-    />
+    <img src="/img/Animal/24.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   );
   const [face27, setFace27] = useState(
-    <img
-      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
-      alt="si si"
-      style={{ maxWidth: "3pc" }}
-    />
+    <img src="/img/Animal/8.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   );
   const [face28, setFace28] = useState(
-    <img
-      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
-      alt="si si"
-      style={{ maxWidth: "3pc" }}
-    />
+    <img src="/img/Animal/17.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   );
   const [face29, setFace29] = useState(
-    <img
-      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
-      alt="si si"
-      style={{ maxWidth: "3pc" }}
-    />
+    <img src="/img/Animal/4.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   );
   const [face30, setFace30] = useState(
-    <img
-      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
-      alt="si si"
-      style={{ maxWidth: "3pc" }}
-    />
+    <img src="/img/Animal/22.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   );
   const [face31, setFace31] = useState("R");
   const [face32, setFace32] = useState(
-    <img
-      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
-      alt="si si"
-      style={{ maxWidth: "3pc" }}
-    />
+    <img src="/img/Animal/8.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   );
   const [face33, setFace33] = useState(
-    <img
-      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
-      alt="si si"
-      style={{ maxWidth: "3pc" }}
-    />
+    <img src="/img/Animal/15.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   );
   const [face34, setFace34] = useState(
-    <img
-      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
-      alt="si si"
-      style={{ maxWidth: "3pc" }}
-    />
+    <img src="/img/Animal/4.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   );
   const [face35, setFace35] = useState(
-    <img
-      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
-      alt="si si"
-      style={{ maxWidth: "3pc" }}
-    />
+    <img src="/img/Animal/6.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   );
   const [face36, setFace36] = useState(
-    <img
-      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
-      alt="si si"
-      style={{ maxWidth: "3pc" }}
-    />
+    <img src="/img/Animal/12.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   );
   const [face37, setFace37] = useState(
-    <img
-      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
-      alt="si si"
-      style={{ maxWidth: "3pc" }}
-    />
+    <img src="/img/Animal/18.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   );
   const [face38, setFace38] = useState(
-    <img
-      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
-      alt="si si"
-      style={{ maxWidth: "3pc" }}
-    />
+    <img src="/img/Animal/17.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   );
   const [face39, setFace39] = useState(
-    <img
-      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
-      alt="si si"
-      style={{ maxWidth: "3pc" }}
-    />
+    <img src="/img/Animal/8.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   );
   const [face40, setFace40] = useState(
-    <img
-      src="https://raw.githubusercontent.com/Mp-keyner/Emytic/b094fc7937fba8d9329bcaccb363a4e13753ccb3/public/img/Animal/10.svg"
-      alt="si si"
-      style={{ maxWidth: "3pc" }}
-    />
+    <img src="/img/Animal/22.svg" alt="si si" style={{ maxWidth: "2.5pc" }} />
   );
   const [idIndex, setIdIndex] = useState(0);
   const [face, setFace] = useState(
     "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FcarasBlancas%2F1.png?alt=media&token=8fe4a84f-0e14-4a78-86ba-026d0f88c24c"
   );
-  console.log(face1, face2, face3, face4, face5, face6);
-  console.log(face7, face8, face9);
-  console.log(face3);
-  console.log(face25, face26, face27, face28, face29, face30);
   const [vista, setvista] = useState("");
   useEffect(() => {
     setScreen(window.screen.height);
@@ -297,12 +233,8 @@ const Letras = () => {
       setStatusFace: setFace7,
     },
   ];
-  console.log(showSelect);
-  console.log(vista + " kk");
-  console.log(screen + "screen");
   const styles = {
     ContainerApp: {
-      // backgroundColor: "#333",
       height: "100vh",
       display: "flex",
       justifyContent: "space-between",

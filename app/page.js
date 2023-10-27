@@ -63,7 +63,6 @@ export default function Home() {
   return (
     <>
       <Playo volumen={volumen} setVolumen={setVolumen} />
-      {/* <PageMobile /> */}
       {Show ? (
         <Fscreen
           setShowFunction={setShow}

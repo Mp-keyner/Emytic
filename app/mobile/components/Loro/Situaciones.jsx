@@ -23,7 +23,6 @@ const Situaciones = () => {
     "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FcarasBlancas%2F1.png?alt=media&token=8fe4a84f-0e14-4a78-86ba-026d0f88c24c"
   );
   const [vista, setvista] = useState("");
-  console.log(face1);
   useEffect(() => {
     setScreen(window.screen.height);
     setvista(window.innerHeight);
@@ -98,9 +97,6 @@ const Situaciones = () => {
       setStatusFace: setFace6,
     },
   ];
-  console.log(showSelect);
-  console.log(vista + " kk");
-  console.log(screen);
   const styles = {
     ContainerApp: {
       // backgroundColor: "#333",

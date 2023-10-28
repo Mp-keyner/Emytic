@@ -3,16 +3,17 @@ const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
   const [emyticClass, setEmyticClass] = useState(
-    "fixed z-50 bottom-72 right-[50%] w-[10pc]"
+    "fixed z-50 bottom-[40%] right-[30%] w-[10pc]"
   );
   const [pageNumber, setPageNumber] = useState(1);
-  const StylesAndViewPages = () => {
-    console.log(pageNumber);
-    console.log("Active Event Click Function");
+
+  useEffect(() => {
+    console.log(pageNumber)
     switch (pageNumber) {
       case 1:
-        setEmyticClass("fixed z-50 bottom-20 right-[55%] w-[10pc] ");
-        window.scrollTo({ top: innerHeight * pageNumber, behavior: "smooth" });
+        setEmyticClass("fixed z-50 bottom-1/2 right-[55%] w-[10pc] ");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        console.log("Caso 1");
         break;
       case 2:
         setEmyticClass("fixed z-50 bottom-48 right-10 w-[10pc]  ");
@@ -56,15 +57,16 @@ const AppProvider = ({ children }) => {
         setEmyticClass("fixed z-50 bottom-0 right-10 w-[10pc]   ");
         window.scrollTo({ top: innerHeight * pageNumber, behavior: "smooth" });
         break;
+      default: 
+      setEmyticClass("fixed z-50 bottom-[40%] right-[30%] w-[10pc]");
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
-  };
-  useEffect(() => {
-    console.log(pageNumber);
-    StylesAndViewPages();
   }, [pageNumber]);
+  console.log(pageNumber);
   const handleClick = (number) => {
     setPageNumber(number);
     console.log("handleClick called", number);
+    window.scrollTo({ top: innerHeight * number, behavior: "smooth" });
   };
   return (
     <AppContext.Provider value={{ handleClick, emyticClass, pageNumber }}>

@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useContext } from "react";
 import { AppContext } from "./Context";
 
-const MainView = () => {
+const MainView = () => { 
   const { handleClick } = useContext(AppContext);
 
   return (

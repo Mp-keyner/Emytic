@@ -5,24 +5,21 @@ import Image from "next/image";
 const Emytic = () => {
   const { pageNumber, emyticClass } = useContext(AppContext);
   const [opacity, setOpacity] = useState(false);
-  console.log(pageNumber);
   useEffect(() => {
-    console.log("SE monto", emyticClass);
     //Actualiar el valor de
     if (pageNumber === 8 || pageNumber === 9) {
-      setOpacity(true);
+      setOpacity(true); 
     } else {
       setOpacity(false);
     }
   }, [pageNumber]);
-  console.log(opacity);
   return (
     <>
       <Image
         src="/img/1.svg"
         width={300}
         height={500}
-        className={emyticClass}
+        className={"fixed z-50 bottom-[35%] right-[55%] w-[10pc] "}
         style={{
           border: "1px solid red",
           transition: "all 1s ease-in-out",

@@ -74,7 +74,7 @@ const AppProvider = ({ children }) => {
         scrollToSection(15);
         break;
       default:
-        setEmyticClass("fixed z-50 bottom-[40%] right-[30%] w-[10pc]");
+        setEmyticClass("fixed z-50 bottom-[35%] right-[55%] w-[10pc] ");
         window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [pageNumber]);

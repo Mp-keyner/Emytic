@@ -34,9 +34,8 @@ const View8 = () => {
         data-aos-delay="1500"
       >
         <p>
-          ¡Hola amigos, soy Pepe, el loro!
-          <br /> Hoy estaba un poco enojado y triste a la vez ¿Quieres saber por
-          que?
+          ¡HOLA EMYTIC! Que alegría poder encontrarnos, justo en estos momento
+          voy a leer una fabula, ¿ Niños quieren escucharla?
         </p>
       </div>
       <Image

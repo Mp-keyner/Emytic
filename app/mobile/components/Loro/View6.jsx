@@ -10,7 +10,7 @@ const   View6 = () => {
       <div className="absolute bottom-4 flex flex-col justify-center items-center text-center w-52 font-bold">
         <h2>Presiona para continuar con esta aventura</h2>
         <Image
-          onClick={() => handleClick(7)}
+          onClick={() => handleClick(8)}
           src="/img/row.svg"
           width={100}
           height={100}

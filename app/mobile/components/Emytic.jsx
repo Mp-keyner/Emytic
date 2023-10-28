@@ -8,7 +8,7 @@ const Emytic = () => {
   useEffect(() => {
     //Actualiar el valor de
     if (pageNumber === 8 || pageNumber === 9) {
-      setOpacity(true); 
+      setOpacity(true);
     } else {
       setOpacity(false);
     }
@@ -19,7 +19,7 @@ const Emytic = () => {
         src="/img/1.svg"
         width={300}
         height={500}
-        className={"fixed z-50 bottom-[35%] right-[55%] w-[10pc] "}
+        className={emyticClass}
         style={{
           border: "1px solid red",
           transition: "all 1s ease-in-out",

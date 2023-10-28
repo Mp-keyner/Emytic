@@ -247,7 +247,7 @@ const Situaciones = () => {
           Presiona para saber por que pepe estaba enojado
         </h2>
         <Image
-          onClick={() => handleClick(8)}
+          onClick={() => handleClick(9)}
           src="/img/row2.svg"
           width={100}
           height={100}

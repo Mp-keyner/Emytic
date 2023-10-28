@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useContext } from "react";
 import { AppContext } from "./Context";
 
-const MainView = () => { 
+const MainView = () => {
   const { handleClick } = useContext(AppContext);
 
   return (
@@ -55,7 +55,7 @@ const MainView = () => {
         data-aos="fade-left"
         data-aos-out="fade-left"
         className="absolute bottom-28 right-0 w-[10pc] flex flex-col items-center text-center text-black "
-        onClick={() => handleClick(1)}
+        onClick={() => handleClick(2)}
       >
         <h2 className="text-xl font-semibold ">Presiona para empezar</h2>
         <Image

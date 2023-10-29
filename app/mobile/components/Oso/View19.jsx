@@ -1,16 +1,16 @@
+import Image from "next/image";
 import React, { useContext } from "react";
 import { AppContext } from "../Context";
-import Image from "next/image";
 
-const View11 = () => {
+const View8 = () => {
   const { handleClick } = useContext(AppContext);
 
   return (
-    <div className="h-screen fondo6 relative">
+    <div className="h-screen relative fondo6">
       <div className="absolute bottom-4 flex flex-col justify-center items-center text-center w-52 font-bold">
-        <h2>Presiona para continuar con esta aventura</h2>
+        <h2>Presiona para comenzar su historia</h2>
         <Image
-          onClick={() => handleClick(15)}
+          onClick={() => handleClick(12)}
           src="/img/row.svg"
           width={100}
           height={100}
@@ -19,29 +19,31 @@ const View11 = () => {
         />
       </div>
       <div
-        className="bocadillo-cuadrado-mobile2 fixed left-14 bottom-[-29%] z-50"
+        className="bocadillo-cuadrado-mobile2 fixed left-6 top-96"
         data-aos="fade-right"
         data-aos-delay="500"
       >
         <p>
-          <b>
-            Responde y comenta: <br />
-          </b>
-          1. ¿Cómo fue la actitud del conejo? <br />
-          2. ¿Cómo fue la actitud de Tuti, la tortuga? <br />
-          3. Crees que la actitud de la tortuga fue la correcta?, ¿por qué?{" "}
-          <br />
-          4. ¿Cómo te has sentido cuando se han burlado de ti y que has hecho?{" "}
-          <br />
+          Esta es mi amiga Tuti la tortuga y con ella aprenderemos cosas
+          maravillosas… <b>¡HOLA TUTI!</b> Saluda a los niños
         </p>
       </div>
-
+      <div
+        className="bocadillo-cuadrado-mobile3 fixed z-50 left-44 -top-8"
+        data-aos="fade-right"
+        data-aos-delay="1500"
+      >
+        <p>
+          ¡HOLA EMYTIC! Que alegría poder encontrarnos, justo en estos momento
+          voy a leer una fabula, ¿ Niños quieren escucharla?
+        </p>
+      </div>
       <Image
         src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F36.png?alt=media&token=b1e9ba48-6f49-4587-a356-b9a3d3dc6568"
         data-aos="fade-right"
         width={200}
         height={200}
-        className="z-40 absolute top-8 -right-5"
+        className="z-40 absolute top-8 -left-7"
         title="Pepe el loro..."
         alt=""
       />
@@ -49,4 +51,4 @@ const View11 = () => {
   );
 };
 
-export default View11;
+export default View8;

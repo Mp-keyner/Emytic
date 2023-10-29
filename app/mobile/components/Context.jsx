@@ -46,7 +46,6 @@ const AppProvider = ({ children }) => {
         scrollToSection(8);
         break;
       case 9:
-        setEmyticClass("fixed z-50 bottom-20 left-5 w-[10pc] ");
         scrollToSection(9);
         break;
       case 10:
@@ -62,7 +61,7 @@ const AppProvider = ({ children }) => {
         scrollToSection(12);
         break;
       case 13:
-        setEmyticClass("fixed z-50 bottom-[20%] right-10 w-[10pc]");
+        setEmyticClass("fixed z-50 bottom-[4%] right-11 w-[10pc]");
         scrollToSection(13);
         break;
       case 14:
@@ -73,7 +72,40 @@ const AppProvider = ({ children }) => {
         setEmyticClass("fixed z-50 bottom-[20%] right-10 w-[10pc]");
         scrollToSection(15);
         break;
-      default:
+      case 16:
+        setEmyticClass("fixed z-50 bottom-[20%] right-10 w-[10pc]");
+        scrollToSection(16);
+        break;
+      case 17:
+        setEmyticClass("fixed z-50 bottom-[20%] right-10 w-[10pc]");
+        scrollToSection(17);
+        break;
+      case 18:
+        setEmyticClass("fixed z-50 bottom-[10%] right-[55%] w-[10pc] ");
+        scrollToSection(18);
+        console.log("Caso 18");
+        break;
+      case 19:
+        setEmyticClass("fixed z-50 bottom-48 right-[10%] w-[10pc]  ");
+        scrollToSection(19);
+        console.log("Caso 19");
+        break;
+      case 20:
+        setEmyticClass("fixed z-50 bottom-44 right-[10%] w-[10pc]  ");
+        scrollToSection(20);
+        break;
+      case 21:
+        setEmyticClass("fixed z-50 bottom-44 right-[10%] w-[10pc]  ");
+        scrollToSection(21);
+        break;
+      case 22:
+        setEmyticClass("fixed z-50 bottom-48 right-1 w-[10pc]  ");
+        scrollToSection(22);
+        break;
+      case 23:
+        setEmyticClass("fixed z-50 bottom-48 right-1 w-[10pc] ");
+        scrollToSection(23);
+        break;
         setEmyticClass("fixed z-50 bottom-[35%] right-[55%] w-[10pc] ");
         window.scrollTo({ top: 0, behavior: "smooth" });
     }

@@ -63,7 +63,7 @@ const MainView = () => {
           width={100}
           height={100}
           className="cursor-pointer flecha"
-        />
+        />  
       </div>
       <div data-aos="fade-left" className="z-40 absolute top-[14%] right-[2%] ">
         <div className="bocadillo-cuadrado-mobile1">

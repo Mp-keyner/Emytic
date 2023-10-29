@@ -7,7 +7,12 @@ const Emytic = () => {
   const [opacity, setOpacity] = useState(false);
   useEffect(() => {
     //Actualiar el valor de
-    if (pageNumber === 8 || pageNumber === 9) {
+    if (
+      pageNumber === 8 ||
+      pageNumber === 16 ||
+      pageNumber === 9 ||
+      pageNumber === 17
+    ) {
       setOpacity(true);
     } else {
       setOpacity(false);

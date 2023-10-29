@@ -16,9 +16,11 @@ import View9 from "./components/Tortuga/View9";
 import View10 from "./components/Tortuga/View10";
 import View11 from "./components/Tortuga/View11";
 import View12 from "./components/Tortuga/View12";
+import View18 from "./components/Oso/View18";
 import Letras from "./components/Loro/Letras";
 import Situaciones from "./components/Loro/Situaciones";
 import Emytic from "./components/Emytic";
+import ComoSientes from "./components/ComoSientes";
 
 const PageMobile = () => {
   useEffect(() => {
@@ -37,7 +39,7 @@ const PageMobile = () => {
           <View5 />
           <View6 />
           <Situaciones />
-          <Letras />
+          <ComoSientes to={10} />
         </div>
         <div id="Tortuga">
           <View7 />
@@ -46,6 +48,11 @@ const PageMobile = () => {
           <View10 />
           <View11 />
           <View12 />
+          <Letras />
+          <ComoSientes to={18} />
+        </div>
+        <div>
+          <View18 />
         </div>
       </AppProvider>
     </div>
@@ -53,3 +60,9 @@ const PageMobile = () => {
 };
 
 export default PageMobile;
+
+{
+  /*
+
+*/
+}

@@ -69,6 +69,7 @@ export default function Home() {
           Show={Show}
           volumen={volumen}
           setVolumen={setVolumen}
+          isMovileQ={isMovileQ}
         />
       ) : (
         <>

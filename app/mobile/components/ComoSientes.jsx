@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import React, { useContext, useEffect, useState } from "react";
-import "../Style  s.css";
-import Select from "./Select";
-import { AppContext } from "../Context";
+import "./Styles.css";
+import { AppContext } from "./Context";
+import ComoSientesSelect from "./ComoSientesSelect";
 
-const Situaciones = () => {
+const ComoSientes = ({ to }) => {
   const { handleClick } = useContext(AppContext);
   const [showSelect, setShowSelect] = useState(false);
   const [screen, setScreen] = useState("");
@@ -23,7 +23,6 @@ const Situaciones = () => {
     "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/documentos%2FcarasBlancas%2F1.png?alt=media&token=8fe4a84f-0e14-4a78-86ba-026d0f88c24c"
   );
   const [vista, setvista] = useState("");
-  console.log(face1);
   useEffect(() => {
     setScreen(window.screen.height);
     setvista(window.innerHeight);
@@ -63,44 +62,11 @@ const Situaciones = () => {
   const Situaciones = [
     {
       id: 1,
-      description: "Ganar un examen con excelente nota",
+      description: "¿ Como te sientes ? ",
       statusFace: face1,
       setStatusFace: setFace1,
     },
-    {
-      id: 2,
-      description: "Quedarme solo en la oscuridad",
-      statusFace: face2,
-      setStatusFace: setFace2,
-    },
-    {
-      id: 3,
-      description: "Recibir una fiesta sorpresa",
-      statusFace: face3,
-      setStatusFace: setFace3,
-    },
-    {
-      id: 4,
-      description: "Perder a un ser querido",
-      statusFace: face4,
-      setStatusFace: setFace4,
-    },
-    {
-      id: 5,
-      description: "Probar un alimento que no me gusta",
-      statusFace: face5,
-      setStatusFace: setFace5,
-    },
-    {
-      id: 6,
-      description: "No conseguir mi juguete favorito",
-      statusFace: face6,
-      setStatusFace: setFace6,
-    },
   ];
-  console.log(showSelect);
-  console.log(vista + " vista");
-  console.log(screen, "creen");
   const styles = {
     ContainerApp: {
       // backgroundColor: "#333",
@@ -177,6 +143,7 @@ const Situaciones = () => {
       marginLeft: "1pc",
       fontSize: "1.4pc",
       width: "80%",
+      fontWeight: "bold",
     },
     Footer: {
       // border: "1px solid red",
@@ -251,7 +218,7 @@ const Situaciones = () => {
           Presiona para saber por que pepe estaba enojado
         </h2>
         <Image
-          onClick={() => handleClick(8)}
+          onClick={() => handleClick(to)}
           src="/img/row2.svg"
           width={100}
           height={100}
@@ -260,8 +227,8 @@ const Situaciones = () => {
         />
       </div>
       {showSelect && (
-        <Select
-          screen={vista}
+        <ComoSientesSelect
+          screen={screen}
           setShowSelect={setShowSelect}
           showSelect={showSelect}
           setStatusChange={setStatusChange}
@@ -273,4 +240,4 @@ const Situaciones = () => {
   );
 };
 
-export default Situaciones;
+export default ComoSientes;

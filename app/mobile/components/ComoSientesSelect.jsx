@@ -1,6 +1,6 @@
 import React from "react";
 
-const Select = ({
+const ComoSientesSelect = ({
   screen,
   setShowSelect,
   setStatusChange,
@@ -15,6 +15,7 @@ const Select = ({
     constainerSelect: {
       // backgroundColor: "red",
       width: "100%",
+      height: `${screen}px`,
       position: "absolute",
       overflow: "hidden",
     },
@@ -167,4 +168,4 @@ const Select = ({
   );
 };
 
-export default Select;
+export default ComoSientesSelect;

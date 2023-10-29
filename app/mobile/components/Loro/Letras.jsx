@@ -386,7 +386,7 @@ const Letras = () => {
   };
 
   return (
-    <div style={styles.ContainerApp} className="fondo8">
+    <div style={styles.ContainerApp} className="fondo6">
       <div style={styles.situaciones}>
         {Palabras.map((item) => (
           <div
@@ -411,7 +411,7 @@ const Letras = () => {
           Presiona para saber por que pepe estaba enojado
         </h2>
         <Image
-          onClick={() => handleClick(10)}
+          onClick={() => handleClick(17)}
           src="/img/row2.svg"
           width={100}
           height={100}

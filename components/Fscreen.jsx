@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Sppiner from "./Sppiner";
-import MusicPlayer from "./MusicPlayer";
-import Mapa from "./Drop";
-import Playo from "./Play";
 
-const Fscreen = ({ setShowFunction, Show, volumen, setVolumen }) => {
+const Fscreen = ({ setShowFunction, Show, volumen, setVolumen, isMovileQ }) => {
   const [wiew, setWiew] = useState(false);
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -20,12 +17,14 @@ const Fscreen = ({ setShowFunction, Show, volumen, setVolumen }) => {
     setVolumen(!volumen);
     console.log("dia dia ");
     // Verificar si el navegador admite el modo de pantalla completa
-    // if (document.documentElement.requestFullscreen) {
-    //   // Solicitar entrar en modo de pantalla completa en respuesta a un clic
-    //   document.documentElement.requestFullscreen();
+    if (isMovileQ) {
+      if (document.documentElement.requestFullscreen) {
+        // Solicitar entrar en modo de pantalla completa en respuesta a un clic
+        document.documentElement.requestFullscreen();
 
-    //   console.log(Show);
-    // }
+        console.log(Show);
+      }
+    }
   }
 
   return (

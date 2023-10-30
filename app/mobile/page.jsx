@@ -17,10 +17,17 @@ import View10 from "./components/Tortuga/View10";
 import View11 from "./components/Tortuga/View11";
 import View12 from "./components/Tortuga/View12";
 import View18 from "./components/Oso/View18";
+import View19 from "./components/Oso/View19";
+import View20 from "./components/Oso/View20";
+import View21 from "./components/Oso/View21";
+import View22 from "./components/Oso/View22";
+import View23 from "./components/Oso/View23";
 import Letras from "./components/Loro/Letras";
 import Situaciones from "./components/Loro/Situaciones";
 import Emytic from "./components/Emytic";
 import ComoSientes from "./components/ComoSientes";
+import LetrasOrden from "./components/Jaguar/LetrasOrden";
+import Regalo from "./components/Jaguar/Regalo";
 
 const PageMobile = () => {
   useEffect(() => {
@@ -29,6 +36,17 @@ const PageMobile = () => {
   return (
     <div className="relative">
       <AppProvider>
+        <Regalo />
+      </AppProvider>
+    </div>
+  );
+};
+
+export default PageMobile;
+
+{
+  /*
+   
         <Emytic />
         <div id="Loro">
           <MainView />
@@ -53,16 +71,11 @@ const PageMobile = () => {
         </div>
         <div>
           <View18 />
+          <View19 />
+          <View20 />
+          <View21 />
+          <View22 />
+          <View23 />
         </div>
-      </AppProvider>
-    </div>
-  );
-};
-
-export default PageMobile;
-
-{
-  /*
-
 */
 }

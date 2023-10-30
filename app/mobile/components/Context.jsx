@@ -95,15 +95,15 @@ const AppProvider = ({ children }) => {
         scrollToSection(20);
         break;
       case 21:
-        setEmyticClass("fixed z-50 bottom-44 right-[10%] w-[10pc]  ");
+        setEmyticClass("fixed z-50 bottom-[12%] right-[10%] w-[10pc]  ");
         scrollToSection(21);
         break;
       case 22:
-        setEmyticClass("fixed z-50 bottom-48 right-1 w-[10pc]  ");
+        setEmyticClass("fixed z-50 bottom-48 right-5 w-[10pc]  ");
         scrollToSection(22);
         break;
       case 23:
-        setEmyticClass("fixed z-50 bottom-48 right-1 w-[10pc] ");
+        setEmyticClass("fixed z-50 top-12 right-5 w-[10pc] ");
         scrollToSection(23);
         break;
         setEmyticClass("fixed z-50 bottom-[35%] right-[55%] w-[10pc] ");
@@ -213,3 +213,16 @@ export { AppProvider, AppContext };
 // };
 
 // export { AppProvider, AppContext };
+// "O - I - D - A - S - A - L - D - I - R - D ",
+{
+  /*
+situacion: {
+      marginLeft: "1pc",
+      fontSize: "1.2pc",
+      width: "100%",
+      fontWeight: "bold",
+      margin: "0pc",
+      textAlign: "center",
+    },
+*/
+}

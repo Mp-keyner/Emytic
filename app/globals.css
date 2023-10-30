@@ -439,6 +439,33 @@ body {
   left: calc(-25%);
   transform: rotate(90deg);
 }
+
+.bocadillo-cuadrado-mobile4 {
+  position: relative;
+  min-height: 90px;
+  width: 200px;
+  background: white;
+  box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+  border-radius: 8px;
+  color: black;
+  padding: 1pc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+.bocadillo-cuadrado-mobile4:before {
+  border: 25px solid white;
+  content: "";
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  top: -45px;
+  left: calc(4%);
+  transform: rotate(180deg);
+}
 .flecha {
   transition: all 0.2s ease-in-out;
   animation: hello 2s infinite;

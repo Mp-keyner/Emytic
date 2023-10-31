@@ -28,6 +28,7 @@ import Emytic from "./components/Emytic";
 import ComoSientes from "./components/ComoSientes";
 import LetrasOrden from "./components/Jaguar/LetrasOrden";
 import Regalo from "./components/Jaguar/Regalo";
+import SopaLetras from "./components/Mono/SopaLetras";
 
 const PageMobile = () => {
   useEffect(() => {
@@ -36,7 +37,8 @@ const PageMobile = () => {
   return (
     <div className="relative">
       <AppProvider>
-        <Regalo />
+        {/* <Regalo /> */}
+        <SopaLetras />
       </AppProvider>
     </div>
   );

@@ -37,8 +37,7 @@ const PageMobile = () => {
   return (
     <div className="relative">
       <AppProvider>
-        {/* <Regalo /> */}
-        <SopaLetras />
+        <Regalo />
       </AppProvider>
     </div>
   );

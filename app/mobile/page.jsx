@@ -29,6 +29,7 @@ import ComoSientes from "./components/ComoSientes";
 import LetrasOrden from "./components/Jaguar/LetrasOrden";
 import Regalo from "./components/Jaguar/Regalo";
 import SopaLetras from "./components/Mono/SopaLetras";
+import Memorias from "./components/Mono/Memorias";
 
 const PageMobile = () => {
   useEffect(() => {
@@ -37,7 +38,7 @@ const PageMobile = () => {
   return (
     <div className="relative">
       <AppProvider>
-        <Regalo />
+        <Memorias />
       </AppProvider>
     </div>
   );

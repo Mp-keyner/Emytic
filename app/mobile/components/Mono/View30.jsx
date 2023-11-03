@@ -2,15 +2,15 @@ import Image from "next/image";
 import React, { useContext } from "react";
 import { AppContext } from "../Context";
 
-const View2 = () => {
+const View30 = () => {
   const { handleClick } = useContext(AppContext);
 
   return (
-    <div className="h-screen relative fondo2">
+    <div className="h-screen relative fondo3">
       <div className="absolute bottom-4 flex flex-col justify-center items-center text-center w-52 font-bold">
-        <h2>Presiona para sabes por qué pepe está enojado</h2>
+        <h2>Presiona para comenzar su historia</h2>
         <Image
-          onClick={() => handleClick(4)}
+          onClick={() => handleClick(20)}
           src="/img/row.svg"
           width={100}
           height={100}
@@ -23,30 +23,17 @@ const View2 = () => {
         data-aos="fade-right"
         data-aos-delay="500"
       >
-        <p>¡Hola Pepe, estos son mis amigos!</p>
+        <p>Hola, Timi, como estas, te he notado pensativa en el día de hoy…</p>
       </div>
       <div
         className="bocadillo-cuadrado-mobile3 fixed z-50 left-44 -top-8"
         data-aos="fade-right"
         data-aos-delay="1500"
       >
-        <p>
-          ¡Hola amigos, soy Pepe, el loro!
-          <br /> Hoy estaba un poco enojado y triste a la vez ¿Quieres saber por
-          que?
-        </p>
+        <p>HOLA EMYTIC ¡Que alegría verte!</p>
       </div>
       <Image
-        src="/img/Arbol2.svg"
-        priority={true} // {false} | {true}
-        width={400}
-        height={600}
-        className="w-[36pc] z-10 absolute top-[0pc] left-[0pc]"
-        data-aos="fade-right"
-        alt=""
-      />
-      <Image
-        src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F40.png?alt=media&token=ffa78c81-86d9-4519-9567-0c4c72fdeb0b"
+        src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F34.png?alt=media&token=09cf0f4f-3902-4992-a21e-89b3d3b32d91"
         data-aos="fade-right"
         width={200}
         height={200}
@@ -58,4 +45,4 @@ const View2 = () => {
   );
 };
 
-export default View2;
+export default View30;

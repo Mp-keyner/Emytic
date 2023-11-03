@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useContext } from "react";
 import { AppContext } from "../Context";
 
-const View7 = () => {
+const View24 = () => {
   const { handleClick } = useContext(AppContext);
 
   return (
@@ -10,7 +10,7 @@ const View7 = () => {
       <div className="w absolute bottom-10 right-0 font-bold w-52 flex flex-col items-center text-center">
         <h2>Presiona para continuar con esta aventura</h2>
         <Image
-          onClick={() => handleClick(19)}
+          onClick={() => handleClick(3)}
           src="/img/row.svg"
           width={80}
           height={80}
@@ -34,14 +34,12 @@ const View7 = () => {
         data-aos-delay="500"
         className="absolute left-9 bottom-64"
       >
-        <div className="bocadillo-cuadrado-mobile1 ">
+        <div className="bocadillo-cuadrado-mobile1">
           <p>
-            Amigos viajemos, al corazón de nuestro país la región andina , es
-            una región ubicada en el{" "}
-            <b>centro y se extiende al norte y al sur,</b>
-            esta bañada por dos ríos maravillosos el rio Magdalena y el rio
-            Cauca, es la región de las flores y el café y allí conoceremos a
-            alguien muy especial
+            Nuestro siguiente viaje, <b>es al oriente a la región Orinoquia</b>,
+            aquí a las personas les gusta zapatear al son de arpa, al ritmo del
+            joropo, tengo muchos amigos como Chiqui el chigüiro, Beni el venado,
+            pero hoy conocerás a alguien muy veloz… Vamos!
           </p>
         </div>
       </div>
@@ -49,4 +47,4 @@ const View7 = () => {
   );
 };
 
-export default View7;
+export default View24;

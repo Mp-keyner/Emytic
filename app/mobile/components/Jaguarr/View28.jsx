@@ -2,15 +2,15 @@ import React, { useContext } from "react";
 import { AppContext } from "../Context";
 import Image from "next/image";
 
-const View3 = () => {
+const View28 = () => {
   const { handleClick } = useContext(AppContext);
 
   return (
     <div className="h-screen fondo2 relative">
       <div className="absolute bottom-4 flex flex-col justify-center items-center text-center w-52 font-bold">
-        <h2>Presiona para continuar con la historia de pepe</h2>
+        <h2>Presiona para continuar con esta aventura</h2>
         <Image
-          onClick={() => handleClick(5)}
+          onClick={() => handleClick(8)}
           src="/img/row.svg"
           width={100}
           height={100}
@@ -19,26 +19,26 @@ const View3 = () => {
         />
       </div>
       <div
-        className="bocadillo-cuadrado-mobile2 fixed left-6 top-96"
+        className="bocadillo-cuadrado-mobile2 fixed left-16 top-96 z-50"
         data-aos="fade-right"
         data-aos-delay="500"
       >
-        <p>¡!</p>
+        <p>
+          La base de una buena comunicación es el dialogo, solo así podemos
+          reconocer nuestras diferencias y aprendemos a respetar a los demás.
+        </p>
       </div>
       <div
-        className="bocadillo-cuadrado-mobile3 fixed z-50 left-44 -top-8 h-64 overflow-scroll"
+        className="bocadillo-cuadrado-mobile3 fixed left-40 -top-16 z-50 h-64 overflow-scroll"
         data-aos="fade-right"
         data-aos-delay="500"
       >
-        <p className="h-full pb-4">
-          Esta mañana camino a la escuela, me tropecé con una piedra y ajá, caí
-          sobre un charco de barro… me ensucie todo!, mi mamá me había bañado
-          muy bien y por distraído me paso esto, me puse muy triste, tenia el
-          genio bajito… y cuando estoy triste mi cuerpo se siente sin energía, y
-          mi pecho me duele, Todos lo pelaos en la calle se rieron de mi…y
-          aunque en mi mente me decía-cógela suave, de un momento a otro sentía
-          tronco e calor, y respiraba como si echara chispitas, estaba tan
-          enojado y no sabia que hacer.
+        <p className="h-full">
+          <b>Aprende:</b> <br />
+          Es importante mantener buenas relaciones con otras personas. Esto
+          implica saludar, respetar, compartir y ayudar a los demás. Cuando
+          logramos una buena comunicación, podemos solucionar conflictos,
+          encontramos buenos amigos y somos felices.
         </p>
       </div>
       <Image
@@ -63,4 +63,4 @@ const View3 = () => {
   );
 };
 
-export default View3;
+export default View28;

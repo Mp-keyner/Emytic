@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const Modal = ({ closeModal, mensaje }) => {
+const ModalMobil = ({ HandlesetCloseModal, mensaje }) => {
   return (
     <>
       <div
@@ -11,7 +11,7 @@ const Modal = ({ closeModal, mensaje }) => {
         <div className="modal-overlay fixed inset-0"></div>
         <div className="modal-content sorpresa bg-customColor rounded-lg p-4 z-20">
           <Image
-            onClick={closeModal}
+            onClick={() => HandlesetCloseModal()}
             src="/img/x.svg"
             width={50}
             height={50}
@@ -43,4 +43,4 @@ const Modal = ({ closeModal, mensaje }) => {
   );
 };
 
-export default Modal;
+export default ModalMobil;

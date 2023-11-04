@@ -26,10 +26,18 @@ import Letras from "./components/Loro/Letras";
 import Situaciones from "./components/Loro/Situaciones";
 import Emytic from "./components/Emytic";
 import ComoSientes from "./components/ComoSientes";
-import LetrasOrden from "./components/Jaguar/LetrasOrden";
-import Regalo from "./components/Jaguar/Regalo";
-import SopaLetras from "./components/Mono/SopaLetras";
-import Memorias from "./components/Mono/Memorias";
+import LetrasOrden from "./components/Mono/LetrasOrden";
+import Regalo from "./components/Mono/Regalo";
+import SopaLetras from "./components/Jaguarr/SopaLetras";
+import Memorias from "./components/Jaguarr/Memorias";
+import View24 from "./components/Jaguarr/View24";
+import View25 from "./components/Jaguarr/View25";
+import View26 from "./components/Jaguarr/View26";
+import View27 from "./components/Jaguarr/View27";
+import View28 from "./components/Jaguarr/View28";
+import View29 from "./components/Mono/View29";
+import View30 from "./components/Mono/View30";
+import View31 from "./components/Mono/View31";
 
 const PageMobile = () => {
   useEffect(() => {
@@ -39,7 +47,7 @@ const PageMobile = () => {
     <div className="relative">
       <AppProvider>
         {/* <Regalo /> */}
-        <Memorias />
+        <SopaLetras />
       </AppProvider>
     </div>
   );

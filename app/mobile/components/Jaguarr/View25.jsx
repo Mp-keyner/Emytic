@@ -1,16 +1,16 @@
+import Image from "next/image";
 import React, { useContext } from "react";
 import { AppContext } from "../Context";
-import Image from "next/image";
 
-const   View6 = () => {
+const View25 = () => {
   const { handleClick } = useContext(AppContext);
 
   return (
-    <div className="h-screen fondo2 relative">
+    <div className="h-screen relative fondo2">
       <div className="absolute bottom-4 flex flex-col justify-center items-center text-center w-52 font-bold">
-        <h2>Presiona para continuar con esta aventura</h2>
+        <h2>Presiona para sabes por qué pepe está enojado</h2>
         <Image
-          onClick={() => handleClick(8)}
+          onClick={() => handleClick(4)}
           src="/img/row.svg"
           width={100}
           height={100}
@@ -19,22 +19,24 @@ const   View6 = () => {
         />
       </div>
       <div
-        className="bocadillo-cuadrado-mobile2 fixed left-16 top-96 z-50"
+        className="bocadillo-cuadrado-mobile2 fixed left-6 top-96"
         data-aos="fade-right"
         data-aos-delay="500"
       >
-        <p>Pepe buscando información encontré esto...</p>
+        <p>
+          Este es mi amigo Flaqui El es un poderoso Jaguar. Vive en un hermoso
+          llano El llano oriental, faquí que nos vas a contar
+        </p>
       </div>
       <div
-        className="bocadillo-cuadrado-mobile3 fixed left-40 -top-4 z-50 h-64 overflow-scroll"
+        className="bocadillo-cuadrado-mobile3 fixed z-50 left-44 -top-8"
         data-aos="fade-right"
-        data-aos-delay="500"
+        data-aos-delay="1500"
       >
-        <p className="h-full">
-          Las emociones son <b>estados de las personas</b>, que permiten que
-          reaccione frente a diversas situaciones y puedan comunicarse con los
-          demás Para conocerlas debes sentirlas, pero es importante el mensaje
-          que con ellas les muestras a lo demás.
+        <p>
+          Alegría y diversión, Con flaqui vamos a jugar Aprendiendo a
+          comunicarnos Respetando a los demás, Escucha con atención la historia
+          que te voy a contar
         </p>
       </div>
       <Image
@@ -47,7 +49,7 @@ const   View6 = () => {
         alt=""
       />
       <Image
-        src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F40.png?alt=media&token=ffa78c81-86d9-4519-9567-0c4c72fdeb0b"
+        src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/moko%2F38.png?alt=media&token=183919e7-9b95-4529-9ee3-4a5bdd5f6ef9"
         data-aos="fade-right"
         width={200}
         height={200}
@@ -59,4 +61,4 @@ const   View6 = () => {
   );
 };
 
-export default View6;
+export default View25;

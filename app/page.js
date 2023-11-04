@@ -38,6 +38,9 @@ import View30 from "@/components/View30";
 import View31 from "@/components/View31";
 import View32 from "@/components/View32";
 import View33 from "@/components/View33";
+import View34 from "@/components/View34";
+import View35 from "@/components/View35";
+import View36 from "@/components/View36";
 import Playo from "@/components/Play";
 import Slo from "@/components/Slo";
 import Fscreen from "@/components/Fscreen";
@@ -176,6 +179,15 @@ export default function Home() {
               </div>
               <div id="ThirtyFourt">
                 <View33 />
+              </div>
+              <div id="ThirtyFourt">
+                <View34 />
+              </div>
+              <div id="ThirtyFourt">
+                <View35 />
+              </div>
+              <div id="ThirtyFourt">
+                <View36 />
               </div>
             </>
           )}

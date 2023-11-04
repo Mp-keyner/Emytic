@@ -96,6 +96,8 @@ const PageMobile = () => {
           <View31 />
           <View32 />
           <View33 />
+          <Memorias/>
+          <ComoSientes to={18} />
         </div>
       </AppProvider>
     </div>

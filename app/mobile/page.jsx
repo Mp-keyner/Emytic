@@ -38,6 +38,8 @@ import View28 from "./components/Jaguarr/View28";
 import View29 from "./components/Mono/View29";
 import View30 from "./components/Mono/View30";
 import View31 from "./components/Mono/View31";
+import View32 from "./components/Mono/View32";
+import View33 from "./components/Mono/View33";
 
 const PageMobile = () => {
   useEffect(() => {
@@ -92,6 +94,8 @@ const PageMobile = () => {
           <View29 />
           <View30 />
           <View31 />
+          <View32 />
+          <View33 />
         </div>
       </AppProvider>
     </div>

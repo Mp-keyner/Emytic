@@ -55,7 +55,7 @@ const MainView = () => {
         data-aos="fade-left"
         data-aos-out="fade-left"
         className="absolute bottom-28 right-0 w-[10pc] flex flex-col items-center text-center text-black "
-        onClick={() => handleClick(2)}
+        onClick={() => handleClick(3)}
       >
         <h2 className="text-xl font-semibold ">Presiona para empezar</h2>
         <Image
@@ -63,7 +63,7 @@ const MainView = () => {
           width={100}
           height={100}
           className="cursor-pointer flecha"
-        />  
+        />
       </div>
       <div data-aos="fade-left" className="z-40 absolute top-[14%] right-[2%] ">
         <div className="bocadillo-cuadrado-mobile1">

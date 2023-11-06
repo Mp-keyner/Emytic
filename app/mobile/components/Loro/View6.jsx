@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { AppContext } from "../Context";
 import Image from "next/image";
 
-const   View6 = () => {
+const View6 = () => {
   const { handleClick } = useContext(AppContext);
 
   return (
@@ -10,7 +10,7 @@ const   View6 = () => {
       <div className="absolute bottom-4 flex flex-col justify-center items-center text-center w-52 font-bold">
         <h2>Presiona para continuar con esta aventura</h2>
         <Image
-          onClick={() => handleClick(8)}
+          onClick={() => handleClick(9)}
           src="/img/row.svg"
           width={100}
           height={100}

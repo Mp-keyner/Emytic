@@ -10,7 +10,7 @@ const View24 = () => {
       <div className="w absolute bottom-10 right-0 font-bold w-52 flex flex-col items-center text-center">
         <h2>Presiona para continuar con esta aventura</h2>
         <Image
-          onClick={() => handleClick(3)}
+          onClick={() => handleClick(28)}
           src="/img/row.svg"
           width={80}
           height={80}

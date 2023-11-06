@@ -1,11 +1,13 @@
 import Modal from "@/components/Modal";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import ModalMobil from "../ModalMobil";
+import { AppContext } from "../Context";
 
 const Regalo = () => {
   const [closeModal, setCloseModal] = useState(false);
   const [mensaje, setMensaje] = useState("keyner de la hoz");
+  const { handleClick } = useContext(AppContext);
   const HandlesetCloseModal = () => {
     console.log("cerro");
     setCloseModal(false);
@@ -15,6 +17,7 @@ const Regalo = () => {
     setCloseModal(true);
     setMensaje(x);
   };
+  // 34
   return (
     <>
       <div
@@ -107,7 +110,7 @@ const Regalo = () => {
         <div className="absolute bottom-4 flex flex-col justify-center items-center text-center w-52 font-bold left-1">
           <h2>Presiona para continuar con esta aventura</h2>
           <Image
-            onClick={() => handleClick(23)}
+            onClick={() => handleClick(34)}
             src="/img/row.svg"
             width={100}
             height={100}

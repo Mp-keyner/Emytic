@@ -1,7 +1,9 @@
 import Image from "next/image";
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../Context";
 
 const Memorias = () => {
+  const { handleClick } = useContext(AppContext);
   const url = "https://sopa-six.vercel.app/Memorias2.html";
   return (
     <div className="relative">
@@ -20,7 +22,7 @@ const Memorias = () => {
       <div className="absolute bottom-0 flex justify-center items-center text-center font-bold w-[100%]">
         <h2>Presiona para continuar con esta aventura</h2>
         <Image
-          onClick={() => handleClick(23)}
+          onClick={() => handleClick(39)}
           src="/img/row.svg"
           width={100}
           height={100}

@@ -6,6 +6,7 @@ const AppProvider = ({ children }) => {
     "fixed z-50 bottom-[40%] right-[30%] w-[10pc]"
   );
   const [pageNumber, setPageNumber] = useState(1);
+  const [tuto, setTuto] = useState(false);
 
   useEffect(() => {
     console.log(pageNumber);
@@ -16,21 +17,24 @@ const AppProvider = ({ children }) => {
         console.log("Caso 1");
         break;
       case 2:
-        setEmyticClass("fixed z-50 bottom-[10%] right-[55%] w-[10pc] ");
+        setEmyticClass("fixed z-50 bottom-[35%] right-[55%] w-[10pc] ");
+        // setEmyticClass("fixed z-50 bottom-[10%] right-[55%] w-[10pc] ");
         scrollToSection(2);
         console.log("Caso 2");
         break;
       case 3:
-        setEmyticClass("fixed z-50 bottom-48 right-[10%] w-[10pc]  ");
+        setEmyticClass("fixed z-50 bottom-[10%] right-[55%] w-[10pc] ");
         scrollToSection(3);
         console.log("Caso 3");
         break;
       case 4:
-        setEmyticClass("fixed z-50 bottom-44 right-[10%] w-[10pc]  ");
+        setEmyticClass("fixed z-50 bottom-48 right-[10%] w-[10pc]  ");
+
         scrollToSection(4);
         break;
       case 5:
         setEmyticClass("fixed z-50 bottom-44 right-[10%] w-[10pc]  ");
+        // setEmyticClass("fixed z-50 bottom-44 right-[10%] w-[10pc]  ");
         scrollToSection(5);
         break;
       case 6:
@@ -53,7 +57,8 @@ const AppProvider = ({ children }) => {
         scrollToSection(10);
         break;
       case 11:
-        setEmyticClass("fixed z-50 bottom-[20%] right-10 w-[10pc]");
+        // setEmyticClass("fixed z-50 bottom-[20%] right-10 w-[10pc]");
+        setEmyticClass("fixed z-50 bottom-[10%] right-[55%] w-[10pc] ");
         scrollToSection(11);
         break;
       case 12:
@@ -124,7 +129,9 @@ const AppProvider = ({ children }) => {
   };
 
   return (
-    <AppContext.Provider value={{ handleClick, emyticClass, pageNumber }}>
+    <AppContext.Provider
+      value={{ handleClick, emyticClass, pageNumber, tuto, setTuto }}
+    >
       {children}
     </AppContext.Provider>
   );

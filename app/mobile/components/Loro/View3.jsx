@@ -29,6 +29,7 @@ const View3 = () => {
         className="bocadillo-cuadrado-mobile3 fixed z-50 left-44 -top-8 h-64 overflow-scroll"
         data-aos="fade-right"
         data-aos-delay="500"
+        style={{ backgroundColor: "#51e843" }}
       >
         <p className="h-full pb-4">
           Esta mañana camino a la escuela, me tropecé con una piedra y ajá, caí

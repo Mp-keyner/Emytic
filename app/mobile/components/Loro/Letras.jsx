@@ -408,7 +408,7 @@ const Letras = () => {
       </div>
       <div style={styles.Footer}>
         <h2 className="text-white text-[1.2pc]">
-          Presiona para saber por que pepe estaba enojado
+          Presiona para saber expresar como te sientes
         </h2>
         <Image
           onClick={() => handleClick(18)}

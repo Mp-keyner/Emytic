@@ -108,7 +108,7 @@ const Regalo = () => {
           />
         </div>
         <div className="absolute bottom-4 flex flex-col justify-center items-center text-center w-52 font-bold left-1">
-          <h2>Presiona para continuar con esta aventura</h2>
+          <h2>Presiona para continuar expresar tus sentimientos</h2>
           <Image
             onClick={() => handleClick(34)}
             src="/img/row.svg"

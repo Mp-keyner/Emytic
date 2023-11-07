@@ -8,7 +8,7 @@ const View12 = () => {
   return (
     <div className="h-screen fondo6 relative">
       <div className="absolute bottom-4 flex flex-col justify-center items-center text-center w-52 font-bold">
-        <h2>Presiona para continuar con esta aventura</h2>
+        <h2>Presiona para continuar con la primera actividad</h2>
         <Image
           onClick={() => handleClick(17)}
           src="/img/row.svg"
@@ -29,6 +29,7 @@ const View12 = () => {
         className="bocadillo-cuadrado-mobile3 fixed left-40 -top-4 z-50 h-64 overflow-scroll"
         data-aos="fade-right"
         data-aos-delay="500"
+        style={{ backgroundColor: "#51e843" }}
       >
         <p className="h-full">
           Hay situaciones que pueden generarnos emociones negativas como ira,

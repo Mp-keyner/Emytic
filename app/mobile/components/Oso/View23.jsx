@@ -8,7 +8,7 @@ const View12 = () => {
   return (
     <div className="h-screen fondo1 relative">
       <div className="absolute bottom-4 flex flex-col justify-center items-center text-center w-52 font-bold">
-        <h2>Presiona para continuar con esta aventura</h2>
+        <h2>Presiona para continuar con una actividad</h2>
         <Image
           onClick={() => handleClick(25)}
           src="/img/row.svg"

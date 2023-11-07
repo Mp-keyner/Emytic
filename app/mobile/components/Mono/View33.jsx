@@ -9,6 +9,7 @@ const View33 = () => {
       // border: "1px solid red",
       display: "flex",
       justifyContent: "center",
+      alignItems: "center",
     },
     Filas: {
       display: "flex",
@@ -33,7 +34,7 @@ const View33 = () => {
           width={100}
           height={100}
           alt=""
-          className="w-[2pc] h-[2.4pc]"
+          className="w-[2pc] h-[2.4pc] m-0"
         />
       );
     };
@@ -57,7 +58,7 @@ const View33 = () => {
       <div className="absolute bottom-0 flex justify-center items-center text-center w-[100%] font-bold">
         <h2>Presiona para continuar con esta aventura</h2>
         <Image
-          onClick={() => handleClick(38)}
+          onClick={() => handleClick(40)}
           src="/img/row.svg"
           width={100}
           height={100}

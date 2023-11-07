@@ -25,7 +25,7 @@ export const BeforePages = () => {
     {
       id: 4,
       imgUrl:
-        "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/Emytic%2F3.png?alt=media&token=e6eeceeb-8057-4c4a-a531-a796226ed767",
+        "https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/Emytic%2F4.png?alt=media&token=8a7ff8d0-4e07-4924-a02f-978e2a9d9ddc",
     },
     {
       id: 5,

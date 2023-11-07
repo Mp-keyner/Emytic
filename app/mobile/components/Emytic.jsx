@@ -11,8 +11,16 @@ const Emytic = () => {
       pageNumber === 1 ||
       pageNumber === 9 ||
       pageNumber === 10 ||
-      pageNumber === 16 ||
-      pageNumber === 17
+      pageNumber === 17 ||
+      pageNumber === 18 ||
+      pageNumber === 25 ||
+      pageNumber === 26 ||
+      pageNumber === 31 ||
+      pageNumber === 33 ||
+      pageNumber === 34 ||
+      pageNumber === 37 ||
+      pageNumber === 39 ||
+      pageNumber === 40
     ) {
       setOpacity(true);
     } else {
@@ -27,7 +35,6 @@ const Emytic = () => {
         height={500}
         className={emyticClass}
         style={{
-          border: "1px solid red",
           transition: "all 1s ease-in-out",
           opacity: `${opacity ? 0 : 1}`,
           display: `${opacity ? "none" : "block"}`,

@@ -6,7 +6,7 @@ const SopaLetras = () => {
   const { handleClick } = useContext(AppContext);
   const url = "https://sopa-six.vercel.app/mobil.html";
   return (
-    <div className="relative">
+    <div className="relative h-screen bg-[#79c606]">
       <iframe
         title="Página Web"
         src={url}
@@ -15,14 +15,16 @@ const SopaLetras = () => {
         frameBorder="0"
         style={{
           width: "100%",
-          height: "100vh",
+          height: "92vh",
           transform: "scale(1)",
         }}
       />
-      <div className="absolute bottom-0 flex justify-center items-center text-center font-bold w-[100%]">
+      <div className="absolute z-50 bottom-0 flex justify-center items-center text-center font-bold w-[100%]">
         <h2>Presiona para continuar con esta aventura</h2>
         <Image
-          onClick={() => handleClick(32)}
+          onClick={() => {
+            handleClick(32);
+          }}
           src="/img/row.svg"
           width={100}
           height={100}

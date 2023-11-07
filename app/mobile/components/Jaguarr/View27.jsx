@@ -8,7 +8,7 @@ const View27 = () => {
   return (
     <div className="h-screen fondo2 relative">
       <div className="absolute bottom-4 flex flex-col justify-center items-center text-center w-52 font-bold">
-        <h2>Presiona para continuar con la historia de pepe</h2>
+        <h2>Presiona para continuar con la historia de Flaqui</h2>
         <Image
           onClick={() => handleClick(31)}
           src="/img/row.svg"

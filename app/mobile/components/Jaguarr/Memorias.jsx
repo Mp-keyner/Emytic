@@ -6,7 +6,7 @@ const Memorias = () => {
   const { handleClick } = useContext(AppContext);
   const url = "https://sopa-six.vercel.app/Memorias2.html";
   return (
-    <div className="relative">
+    <div className="relative h-screen bg-[#35c56c]">
       <iframe
         title="Página Web"
         src={url}
@@ -15,14 +15,14 @@ const Memorias = () => {
         frameBorder="0"
         style={{
           width: "100%",
-          height: "100vh",
+          height: "92vh",
           transform: "scale(1)",
         }}
       />
       <div className="absolute bottom-0 flex justify-center items-center text-center font-bold w-[100%]">
-        <h2>Presiona para continuar con esta aventura</h2>
+        <h2>Presiona para continuar y expresar tus emociones</h2>
         <Image
-          onClick={() => handleClick(39)}
+          onClick={() => handleClick(41)}
           src="/img/row.svg"
           width={100}
           height={100}

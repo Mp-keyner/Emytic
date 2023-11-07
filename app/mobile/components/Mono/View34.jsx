@@ -9,14 +9,17 @@ const View34 = () => {
     <div className="h-screen fondo1 relative">
       <div className="absolute bottom-4 flex flex-col justify-center items-center text-center w-52 font-bold">
         <h2>Presiona para reiniciar esta aventura</h2>
-        <Image
-          onClick={() => handleClick(35)}
-          src="/img/row.svg"
-          width={100}
-          height={100}
-          className="cursor-pointer flecha"
-          alt=""
-        />
+        <button
+          style={{
+            border: "1px solid white",
+            color: "white",
+            padding: "8px",
+            borderRadius: "8px",
+          }}
+          onClick={() => window.location.reload()}
+        >
+          Reiniciar
+        </button>
       </div>
 
       <Image

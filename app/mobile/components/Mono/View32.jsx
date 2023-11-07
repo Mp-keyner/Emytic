@@ -8,9 +8,9 @@ const View32 = () => {
   return (
     <div className="h-screen fondo1 relative">
       <div className="absolute bottom-4 flex flex-col justify-center items-center text-center w-52 font-bold">
-        <h2>Presiona para continuar con la historia de pepe</h2>
+        <h2>Presiona para continuar con la actividad</h2>
         <Image
-          onClick={() => handleClick(37)}
+          onClick={() => handleClick(39)}
           src="/img/row.svg"
           width={100}
           height={100}
@@ -20,7 +20,7 @@ const View32 = () => {
       </div>
       <div
         className="bocadillo-cuadrado-mobile3 fixed z-50 left-40 top-10 h-64 overflow-scroll"
-        style={{ position: "absolute" }}
+        style={{ position: "absolute", backgroundColor: "#51e843" }}
         data-aos="fade-right"
         data-aos-delay="500"
       >

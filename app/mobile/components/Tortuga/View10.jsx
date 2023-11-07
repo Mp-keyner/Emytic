@@ -8,7 +8,7 @@ const View10 = () => {
   return (
     <div className="h-screen fondo6 relative">
       <div className="absolute bottom-4 flex flex-col justify-center items-center text-center w-52 font-bold">
-        <h2>Presiona para continuar con la historia de pepe</h2>
+        <h2>Presiona para continuar con las preguntas de tuti</h2>
         <Image
           onClick={() => handleClick(15)}
           src="/img/row.svg"

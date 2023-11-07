@@ -42,13 +42,19 @@ import View32 from "./components/Mono/View32";
 import View33 from "./components/Mono/View33";
 import View34 from "./components/Mono/View34";
 import { BeforePages } from "./components/beforePages/BeforePages";
+import Maa from "./components/Mono/maa";
 
 const PageMobile = () => {
   useEffect(() => {
     console.log("aPpp montada");
   }, []);
   return (
-    <div className="relative">
+    <div
+      className="relative "
+      style={{
+        overflow: "hidden",
+      }}
+    >
       <AppProvider>
         <BeforePages />
         <Emytic />
@@ -91,15 +97,16 @@ const PageMobile = () => {
           <SopaLetras />
           <View28 />
           <Regalo />
-          <ComoSientes to={34} />
+          <ComoSientes to={35} />
         </div>
         <div id="Mono">
+          <Maa />
           <View30 />
           <View31 />
           <View32 />
           <View33 />
           <Memorias />
-          <ComoSientes to={18} />
+          <ComoSientes to={42} />
           <View34 />
         </div>
       </AppProvider>

@@ -20,7 +20,7 @@ const View7 = () => {
       </div>
       <Image
         data-aos="fade-up-left"
-        src={"/img/map/1.svg"}
+        src={"/img/map/1.2.svg"}
         width={300}
         height={300}
         id="mapa"

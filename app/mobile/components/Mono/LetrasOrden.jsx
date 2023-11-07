@@ -186,7 +186,7 @@ const LetrasOrden = ({ to }) => {
       </div>
       <div style={styles.Footer}>
         <h2 className="text-white text-[1.2pc]">
-          Presiona para saber por que pepe estaba enojado
+          Presiona para expresar tus sentimientos
         </h2>
         <Image
           onClick={() => handleClick(to)}

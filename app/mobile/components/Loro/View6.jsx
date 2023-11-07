@@ -29,6 +29,7 @@ const View6 = () => {
         className="bocadillo-cuadrado-mobile3 fixed left-40 -top-4 z-50 h-64 overflow-scroll"
         data-aos="fade-right"
         data-aos-delay="500"
+        style={{ backgroundColor: "#51e843" }}
       >
         <p className="h-full">
           Las emociones son <b>estados de las personas</b>, que permiten que

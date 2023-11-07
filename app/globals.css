@@ -29,7 +29,7 @@ html {
 }
 
 body {
-  /* overflow: hidden; */
+  overflow: hidden;
   font-family: "Kanit", sans-serif;
   color: #000;
   background-color: white;
